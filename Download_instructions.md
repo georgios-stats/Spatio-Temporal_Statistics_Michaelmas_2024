@@ -1,36 +1,36 @@
 <!-- -------------------------------------------------------------------------------- -->
 
-<!-- Copyright 2023 Georgios Karagiannis -->
+<!-- Copyright 2024 Georgios Karagiannis -->
 
 <!-- georgios.karagiannis@durham.ac.uk -->
 <!-- Associate Professor -->
 <!-- Department of Mathematical Sciences, Durham University, Durham,  UK  -->
 
-<!-- This file is part of Machine_Learning_and_Neural_Networks_III_Epiphany_2023 -->
+<!-- This file is part of Spatio-Temporal_Statistics_Michaelmas -->
 <!-- which is the material of the course -->
 <!-- MATH4341: Spatio-Temporal Statistics -->
 <!-- Epiphany term -->
 <!-- taught by Georgios P. Katagiannis in the Department of Mathematical Sciences   -->
-<!-- in the University of Durham  in Michaelmas term in 2023 -->
+<!-- in the University of Durham  in Michaelmas term in 2024 -->
 
-<!-- Spatio-Temporal_Statistics_Michaelmas_2023 is free software: -->
+<!-- Spatio-Temporal_Statistics_Michaelmas is free software: -->
 <!-- you can redistribute it and/or modify it-->
 <!-- under the terms of the GNU General Public License as published by -->
 <!-- the Free Software Foundation version 3 of the License. -->
 
-<!-- Spatio-Temporal_Statistics_Michaelmas_2023 is distributed ->
+<!-- Spatio-Temporal_Statistics_Michaelmas is distributed ->
 <!-- in the hope that it will be useful, -->
 <!-- but WITHOUT ANY WARRANTY; without even the implied warranty of -->
 <!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the -->
 <!-- GNU General Public License for more details. -->
 
 <!-- You should have received a copy of the GNU General Public License -->
-<!-- along with Machine_Learning_and_Neural_Networks_III_Epiphany_2023 -->
+<!-- along with Spatio-Temporal_Statistics_Michaelmas -->
 <!-- If not, see <http://www.gnu.org/licenses/>. -->
 
 <!-- -------------------------------------------------------------------------------- -->
 
-[Back to README](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2023#details)
+[Back to README](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas#details)
 
 ------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@
     
     4. in the *URL of your Git repository* section insert the link: 
         
-        <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2023.git> 
+        <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git> 
 
     ... this will gonna download the whole Spatio-Temporal Statistics learning teaching material. You can navigate to the material.  
 
@@ -58,7 +58,7 @@
 
 Ways:
 
-1. You can click [[HERE](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2023/archive/refs/heads/main.zip)].
+1. You can click [[HERE](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/archive/refs/heads/main.zip)].
 
 2. You can click the green button 'Clone or download' and download it as a zip file
 
@@ -78,7 +78,7 @@ Ways:
     
     ... then run:
 
-    -   git clone https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2023.git
+    -   git clone https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git
 
 4. You can use rstudio:
 
@@ -86,7 +86,7 @@ Ways:
     
     2.  In the section *Repository URL* write
         
-        -   <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2023.git>
+        -   <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git>
         
         -   … and complete the rest as you wish
     
