@@ -45,9 +45,9 @@
 
 Topic 0: Types of spatial data       
 
-+ [Types_of_spatial_data.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/master/Lecture_handouts/Types_of_spatial_data.pdf)  
++ Lecture notes (PDF) [Types_of_spatial_data.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/master/Lecture_handouts/Types_of_spatial_data.pdf)  
 
-+ [Types_of_spatial_data.xhtml](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Types_of_spatial_data_xhtml/Types_of_spatial_data.xhtml) 
++ Lecture notes (HTML) [Types_of_spatial_data.xhtml](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Types_of_spatial_data_xhtml/Types_of_spatial_data.xhtml) 
 
 + R code: [Types_of_spatial_data.R](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/main/Lecture_handouts/R_scripts/Types_of_spatial_data.R)  
 
@@ -65,17 +65,17 @@ Topic 1: Computations with INLA
 
 Topic 1: Geostatistical data modeling       
 
-+ [Geostatistical_data.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Geostatistical_data.pdf)   
++ Lecture notes (PDF) [Geostatistical_data.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Geostatistical_data.pdf)   
 
-+ [Geostatistical_data.xhtml](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Geostatistical_data_xhtml/Geostatistical_data.xhtml) 
++ Lecture notes (HTML) [Geostatistical_data.xhtml](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Geostatistical_data_xhtml/Geostatistical_data.xhtml) 
 
 + R code: [Geostatistical_data.R](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/main/Lecture_handouts/R_scripts/Geostatistical_data.R)  
 
 Topic 2: Aerial unit data modeling       
 
-+ [Aerial_unit_data.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Aerial_unit_data.pdf)  
++ Lecture notes (PDF) [Aerial_unit_data.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Aerial_unit_data.pdf)  
 
-+ [Aerial_unit_data.xhtml](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Aerial_unit_data_xhtml/Aerial_unit_data.xhtml)  
++ Lecture notes (HTML) [Aerial_unit_data.xhtml](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Lecture_handouts/Aerial_unit_data_xhtml/Aerial_unit_data.xhtml)  
 
 Topic 3: Random pattern data modeling       
 
