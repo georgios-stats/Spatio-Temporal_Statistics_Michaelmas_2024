@@ -55,7 +55,7 @@ This repository contains the teaching material for the module ***MATH4341: Spati
 
 ### Computer practicals
 
--   '[Computer_practicals](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Computer_practicals#details))' folder contains the material for your computer practical classes
+-   '[Computer_practicals](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Computer_practicals#details)' folder contains the material for your computer practical classes
 
 ### Excercises
 
