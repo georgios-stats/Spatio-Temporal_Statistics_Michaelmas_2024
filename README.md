@@ -33,46 +33,139 @@
 
 ------------------------------------------------------------------------
 
-# Details
+# Description
 
 This repository contains the teaching material for the module ***MATH4341: Spatio-Temporal Statistics*** in Michaelmas term in 2024 @ Durham University.
 
-------------------------------------------------------------------------
+-   '[Description.pdf](Description.pdf)' contains the ILOs, syllabus, and bibliography  
 
-### Description
+Below you can find:  
 
--   '[Description.pdf](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/master/Description.pdf)' contains the ILOs, sylabus, and bibliography
++ Lecture notes / handouts  
 
-### Lectures
++ Computer lab notes  
 
--   '[Lecture_handouts](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Lecture_handouts#details)' folder contains the material used in your lectures
++ Exercise sheets  
 
-<!--
-### Problem classes  
++ Data sets  
 
--   '[Problem_class_sheets](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Problem_class_sheets#details)' folder contains the material used in your problem classes
--->
-
-### Computer practicals
-
--   '[Computer_practicals](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Computer_practicals#details)' folder contains the material for your computer practical classes
-
-### Excercises
-
--   '[Exercises](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Exercises#details-about-exercise-material)' folder contains the material used for your practice at home
-
-### Datasets
-
--   '[Datasets](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/tree/main/Datasets)' folder contains the data sets used in the course
++ Downloading instructions     
 
 ------------------------------------------------------------------------
 
-# How to download the repository:  
+# Lecture notes / handouts
 
-Please visit:  
+Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_notes)**  
 
-+ [Download instructions](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/blob/main/Download_instructions.md#how-to-download-and-use-it)
+#### Complete set of notes    
 
+#### Types of spatial data       
+
+#### Geostatistical data modeling       
+
+#### Aerial unit data modeling       
+
+#### Random pattern data modeling       
+
+------------------------------------------------------------------------
+
+# Computer lab notes  
+
+#### Types of spatial data       
+
+... Coming soon
+
+#### Geostatistical data modeling       
+
+... Coming soon
+
+#### Aerial unit data modeling       
+
+... Coming soon
+
+#### Random pattern data modeling    
+
+... Coming soon
+
+------------------------------------------------------------------------
+
+# Excercise sheets and homework 
+
+#### Excersice sheet  
+
+It contains all the exercises and solutions  
+
+#### Homework 1  
+
+... Coming soon  
+
+#### Homework 2  
+
+... Coming soon  
+
+#### Homework 3  
+
+... Coming soon  
+
+#### Homework 4  
+
+... Coming soon
+
+------------------------------------------------------------------------
+
+# Data sets  
+
+... Coming soon
+
+------------------------------------------------------------------------
+
+# Downloading instructions     
+
+### How to download the whole repository
+
+Ways:
+
+1. You can click [[HERE](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/archive/refs/heads/main.zip)].
+
+2. You can click the green button 'Clone or download' and download it as a zip file
+
+3. You can use the program 'git' (<https://git-scm.com/>):
+    
+    -   in windows/linux: 
+    
+        download and install git from https://git-scm.com/
+    
+    -   in Debian linux run in the terminal: 
+    
+        sudo apt-get install git
+    
+    -   in Red Hat linux run in the terminal: 
+    
+        sudo yum install git
+    
+    ... then run:
+
+    -   git clone https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git
+
+4. You can use rstudio:
+
+    1.  Go to File &gt; New Project &gt; Version Control &gt; Git
+    
+    2.  In the section *Repository URL* write
+        
+        -   <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git>
+        
+        -   … and complete the rest as you wish
+    
+    3.  Hit *Create a Project*
+
+### How to download a specific file
+
+Ways:
+
+1. You can just navigate to the file from the browser and download it.
+
+2. You can use the GitZip add-on for Firefox available [HERE](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=2ahUKEwias52xjd3nAhXPUs0KHeXHCEUQFjACegQIAhAB&url=https%3A%2F%2Faddons.mozilla.org%2Fen-US%2Ffirefox%2Faddon%2Fgitzip%2F&usg=AOvVaw37servrJ29tuNcx9dIQDqy) or the Chrome add-on GitZip available [HERE](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwias52xjd3nAhXPUs0KHeXHCEUQFjABegQIARAB&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fgitzip-for-github%2Fffabmkklhbepgcgfonabamgnfafbdlkn%3Fhl%3Den&usg=AOvVaw1Pn3VXuXz1Fphl7dsPEhDS)
 
 ------------------------------------------------------------------------
 
