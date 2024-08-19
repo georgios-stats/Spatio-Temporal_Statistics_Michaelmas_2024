@@ -59,13 +59,23 @@ Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_n
 
 #### Complete set of notes    
 
+... Not available yet  
+
 #### Types of spatial data       
+
+... Not available yet  
 
 #### Geostatistical data modeling       
 
+... Not available yet  
+
 #### Aerial unit data modeling       
 
+... Not available yet  
+
 #### Random pattern data modeling       
+
+... Not available yet  
 
 ------------------------------------------------------------------------
 
@@ -73,19 +83,19 @@ Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_n
 
 #### Types of spatial data       
 
-... Coming soon
+... Not available yet  
 
 #### Geostatistical data modeling       
 
-... Coming soon
+... Not available yet  
 
 #### Aerial unit data modeling       
 
-... Coming soon
+... Not available yet  
 
 #### Random pattern data modeling    
 
-... Coming soon
+... Not available yet  
 
 ------------------------------------------------------------------------
 
@@ -97,25 +107,25 @@ It contains all the exercises and solutions
 
 #### Homework 1  
 
-... Coming soon  
+... Not available yet  
 
 #### Homework 2  
 
-... Coming soon  
+... Not available yet  
 
 #### Homework 3  
 
-... Coming soon  
+... Not available yet  
 
 #### Homework 4  
 
-... Coming soon
+... Not available yet  
 
 ------------------------------------------------------------------------
 
 # Data sets  
 
-... Coming soon
+... Not available yet  
 
 ------------------------------------------------------------------------
 
