@@ -41,15 +41,15 @@ This repository contains the teaching material for the module ***MATH4341: Spati
 
 Below you can find:  
 
-+ Lecture notes / handouts  
++ [Lecture notes / handouts](./README.md#lecture-notes--handouts)  
 
-+ Computer lab notes  
++ [Computer lab notes](./README.md#computer-lab-notes)  
 
-+ Exercise sheets  
++ [Exercise sheets](./README.md#excercise-sheets-and-homework)  
 
-+ Data sets  
++ [Data sets](./README.md#data-sets)  
 
-+ Downloading instructions     
++ [Downloading instructions](./README.md#downloading-instructions)     
 
 ------------------------------------------------------------------------
 
