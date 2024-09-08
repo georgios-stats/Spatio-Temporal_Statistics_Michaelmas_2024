@@ -1,0 +1,1024 @@
+---
+title: "Lab notes and tasks in R"
+subtitle: "Point referenced spatial data modelling"
+author: "Georgios P. Karagiannis @ MATH4341 Spatio-temporal statiatics IV"
+output:
+  html_notebook: 
+    number_sections: true
+  word_document: default
+  html_document:
+    df_print: paged
+    number_sections: true
+  pdf_document: default
+header-includes: 
+  - \usepackage{tikz}
+  - \usepackage{pgfplots}
+  - \usepackage{amsmath}
+---
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- Copyright 2024 Georgios Karagiannis -->
+
+<!-- georgios.karagiannis@durham.ac.uk -->
+<!-- Associate Professor -->
+<!-- Department of Mathematical Sciences, Durham University, Durham,  UK  -->
+
+<!-- This file is part of Spatio-Temporal_Statistics_Michaelmas_2024 -->
+<!-- which is the material of the course -->
+<!-- MATH4341: Spatio-Temporal Statistics -->
+<!-- Epiphany term -->
+<!-- taught by Georgios P. Katagiannis in the Department of Mathematical Sciences   -->
+<!-- in the University of Durham  in Michaelmas term in 2024 -->
+
+<!-- Spatio-Temporal_Statistics_Michaelmas_2024 is free software: -->
+<!-- you can redistribute it and/or modify it-->
+<!-- under the terms of the GNU General Public License as published by -->
+<!-- the Free Software Foundation version 3 of the License. -->
+
+<!-- Spatio-Temporal_Statistics_Michaelmas_2024 is distributed ->
+<!-- in the hope that it will be useful, -->
+<!-- but WITHOUT ANY WARRANTY; without even the implied warranty of -->
+<!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the -->
+<!-- GNU General Public License for more details. -->
+
+<!-- You should have received a copy of the GNU General Public License -->
+<!-- along with Spatio-Temporal_Statistics_Michaelmas_2024 -->
+<!-- If not, see <http://www.gnu.org/licenses/>. -->
+
+<!-- -------------------------------------------------------------------------------- -->
+
+[Back to README](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024#computer-lab-notes)
+
+```{r}
+rm(list=ls())
+```
+
+
+```{r, echo=false, results="hide"}
+# Load R package for printing
+library(knitr)
+```
+
+---
+
+#### Aim {-}
+
+Students will become able to model and analyse point reference spatial data sets in R by using the R package [***gstat***](https://cran.r-project.org/web/packages/gstat/).  
+
+---
+
+#### Related material  {-}
+
+References for ***R***, ***Rmarkdown***, and ***LaTeX***  (optional, supplementary material):  
+
++ [Cheat sheet with basic commands](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)   
+
++ [R Markdown cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/rmarkdown-2.0.pdf)  
+
++ [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)  
+
++ [knitr options](https://yihui.name/knitr/options)   
+
++ [Latex Cheat Sheet](https://wch.github.io/latexsheet/latexsheet-a4.pdf)  
+
+Lecture notes:  
+
++ [Point referenced data modelling](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/main/Lecture_handouts/Geostatistical_data.pdf)  
+
+R Packages we will learn:    
+
++ [CRAN: Package gstat: Spatial and Spatio-Temporal Geostatistical Modelling, Prediction and Simulation](https://cran.r-project.org/web/packages/gstat/)      
+
+    URL: <https://cran.r-project.org/web/packages/gstat/>  
+
+R Packages we needed to be familiar with:    
+
++ [CRAN: Package sf: Classes and Methods for Spatial Data](https://cran.r-project.org/web/packages/sf/)      
+
+    URL: <https://cran.r-project.org/web/packages/sf/>
+    
+Students are required to have already installed the above packages before the Lab.  
+
+
+---
+
+# Introduction {-}  
+
+## R package [***gstat***](https://cran.r-project.org/web/packages/gstat/)  {-}  
+
+We study how to implement basic point reference modeling and analysis in R computing environment by using the R package [***gstat***](https://cran.r-project.org/web/packages/gstat/)  (Pebesma, 2004), in conjunction to the R packages [***sf***](https://cran.r-project.org/web/packages/sf/) and [***sp***](https://cran.r-project.org/web/packages/sp/) for handling spatial data objects.    
+
+The R package [***gstat***](https://cran.r-project.org/web/packages/gstat/) (Pebesma, 2004) provides basic functionality for univariable and multivariable geostatistical modeling, prediction, simulation, and analysis. This includes:  
+
++ variogram modeling  
++ simple, ordinary and universal point or block (co)kriging
++ spatio-temporal kriging 
++ sequential Gaussian or indicator (co)simulation  
++ variogram and variogram map plotting utility functions  
+
+The repository of [***gstat***](https://cran.r-project.org/web/packages/gstat/) can be found in   
+
++ <https://cran.r-project.org/web/packages/gstat/>    
+
+Load R package  [***gstat***](https://cran.r-project.org/web/packages/gstat/) by running  
+
+```{r}
+library(gstat) 
+```
+
+FYI: Another important geostatistical R package is [***R-INLA***](https://www.r-inla.org/) offering realistic computational tools for (both fully and empirical) Bayesian predictiva and parametric inference.   
+
+
+## Dataset ***meuse{sp}*** {-}  
+
+We practice the use of routines in R package [***gstat***](https://cran.r-project.org/web/packages/gstat/) by using the Meuse bank   data set  ***meuse{sp}*** (P.A. Burrough, R.A. McDonnell, 1998)   provided with [***sp***](https://cran.r-project.org/web/packages/sp/) package.  
+
+The meuse data set is a data set comprising of four heavy metals measured in the top soil in a flood plain along the river Meuse, along with a handful of covariates. The process governing heavy metal distribu-
+tion seems that polluted sediment is carried by the river, and mostly deposited close to the river bank, and areas with low elevation. This document shows a geostatistical analysis of this data set.  
+
+Locations of soil samples collected in a flood plain of the river Meuse, near the village of Stein (NL) in the observation region which is the convex hull of the sample locations, annotated with marks including elevation (in meters), distance to river (in meters), flooding frequency, cadmium (in ppm), copper (in ppm), lead (in ppm), zinc (in ppm), percent of organic matter, presence of lime, and soil type (Rd10A - Calcareous weakly-developed meadow soils, light sandy clay; Rd90C/VII - Non-calcareous weakly-developed meadow soils, heavy sandy clay to light clay; Bkd26/VII - Red Brick soil, fine-sandy, silty light clay).  
+
+<!-- + M G J Rikken and R P G Van Rijn, 1993. Soil pollution with heavy metals - an inquiry into spatial variation, cost of mapping and the risk evaluation of copper, cadmium, lead and zinc in the floodplains of the Meuse west of Stein, the Netherlands. Doctoraalveldwerkverslag, Dept. of Physical Geography, Utrecht University -->
+
+Let's load the R dataset ***meuse{sp}*** by running  
+
+```{r}
+library(sp)
+data(meuse)
+# FYI ?meuse
+```
+
+---
+
+
+# Exploratory spatial data analysis  
+
+<!-- The data used to define the surface is the log of the zinc level, and preliminary plots indicated that this variable was strongly correlated with the shorted distance from the river bank. The first variable is treated in the analysis as what is to be fit by the surface, and distance was treated as a covariate that provides further information about the estimated height of the log-zinc surface. These data are in the two-column matrix MeuseData$covdata, with distance in the first column and zinc level in the second. -->
+
+Let's see in what format the dataset is    
+
+```{r}
+class(meuse) 
+```
+
+Let's see what columns/variables this data.frame contains      
+
+```{r}
+names(meuse)
+```
+We consider as ***response variable***      
+
++ ***meuse$zinc*** which is topsoil zinc concentration, mg kg-1 soil ("ppm")
+
+In particular, here we will consider the ***meuse*** in log scale, as $\log(\text{zinc})$.  
+
+The ***spatial coordinates*** are in columns/variables     
+
++ ***meuse$x*** (numeric vector) Easting (m) in Rijksdriehoek (RDH) (Netherlands topographical) map coordinates  
+
++ ***meuse$y*** (numeric vector) Northing (m) in RDH coordinates
+
+We need to use function ***coordinates{sp}*** to set spatial coordinates and create a Spatial object.  ***coordinates{sp}*** does this by  promoting the data.frame ***meuse*** into a ***SpatialPointsDataFrame***. ***SpatialPointsDataFrame*** knows about its spatial coordinates. Coordinates may be specified by a formula, a character vector, or a numeric matrix or data frame with the actual coordinates. 
+
+```{r}
+coordinates(meuse) <- c("x", "y")
+meuse <- as(meuse, "SpatialPixelsDataFrame")
+class(meuse)
+```
+
+We will also consider explanatory variable  
+
++ ***meuse$dist*** (numeric vector) Distance to the river Meuse.  
+
+
+Let's plot the observed $\log(\text{zinc})$ against the spatial coordinates by using ***spplot{sp}*** and ***bubble{sp}***
+
+```{r}
+#par(mfrow=c(1,2))
+#
+spplot(obj = meuse,     # object of class SpatialPointsDataFrame or SpatialGridDataFrame
+       do.log = TRUE,   # z-variable in log scale
+       zcol = c("zinc") # z-variable column name
+       )
+#
+bubble(obj = meuse,     # object of class SpatialPointsDataFrame or SpatialGridDataFrame
+       do.log = TRUE,   # z-variable in log scale
+       zcol = c("zinc") # z-variable column name
+       )
+```
+
+<!-- Interpolation is done on a regular grid. For the Meuse data set, coordinates of points on a regular grid are already deﬁned in the meuse.grid data.frame, and are converted into a SpatialPixelsDataFrame by   -->
+
+<!-- ```{r} -->
+<!-- data(meuse.grid) -->
+<!-- coordinates(meuse.grid) <- c("x", "y") -->
+<!-- meuse.grid <- as(meuse.grid, "SpatialPixelsDataFrame") -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- meuse.lm <- krige( log(zinc) ~ sqrt(dist),    -->
+<!--                   locations = meuse, # training data set  -->
+<!--                   newdata = meuse.grid,  # evaluation data set -->
+<!--                   ) -->
+<!-- err <- (meuse.lm$var1.pred-log(meuse$zinc) )   -->
+<!-- qqnorm(err, col = 'red')  -->
+<!-- qqline(err) -->
+<!-- ``` -->
+
+---  
+
+
+# The spatial model {-}  
+
+We consider the geostatistical model  
+
+\[
+Z\left(s\right)=\mu\left(s\right)+\delta\left(s\right) 
+\]  
+
+Let    
+
+\[
+\mu\left(s\right)=\left(\psi\left(s\right)\right)^{\top}\beta=\beta_{0}+\sum_{j=1}^{p}\psi_{j}\left(s\right)\beta_{j}
+\]
+
+be the deterministic trend, $\psi\left(s\right)=\left(1,\psi_{1}\left(s\right),...,\psi_{p}\left(s\right)\right)^{\top}$ be the vector of $p$  possibly spatially dependent explanatory variables, and $\beta=\left(\beta_{0},\beta_{1},...,\beta_{p}\right)^{\top}$ be the vector of unknown linear trend coefficients.   
+
+Also, let $\delta\left(s\right)$ be a spatial stochastic process, and (for the shake of our practical) assume that it is intrinsically stationary with a semivariogram $\gamma\left(\cdot\right)$.   
+
+In our application/dataset, 
+
++ we specify a linear trend \[\mu\left(s\right)=\beta_{0}+\beta_{1}\underset{=\psi_{1}\left(s\right)}{\underbrace{\sqrt{D\left(s\right)}}}
+\] where $D\left(s\right)$ denotes the variable ***distance***.  
++ as response $Z\left(s\right)$ we consider the $\log(\text{zinc})$ that is the ***zinc*** variable but in the log scale.  
+
+
+---
+
+# Spatial correlation and the semivariogram  
+
+<!-- The semivariogram plots semivariance as a function of distance.   -->
+
+<!-- Semi-variograms are calculated using the function variogram, which takes a formula as its first argument: $\log(zinc)\sim 1$ means that we assume a constant trend for the variable $\log(zinc)$. -->
+
+Consider a spatial model   
+
+\[
+\log(Z(s,\xi)) = \mu(s) + W(s)
+\]
+
+where $W(s)$ is an intrinsic stationary process this zero mean with respect to the spatial coordinates, $\mu(s)$ is a non-stochastic,   non-constant term containing explanatory variables. 
+
+In our dataset consider 
+
+\[
+\mu\left(s\right) = \beta_{0} + \beta_{1} \sqrt{\psi\left(s\right)}
+\] 
+
+## Exploratory variogram analysis  
+
+### Scatterplots
+
+A simple way to check whether spatial correlation is present or not is to produce $h$-scatterplots; namely, scatter plots of pairs $Z(s_i )$ and $Z(s_j)$, grouped according to their separation distance $h_{ij} = \left|s_i−s_j\right|$.   
+
+#### Task  {-}  
+
+Produce $9$ $h$-scatterplots for the variable $\log(zinc)$ each of them will have different separation ranges $(0,100)$, $(100,200)$, ..., $(800,900)$. 
+
+Use the R function ***hscat {gstat}*** with arguments formula, data, breaks.
+
+```{r}
+hscat(formula = log(zinc) ~ 1 + sqrt(dist), # specifies the dependent variable
+      data = meuse,                         # data where the variable in formula is resolved
+      breaks = (0:9) * 100                  # distance class boundaries
+      )
+```
+The strip texts indicate the distance classes, and sample correlations are shown in each panel.  Note that the the correlation reduces with distance. 
+
+### Sample semivariogram cloud  
+
+Another way to explore spatial correlation is by plotting the semivariogram cloud.  
+
+#### Task  {-}  
+
+Use the R function ***variogram {gstat}*** with arguments object, data, and cloud.  
+
+Store the output of object class "gstatVariogram" as ***cld***. 
+
+```{r}
+cld <- variogram(object = log(zinc) ~ 1 + sqrt(dist), # formula defining the response vector and (possible) regressors
+                 data = meuse,                        # data frame
+                 cloud = TRUE                         # if TRUE, it calculates the semivariogram cloud
+                 )
+```
+
+#### Task  {-}  
+
+Print a summary of the output, namely of the object named ***cld***, by using the R function ***summary()***. 
+
+```{r}
+summary(cld)
+```
+
+An object of class "gstatVariogram" with the following fields:
+
++ **np**: the number of point pairs for this estimate  
++ **dist**: the average distance of all point pairs considered for this estimate    
++ **gamma**: the actual sample variogram estimate 
+
+#### Task  {-}  
+
+Draw the variogram cloud; namely plot the *the numbers of the point pair that contributed to a variogram cloud estimate* against the *average distance of all point pairs considered for this estimate*.  
+
+Use R function ***plot()*** and object ***cld***.  
+
+
+```{r}
+plot(x = cld$dist,
+     y = cld$gamma,
+     cex = .5, 
+     pch = 3, 
+     col = 'blue', 
+     xlab = 'distance', 
+     ylab = 'gamma', 
+     main = 'cloud'
+)
+```
+
+### Sample semivariogram plot    
+
+Another way to explore spatial correlation is by plotting the sample semivariogram plot    
+
+#### Task  {-}  
+
+Estimate and draw the sample semivariogram; namely plot the *the actual sample variogram estimate* against the *average distance of all point pairs considered for this estimate*. 
+
+1. Use the R function ***variogram {gstat}*** with arguments object, and data to produce object of class "gstatVariogram". Call it ***svgm***. 
+
+2. Use the R function ***summary()*** to print a summary of the object ***svgm***. 
+
+3. Given ***svgm***, use R function ***plot()*** to plot the sample semivariogram. 
+
+4. Given ***svgm***, use R function ***text {graphics}*** to superimpose the *number of point pairs for this estimate* on the produced sample semivariogram plot. 
+
+
+```{r}
+svgm <- variogram(object = log(zinc) ~ 1 + sqrt(dist), # formula defining the response vector and (possible) regressors
+                  data = meuse,                        # data frame
+                  )
+#
+summary(svgm)
+#
+plot(x = svgm$dist,
+     y = svgm$gamma,
+     cex = .5, 
+     pch = 3, 
+     col = 'blue', 
+     xlab = 'distance',
+     ylab = 'gamma',  
+     main = 'sample variogram'
+     )
+#
+text(svgm$dist, 
+     svgm$gamma, 
+     svgm$np, 
+     adj = c(0,2)
+     )
+```
+#### Task  {-}   
+
+Draw the sample semivariogram plot of $\log(zinc)$ for different angles $0$, $45$, $90$, and $135$ degrees.  
+
+Use function ***variogram{gstat}*** arguments object, data, and alpha.   
+
+Use function ***plot()*** to plot the semi-variogram.  
+
+
+```{r}
+svgm.tmp <- variogram(object = log(zinc) ~ 1 + sqrt(dist), # formula defining the response vector and (possible) regressors
+                  data = meuse,               # data frame
+                  alpha = c(0, 45, 90, 135)   # direction in plane (x,y)
+                  )
+plot( svgm.tmp )
+```
+
+#### Task  {-}   
+
+Draw the sample semivariogram plot of $\log(zinc)$ with cutoff distance (the maximum distance up to which point pairs are considered) equal to $1000$ and width (distance interval over which point pairs are averaged in bins) equal to $50$.  
+
+Use function ***variogram{gstat}*** with arguments object, data, cutoff, and  width.   
+
+Use function ***plot()***. 
+
+```{r}
+svgm.tmp <- variogram(object = log(zinc) ~ 1 + sqrt(dist), # formula defining the response vector and (possible) regressors
+                  data = meuse,                            # data frame
+                  cutoff = 1000,                           # spatial separation distance up to which point pairs are included in semivariance estimates
+                  width = 50                               # the width of subsequent distance intervals into which data point pairs are grouped for semivariance estimates
+                  )
+plot( svgm.tmp )
+```
+
+#### Task  {-}   
+
+Draw the sample semivariogram plot of $\log(zinc)$ with cutoff distance (the maximum distance up to which point pairs are considered) equal to $1000$ and width (distance interval over which point pairs are averaged in bins) equal to $50$.  
+
+Use function ***variogram{gstat}*** with arguments object, data, cutoff, and  width.   
+
+Use function ***plot()***. 
+
+The distance vector does not have to be cut in regular intervals. 
+
+Draw the semivariogram plot of $\log(zinc)$ as above but specify each interval according to bins  
+
++ 0,   50,  110,  360,  610,  860, 1110, 1360 . 
+
+Use function ***variogram{gstat}*** arguments object, data, and  boundaries   
+
+Use function ***plot()*** to plot the semi-variogram. 
+
+```{r}
+svgm.tmp <- variogram(object = log(zinc) ~ 1 + sqrt(dist), # formula defining the response vector and (possible) regressors
+                  data = meuse,               # data frame
+                  boundaries = c(0,50,110,360,610,860,1110,1360)  # numerical vector with distance interval upper boundaries
+)
+plot( svgm.tmp )
+```
+
+### Parametric modelling of the semivariogram  
+
+A common way to ensure that predictions are associated with non-negative prediction variances is to infer a parametric semivariogram model from the observed data.  
+
+<!-- The traditional way of finding a suitable variogram model is to fit a parametric model to the sample variogram.  -->
+
+The basic semivariogram models available in ***gstat*** are show  
+
+```{r}
+vgm()
+```
+
+Here are some examples of semivariogram parametric models using specific parametric values.; check with ***?vgms***  
+
+```{r,echo=false}
+show.vgms()
+```
+
+Here are some examples of the Matern semivariogram model for a range of different parametric values.  
+
+```{r,echo=false}
+show.vgms(model = "Mat", 
+          kappa.range = c(0.1, 0.2, 0.5, 1, 2, 5, 10)
+          )
+```
+
+The usual parameters we need to adjust are in the following plot (ignore the code)  
+
+```{r,echo=false}
+ccol = 'darkblue' #grey(.5)
+v <- variogram(log(zinc) ~ 1, meuse)
+v.fit <- fit.variogram(v, vgm(1, "Sph", 800, 1))
+plot(v, v.fit, pch = 3, panel = function(x,y,subscripts,...) {
+		larrows(0,v.fit$psill[1], v.fit$range[2], v.fit$psill[1], 
+			col=ccol, ends = 'both', length=.1, angle=15)
+		larrows(v.fit$range[2],0, v.fit$range[2], v.fit$psill[1], 
+			col=ccol, ends = 'both', length=.1, angle=15)
+		larrows(v.fit$range[2],v.fit$psill[1], v.fit$range[2], 
+			sum(v.fit$psill), 
+			col=ccol, ends = 'both', length=.1, angle=15)
+		ltext(v.fit$rang[2]/2, 1.2*v.fit$psill[1], "range", col=ccol,
+			adj = c(.5, 0), cex=.9)
+		ltext(1.02 * v.fit$rang[2], 0.5 *v.fit$psill[1], "nugget", col=ccol,
+			adj = c(0, 0.5), cex=.9)
+		ltext(1.02 * v.fit$rang[2], v.fit$psill[1] + 0.5 * v.fit$psill[2], 
+			"partial sill", col=ccol, adj = c(0, 0.5), cex=.9)
+		vgm.panel.xyplot(x,y,subscripts,...)
+	}
+)
+```
+To specify the spherical semivariogram model with (partial) sill equal to $\sigma^2=1$, and range equal to $\phi=300$, and saved it as an object of class variogramModel named vgm.tmp .
+
+\[
+\gamma\left(h\right) = \begin{cases}
+\sigma^{2}-\sigma^{2}\left(1-\frac{3}{2}\frac{\left\Vert h\right\Vert _{1}}{\phi}+\frac{1}{2}\left(\frac{\left\Vert h\right\Vert _{1}}{\phi}\right)^{3}\right) & \left\Vert h\right\Vert _{1}\le\phi\\
+0 & \left\Vert h\right\Vert _{1}>\phi
+\end{cases},\,\,h\in\mathbb{R}^{3}
+\]
+
+
+```{r}
+vgm.tmp <- vgm(psill = 1, 
+               model = "Sph",
+               range = 300
+               )
+print(vgm.tmp)
+```
+
+To specify a semivariogram model  
+
+\[
+\gamma\left(h\right)=\gamma_{\text{nug}}\left(h;\sigma^{2}=0.5\right)+\gamma_{\text{sph}}\left(h;\sigma^{2}=1,\phi=300\right)+\gamma_{\text{sph}}\left(h;\sigma^{2}=0.8,\phi=800\right)
+\]  
+
+where $\gamma_{\text{nug}}\left(h;\sigma^{2}\right)=\sigma^{2}\text{1}_{\{0\}}\left(\left\Vert h\right\Vert \right)$ is the nugget semivariogram model, we code sequentially     
+
+```{r}
+vgm.tmp <- vgm(psill = 0.5,
+          model = "Nug", 
+          range = 0
+          )
+vgm.tmp <- vgm(psill = 1,
+          model = "Sph", 
+          range = 300,
+          add.to = vgm.tmp
+          )
+vgm.tmp <- vgm(psill = 0.8, 
+          model = "Sph", 
+          range = 800, 
+          add.to = vgm.tmp
+          )
+print(vgm.tmp)
+```
+
+
+#### Fit a semivariogram parametric model (constant trent)  
+
+***gstat*** fits a specified semivariogram parametric model to the sample semivariogram via weighted least squares. To do this, we need to take the steps:    
+
+1. Choose a suitable model (such as spherical, exponential, ...), with or without nugget    
+
+2. Choose suitable initial values for partial sill(s), range(s), and possibly nugget  
+
+3. Fit this model, by using the R function ***fit.variogram {gstat}***  
+
+#### Task {-}   
+
+Fit the semivariogram parametric model 
+
+\[
+\gamma\left(h\right)
+  =\gamma_{\text{nug}}\left(h;\sigma_{\text{nug}}^{2} \right)
+    +\gamma_{\text{sph}}\left(h;\sigma_{\text{sph}}^{2},\phi_{\text{sph}}\right)
+\]  
+
+(aka estimate $\sigma_{\text{nug}}^{2}$, $\sigma_{\text{sph}}^{2}$, and $\phi_{\text{sph}}$) against the sample variogram via weighted least squares. 
+
+Take the aforesaid steps and use the R functions ***vgm{gstat}***, ***variogram{gstat}*** and ***fit.variogram {gstat}***.    
+
+Print the result by using the R function ***print()***.   
+
+
+```{r}
+smpl.vgm <- variogram(object = log(zinc) ~ 1 + sqrt(dist), # formula defining the response vector and (possible) regressors
+                      data = meuse,           # data frame
+                      )
+vgm.obj <- vgm(psill = 0.5,
+                model = "Nug", 
+                range = 0
+                )
+vgm.obj <- vgm(psill = 1,                   # the value "=1" is just an initial value
+                 model = "Sph",
+                 range = 300,
+                 add.to = vgm.obj
+                )
+est.vgm <- fit.variogram(object = smpl.vgm, # sample variogram, output of variogram
+                         model = vgm.obj    # variogram model, output of vgm
+                         )
+print(est.vgm)
+```
+
+
+
+
+
+
+## Spatial Prediction  
+
+### Ordinary Kriging  
+
+```{r}
+#
+# set the formula of the ternd  
+#
+frml <- log(zinc) ~ 1
+#
+# Estimate the variogram  
+#
+smpl.vgm <- variogram(object = frml, 
+               data = meuse)
+#
+par.vgm.0 <- vgm(psill = 0.5,
+                model = "Nug", 
+                range = 0
+                )
+par.vgm.1 <- vgm(psill = 1,
+                 model = "Sph",
+                 range = 300,
+                 add.to = par.vgm.0
+                )
+par.vgm.est <- fit.variogram(object = smpl.vgm, 
+                         model = par.vgm.1
+                         )
+#
+# compute the Kriging equations
+# 
+krige.est <- krige( formula = frml,
+                    locations = meuse, 
+                    newdata = meuse.grid, 
+                    model = par.vgm.est
+                )
+#
+# summary
+#
+summary(krige.est)
+#
+# Plot
+#
+plot(krige.est)
+#
+#
+ord.krige.est <- krige.est
+```
+
+### Universial Kriging  
+
+```{r}
+#
+# set the formula of the ternd  
+#
+frml <- log(zinc) ~ 1 + sqrt(dist)
+#
+# Estimate the variogram  
+#
+smpl.vgm <- variogram(object = frml, 
+               data = meuse)
+#
+par.vgm.0 <- vgm(psill = 0.5,
+                model = "Nug", 
+                range = 0
+                )
+par.vgm.1 <- vgm(psill = 1,
+                 model = "Sph",
+                 range = 300,
+                 add.to = par.vgm.0
+                )
+par.vgm.est <- fit.variogram(object = smpl.vgm, 
+                         model = par.vgm.1
+                         )
+#
+# compute the Kriging equations
+# 
+krige.est <- krige( formula = frml,
+                    locations = meuse, 
+                    newdata = meuse.grid, 
+                    model = par.vgm.est
+                )
+#
+# summary
+#
+summary(krige.est)
+#
+# Plot
+#
+plot(krige.est)
+#
+#
+uni.krige.est <- krige.est
+```
+
+
+### Simple Kriging  
+
+```{r}
+#
+# set the formula of the ternd  
+#
+frml <- log(zinc) ~ 1
+#
+# Estimate the variogram  
+#
+smpl.vgm <- variogram(object = frml, 
+               data = meuse)
+#
+par.vgm.0 <- vgm(psill = 0.5,
+                model = "Nug", 
+                range = 0
+                )
+par.vgm.1 <- vgm(psill = 1,
+                 model = "Sph",
+                 range = 300,
+                 add.to = par.vgm.0
+                )
+par.vgm.est <- fit.variogram(object = smpl.vgm, 
+                         model = par.vgm.1
+                         )
+#
+# compute the Kriging equations
+# 
+krige.est <- krige( formula = frml,
+                    locations = meuse, 
+                    newdata = meuse.grid, 
+                    model = par.vgm.est
+                )
+#
+# summary
+#
+summary(krige.est)
+#
+# Plot
+#
+plot(krige.est)
+#
+#
+sim.krige.est <- krige.est
+```
+
+
+
+
+### Evaluating the trend functions and coefficients
+
+
+For cases of exploratory data analysis or analysis of specific regression diagnostics, it may be of interest to limit prediction to the trend component  
+
+\[
+\mu \left( s_0 \right) = \psi\left( s_0 \right)^\top \beta 
+\] 
+
+ and particularly the estimation $\hat{\beta}$ of the linear trend coefficients $\beta$
+
+```{r}
+frml <- log(zinc) ~ sqrt(dist)
+uk.est <- gstat(formula = frml, 
+              data = meuse,
+              model = par.vgm.est
+              )
+summary(uk.est)
+#
+uk.pred <- predict(object = uk.est, 
+                   newdata = meuse.grid)
+summary(uk.pred)
+#
+plot(uk.pred)
+```
+
+```{r}
+frml <- log(zinc) ~ sqrt(dist)
+uk.est <- gstat(formula = frml, 
+              data = meuse,
+              model = par.vgm.est
+              )
+summary(uk.est)
+#
+uk.tr.pred <- predict(object = uk.est, 
+                   newdata = meuse.grid,
+                   BLUE = TRUE)
+summary(uk.tr.pred)
+#
+plot(uk.tr.pred)
+```
+
+
+### Coefficiencs infrence (a huck...)
+
+```{r}
+frml <- log(zinc) ~ sqrt(dist)
+#
+n.obs <- length(meuse$zinc)
+meuse$Int <- rep(1, n.obs)
+#
+uk.est <- gstat(formula = log(zinc) ~ -1 + Int + sqrt(dist),
+              data = meuse, 
+              model = par.vgm.est
+              )
+#
+df <- data.frame(Int = c(0, 1), 
+                 dist = c(1, 0), 
+                 row.names = c("Intercept", "beta1")
+                 )
+#
+spdf <- SpatialPointsDataFrame( 
+  SpatialPoints(matrix(0,2, 2)), 
+  df
+  )
+#
+spdf
+#
+#
+#
+uk.tr.pred <- predict(object = uk.est,
+                      newdata = spdf,
+                      BLUE = TRUE
+                      )
+#
+uk.tr.pred
+```
+
+
+Int variable is a ‘manual’ intercept to replace the automatic intercept.  
+
+the -1 in the formula removes the automatic intercept  
+
+The predictions now contain the generalised least squares estimates of the regression model
+
+
+#### Cross validation  
+
+Cross validation splits the data set into two sets: a modelling set and a validation set.  The modelling set is used for variogram modelling and kriging on the locations of the validation set, and then the validation measurements can be compared to their predictions. If all went well, cross validation residuals are small, have zero mean, and no apparent structure.
+
+
+```{r}
+v.fit <- vgm(.59, "Sph", 874, .04)
+#
+cv155 <- krige.cv(formula = log(zinc)~1, 
+                  locations = meuse, 
+                  model = v.fit, 
+                  nfold = 5, 
+                  verbose = FALSE 
+                  )
+#
+bubble(cv155, 
+       "residual", 
+       main = "log(zinc): 5-fold CV residuals"
+       )
+#
+summary(cv155)
+```
+the variable fold shows to which fold each record belonged, and the variable zscore is the z-score, computed as
+\[
+z_i = \frac 
+  {
+  Z(s_i)-Z_{[i]}(s_i)
+  }
+  {
+  \sigma_{[i]}(s_i)
+  }
+\]
+
+with $Z_{[i]}(s_i)$ the cross validation prediction for $s_i$ and $\sigma_{[i]}(s_i)$ the corresponding kriging standard error. In contrast to standard residuals the z-score takes the kriging variance into account: it is a standardized residual, and if the variogram model is correct, the z-score should have mean and variance values close to 0 and 1. If, in addition, Z(s) follows a normal distribution, so should the z-score do.
+
+
+
+#### Singular Matrix Errors  
+
+Kriging cannot deal with duplicate observations, or observations that share the same location, because they are perfectly correlated, and lead to singular covariance matrices needed to be inverted in the Kriging formulas.  
+
+Run the following script and noticed the Warning message in red that the console outputs
+
+```{r}
+meuse.dup <- rbind( as.data.frame(meuse)[1, ], 
+                    as.data.frame(meuse)
+                    )
+#
+coordinates(meuse.dup) = ~x + y
+#
+gstat( formula = log(zinc) ~ 1, 
+      meuse.dup, 
+      meuse[1, ], 
+      v.fit)
+```
+The most common case where this happens is when duplicate observations are present in the data set. 
+
+#### Task 
+
+1. Find duplicate observations by using the R function ***zerodist {sp}***.  
+
+2. Then, create ***meuse0*** as a copy of ***meuse.dup*** that does not contain duplicate observations.   
+
+3. Then, predict $\log(zinc)$ at the locations of the duplication by Kriging against the data set ***meuse0***.  
+
+
+```{r}
+zd <- zerodist(meuse.dup)
+print(zd)
+#
+meuse0 <- meuse.dup[-zd[, 1], ]
+#
+ord.krige.pred <- krige(log(zinc) ~ 1, meuse0, meuse0[1, ], v.fit)
+print(ord.krige.pred)
+```
+
+
+
+
+
+
+# Multivariate geostatistics  
+
+
+This is the case where multiple dependent spatial variables are analysed jointly.  
+
+
+
+## Multivariable Variogram Modelling  
+
+The main tool for estimating semivariances between different variables is the cross variogram. 
+
+As multivariable analysis may involve numerous variables, we need to start organising the available information. For that reason, we collect all the observation data speciﬁcations in a gstat object, created by the function gstat.
+
+This function does nothing else than ordering (and actually, copying) information needed later in a single object. Consider the following definitions of four heavy metals:
+
+```{r}
+gstat.obj <- NULL
+gstat.obj <- gstat(g = gstat.obj,
+                   id = "log(cadmium)", 
+                   formula = log(cadmium) ~ 1, 
+                   data = meuse
+                   )
+gstat.obj <- gstat(g = gstat.obj,
+                   id = "log(zinc)", 
+                   formula = log(zinc) ~ 1, 
+                   data = meuse
+                   )
+gstat.obj
+```
+
+#### Task  
+
+Modify the above code by considering the response variables ***cadmium***, ***copper***, ***lead***, and ,***zinc*** in log scale.  
+
+Save the produced object as ***gstat.obj***, i.i. the same name with the above.  
+
+
+```{r}
+gstat.obj <- NULL
+gstat.obj <- gstat(g = gstat.obj,
+                   id = "log(cadmium)", 
+                   formula = log(cadmium) ~ 1, 
+                   data = meuse
+                   )
+gstat.obj <- gstat(g = gstat.obj,
+                   id = "log(copper)", 
+                   formula = log(copper) ~ 1, 
+                   data = meuse
+                   )
+gstat.obj <- gstat(g = gstat.obj,
+                   id = "log(lead)", 
+                   formula = log(lead) ~ 1, 
+                   data = meuse
+                   )
+gstat.obj <- gstat(g = gstat.obj,
+                   id = "log(zinc)", 
+                   formula = log(zinc) ~ 1, 
+                   data = meuse
+                   )
+gstat.obj
+```
+
+#### Task 
+
+1. Use the R function ***variogram{gstat}*** to compute the sample semi-variogram, similar to the univariate case.  
+
+2 .Then use the R function ***fit.lmc{gstat}*** to fit Linear Model of Coregionalization (LMC) to a Multivariable Sample Variogram. Use a parametric variogram, for instance the spherical semi-variogram.   
+  
+  + ***vgm(1, "Sph", 800, 1)*** 
+  
+  The function fit.lmc ﬁts a linear model of coregionalization, which is a particular model that needs to have identical model components (here nugget, and spherical with range 800), and needs to have positive deﬁnite partial sill matrices, to ensure non-negative prediction variances when used for spatial prediction (cokriging).
+
+3. Then use the R function ***plot.gstatVariogram {gstat}*** to plot the  (For help ***?plot.gstatVariogram***)  
+
+4. Inspect the semi-variograms. Do the plots indicate a strong or a weak  cross correlation between the variables under consideration?  
+
+```{r}
+smpl.vm <- variogram(gstat.obj)  
+par.vm.fit <- fit.lmc(smpl.vm, 
+                  gstat.obj, 
+                  vgm(1, "Sph", 800, 1)
+                  )
+plot(smpl.vm, par.vm.fit)
+#The plots indicate that the variables have a strong cross correlation.
+```
+Comment: Regarding the R package gstat, in general, variables do not need to have a constant mean but can have a trend function specified.  
+
+
+## Multivariable prediction: Cokriging.  
+
+The general idea is that multiple variables may be cross correlated, meaning that they exhibit not only autocorrelation but that the spatial variability of variable A is correlated with variable B, and can therefore be used for its prediction, and vice versa.  
+
+Here, we focus of the LMC.  
+
+#### Task 
+
+Use R function ***spplot{sp}*** to get an overview of the prediction error variance and covariances.  
+
+
+
+```{r}
+cok.maps <- predict(par.vm.fit, 
+                    meuse.grid)
+plot(cok.maps)
+```
+
+
+# Further material  
+
+Perhaps one can "play" with the following R packages implementing model based approaches:  
+
++ [geoR](https://cran.r-project.org/web/packages/geoR/index.html). geoR: Analysis of Geostatistical Data. It provides geostatistical analysis including variogram-based, likelihood-based and Bayesian methods. Software companion for Diggle and Ribeiro (2007)   
+
++ [R-INLA](https://www.r-inla.org/). R-INLA is a package in R that do approximate Bayesian inference for Latent Gaussian Models. This invludes the above geostatistical models.  
+
+
+
+

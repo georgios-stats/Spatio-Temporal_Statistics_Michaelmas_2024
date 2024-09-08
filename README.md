@@ -37,7 +37,7 @@
 
 This repository contains the teaching material for the module ***MATH4341: Spatio-Temporal Statistics*** in Michaelmas term in 2024 @ Durham University.
 
--   '[Description.pdf](Description.pdf)' contains the ILOs, syllabus, and bibliography  
++ '[Description.pdf](./Description.pdf)' contains the ILOs, syllabus, and bibliography  
 
 Below you can find:  
 
@@ -55,13 +55,13 @@ Below you can find:
 
 # Lecture notes / handouts
 
-Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_notes)**  
+Lecture notes / handouts are in the folder **[[./Lecture_notes]](./Lecture_notes)**  
 
-#### Complete set of notes    
+#### Complete set of notes  
 
 ... Not available yet  
 
-#### Types of spatial data       
+#### Types of spatial data  
 
 ... Not available yet  
 
@@ -81,11 +81,21 @@ Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_n
 
 # Computer lab notes  
 
+Computer lab notes are in the folder **[[./Lab_notes]](./Lab_notes)**  
+
 #### Types of spatial data       
+
+<!-- + [R Notebook (nb.html)](./Lab_notes/Handling_spatial_data.nb.html)  
+
++ [R Notebook (Rmd)](./Lab_notes/Handling_spatial_data.Rmd)   -->
 
 ... Not available yet  
 
 #### Geostatistical data modeling       
+
+<!-- + [R Notebook (nb.html)](./Lab_notes/Point_referenced_spatial_data_modelling.nb.html)  
+
++ [R Notebook (Rmd)](./Lab_notes/Point_referenced_spatial_data_modelling.Rmd)   -->
 
 ... Not available yet  
 
