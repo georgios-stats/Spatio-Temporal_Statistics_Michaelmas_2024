@@ -83,11 +83,13 @@ Lecture notes / handouts are in the folder **[[./Lecture_notes]](./Lecture_notes
 
 Computer lab notes are in the folder **[[./Computer_lab_notes]](./Computer_lab_notes)**  
 
+You can download the **Computer_lab_notes** folder containing R notebooks of the computer practical classes by clicking [[Here]](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/tree/main/Computer_lab_notes).  
+
 #### Types of spatial data       
 
 <!-- + [R Notebook (nb.html)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Handling_spatial_data.nb.html)  
 
-+ [R Notebook (Rmd)](./Lab_notes/Handling_spatial_data.Rmd)   -->
++ [R Notebook (Rmd)](./Computer_lab_notes/Handling_spatial_data.Rmd)   -->
 
 ... Not available yet  
 
@@ -95,7 +97,7 @@ Computer lab notes are in the folder **[[./Computer_lab_notes]](./Computer_lab_n
 
 <!-- + [R Notebook (nb.html)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling.nb.html)  
 
-+ [R Notebook (Rmd)](./Lab_notes/Point_referenced_spatial_data_modelling.Rmd)   -->
++ [R Notebook (Rmd)](./Computer_lab_notes/Point_referenced_spatial_data_modelling.Rmd)   -->
 
 ... Not available yet  
 
