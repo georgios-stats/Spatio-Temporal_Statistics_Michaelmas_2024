@@ -85,7 +85,7 @@ Computer lab notes are in the folder **[[./Lab_notes]](./Lab_notes)**
 
 #### Types of spatial data       
 
-<!-- + [R Notebook (nb.html)](./Lab_notes/Handling_spatial_data.nb.html)  
+<!-- + [R Notebook (nb.html)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lab_notes/Handling_spatial_data.nb.html)  
 
 + [R Notebook (Rmd)](./Lab_notes/Handling_spatial_data.Rmd)   -->
 
@@ -93,7 +93,7 @@ Computer lab notes are in the folder **[[./Lab_notes]](./Lab_notes)**
 
 #### Geostatistical data modeling       
 
-<!-- + [R Notebook (nb.html)](./Lab_notes/Point_referenced_spatial_data_modelling.nb.html)  
+<!-- + [R Notebook (nb.html)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lab_notes/Point_referenced_spatial_data_modelling.nb.html)  
 
 + [R Notebook (Rmd)](./Lab_notes/Point_referenced_spatial_data_modelling.Rmd)   -->
 
