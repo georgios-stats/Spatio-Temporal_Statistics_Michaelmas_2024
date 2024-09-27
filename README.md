@@ -6,26 +6,26 @@
 <!-- Associate Professor -->
 <!-- Department of Mathematical Sciences, Durham University, Durham,  UK  -->
 
-<!-- This file is part of Spatio-Temporal_Statistics_Michaelmas -->
+<!-- This file is part of Spatio-Temporal_Statistics_Michaelmas_2024 -->
 <!-- which is the material of the course -->
 <!-- MATH4341: Spatio-Temporal Statistics -->
 <!-- Epiphany term -->
 <!-- taught by Georgios P. Katagiannis in the Department of Mathematical Sciences   -->
 <!-- in the University of Durham  in Michaelmas term in 2024 -->
 
-<!-- Spatio-Temporal_Statistics_Michaelmas is free software: -->
+<!-- Spatio-Temporal_Statistics_Michaelmas_2024 is free software: -->
 <!-- you can redistribute it and/or modify it-->
 <!-- under the terms of the GNU General Public License as published by -->
 <!-- the Free Software Foundation version 3 of the License. -->
 
-<!-- Spatio-Temporal_Statistics_Michaelmas is distributed ->
+<!-- Spatio-Temporal_Statistics_Michaelmas_2024 is distributed ->
 <!-- in the hope that it will be useful, -->
 <!-- but WITHOUT ANY WARRANTY; without even the implied warranty of -->
 <!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the -->
 <!-- GNU General Public License for more details. -->
 
 <!-- You should have received a copy of the GNU General Public License -->
-<!-- along with Spatio-Temporal_Statistics_Michaelmas -->
+<!-- along with Spatio-Temporal_Statistics_Michaelmas_2024 -->
 <!-- If not, see <http://www.gnu.org/licenses/>. -->
 
 <!-- -------------------------------------------------------------------------------- -->
@@ -37,7 +37,7 @@
 
 This repository contains the teaching material for the module ***MATH4341: Spatio-Temporal Statistics*** in Michaelmas term in 2024 @ Durham University.
 
-+ '[Description.pdf](./Description.pdf)' contains the ILOs, syllabus, and bibliography  
+-   '[Description_sheet.pdf](Description_sheet.pdf)' contains the ILOs, syllabus, and bibliography  
 
 Below you can find:  
 
@@ -55,13 +55,13 @@ Below you can find:
 
 # Lecture notes / handouts
 
-Lecture notes / handouts are in the folder **[[./Lecture_notes]](./Lecture_notes)**  
+Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_notes)**  
 
-#### Complete set of notes  
+#### Complete set of notes    
 
 ... Not available yet  
 
-#### Types of spatial data  
+#### Types of spatial data       
 
 ... Not available yet  
 
@@ -81,23 +81,11 @@ Lecture notes / handouts are in the folder **[[./Lecture_notes]](./Lecture_notes
 
 # Computer lab notes  
 
-Computer lab notes are in the folder **[[./Computer_lab_notes]](./Computer_lab_notes)**  
-
-You can download the *Computer_lab_notes* folder containing R notebooks of the computer practical classes by clicking [[Here]](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/tree/main/Computer_lab_notes).  
-
 #### Types of spatial data       
-
-<!-- + [R Notebook (nb.html)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Handling_spatial_data.nb.html)  
-
-+ [R Notebook (Rmd)](./Computer_lab_notes/Handling_spatial_data.Rmd)   -->
 
 ... Not available yet  
 
 #### Geostatistical data modeling       
-
-<!-- + [R Notebook (nb.html)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling.nb.html)  
-
-+ [R Notebook (Rmd)](./Computer_lab_notes/Point_referenced_spatial_data_modelling.Rmd)   -->
 
 ... Not available yet  
 
@@ -111,9 +99,9 @@ You can download the *Computer_lab_notes* folder containing R notebooks of the c
 
 ------------------------------------------------------------------------
 
-# Excercise sheets and homework 
+# Exercise sheets and homework 
 
-#### Excersice sheet  
+#### Exercise sheet  
 
 It contains all the exercises and solutions  
 
@@ -147,7 +135,7 @@ It contains all the exercises and solutions
 
 Ways:
 
-1. You can click [[HERE](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas/archive/refs/heads/main.zip)].
+1. You can click [[HERE](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/archive/refs/heads/main.zip)].
 
 2. You can click the green button 'Clone or download' and download it as a zip file
 
@@ -167,7 +155,7 @@ Ways:
     
     ... then run:
 
-    -   git clone https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git
+    -   git clone https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024.git
 
 4. You can use rstudio:
 
@@ -175,7 +163,7 @@ Ways:
     
     2.  In the section *Repository URL* write
         
-        -   <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas.git>
+        -   <https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024.git>
         
         -   … and complete the rest as you wish
     
