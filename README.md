@@ -37,7 +37,7 @@
 
 This repository contains the teaching material for the module ***MATH4341: Spatio-Temporal Statistics*** in Michaelmas term in 2024 @ Durham University.
 
--   '[Description_sheet.pdf](Description_sheet.pdf)' contains the ILOs, syllabus, and bibliography  
+-   '[Description_sheet.pdf](./Description_sheet.pdf)' contains the ILOs, syllabus, and references  
 
 Below you can find:  
 
@@ -55,7 +55,7 @@ Below you can find:
 
 # Lecture notes / handouts
 
-Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_notes)**  
+Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_notes)**  
 
 #### Complete set of notes    
 
