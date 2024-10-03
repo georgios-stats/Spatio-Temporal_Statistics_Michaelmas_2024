@@ -105,11 +105,13 @@ Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_n
 
 It contains all the exercises and solutions  
 
-[Problems only (PDF)](./Exercise_sheets/Exercise_sheet_questions.pdf)
+[Problems only (PDF)](./Exercise_sheets/Exercise_sheet_questions.pdf)  
 
-[Problems only (HTML)](https://html-preview.github.io/?)
+[Problems only (HTML)](https://html-preview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Exercise_sheet_complete_xhtml/Exercise_sheet_questions.xhtml)  
 
-[Problems and solutions (PDF)](./Exercise_sheets/Exercise_sheet_complete.pdf)
+[Problems and solutions (PDF)](./Exercise_sheets/Exercise_sheet_complete.pdf)  
+
+[Problems and solutions (HTML)](https://html-preview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Exercise_sheet_complete_xhtml/Exercise_sheet_complete.xhtml)  
 
 #### Homework 1  
 
