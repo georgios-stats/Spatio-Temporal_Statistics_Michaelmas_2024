@@ -105,6 +105,12 @@ Lecture notes and lecture handouts are in folder **[[./Lecture_notes]](Lecture_n
 
 It contains all the exercises and solutions  
 
+[Problems only (PDF)](./Exercise_sheets/Exercise_sheet_questions.pdf)
+
+[Problems only (HTML)](https://html-preview.github.io/?)
+
+[Problems and solutions (PDF)](./Exercise_sheets/Exercise_sheet_complete.pdf)
+
 #### Homework 1  
 
 ... Not available yet  
