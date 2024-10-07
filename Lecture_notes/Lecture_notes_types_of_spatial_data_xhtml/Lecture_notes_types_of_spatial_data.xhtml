@@ -1,0 +1,4193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta name="generator" content="LyX 2.4.1" />
+<title>LyX Document</title>
+<style>
+/* Layout-provided Styles */
+del.strikeout {
+  text-decoration: line-through;
+}
+div.standard {
+text-align: left;
+
+}
+div.plain_layout {
+text-align: left;
+
+}
+h3.subsection_ {
+font-weight: bold;
+font-size: medium;
+margin-top: 0.9ex;
+margin-bottom: 0.5ex;
+text-align: left;
+
+}
+ul.itemize {
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+margin-left: 3ex;
+text-align: left;
+
+}
+h2.section {
+font-weight: normal;
+font-style: normal;
+font-variant: small-caps;
+font-size: medium;
+margin-top: 1.3ex;
+margin-bottom: 0.7ex;
+text-align: center;
+
+}
+div.theorem {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.theorem_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.note {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.note_label {
+font-weight: normal;
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+
+}
+div.example {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.example_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+dl.description dt { font-weight: bold; }
+ol.enumi   { list-style-type: decimal; }
+ol.enumii  { list-style-type: lower-latin; }
+ol.enumiii { list-style-type: lower-roman; }
+ol.enumiv  { list-style-type: upper-latin; }
+h3.subsection {
+font-weight: bold;
+font-size: medium;
+margin-top: 0.9ex;
+margin-bottom: 0.5ex;
+text-align: left;
+
+}
+span.subsection_label {
+font-weight: normal;
+font-size: medium;
+
+}
+div.Shadowbox { border: solid gray medium; border-bottom: solid black 1ex; border-right: solid black 1ex; padding: 0.5ex; }
+span.foot_label {
+	vertical-align: super;
+	font-size: smaller;
+	font-weight: bold;
+	text-decoration: underline;
+}
+div.foot {
+	display: inline;
+	font-size: small;
+	font-weight: normal;
+	font-family: serif;
+	font-variant: normal;
+	font-style: normal;
+}
+div.foot_inner { display: none; }
+div.foot:hover div.foot_inner {
+	display: block;
+	border: 1px double black;
+	margin: 0em 1em;
+	padding: 1em;
+}
+div.float {
+	border: 2px solid black;
+	text-align: center;
+}
+div.float-caption {
+	text-align: center;
+	border: 2px solid black;
+	padding: 1ex;
+	margin: 1ex;
+}
+div.marginal {
+	border: 2px solid black;
+	padding: 1ex;
+	margin: 1ex;
+	background-color: #F0F0F0;
+	float:right;
+	font-size: small;
+	font-weight: normal;
+	font-family: serif;
+	font-variant: normal;
+	font-style: normal;
+}
+
+
+</style>
+</head>
+<body dir="auto">
+<div class='standard' id='magicparlabel-1'><div class='Shadowbox'>
+
+<div class='plain_layout' id='magicparlabel-10'>Spatio-temporal statistics (MATH4341)&#xA0;&#xA0;
+Michaelmas term, 2024<div style='height:3ex'></div></div>
+
+<div class='plain_layout' style='text-align: center;' id='magicparlabel-11'> Lecture notes part <a href="#enu_Handout_1__Types">enu:Handout-1:-Types</a>: Types of spatial data <div style='height:3ex'></div></div>
+
+<div class='plain_layout' id='magicparlabel-28'>Lecturer &amp; author: Georgios P. Karagiannis 
+<a href="mailto:georgios.karagiannis@durham.ac.uk">georgios.karagiannis@durham.ac.uk</a></div>
+
+<div class='plain_layout' id='magicparlabel-29'><hr />
+<div style='height:3ex'></div></div>
+<h3 class='subsection_' id='magicparlabel-30'>Aim</h3>
+<div class='plain_layout' id='magicparlabel-31'>To introduce the types of spatial statistical data. To get a general idea about spatial statistics modeling. </div>
+
+<div class='plain_layout' id='magicparlabel-32'><hr />
+</div>
+<h3 class='subsection_' id='magicparlabel-33'>Reading&#xA0;list&#xA0;&amp;&#xA0;references:</h3>
+<ul class='lyxitem lyxitemi'>
+<li class="itemize_item" id='magicparlabel-34'>Cressie, N. (2015). Statistics for spatial data. John Wiley &amp; Sons.
+<ul class='lyxitem lyxitemii'>
+<li class="itemize_item" id='magicparlabel-35'>Chapter 1: pp 1- 28</li>
+</ul>
+</li></ul>
+</div></div>
+<section>
+<h2 class='section' id='magicparlabel-58'><span class="section_label">1</span> Motivations</h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-59'><span class="note_label">Note 1.</span>
+Researchers in diverse areas such as geology, soil science, image processing, epidemiology, crop science, ecology, forestry, astronomy, atmospheric science, climatology, ecology, environmental health, and real estate marketing are increasingly faced with the task of analyzing data that are geographically referenced, and often presented as maps. </div>
+</div>
+<div class='standard' id='magicparlabel-60'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-61'><span class="note_label">Note 2.</span>
+In several problems, the data have a space (and time) label associated with them; this gives the motivation for the development and analysis of (not necessarily statistical) models that indicate whether there is dependence between measurements at different locations. </div>
+</div>
+<div class='standard' id='magicparlabel-62'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-63'><span class="note_label">Note 3.</span>
+In an epidemiological investigation, for instance, one might wish to analyze lung, breast, colorectal, and cervical cancer rates by county and year in a particular state, with smoking, mammography, and other important screening and staging information also available at some level. Public health professionals who collect such data are charged not only with surveillance, but also statistical inference tasks, such as modeling of trends and correlation structures, estimation of underlying model parameters, hypothesis testing (or comparison of competing models), and prediction of observations at unobserved locations (and times).</div>
+</div>
+<div class='standard' id='magicparlabel-64'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-65'><span class="note_label">Note 4.</span>
+Spatial statistics is the branch of statistics that focuses on the analysis and modeling of data with inherent spatial relationships, by accounting for spatial dependencies and patterns to derive meaningful insights and make informed decisions. </div>
+</div>
+<div class='standard' id='magicparlabel-66'>
+<br />
+</div>
+<h3 class='subsection_' id='magicparlabel-67'>Shall I ignore spatial dependence? –No!</h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-73'><span class="note_label">Note 5.</span>
+Galton’s problem (1888) arises in spatial statistics and cross-cultural research when observations are not statistically independent due to external dependencies like borrowing or common descent. For example, if two neighboring cultures share similar traits, it might be due to cultural borrowing rather than independent development. This autocorrelation can lead to misleading conclusions if not properly accounted. </div>
+</div>
+<div class='standard' id='magicparlabel-74'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-75'><span class="note_label">Note 6.</span>
+From your experimental design lectures, recall R. A. Fisher&#8217;s principles of randomization, blocking and replication to neutralize (not remove) spatial dependence. In his agricultural studies, he noticed that &#8220;After choosing the area we usually have no guidance beyond the widely verified fact that patches in close proximity are commonly more alike, as judged by the yield of crops, than those which are further apart.&#8221; To avoid the &#8220;confounding&#8221; of treatment effect Fisher properly introduced randomization, namely the controlled introduction of uncertainty. </div>
+</div>
+<div class='standard' id='magicparlabel-76'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-77'><span class="note_label">Note 7.</span>
+The First Law of Geography, according to Waldo Tobler, is "<i>everything is related to everything else, but near things are more related than distant things.</i>" Perhaps, we can paraphrase it by using stats terms to &#8220;nearby attribute values are more statistically dependent than distant attribute values&#8221;.</div>
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-78'><span class="example_label">Example 8.</span>
+<div class='foot'><span class="foot_label">1</span><div class="foot_inner"><div class='plain_layout' id='magicparlabel-82'>No need to worry how the equations are produced.</div>
+</div></div>Consider a random sample <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>Z</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mo stretchy='false'>;</mo>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+  <mo stretchy='false'>,</mo>
+  <mn>...</mn>
+  <mo stretchy='false'>,</mo>
+  <mi>n</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ jointly following a Normal distribution with unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>Z</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+</mrow>
+</math>
+ and known <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>Z</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+. </div>
+<dl class='description'>
+<dt class="description_label">Iid&#xA0;assumption</dt>
+<dd class="description_item" id='magicparlabel-83'> Assumption that the observables <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are independent. This is equivalent to iid model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+ <mover accent='false'>
+  <mo>&#x223C;</mo>
+  <mtext>iid</mtext>
+ </mover>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </dd>
+<dt class="description_label">AR&#xA0;assumption</dt>
+<dd class="description_item" id='magicparlabel-84'> Assumption that the observables <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are positively autocorrelated as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>Cov</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>Z</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msup>
+  <mi>&#x3C1;</mi>
+  <mrow>
+   <mo>|</mo>
+   <mrow>
+    <mi>i</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>j</mi>
+   </mrow>
+   <mo>|</mo>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+ with known <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C1;</mi>
+ <mo>&#x2208;</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <mn>1</mn>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. This is equivalent to AR model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C1;</mi>
+ <msub>
+  <mi>Z</mi>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+ <mover accent='false'>
+  <mo>&#x223C;</mo>
+  <mtext>iid</mtext>
+ </mover>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo stretchy='false'>-</mo>
+     <msup>
+      <mi>&#x3C1;</mi>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</dd>
+</dl>
+<div class='standard' id='magicparlabel-89'>Consider the case that the observables <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are positively autocorrelated. Assume You fail to realize the presence of positive correlation in the data and You use the i.i.d model instead.</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-90'><u>Effect on parametric estimation of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BC;</mi>
+</math>
+</u>
+<div class='standard' id='magicparlabel-91'>The BLUE of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BC;</mi>
+</math>
+ is <a id="eq__7" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mover>
+     <mi>Z</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mo stretchy='false'>=</mo>
+    <mover>
+     <mi>Z</mi>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    <mo stretchy='false'>=</mo>
+    <mfrac>
+     <mn>1</mn>
+     <mi>n</mi>
+    </mfrac>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(1.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ If the observables were iid then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mover>
+    <mi>Z</mi>
+    <mo stretchy='true'>&#x02C6;</mo>
+   </mover>
+   <mo stretchy='false'>|</mo>
+   <mtext>iid&#0160;obs</mtext>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <msup>
+   <mi>&#x3C3;</mi>
+   <mn>2</mn>
+  </msup>
+  <mi>n</mi>
+ </mfrac>
+</mrow>
+</math>
+ Since the observables are positively autocorrelated <a id="eq__6" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mtext>Var</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mover>
+       <mi>Z</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mo stretchy='false'>|</mo>
+      <mtext>AR&#0160;obs</mtext>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mi>n</mi>
+    </mfrac>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <mtext>Cov</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>Z</mi>
+       <mi>i</mi>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>Z</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mfrac>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mi>n</mi>
+    </mfrac>
+    <mover accent='false'>
+     <mover>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mn>1</mn>
+        <mo stretchy='false'>+</mo>
+        <mn>2</mn>
+        <mfrac>
+         <mi>&#x3C1;</mi>
+         <mrow>
+          <mn>1</mn>
+          <mo stretchy='false'>-</mo>
+          <mi>&#x3C1;</mi>
+         </mrow>
+        </mfrac>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mn>1</mn>
+          <mo stretchy='false'>-</mo>
+          <mfrac>
+           <mn>1</mn>
+           <mi>n</mi>
+          </mfrac>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo stretchy='false'>-</mo>
+        <mfrac>
+         <mn>2</mn>
+         <mi>n</mi>
+        </mfrac>
+        <msup>
+         <mrow>
+          <mo>(</mo>
+          <mfrac>
+           <mi>&#x3C1;</mi>
+           <mrow>
+            <mn>1</mn>
+            <mo stretchy='false'>-</mo>
+            <mi>&#x3C1;</mi>
+           </mrow>
+          </mfrac>
+          <mo>)</mo>
+         </mrow>
+         <mn>2</mn>
+        </msup>
+        <mfrac>
+         <mrow>
+          <mn>1</mn>
+          <mo stretchy='false'>-</mo>
+          <msup>
+           <mi>&#x3C1;</mi>
+           <mrow>
+            <mi>n</mi>
+            <mo stretchy='false'>-</mo>
+            <mn>1</mn>
+           </mrow>
+          </msup>
+         </mrow>
+         <mn>2</mn>
+        </mfrac>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='true'>&#x23DE;</mo>
+     </mover>
+     <mrow>
+      <msub>
+       <mi>&#x3C4;</mi>
+       <mrow>
+        <mi>n</mi>
+        <mo stretchy='false'>,</mo>
+        <mi>&#x3C1;</mi>
+       </mrow>
+      </msub>
+      <mo stretchy='false'>=</mo>
+     </mrow>
+    </mover>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(1.2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>10</mn>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C1;</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>0.26</mn>
+</mrow>
+</math>
+, the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>1</mn>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3B1;</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>95</mn>%
+</mrow>
+</math>
+ confidence interval for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BC;</mi>
+</math>
+ is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mover>
+    <mi>Z</mi>
+    <mo stretchy='true'>&#x00AF;</mo>
+   </mover>
+   <mo>&#x00B1;</mo>
+   <msub>
+    <mi>q</mi>
+    <mfrac>
+     <mi>&#x3B1;</mi>
+     <mn>2</mn>
+    </mfrac>
+   </msub>
+   <msqrt>
+    <mrow>
+     <mtext>Var</mtext>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mover>
+        <mi>Z</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mo stretchy='false'>|</mo>
+       <mtext>assump
+       <mn>.</mn></mtext>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </msqrt>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x27F9;</mo>
+ <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mover>
+      <mi>Z</mi>
+      <mo stretchy='true'>&#x00AF;</mo>
+     </mover>
+     <mo>&#x00B1;</mo>
+     <mover accent='false'>
+      <mover>
+       <mn>1.96</mn>
+       <mo stretchy='true'>&#x23DE;</mo>
+      </mover>
+      <mrow>
+       <msub>
+        <mi>q</mi>
+        <mfrac>
+         <mn>0.95</mn>
+         <mn>2</mn>
+        </mfrac>
+       </msub>
+       <mo stretchy='false'>=</mo>
+      </mrow>
+     </mover>
+     <mfrac>
+      <mi>&#x3C3;</mi>
+      <msqrt>
+       <mn>10</mn>
+      </msqrt>
+     </mfrac>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mtext>in&#0160;i
+    <mn>.</mn>i
+    <mn>.</mn>d&#0160;assum
+    <mn>.</mn></mtext>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mover>
+      <mi>Z</mi>
+      <mo stretchy='true'>&#x00AF;</mo>
+     </mover>
+     <mo>&#x00B1;</mo>
+     <munder accent='false'>
+      <munder>
+       <mn>2.485</mn>
+       <mo stretchy='true'>&#x23DF;</mo>
+      </munder>
+      <mrow>
+       <mo stretchy='false'>=</mo>
+       <msub>
+        <mi>q</mi>
+        <mfrac>
+         <mn>0.95</mn>
+         <mn>2</mn>
+        </mfrac>
+       </msub>
+       <msqrt>
+        <msub>
+         <mi>&#x3C4;</mi>
+         <mrow>
+          <mn>10</mn>
+          <mo stretchy='false'>,</mo>
+          <mn>0.26</mn>
+         </mrow>
+        </msub>
+       </msqrt>
+      </mrow>
+     </munder>
+     <mfrac>
+      <mi>&#x3C3;</mi>
+      <msqrt>
+       <mn>10</mn>
+      </msqrt>
+     </mfrac>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mtext>in&#0160;AR&#0160;assum
+    <mn>.</mn></mtext>
+   </mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</math>
+ as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msqrt>
+  <msub>
+   <mi>&#x3C4;</mi>
+   <mrow>
+    <mn>10</mn>
+    <mo stretchy='false'>,</mo>
+    <mn>0.26</mn>
+   </mrow>
+  </msub>
+ </msqrt>
+ <mo stretchy='false'>=</mo>
+ <mn>1.608</mn>
+</mrow>
+</math>
+. Hence, if we fail to realize the presence of positive autocorrelation in the observables and wrongly the i.i.d model, the resulted confidence interval would be too narrow since the actual coverage probability is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3A6;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>2.485</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3A6;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>2.485</mn>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>87.5</mn>%
+</mrow>
+</math>
+ instead of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>95</mn>%
+</mrow>
+</math>
+. </div>
+
+<div class='standard' id='magicparlabel-113'>By re-writing the variance <a href="#eq__6">(1.2)</a> as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mover>
+   <mi>Z</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <msup>
+   <mi>&#x3C3;</mi>
+   <mn>2</mn>
+  </msup>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+ </mfrac>
+</mrow>
+</math>
+ with 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>+</mo>
+ <mn>2</mn>
+ <mfrac>
+  <mi>&#x3C1;</mi>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3C1;</mi>
+  </mrow>
+ </mfrac>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <mn>1</mn>
+    <mi>n</mi>
+   </mfrac>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mfrac>
+  <mn>2</mn>
+  <mi>n</mi>
+ </mfrac>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mfrac>
+    <mi>&#x3C1;</mi>
+    <mrow>
+     <mn>1</mn>
+     <mo stretchy='false'>-</mo>
+     <mi>&#x3C1;</mi>
+    </mrow>
+   </mfrac>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mfrac>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <msup>
+    <mi>&#x3C1;</mi>
+    <mrow>
+     <mi>n</mi>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+  </mrow>
+  <mn>2</mn>
+ </mfrac>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+ we intuitively understand that the effect of the positive spatial correlation is that the equivalent independent observations in the above dataset with size <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ (i.e. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>'</mo>
+ <mo>&#x2248;</mo>
+ <mi>n</mi>
+ <mfrac>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3C1;</mi>
+  </mrow>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>+</mo>
+   <mi>&#x3C1;</mi>
+  </mrow>
+ </mfrac>
+</mrow>
+</math>
+, for large <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+). If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>10</mn>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C1;</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>0.26</mn>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>=</mo>
+ <mn>6.2</mn>
+</mrow>
+</math>
+. </div>
+</li><li class="enumerate_item" id='magicparlabel-114'><u>Effect on predictive estimation of </u><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Z</mi>
+ <mrow>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+  <mn>1</mn>
+ </mrow>
+</msub>
+</math>
+
+<div class='standard' id='magicparlabel-115'>Under the i.i.d. model, the predictor minimizing the MSPE for the next outcome <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Z</mi>
+ <mrow>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+  <mn>1</mn>
+ </mrow>
+</msub>
+</math>
+ is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msubsup>
+  <mover>
+   <mi>Z</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+   <mn>1</mn>
+  </mrow>
+  <mtext>iid</mtext>
+ </msubsup>
+ <mo stretchy='false'>=</mo>
+ <mover>
+  <mi>Z</mi>
+  <mo stretchy='true'>&#x00AF;</mo>
+ </mover>
+</mrow>
+</math>
+ and has 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>MSPE</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msubsup>
+    <mover>
+     <mi>Z</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mrow>
+     <mi>n</mi>
+     <mo stretchy='false'>+</mo>
+     <mn>1</mn>
+    </mrow>
+    <mtext>iid</mtext>
+   </msubsup>
+   <mo stretchy='false'>|</mo>
+   <mtext>ind&#0160;obs</mtext>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>+</mo>
+   <mn>2</mn>
+   <mfrac>
+    <mi>&#x3C1;</mi>
+    <mrow>
+     <mn>1</mn>
+     <mo stretchy='false'>-</mo>
+     <mi>&#x3C1;</mi>
+    </mrow>
+   </mfrac>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msup>
+      <mi>&#x3C1;</mi>
+      <mi>n</mi>
+     </msup>
+     <mo stretchy='false'>-</mo>
+     <mfrac>
+      <mn>1</mn>
+      <mi>n</mi>
+     </mfrac>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>2</mn>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mfrac>
+      <mi>&#x3C1;</mi>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>-</mo>
+       <mi>&#x3C1;</mi>
+      </mrow>
+     </mfrac>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+   <mfrac>
+    <mrow>
+     <mn>1</mn>
+     <mo stretchy='false'>-</mo>
+     <msup>
+      <mi>&#x3C1;</mi>
+      <mrow>
+       <mi>n</mi>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+    </mrow>
+    <mn>2</mn>
+   </mfrac>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-116'>Under the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mtext>AR</mtext>
+</math>
+ model the predictor minimizing the mse of the next outcome <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Z</mi>
+ <mrow>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+  <mn>1</mn>
+ </mrow>
+</msub>
+</math>
+ is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msubsup>
+  <mover>
+   <mi>Z</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+   <mn>1</mn>
+  </mrow>
+  <mtext>AR</mtext>
+ </msubsup>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C1;</mi>
+ <msub>
+  <mi>Z</mi>
+  <mi>n</mi>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3C1;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mfrac>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo stretchy='false'>-</mo>
+     <mi>&#x3C1;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <munderover>
+    <mo>&#x2211;</mo>
+    <mrow>
+     <mi>i</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>2</mn>
+    </mrow>
+    <mrow>
+     <mi>n</mi>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </munderover>
+   <msub>
+    <mi>Z</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>Z</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>-</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>n</mi>
+     <mo stretchy='false'>-</mo>
+     <mn>2</mn>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mi>&#x3C1;</mi>
+  </mrow>
+ </mfrac>
+</mrow>
+</math>
+ with MSPE 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>MSPE</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msubsup>
+    <mover>
+     <mi>Z</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mrow>
+     <mi>n</mi>
+     <mo stretchy='false'>+</mo>
+     <mn>1</mn>
+    </mrow>
+    <mtext>AR</mtext>
+   </msubsup>
+   <mo stretchy='false'>|</mo>
+   <mtext>dep&#0160;obs</mtext>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <msup>
+    <mi>&#x3C1;</mi>
+    <mn>2</mn>
+   </msup>
+   <mfrac>
+    <mrow>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>+</mo>
+       <mi>&#x3C1;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mn>1</mn>
+        <mo stretchy='false'>-</mo>
+        <mi>&#x3C1;</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mrow>
+     <mi>n</mi>
+     <mo stretchy='false'>-</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>n</mi>
+       <mo stretchy='false'>-</mo>
+       <mn>2</mn>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x3C1;</mi>
+    </mrow>
+   </mfrac>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+Note that the relative efficiency of this mistake is not too bad, e.g. for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>10</mn>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C1;</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>0.26</mn>
+</mrow>
+</math>
+ 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>RE</mtext>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mrow>
+   <mtext>MSPE</mtext>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msubsup>
+      <mover>
+       <mi>Z</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mrow>
+       <mn>10</mn>
+       <mo stretchy='false'>+</mo>
+       <mn>1</mn>
+      </mrow>
+      <mtext>AR</mtext>
+     </msubsup>
+     <mo stretchy='false'>|</mo>
+     <mtext>dep&#0160;obs</mtext>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mrow>
+   <mtext>MSPE</mtext>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msubsup>
+      <mover>
+       <mi>Z</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mrow>
+       <mn>10</mn>
+       <mo stretchy='false'>+</mo>
+       <mn>1</mn>
+      </mrow>
+      <mtext>iid</mtext>
+     </msubsup>
+     <mo stretchy='false'>|</mo>
+     <mtext>ind&#0160;obs</mtext>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mfrac>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1.01952</mn>
+  <mn>1.1</mn>
+ </mfrac>
+ <mo>&#x2248;</mo>
+ <mn>1.</mn>
+</mrow>
+</math>
+However, if I consider large datasize <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2192;</mo>
+ <mi>&#x221E;</mi>
+</mrow>
+</math>
+ the asymptotic relative efficiency is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>ARE</mtext>
+ <mo stretchy='false'>=</mo>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mi>n</mi>
+   <mo>&#x2192;</mo>
+   <mi>&#x221E;</mi>
+  </mrow>
+ </munder>
+ <mfrac>
+  <mrow>
+   <mtext>MSPE</mtext>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msubsup>
+      <mover>
+       <mi>Z</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mrow>
+       <mi>n</mi>
+       <mo stretchy='false'>+</mo>
+       <mn>1</mn>
+      </mrow>
+      <mtext>AR</mtext>
+     </msubsup>
+     <mo stretchy='false'>|</mo>
+     <mtext>dep&#0160;obs</mtext>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mrow>
+   <mtext>MSPE</mtext>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msubsup>
+      <mover>
+       <mi>Z</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mrow>
+       <mi>n</mi>
+       <mo stretchy='false'>+</mo>
+       <mn>1</mn>
+      </mrow>
+      <mtext>iid</mtext>
+     </msubsup>
+     <mo stretchy='false'>|</mo>
+     <mtext>ind&#0160;obs</mtext>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mfrac>
+ <mo stretchy='false'>=</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>-</mo>
+ <msup>
+  <mi>&#x3C1;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>&#x2248;</mo>
+ <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mn>93</mn>%
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3C1;</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>0.26</mn>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mn>75</mn>%
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3C1;</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>0.5</mn>
+    </mrow>
+   </mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</math>
+</div>
+</li></ol>
+</div>
+<div class='standard' id='magicparlabel-117'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-118'>
+<br />
+</div>
+<h3 class='subsection_' id='magicparlabel-119'>Spatial data and spatial process</h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-120'><span class="note_label">Note 9.</span>
+In spatial statistics, the basic components are data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>Z</mi>
+   <mn>1</mn>
+  </msub>
+  <mo stretchy='false'>,</mo>
+  <mn>...</mn>
+  <mo stretchy='false'>,</mo>
+  <msub>
+   <mi>Z</mi>
+   <mi>n</mi>
+  </msub>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ observed at spatial locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>s</mi>
+   <mn>1</mn>
+  </msub>
+  <mo stretchy='false'>,</mo>
+  <mn>...</mn>
+  <mo stretchy='false'>,</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>n</mi>
+  </msub>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ correspondingly. Classically, the locations are <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>2</mn>
+</math>
+D, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+, however it can be <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mn>1</mn>
+ </msup>
+</mrow>
+</math>
+ (such as in chromatography applications), or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mn>3</mn>
+ </msup>
+</mrow>
+</math>
+ (such as in earth science, 3D imaging, etc) depending on the application. </div>
+</div>
+<div class='standard' id='magicparlabel-121'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-122'><span class="note_label">Note 10.</span>
+Even more exotically, the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ does not necessarily need to be a Euclidean space (which our course will focus) such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>d</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>2</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>3</mn>
+</mrow>
+</math>
+,... but any topological space, eg sphere (recall Earth is round...). </div>
+</div>
+<div class='standard' id='magicparlabel-123'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-124'><span class="note_label">Note 11.</span>
+The locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ can be considered either (i.) fixed and hence used for training or (ii.) uncertain/random and hence a quantity for inference. Yet, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ can be arranged irregularly in the space or regularly in a grid. Data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ are random vectors. </div>
+</div>
+<div class='standard' id='magicparlabel-125'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-126'><span class="note_label">Note 12.</span>
+Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+ be a generic data location, and suppose the datum <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mi>s</mi>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at spatial location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+ is an uncertain and hence random vector. Considering <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+ to vary over index set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+ imposes a spatial random process (or multivariate random field)
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mi>S</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+which can be modeled as a random function / stochastic process (to be defined later.). </div>
+</div>
+<div class='standard' id='magicparlabel-127'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-128'><span class="note_label">Note 13.</span>
+In spatial problems, spatial data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <msub>
+   <mi>Z</mi>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+  </msub>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ at locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ are assumed to be realizations of a spatial process (or a multivariate random field)<a id="eq_" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>;</mo>
+      <mi>s</mi>
+      <mo>&#x2208;</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(1.3)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ indexed by a spatial set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+.</div>
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-129'><span class="section_label">2</span> <a id="sec_Principal_spatial_statistical" />Principal spatial statistics areas</h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-130'><span class="note_label">Note 14.</span>
+We can characterize the spatial statistical problems according to the type of measurement, their specified (assumed) stochastic generating mechanism, and the choice of the spatial locations. In principle, each of them is associated to different motivations, statistical/scientific problems, statistical tools, however, modern applications/problems may involve characteristics from any combination of them. </div>
+</div>
+<div class='standard' id='magicparlabel-131'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-132'><span class="note_label">Note 15.</span>
+Here, we will study three of spatial statistical areas corresponding to point referenced data, aerial unit data, and point patterns. </div>
+</div>
+<section>
+<h3 class='subsection' id='magicparlabel-133'><span class="subsection_label">2.1</span> Point referenced data / Geostatistics</h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-134'><span class="note_label">Note 16.</span>
+Climate or environmental data are often presented in the form of a map, for example the maximum temperatures on a given day in a country, the concentrations of some pollutant in a city or the mineral content in soil. In mathematical terms, such maps can be described as realizations of a random function (random field/stochastic process); that is, an ensemble of random quantities indexed by points in a region of interest. The aim is usually interpolation, and the associated statistical inference.</div>
+</div>
+<div class='standard' id='magicparlabel-135'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-136'><span class="note_label">Note 17.</span>
+Such data were first analyzed in geological sciences. Hence, for historical reasons, this area of spatial statistics is often called Geostatistics and the point referenced data are also called geocoded or geostatistical data.</div>
+</div>
+<div class='standard' id='magicparlabel-137'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-138'><span class="note_label">Note 18.</span>
+Mathematically speaking, the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ is a continuous fixed subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+ <mi>d</mi>
+</msup>
+</math>
+ that contains a <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>d</mi>
+</math>
+-dimensional rectangle of positive volume. The datum <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a random vector (outcome) at specific location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ which can vary continuously over domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+. In practice, the actual data are observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <msub>
+   <mi>Z</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ (finite number) fixed locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msubsup>
+  <mrow>
+   <mo>{</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo>}</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </msubsup>
+ <mo>&#x2282;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. The locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are fixed and can be arranged irregularly in the space or regularly as a grid.</div>
+</div>
+<div class='standard' id='magicparlabel-139'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-140'><span class="note_label">Note 19.</span>
+Geostatistics aims to answer questions about modeling, identification and separation of small and large scale variations, prediction at unobserved locations and reconstruction of the spatial process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ across the whole space <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-141'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-142'><span class="example_label">Example 20.</span>
+<a id="exa__Meuse_river_data" />(Meuse river data set) Due to pollution of the Meuse river over many years, considerable amounts of heavy metals have accumulated in the overbank sediments of the embanked floodplains of their lower river reaches. The spatial variability of metal pollution of floodplain soils, which is controlled primarily by deposition of contaminated overbank sediments during flood events is under consideration. The process governing heavy metal distribution seems that polluted sediment is carried by the river, and mostly deposited close to the river bank, and areas with low elevation. </div>
+<div class='standard' id='magicparlabel-143'>The Meuse river R dataset <span style='font-family:monospace;'>meuse{sp}</span> contains locations and topsoil heavy metal concentrations (such as zinc, lead, copper, and cadmium), along with a number of soil and landscape variables at the observation locations, collected in a flood plain of the river Meuse, near the village of Stein (NL). Figure <a href="#fig_Map_of_the">2.1</a> show <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>155</mn>
+</math>
+ measurements of topsoil concentrations of the above heavy metals cadmium, copper, lead, and zinc collected in a flood plain of the river Meuse. Here, the locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are fixed and arranged irregularly as chosen by experimental design. The quantities of interest <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msubsup>
+    <mi>Z</mi>
+    <mi>i</mi>
+    <mtext>zinc</mtext>
+   </msubsup>
+   <mo stretchy='false'>,</mo>
+   <msubsup>
+    <mi>Z</mi>
+    <mi>i</mi>
+    <mtext>lead</mtext>
+   </msubsup>
+   <mo stretchy='false'>,</mo>
+   <msubsup>
+    <mi>Z</mi>
+    <mi>i</mi>
+    <mtext>cooper</mtext>
+   </msubsup>
+   <mo stretchy='false'>,</mo>
+   <msubsup>
+    <mi>Z</mi>
+    <mi>i</mi>
+    <mtext>carmium</mtext>
+   </msubsup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ are the concentrations of zinc, lead, copper, and cadmium, at these locations; whose join distribution along the flood plain of the river Meuse is of interest. </div>
+
+
+<div class='float-figure'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-156'><img style='width:45%;' src='e_684d41bff322_muse-zinc.png' alt='image: e_684d41bff322_muse-zinc.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-157'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  zinc concentration</span></div>
+
+
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-166'><img style='width:45%;' src='e_fc0ac1ad84c7_meuse-cadmium.png' alt='image: e_fc0ac1ad84c7_meuse-cadmium.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-167'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  cadmium concentration</span></div>
+</div>
+
+
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-176'><img style='width:45%;' src='e_1328d486f0cb_meuse-copper.png' alt='image: e_1328d486f0cb_meuse-copper.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-177'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  copper concentration</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-185'><img style='width:45%;' src='e_0591880a394c_meuse-lead.png' alt='image: e_0591880a394c_meuse-lead.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-186'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  lead concentration</span></div>
+</div>
+
+
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-195'><img style='width:45%;' src='e_67fa11bbb65d_meuse-data-scatterplot.png' alt='image: e_67fa11bbb65d_meuse-data-scatterplot.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-196'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  scaatter plot </span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-205'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.1:  <a id="fig_Map_of_the" />Map of the meuse dataset</span></div>
+</div>
+
+</div>
+<div class='standard' id='magicparlabel-210'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-211'><span class="example_label">Example 21.</span>
+(Coal ash dataset in Pennsylvania) Figure <a href="#fig_Coal_ash_data">2.2</a> shows <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>208</mn>
+</math>
+ coal ash core measurements/samples collected on a regular grid of points in the Robena Mine in Greene County, Pennsylvania. The percentage of coal ash at the sampled locations is denoted by the colorbar. The sampled locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are fixed, and regularly spaced in a grid. As <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+ are coordinates, they vary continuously over the spatial domain which is Robena Mine. The quantity of interest is the percentage of ash coal at these locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+. A mining engineer could be interested in predicting the ash distributions and the washability characteristics of coal along a seam in advance of mining. A spatial statistician would be able to produce a statistical model to predict ash concentrations between sampled points as well as quantify related uncertainties. Once a reasonable model that accounts for both the global trends and the local dependencies in the data is found and validated, the mining engineer could proceed to try and fill in the gaps, in other words, to estimate the percentage of coal ash at missing grid points based on the sampled percentages. <div class='float-figure'><div class='plain_layout' id='magicparlabel-215'><img style='width:35%;' src='e_d27503d4a58e_ashcoal.png' alt='image: e_d27503d4a58e_ashcoal.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.2:  <a id="fig_Coal_ash_data" />(Coal ash data set) Percentage of coal ash at 208 locations.</span></div>
+</div>
+</div>
+</div>
+
+
+<div class='standard' id='magicparlabel-309'>
+<br />
+</div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-310'><span class="subsection_label">2.2</span> <a id="subsec_Aerial_unit_data" />Aerial unit data / spatial data on lattices </h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-311'><span class="note_label">Note 22.</span>
+Sometimes observations are collected over areal units such as pixels, census districts, or tomographic bins. In such cases, the random field models <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mi>S</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ have a discrete index set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+. The aims are usually, noise removal from an image and smoothing rather than interpolation.</div>
+</div>
+<div class='standard' id='magicparlabel-312'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-313'><span class="note_label">Note 23.</span>
+Mathematically speaking, the index set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ of the data  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a fixed (not random) and finite collection of points (locations) <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+. The locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ can be irregular or arranged in a regular grid. Often, there is a natural adjacency relation or neighborhood structure. Often, datum <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a random vector at location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ and it represents an integral or average of the quantity of interest over some region represented by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-318'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-319'><span class="example_label">Example 24.</span>
+In a UK epidemological study, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ may be the centroids of the UK counties, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ may represent the average value of a characteristic in county <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+. In image processing, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ may be a grid of pixels (locations are fixed and regular). In statistical physics, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ may be a collection of atoms and genuinely finite (locations are fixed and regular). </div>
+</div>
+<div class='standard' id='magicparlabel-320'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-321'><span class="example_label">Example 25.</span>
+<a id="exa__Image_restoration_data_qerwerfqwer" /> (Image restoration data) Figure <a href="#fig_Noised_Ferrite_Pearlite_steel">a</a> shows an (observed) image from a gray-scale photo-micrograph of the micro-structure of the Ferrite-Pearlite steel obtained by PNNL&#8217;s project supported by DoE.  The lighter part is ferrite while the darker part is pearlite. We focus our analysis on the first quarter fragment of size <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>240</mn>
+ <mo>&#x00D7;</mo>
+ <mn>320</mn>
+</mrow>
+</math>
+ pixels (red frame). This image is contaminated by noise due to the instrument errors. Interest lies in removing the noise (denoising) and recovering the real image. Figure <a href="#fig_Reconstructed_Ferrite_Pearlite_s">b</a> shows the restored image after appropriate statistical processing. Here the locations are pixels arranged in a fixed regular grid (hence discrete and not continues). The each observation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the color of a pixel <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+; here it is scalar as the observed pixels are in tones of grey, however it could be a <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>3</mn>
+ <mtext>D</mtext>
+</mrow>
+</math>
+ if the pixels were colored. <div class='float-figure'><div class='plain_layout' id='magicparlabel-345'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.3:  Ferrite-Pearlite steel image (Image restoration)</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-349'><img style='width:49%;' src='e_dfe8891ad6a2_FPphotomicro_240x320.png' alt='image: e_dfe8891ad6a2_FPphotomicro_240x320.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Noised_Ferrite_Pearlite_steel" />Noised image</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-357'><img style='width:49%;' src='e_ec7446ce33a3_FPphotomicro_240x320_MAP_bw_croped.png' alt='image: e_ec7446ce33a3_FPphotomicro_240x320_MAP_bw_croped.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Reconstructed image<a id="fig_Reconstructed_Ferrite_Pearlite_s" /></span></div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-413'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-414'><span class="example_label">Example 26.</span>
+<a id="exa__North_Carolina_SIDS" />(North Carolina SIDS data set) Figure <a href="#fig_Numbers_of_SIDS">a</a> shows the total number of deaths from Sudden Infant Death Syndrome (SIDS) in 1974 for each of the 100 counties in North Carolina. Figure <a href="#fig_Live_birth_counts">b</a> shows the corresponding live births in each county and same period. This is the R data set <span style='font-family:monospace;'>nc{spdep}</span>. The centroids of the counties do not lie on a regular grid. The sizes and shapes of the counties vary and can be quite irregular. The recorded counts are not tied to a precise location but tallied up county-wise. This kind of accumulation over administrative units is usual for privacy-sensitive data in, for instance, the crime or public health domains. A public health official could be interested in spatial patterns; e.g., whether or not there are clusters of counties with a high incidence of SIDS, or areas where the SIDS counts are higher than what would be expected based on the number of live births in the area. Perhaps, we can eyeball the figures and see that there is a higher SIDS rate in the north-east areas compared to the north-west with similar birth numbers. A statistician can develop a statistical model providing inference about such questions.<div class='float-figure'><div class='plain_layout' id='magicparlabel-418'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.4:  North Carolina SIDS data (Aerial unit data)</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-422'><img style='width:45%;' src='e_8cfe9701f16d_sids_SID74.png' alt='image: e_8cfe9701f16d_sids_SID74.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-423'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Numbers of SIDS <a id="fig_Numbers_of_SIDS" /></span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-431'><img style='width:45%;' src='e_aab0752b542d_sids_NWBIR74.png' alt='image: e_aab0752b542d_sids_NWBIR74.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Live birth counts<a id="fig_Live_birth_counts" /></span></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-440'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-441'><span class="example_label">Example 27.</span>
+(Columbus Columbus OH data set) Figures <a href="#fig_The_colours_indicate">a</a>, <a href="#fig_The_colours_indicate_1">b</a>, and <a href="#fig_The_colours_indicate_1_1_2">c</a> show the Property crime (number per thousand households) in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>49</mn>
+</math>
+ districts in Columbus in 1980, as well as the average value of the house (in 1,000 USD), and the average household income (in 1,000 USD). This is the R dataset <span style='font-family:monospace;'>columbus{spdep}</span>. The recorded counts are not tied to a precise household but tallied up county-wise (aerial unit) for privacy reasons. The locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ are these areal unites; we observe they are not in a grid, and they do not have the same size or shape. Interest may lie to find whether high rates of crime are clustered in a particular areas, and if yes, perhaps what is the association of it with the value of the houses in the area.  <div class='float-figure'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-457'><img style='width:45%;' src='e_9daf59afe932_columbus_crime_counts.png' alt='image: e_9daf59afe932_columbus_crime_counts.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-458'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Property crime, i.e. residential burglaries and vehicle thefts per thousand households in the neighborhood<a id="fig_The_colours_indicate" /></span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-466'><img style='width:45%;' src='e_1068c3a8a4ca_columbus_crime_HOVAL.png' alt='image: e_1068c3a8a4ca_columbus_crime_HOVAL.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-467'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Average housing value (in 1,000 USD)<a id="fig_The_colours_indicate_1" /></span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-472'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.5:  Columbus Columbus OH spatial analysis dataset</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-476'><img style='width:45%;' src='e_db0bfaf8d17d_columbus_INC.png' alt='image: e_db0bfaf8d17d_columbus_INC.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-477'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Average household income (in 1,000 USD)<a id="fig_The_colours_indicate_1_1_2" /></span></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-486'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-487'>
+<br />
+</div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-488'><span class="subsection_label">2.3</span> Spatial point patterns </h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-489'><span class="note_label">Note 28.</span>
+Sometimes the locations at which events occur are random. Typical examples include locations of trees in forests, outbreaks of forest fires, or epicentres of earthquakes. Such random patterns of locations are said to form a point pattern.</div>
+</div>
+<div class='standard' id='magicparlabel-490'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-491'><span class="note_label">Note 29.</span>
+Rigorously, the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ is a random set of points; specifically a point process, in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+ <mi>d</mi>
+</msup>
+</math>
+ at which some events happened. </div>
+</div>
+<div class='standard' id='magicparlabel-496'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-497'><span class="note_label">Note 30.</span>
+In the most general case, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a random vector at location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ (eg other covariates are associated to the location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+); these covariates are called marked variables. We will refer to it as a Marked spatial point process.</div>
+</div>
+<div class='standard' id='magicparlabel-504'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-505'><span class="note_label">Note 31.</span>
+In the simplest case, no covariate for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is specified, and hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ represents only the occurrences of an even at location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+, one could think of the data taking scalar values <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ when the event has occurred or not for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+. We will refer to it as a spatial point process</div>
+</div>
+<div class='standard' id='magicparlabel-506'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-507'><span class="note_label">Note 32.</span>
+Questions in the spatial point pattern problems are mainly whether the pattern of locations is exhibiting complete spatial randomness, clustering (aggregation), or regularity (repulsiveness). In the marked spatial point process where additional covariates are measured, we could possibly investigate the factors/variables associated to this behavior as well. A statistical approach to address such questions is needed as different observers may disagree on the amount of clustering or randomness. Usually patters from a completely random process may appear to be wrongly clustered when just eyeballed by an individual. </div>
+</div>
+<div class='standard' id='magicparlabel-512'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-513'><span class="example_label">Example 33.</span>
+(Tropical rain forest trees in Barro/Colorado) Figure <a href="#fig_Tropical_rain_forest">2.6</a> shows the positions (dots) of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>3605</mn>
+</math>
+ Beilschmiedia trees in a <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>1000</mn>
+ <mo>&#x00D7;</mo>
+ <mn>5000</mn>
+</mrow>
+</math>
+ meter rectangular stand in a tropical rain forest at Barro Colorado Island, Panama. All spatial coordinates are in the Cartesian coordinate system and in meters. Dataset is available from the R package <span style='font-family:monospace;'>bei{spatstat}</span>. The scientific question may be if the trees are distributed over the area in a uniform way, they form clusters, or they are arrange in a specific pattern. Here, the locations of the dots/trees are not fixed but random/uncertain and of course they are matter of inference. This is a point process as each location is associated to an occurrence only and not any other covariate. The statistician&#8217;s task is to design models able to test and quantify heterogeneity/homogeneity. <div class='float-figure'><div class='plain_layout' id='magicparlabel-521'><img style='width:45%;' src='e_55aed6aa8781_bei_obs.png' alt='image: e_55aed6aa8781_bei_obs.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-522'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.6:  Locations of tropical rain forest trees in Barro/Colorado (Spatial point pattern data)<a id="fig_Tropical_rain_forest" /></span></div>
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-527'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-528'><span class="example_label">Example 34.</span>
+The domain scientist is interested in knowing whether the spatial locations are completely spatially random, clustered, or regularly distributed.</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-529'>(Japanese pine trees) The Japanese pine trees dataset in R <span style='font-family:monospace;'>japanesepines{spatstat}</span> represents locations of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>65</mn>
+</math>
+ saplings of Japanese black pine (Pinus thunbergii) in a <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>5.7</mn>
+ <mo>&#x00D7;</mo>
+ <mn>5.7</mn>
+</mrow>
+</math>
+ square meter sampling region in a natural forest. </li>
+<li class="enumerate_item" id='magicparlabel-538'>(California Redwoods) The data represent the locations of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>62</mn>
+</math>
+ seedlings and saplings of California Giant Redwood (Sequoiadendron giganteum) recorded in a square sampling region. </li>
+<li class="enumerate_item" id='magicparlabel-543'>(Biological Cells) The data record the locations of the centres of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>42</mn>
+</math>
+ biological cells observed under optical microscopy in a histological section. The microscope field-of-view has been rescaled to the unit square. </li>
+</ol>
+<div class='standard' id='magicparlabel-548'>Figure <a href="#fig_Spatial_Point_Patterns">2.7</a> presents the aforesaid spatial point patters. It is difficult to eyeball, perhaps Figure <a href="#fig_Japanese_Pines_Point">a</a> of the Japanese pine trees seems neither clustered nor regularly distributed but rather completely randomly distributed; Figure <a href="#fig_California_Redwoods_Point">b</a> of the California redwoods shows a clustered pattern; and Figure <a href="#fig_Biological_Cells_Point">c</a> shows a a regular pattern. </div>
+<div class='float-figure'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-556'><img style='width:45%;' src='e_f7760240ab99_japanesepines-data-plot.png' alt='image: e_f7760240ab99_japanesepines-data-plot.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Japanese_Pines_Point" />Japanese Pines</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-564'><img style='width:45%;' src='e_739c4a479161_redwood-data-plot.png' alt='image: e_739c4a479161_redwood-data-plot.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_California_Redwoods_Point" />California Redwoods</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-569'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.7:  <a id="fig_Spatial_Point_Patterns" />Spatial Point Patterns</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-573'><img style='width:45%;' src='e_14392e074009_cells-data-plot.png' alt='image: e_14392e074009_cells-data-plot.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Biological_Cells_Point" />Biological Cells</span></div>
+</div>
+
+</div>
+
+</div>
+<div class='standard' id='magicparlabel-582'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-583'><span class="example_label">Example 35.</span>
+(Longleaf Pines Point Pattern) Figure <a href="#fig_Longleaf_Pines_Point">2.8</a> shows locations (as Cartesian coordinates) and relative diameters at breast height in dbh (as the size of the dot) of all longleaf pine trees in the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>24</mn>
+ <mtext>ha</mtext>
+</mrow>
+</math>
+ region of the Wade Tract, an old-growth forest in Thomas County, Georgia in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>1979</mn>
+</math>
+. Dataset is available from R package <span style='font-family:monospace;'>bei{spatstat}</span>. Longleaf pine is a fire-adapted species of trees. The domain scientist is interested in knowing whether the spatial locations are spatially random, or clustered, if large (small) trees cluster and how do large and small trees interact. A statistician can design models able to quantify such notions and provide inference. Here, the locations are random (not fixed) and in fact an object of inference. The diameter at breast height recorded along with the tree&#8217;s location is the marked variable, and hence, the whole process is a marked process.  <div class='float-figure'><div class='plain_layout' id='magicparlabel-591'><img style='width:45%;' src='e_916b524a073f_longleaf_obs.png' alt='image: e_916b524a073f_longleaf_obs.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-592'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.8:  Longleaf Pines Point Pattern (Spatial point data) <a id="fig_Longleaf_Pines_Point" /></span></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-597'><span class="section_label">3</span> Uncertainty quantification and modeling<a id="sec_Uncertainty_quantification_and" /></h2>
+<div class='standard' id='magicparlabel-598'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-599'><span class="note_label">Note 36.</span>
+<div class='marginal'><div class='plain_layout' id='magicparlabel-603'>To be 
+<br />
+defined 
+<br />
+rigorously 
+<br />
+later</div>
+</div>In spatial problems, uncertainty is expressed probabilistically through a spatial stochastic process (or a multivariate random field), which can be written most generally as<a id="eq__4" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>;</mo>
+      <mi>s</mi>
+      <mo>&#x2208;</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(3.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+Here <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the random attribute value at location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+ is a subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+ <mi>d</mi>
+</msup>
+</math>
+ (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>d</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>2</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>3</mn>
+</mrow>
+</math>
+), contained in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ is a possibly random fixed or random set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ that indexes those parts of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ relevant to the scientific study. </div>
+</div>
+<h3 class='subsection_' id='magicparlabel-604'>Spatial process model </h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-605'><span class="note_label">Note 37.</span>
+The scientific uncertainty (i.e. the (known) uncertainty about the scientific problem) is expressed via the spatial process model. E.g., uncertainty about the real picture in Fig. <a href="#fig_Noised_Ferrite_Pearlite_steel">a</a>. </div>
+</div>
+<div class='standard' id='magicparlabel-606'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-607'><span class="note_label">Note 38.</span>
+This spatial stochastic process can be a: geostatistical process, lattice process, or point process depending on the principal spatial statistical area (Section <a href="#sec_Principal_spatial_statistical">2</a>) the application is associated with.</div>
+</div>
+<div class='standard' id='magicparlabel-613'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-614'><span class="note_label">Note 39.</span>
+The joint probability model defined by the random <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Y</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mi>S</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ is <a id="eq__1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mi>S</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(3.2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-615'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-616'><span class="note_label">Note 40.</span>
+The specification of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mi>S</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ represents the three principal spatial statistical areas. E.g., for spatial data on lattices or point referenced data problems were the locations are fixed and not uncertain, we can consider <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mi>S</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mtext>
+  <mn>1</mn></mtext>
+  <mrow>
+   <mo>{</mo>
+   <mi>S</mi>
+   <mo>}</mo>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>S</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and hence ignore <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mi>S</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ from the notation.</div>
+</div>
+<h3 class='subsection_' id='magicparlabel-617'>Data model</h3>
+<div class='standard' id='magicparlabel-618'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-619'><span class="note_label">Note 41.</span>
+The measurement uncertainty is quantified via the data model. E.g. the &#8220;noisy image&#8221; in Fig. <a href="#fig_Noised_Ferrite_Pearlite_steel">a</a>.</div>
+</div>
+<div class='standard' id='magicparlabel-620'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-621'><span class="note_label">Note 42.</span>
+The data model is specified to be the conditional distribution of the data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ given the spatial stochastic process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ and the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+, namely <a id="eq__2" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>Y</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(3.3)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-622'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-623'><span class="note_label">Note 43.</span>
+If the data are assumed to be conditionally independent, such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mi>&#x22A5;</mi>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>|</mo>
+ <mi>Y</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ then <a id="eq__5" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>Y</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <munderover>
+     <mo>&#x220F;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>i</mi>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>|</mo>
+      <mi>Y</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(3.4)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-624'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-625'><span class="note_label">Note 44.</span>
+The spatial statistical dependence of in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+, articulated by the First Law of Geography, follows by 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>&#x222B;</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mtext>d</mtext>
+ <mi>Y</mi>
+</mrow>
+</math>
+</div>
+</div>
+<h3 class='subsection_' id='magicparlabel-626'>The hierarchical statistical model</h3>
+<div class='standard' id='magicparlabel-627'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-628'><span class="note_label">Note 45.</span>
+To sum up the (known) uncertainty in spatial the statistics problem is expressed via the so called Hierarchical spatial model<a id="eq__3_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>S</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>data&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>S</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>spatial&#0160;process&#0160;model</mtext>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mtext>(3.5)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+with
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>S</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mi>S</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<h3 class='subsection_' id='magicparlabel-629'>The Empirical (Bayes) hierarchical model</h3>
+<div class='standard' id='magicparlabel-630'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-631'><span class="note_label">Note 46.</span>
+Often the decomposition <a href="#eq__3_1">(3.5)</a> is parametrized with respect to unknown parameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo>&#x2208;</mo>
+ <mi>&#x398;</mi>
+</mrow>
+</math>
+ we wish to learn given the observables; this is often called the Empirical hierarchical model i.e.<a id="eq__3_1_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>S</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3B8;</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>data&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>S</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>&#x3B8;</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>spatial&#0160;process&#0160;model</mtext>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mtext>(3.6)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+with
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>S</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ ...more details in the next lecture.</div>
+</div>
+<h3 class='subsection_' id='magicparlabel-636'>The Bayesian hierarchical model</h3>
+<div class='standard' id='magicparlabel-637'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-638'><span class="note_label">Note 47.</span>
+In Bayesian statistics, the hierarchical model in <a href="#eq__3_1">(3.5)</a> is completed by the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo>&#x223C;</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ adding a third layer leading to the Bayesian hierarchical model <a id="eq__3_1_1_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>S</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3B8;</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>data&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>S</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>&#x3B8;</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>spatial&#0160;process&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mi>&#x3B8;</mi>
+     </mtd>
+     <mtd>
+      <mtext>hyper-parameter&#0160;prior&#0160;model</mtext>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mtext>(3.7)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+with
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>S</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mi>&#x3B8;</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-639'><span class="example_label">Example 48.</span>
+<div class='marginal'><div class='plain_layout' id='magicparlabel-647'>That&#8217;s a
+<br />
+snapsot
+<br />
+for what
+<br />
+follows.</div>
+</div>(A naive example) Consider Example <a href="#exa__Ground_water_pollution">exa:(Ground-water-pollution</a>, and observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Z</mi>
+ <mi>i</mi>
+</msub>
+</math>
+ is the Cr measurement in ppb at the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>i</mi>
+</math>
+-th location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+. Perhaps one may consider that the real Cr, lets denoted as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+, may follow a Normal distribution with a mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>S</mi>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+ parametrized as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>&#x3BC;</mi>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo>
+    <mn>1</mn>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo>
+    <mn>2</mn>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo>
+    <mn>1</mn>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>s</mi>
+  <mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo>
+    <mn>2</mn>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>12</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <mn>...</mn>
+</mrow>
+</math>
+ at a location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+ (to consider spatial dependence) with some unknown parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+, and covariance matrix parametrized as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>C</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3D5;</mi>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mrow>
+     <mi>s</mi>
+     <mo stretchy='false'>-</mo>
+     <mi>s</mi>
+     <mo stretchy='false'>'</mo>
+    </mrow>
+    <mo>&#x2225;</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+; here <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3D5;</mi>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ are unknown parameters. One may consider that the measurements <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ at each location are the result of observing <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Y</mi>
+ <mi>i</mi>
+</msub>
+</math>
+ (the real Cr) but contaminated by additive random noise, as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. To sum up, we have build the hierarchical model<a id="eq__3" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>&#x223C;</mo>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Y</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>|</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3D5;</mi>
+       <mo>&#x223C;</mo>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mi>&#x3B2;</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>C</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mtext>(3.8)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+Figure <a href="#fig_Examples_representing_the">3.1</a> shows the hierarchical spatial model <a href="#eq__3">(3.8)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ ; the surface corresponds to the spatial process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Y</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <msup>
+   <mstyle mathvariant='double-struck'>
+    <mi>R</mi>
+   </mstyle>
+   <mn>2</mn>
+  </msup>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ and is presented at three different instances each of them with different values for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3D5;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+, while the dots correspond to the observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ and their deviation from the spatial process is controlled by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ .  If we work on the fully Bayesian framework (!!!), we can complete the model with priors on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>&#x223C;</mo>
+ <mtext>IG</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BA;</mi>
+    <mi>&#x3C3;</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3BB;</mi>
+    <mi>&#x3C3;</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3D5;</mi>
+ <mo>&#x223C;</mo>
+ <mtext>IG</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BA;</mi>
+    <mi>&#x3D5;</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3BB;</mi>
+    <mi>&#x3D5;</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B2;</mi>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>b</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>I</mi>
+   <mi>v</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, with some known hyper-parameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3BA;</mi>
+  <mi>&#x3C3;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>&#x3BB;</mi>
+  <mi>&#x3C3;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>&#x3BA;</mi>
+  <mi>&#x3D5;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>&#x3BB;</mi>
+  <mi>&#x3D5;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <mi>b</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>v</mi>
+</mrow>
+</math>
+. To sum up, we have build the Bayesian model 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+<mtable>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mo stretchy='false'>|</mo>
+    <mi>Y</mi>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>I</mi>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Y</mi>
+    <mo stretchy='false'>|</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B2;</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3D5;</mi>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>S</mi>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x3B2;</mi>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>I</mi>
+      <mi>v</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>IG</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BA;</mi>
+       <mi>&#x3C3;</mi>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3BB;</mi>
+       <mi>&#x3C3;</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x3D5;</mi>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>IG</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BA;</mi>
+       <mi>&#x3D5;</mi>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3BB;</mi>
+       <mi>&#x3D5;</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-651'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 3.1:  Examples representing the hierarchical spatial model <a href="#eq__3">(3.8)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+<a id="fig_Examples_representing_the" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-655'><img style='width:33%;' src='e_e37c997a0b42_pic_hierarchical_3.png' alt='image: e_e37c997a0b42_pic_hierarchical_3.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  &#xA0;</span></div>
+
+
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-664'><img style='width:33%;' src='e_21e53fb45fd3_pic_hierarchical_2.png' alt='image: e_21e53fb45fd3_pic_hierarchical_2.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  &#xA0;</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-672'><img style='width:33%;' src='e_3021f7840c84_pic_hierarchical_1.png' alt='image: e_3021f7840c84_pic_hierarchical_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  &#xA0;</span></div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+</section>
+</body>
+</html>

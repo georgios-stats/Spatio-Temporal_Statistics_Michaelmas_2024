@@ -59,11 +59,12 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 #### Complete set of notes    
 
-... Not available yet  
++ [PDF](./Lecture_notes/Lecture_notes_ST4.pdf)    
+
 
 #### Types of spatial data       
 
-... Not available yet  
++ [PDF](./Lecture_notes/Lecture_notes_types_of_spatial_data.pdf)  
 
 #### Geostatistical data modeling       
 
