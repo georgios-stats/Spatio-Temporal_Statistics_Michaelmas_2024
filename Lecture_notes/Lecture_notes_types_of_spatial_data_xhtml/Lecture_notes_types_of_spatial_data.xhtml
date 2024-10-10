@@ -3595,18 +3595,23 @@ Our additional additional interest may be to learn the posterior of <math xmlns=
 </div>
 <div class='example'>
 <div class="example_item" id='magicparlabel-673'><span class="example_label">Example 48.</span>
-<div class='marginal'><div class='plain_layout' id='magicparlabel-681'>That&#8217;s a
+<a id="exa__A_naive_example_" /><div class='marginal'><div class='plain_layout' id='magicparlabel-681'>That&#8217;s a
 <br />
 snapsot
 <br />
 for what
 <br />
 follows.</div>
-</div>(A naive example: Scallop abundance data) Consider the Scallop abundance data example discussed in module &#8220;Statistical modeling 2&#8221; and available from R as <span style='font-family:monospace;'>scallop {SemiPar}</span>. The scallop data is based on a 1990 survey cruise in the Atlantic continental shelf off Long Island, New York, U.S.A. It contains <math xmlns='http://www.w3.org/1998/Math/MathML'>
+</div>(A naive example: NOAA weather data) As dataset we consider a fraction from daily data originated from the US National Oceanic and Atmospheric Administration (NOAA) National Climatic Data Center and can be obtained from the IRI/LDEO Climate Data Library at Columbia University<div class='foot'><span class="foot_label">2</span><div class="foot_inner"><div class='plain_layout' id='magicparlabel-685'>http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.DAILY/.FSOD/</div>
+</div></div>. The dataset is available from the R package in GitHub &#8220;andrewzm/STRbook&#8221;. In this example we focus on maximum temperature (Tmax) in degrees Fahrenheit (◦F) at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>138</mn>
+</math>
+ weather stations in the central USA (between 32◦N-46◦N and 80◦W-100◦W), recorded in 1st of May 1993. The data are not complete, in the sense that there are missing measurements at various stations and at various time points, and the stations themselves are obviously not located everywhere in the central USA. (Figure Figure <a href="#fig_NOAA_weather_data">3.1</a>)</div>
+<div class='standard' id='magicparlabel-686'>This data set contains <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>n</mi>
  <mo stretchy='false'>=</mo>
- <mn>148</mn>
+ <mn>138</mn>
 </mrow>
 </math>
  observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -3641,13 +3646,13 @@ follows.</div>
  where the <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>i</mi>
 </math>
--th observation contains the observed scallop catch size <math xmlns='http://www.w3.org/1998/Math/MathML'>
+-th observation contains the maximum temperature (Tmax) in degrees Fahrenheit (◦F) <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msub>
  <mi>Z</mi>
  <mi>i</mi>
 </msub>
 </math>
- at location specified by coordinate <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ at location specified by coordinates <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>s</mi>
@@ -3682,7 +3687,7 @@ follows.</div>
  </msup>
 </mrow>
 </math>
- that is the degrees latitude north of the Equator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ that is the latitude degrees north of the Equator <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msub>
  <mi>s</mi>
  <mrow>
@@ -3692,7 +3697,7 @@ follows.</div>
  </mrow>
 </msub>
 </math>
-, and degrees longitude west of Greenwich <math xmlns='http://www.w3.org/1998/Math/MathML'>
+, and longitude degrees west of Greenwich <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msub>
  <mi>s</mi>
  <mrow>
@@ -3702,18 +3707,17 @@ follows.</div>
  </mrow>
 </msub>
 </math>
-. See Figure <a href="#fig_Scallop_abundance_data">3.1</a>.</div>
-<div class="example_item" id='magicparlabel-682'><div class='float-figure'><div class='plain_layout' id='magicparlabel-686'><img style='width:45%;' src='e_3db7596c6053_scallop.png' alt='image: e_3db7596c6053_scallop.png' /></div>
+. See Figure <a href="#fig_NOAA_weather_data">3.1</a>.  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-690'><img style='width:80%;' src='e_eae7a5d9d3d4_NOAA-Tmax-1993-May-1.png' alt='image: e_eae7a5d9d3d4_NOAA-Tmax-1993-May-1.png' /></div>
 
-<div class='plain_layout' id='magicparlabel-687'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 3.1:  <a id="fig_Scallop_abundance_data" />Scallop abundance data</span></div>
-
-
+<div class='plain_layout' id='magicparlabel-691'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 3.1:  <a id="fig_NOAA_weather_data" />NOAA weather data (1 May 1993)</span></div>
 </div>
-</div>
-<div class='standard' id='magicparlabel-693'>This is definitely a geostatistics problem. Here, we will present a naive way to model it by reflecting what we discussed earlier. </div>
+
+
+<div class='standard' id='magicparlabel-696'>This is definitely a geostatistics problem. Here, we will present a naive way to model it by reflecting what we discussed earlier. </div>
 <dl class='description'>
 <dt class="description_label">Data&#xA0;model</dt>
-<dd class="description_item" id='magicparlabel-694'> One may consider that the observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<dd class="description_item" id='magicparlabel-697'> One may consider that the observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mo>{</mo>
  <msub>
@@ -3723,7 +3727,7 @@ follows.</div>
  <mo>}</mo>
 </mrow>
 </math>
- at each location are the result of observing the real (hence unknown) scallop catch abundance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ at each location are the result of observing the real (hence unknown) maximum temperature <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msub>
  <mi>Y</mi>
  <mi>i</mi>
@@ -3736,7 +3740,7 @@ follows.</div>
  <mn>0</mn>
 </mrow>
 </math>
-, i.e. 
+ due to instrumental error, i.e. 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
  <msub>
@@ -3783,12 +3787,55 @@ follows.</div>
  <mn>...</mn>
  <mo stretchy='false'>,</mo>
  <mi>n</mi>
- <mn>.</mn>
+ <mo>&#x27F9;</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>|</mo>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mover accent='false'>
+  <mo>&#x223C;</mo>
+  <mtext>iid</mtext>
+ </mover>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>Y</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="20px"/>
+ <mi>i</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>,</mo>
+ <mi>n</mi>
 </mrow>
 </math>
 </dd>
 <dt class="description_label">Spatial&#xA0;process&#xA0;model</dt>
-<dd class="description_item" id='magicparlabel-695'> One may consider that the real scallop catch abundance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<dd class="description_item" id='magicparlabel-698'> One may consider that the real maximum temperature <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>Y</mi>
  <mrow>
@@ -3848,7 +3895,7 @@ follows.</div>
  </mrow>
 </mrow>
 </math>
- parametrized as 
+ parameterized as 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
  <mi>&#x3BC;</mi>
@@ -3948,7 +3995,7 @@ follows.</div>
  </mrow>
 </mrow>
 </math>
- parametrized with covariance function 
+ parameterized with covariance function 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
  <mi>c</mi>
@@ -4002,7 +4049,7 @@ follows.</div>
 </math>
  are unknown parameters.</dd>
 <dt class="description_label">Hierarchical&#xA0;model</dt>
-<dd class="description_item" id='magicparlabel-696'> To sum up, we have build the hierarchical model<a id="eq__3" />
+<dd class="description_item" id='magicparlabel-699'> To sum up, we have build the hierarchical model<a id="eq__3" />
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
  <mtr>
@@ -4100,7 +4147,7 @@ follows.</div>
 </math>
 </dd>
 </dl>
-<div class='standard' id='magicparlabel-697'>Figure <a href="#fig_Examples_representing_the">3.2</a> shows the hierarchical spatial model <a href="#eq__3">(3.8)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='standard' id='magicparlabel-700'>Figure <a href="#fig_Examples_representing_the">3.2</a> shows the hierarchical spatial model <a href="#eq__3">(3.8)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3B8;</mi>
  <mo stretchy='false'>=</mo>
@@ -4240,7 +4287,7 @@ follows.</div>
 </div>
 <dl class='description'>
 <dt class="description_label">Bayesian&#xA0;hierarchical&#xA0;model</dt>
-<dd class="description_item" id='magicparlabel-698'> If we work on the fully Bayesian framework, we can complete the model with priors on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<dd class="description_item" id='magicparlabel-701'> If we work on the fully Bayesian framework, we can complete the model with priors on <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3B8;</mi>
  <mo stretchy='false'>=</mo>
@@ -4535,7 +4582,9 @@ follows.</div>
 </dd>
 </dl>
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-703'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 3.2:  Examples representing the hierarchical spatial model <a href="#eq__3">(3.8)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-731'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 3.2:  Examples representing the hierarchical spatial model <a href="#eq__3">(3.8)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3B8;</mi>
  <mo stretchy='false'>=</mo>
@@ -4556,16 +4605,47 @@ follows.</div>
 </mrow>
 </math>
 <a id="fig_Examples_representing_the" /></span></div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-707'><img style='width:33%;' src='e_b0a15802560f_pic_hierarchical_3.png' alt='image: e_b0a15802560f_pic_hierarchical_3.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  &#xA0;</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-735'><img style='width:33%;' src='e_b0a15802560f_pic_hierarchical_3.png' alt='image: e_b0a15802560f_pic_hierarchical_3.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  &#xA0;</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-715'><img style='width:33%;' src='e_cc3149e6664e_pic_hierarchical_2.png' alt='image: e_cc3149e6664e_pic_hierarchical_2.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  &#xA0;</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-743'><img style='width:33%;' src='e_cc3149e6664e_pic_hierarchical_2.png' alt='image: e_cc3149e6664e_pic_hierarchical_2.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  &#xA0;</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-723'><img style='width:33%;' src='e_1b13c4eda06e_pic_hierarchical_1.png' alt='image: e_1b13c4eda06e_pic_hierarchical_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  &#xA0;</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-751'><img style='width:33%;' src='e_1b13c4eda06e_pic_hierarchical_1.png' alt='image: e_1b13c4eda06e_pic_hierarchical_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  &#xA0;</span></div>
+</div>
+
 </div>
 
 </div>
 
+
+<div class='standard' id='magicparlabel-926'><br /></div>
+
+<div class='standard' id='magicparlabel-927'><br /></div>
+
+
+</section>
+<section>
+<h2 class='section' id='magicparlabel-934'><span class="section_label">4</span> Spatio-temporal statistics</h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-935'><span class="note_label">Note 49.</span>
+Spatio-temporal data arise when information is both spatially and temporally referenced. Any of the aforesaid spatial statistics cases can be extended and become temporal. Such methods will be discussed in the Epiphany term. This is where we aim at the end of the module. </div>
 </div>
+<div class='standard' id='magicparlabel-936'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-937'><span class="example_label">Example 50.</span>
+We extend the dataset in the Spatial statistics Example <a href="#exa__A_naive_example_">48</a> by considering time. </div>
+<div class='standard' id='magicparlabel-942'>The dataset is available from the R package in GitHub &#8220;andrewzm/STRbook&#8221;. These daily data originated from the US National Oceanic and Atmospheric Administration (NOAA) National Climatic Data Center and can be obtained from the IRI/LDEO Climate Data Library at Columbia University. The data set we consider consists the daily maximum temperature (Tmax) in degrees Fahrenheit (◦F) at We extend the dataset in the Spatial statistics Example <a href="#exa__A_naive_example_">48</a> by considering time. weather stations in the central USA (between 32◦N–46◦N and 80◦W–100◦W), recorded between May-July in year 1993. These data are considered to be discrete and regular in time (daily) and geostatistical and irregular in space. However, the data are not complete, in that there are missing measurements at various stations and at various time points, and the stations themselves are obviously not located everywhere in the central USA. See Figure <a href="#fig_NOAA_weather_data_1">4.1</a>.</div>
+
+<div class='standard' id='magicparlabel-943'>Interest lies on not only how the maximum temperature is only distributed over the spatial domain but also how it evolves during the time. </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-947'><img style='width:100%;' src='e_610a641aadc8_NOAA-Tmax-1993-May-July.png' alt='image: e_610a641aadc8_NOAA-Tmax-1993-May-July.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-948'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 4.1:  <a id="fig_NOAA_weather_data_1" />NOAA daily weather data </span></div>
+</div>
+
+</div>
+
+
 
 </section>
 </body>
