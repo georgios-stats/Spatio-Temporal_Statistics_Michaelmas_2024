@@ -414,17 +414,13 @@ and as it is a count its distribution can be represented as a Poisson distributi
  </msup>
  <mover accent='false'>
   <mo>&#x223C;</mo>
-  <mtext>iid</mtext>
+  <mtext>
+  <mtext>ind</mtext></mtext>
  </mover>
  <mtext>Poi</mtext>
  <mrow>
   <mo>(</mo>
   <mrow>
-   <msub>
-    <mi>&#x3BC;</mi>
-    <mi>i</mi>
-   </msub>
-   <mo stretchy='false'>=</mo>
    <mo>exp</mo>
    <mrow>
     <mo>(</mo>
@@ -450,24 +446,44 @@ and as it is a count its distribution can be represented as a Poisson distributi
 </math>
 </dd>
 <dt class="description_label">Spatial&#xA0;process&#xA0;model</dt>
-<dd class="description_item" id='magicparlabel-213'> One may consider that the mean scallop catch abundance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<dd class="description_item" id='magicparlabel-213'> One may consider that in log scale the mean scallop catch abundance <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
- <mi>Y</mi>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mo>log</mo>
  <mrow>
   <mo>(</mo>
-  <mi>s</mi>
+  <mrow>
+   <mtext>E</mtext>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>Z</mi>
+      <mi>i</mi>
+     </msub>
+     <mo stretchy='false'>|</mo>
+     <msub>
+      <mi>Y</mi>
+      <mi>i</mi>
+     </msub>
+     <mo stretchy='false'>,</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
   <mo>)</mo>
  </mrow>
 </mrow>
 </math>
- (over the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <mi>s</mi>
- <mo>&#x2208;</mo>
- <mi>S</mi>
-</mrow>
-</math>
-)in log scale is a function where at each finite set of locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ is a function where at each finite set of locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msubsup>
  <mrow>
   <mo>{</mo>
@@ -485,7 +501,7 @@ and as it is a count its distribution can be represented as a Poisson distributi
  <mi>n</mi>
 </msubsup>
 </math>
- follows a Normal distribution with a mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ and that it follows a Normal distribution with a mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>&#x3BC;</mi>
 </math>
  with <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -523,57 +539,43 @@ and as it is a count its distribution can be represented as a Poisson distributi
  <mo>exp</mo>
  <mrow>
   <mo>(</mo>
-  <munder accent='false'>
-   <munder>
-    <mrow>
-     <msub>
-      <mi>&#x3B2;</mi>
-      <mn>0</mn>
-     </msub>
-     <mo stretchy='false'>+</mo>
-     <msub>
-      <mi>&#x3B2;</mi>
-      <mn>1</mn>
-     </msub>
-     <msub>
-      <mi>s</mi>
-      <mn>1</mn>
-     </msub>
-     <mo stretchy='false'>+</mo>
-     <msub>
-      <mi>&#x3B2;</mi>
-      <mn>2</mn>
-     </msub>
-     <msub>
-      <mi>s</mi>
-      <mn>2</mn>
-     </msub>
-     <mo stretchy='false'>+</mo>
-     <msub>
-      <mi>&#x3B2;</mi>
-      <mn>12</mn>
-     </msub>
-     <msub>
-      <mi>s</mi>
-      <mn>1</mn>
-     </msub>
-     <msub>
-      <mi>s</mi>
-      <mn>2</mn>
-     </msub>
-    </mrow>
-    <mo stretchy='true'>&#x23DF;</mo>
-   </munder>
-   <mrow>
-    <mo stretchy='false'>=</mo>
-    <mi>Y</mi>
-    <mrow>
-     <mo>(</mo>
-     <mi>s</mi>
-     <mo>)</mo>
-    </mrow>
-   </mrow>
-  </munder>
+  <mrow>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>0</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>1</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>2</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>2</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>12</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>1</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
   <mo>)</mo>
  </mrow>
  <mo stretchy='false'>,</mo>
@@ -711,7 +713,7 @@ and as it is a count its distribution can be represented as a Poisson distributi
        </msup>
        <mover accent='false'>
         <mo>&#x223C;</mo>
-        <mtext>iid</mtext>
+        <mtext>ind</mtext>
        </mover>
       </mrow>
      </mtd>
@@ -721,16 +723,6 @@ and as it is a count its distribution can be represented as a Poisson distributi
        <mrow>
         <mo>(</mo>
         <mrow>
-         <mi>&#x3BC;</mi>
-         <mrow>
-          <mo>(</mo>
-          <msub>
-           <mi>s</mi>
-           <mi>i</mi>
-          </msub>
-          <mo>)</mo>
-         </mrow>
-         <mo stretchy='false'>=</mo>
          <mo>exp</mo>
          <mrow>
           <mo>(</mo>
@@ -1033,7 +1025,7 @@ and as it is a count its distribution can be represented as a Poisson distributi
     </msup>
     <mover accent='false'>
      <mo>&#x223C;</mo>
-     <mtext>iid</mtext>
+     <mtext>ind</mtext>
     </mover>
    </mrow>
   </mtd>
@@ -1043,16 +1035,6 @@ and as it is a count its distribution can be represented as a Poisson distributi
     <mrow>
      <mo>(</mo>
      <mrow>
-      <mi>&#x3BC;</mi>
-      <mrow>
-       <mo>(</mo>
-       <msub>
-        <mi>s</mi>
-        <mi>i</mi>
-       </msub>
-       <mo>)</mo>
-      </mrow>
-      <mo stretchy='false'>=</mo>
       <mo>exp</mo>
       <mrow>
        <mo>(</mo>
