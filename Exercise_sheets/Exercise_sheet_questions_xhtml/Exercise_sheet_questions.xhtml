@@ -27,7 +27,70 @@ font-size: xx-large;
 text-align: center;
 
 }
+div.solution_ {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.solution__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.theorem {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.theorem_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.exercise {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.exercise_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+ol.enumi   { list-style-type: decimal; }
+ol.enumii  { list-style-type: lower-latin; }
+ol.enumiii { list-style-type: lower-roman; }
+ol.enumiv  { list-style-type: upper-latin; }
+dl.description dt { font-weight: bold; }
 div.Shadowbox { border: solid gray medium; border-bottom: solid black 1ex; border-right: solid black 1ex; padding: 0.5ex; }
+div.float {
+	border: 2px solid black;
+	text-align: center;
+}
+div.float-caption {
+	text-align: center;
+	border: 2px solid black;
+	padding: 1ex;
+	margin: 1ex;
+}
 
 
 </style>
@@ -47,14 +110,1118 @@ Michaelmas term, 2024<div style='height:3ex'></div></div>
 <div class='standard' id='magicparlabel-11'>&#xA0;</div>
 <section>
 <h1 class='part' id='magicparlabel-12'><span class="part_label">Part I</span> Types of spatial data</h1>
+<div class='standard' id='magicparlabel-13'><a id="exer___" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-15'>(Columbus Columbus OH data set) Figure <a href="#fig_The_colours_indicate">a</a> shows the Property crime (number per thousand households) in 49 districts in Columbus in 1980, as well as the average value of the house in USD. Figure <a href="#fig_The_colours_indicate_1">b</a> presents the corresponding average house value. This is the R dataset <span style='font-family:monospace;'>columbus{spdep}</span>. Interest may lie to find whether high rates of crime are clusterd in a particular areas, and if yes, perhaps what is the association of it with the value of the houses in the area. To which principal spatial statistical are would you associate this problem?  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-23'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 1:  Columbus Columbus OH spatial analysis dataset</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-27'><img style='width:45%;' src='e_1cae51cc7817_columbus_crime_counts.png' alt='image: e_1cae51cc7817_columbus_crime_counts.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-28'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Property crime (number per thousand households)<a id="fig_The_colours_indicate" /></span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-36'><img style='width:45%;' src='e_1ead6a6f1fca_columbus_crime_HOVAL.png' alt='image: e_1ead6a6f1fca_columbus_crime_HOVAL.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-37'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Average value of the house in USD<a id="fig_The_colours_indicate_1" /></span></div>
+</div>
+
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-51'><span class="solution__label">Solution.</span>
+Aerial unit data / spatial data on lattices</div>
+</div>
+
+</div>
+
+<div class='standard' id='magicparlabel-57'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-62'><span class="exercise_label">Exercise 1.</span>
+<a id="exer____2" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-64'>(Soil chemistry properties data set.) It contains measurements of various chemical properties of soil samples collected at different locations in a field. These properties include: the acidity or alkalinity of the soil (PH), the salt concentration in the soil (Salinity), and others. It is the R dataset <span style='font-family:monospace;'>soil250{geoR}</span>. Figure <a href="#fig_Soil_chemistry_data">2</a> presents the locations these measurements are taken. The data (measurements) are in fixed locations at a regular grid of points. The domain scientist would be interested in the nutrient levels and pH to assess soil fertility and make recommendations for agricultural practices. The statistician could (i.) estimate/predict values of soil properties at unsampled locations based on measurements at sampled locations; and (ii.) assess the spatial variability of soil properties (nutrient levels and pH) to identify regions with high or low variability. To which principal spatial statistical are would you associate this problem? </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-68'><img style='width:35%;' src='e_cc9c39e4c64a_soil250.png' alt='image: e_cc9c39e4c64a_soil250.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2:  <a id="fig_Soil_chemistry_data" />Soil chemistry data set</span></div>
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-78'><span class="solution__label">Solution.</span>
+Point referenced data, or geostatistcal data</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-84'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-89'><span class="exercise_label">Exercise 2.</span>
+<a id="exer____3" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-91'>(Scallop abundance data) The scallop data is based on a 1990 survey cruise in the Atlantic continental shelf off Long Island, New York, U.S.A. They are available from R as <span style='font-family:monospace;'>scallop {SemiPar}</span>. Figure <a href="#fig_Scallop_abundance_data">3</a> presents <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>148</mn>
+</math>
+ locations (degrees of longitude &amp; latitude) in the Atlantic waters off the coasts of New Jersey and Long Island New York as coordinates and the size of scallop catch at the corresponding location as the dot size. The sites are at fixed locations within an irregular grid of points. Sustainable scallop abundance is critical for the long-term economic viability of the fishing industry. A healthy and stable scallop population supports a consistent source of income for fishermen and related businesses. </div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-92'>To which principal spatial statistical are would you associate this problem? </li>
+<li class="enumerate_item" id='magicparlabel-93'>Can you suggest a Bayesian hierarchical model for this? Justify your suggestion. </li>
+</ol>
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-98'><img style='width:35%;' src='e_d27b7099aab0_scallop.png' alt='image: e_d27b7099aab0_scallop.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Figure 3:  <a id="fig_Scallop_abundance_data" />Scallop abundance data</span></div>
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-108'><span class="solution__label">Solution.</span>
+&#xA0;</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-109'>Point referenced data, or geostatistcal data</li>
+<li class="enumerate_item" id='magicparlabel-110'>It contains <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>148</mn>
+</mrow>
+</math>
+ observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ where the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>i</mi>
+</math>
+-th observation contains the observed scallop catch size <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Z</mi>
+ <mi>i</mi>
+</msub>
+</math>
+ at location specified by coordinate <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mn>1</mn>
+      <mo stretchy='false'>,</mo>
+      <mi>i</mi>
+     </mrow>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mn>2</mn>
+      <mo stretchy='false'>,</mo>
+      <mi>i</mi>
+     </mrow>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ that is the degrees latitude north of the Equator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mrow>
+  <mn>2</mn>
+  <mo stretchy='false'>,</mo>
+  <mi>i</mi>
+ </mrow>
+</msub>
+</math>
+, and degrees longitude west of Greenwich <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mrow>
+  <mn>1</mn>
+  <mo stretchy='false'>,</mo>
+  <mi>i</mi>
+ </mrow>
+</msub>
+</math>
+. 
+<div class='standard' id='magicparlabel-111'>This is definitely a geostatistics problem. Here, we will present a naive way to model it by reflecting what we discussed earlier. </div>
+<dl class='description'>
+<dt class="description_label">Data&#xA0;model</dt>
+<dd class="description_item" id='magicparlabel-112'> One may consider that the observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ at each location are a realization of the actual mean (hence unknown) scallop catch abundance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>Y</mi>
+ <mi>i</mi>
+</msub>
+</math>
+and as it is a count its distribution can be represented as a Poisson distribution, i.e. 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>|</mo>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mover accent='false'>
+  <mo>&#x223C;</mo>
+  <mtext>iid</mtext>
+ </mover>
+ <mtext>Poi</mtext>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>Y</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="20px"/>
+ <mi>i</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>,</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+</dd>
+<dt class="description_label">Spatial&#xA0;process&#xA0;model</dt>
+<dd class="description_item" id='magicparlabel-113'> One may consider that the mean scallop catch abundance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ (over the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+)in log scale is a function where at each finite set of locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ follows a Normal distribution with a mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BC;</mi>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>&#x3BC;</mi>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ parametrized as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>0</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>1</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>2</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>2</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>&#x3B2;</mi>
+    <mn>12</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>1</mn>
+   </msub>
+   <msub>
+    <mi>s</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mtext>at&#0160;a&#0160;location&#0160;s=
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <msub>s
+    <mn>1</mn>
+   </msub>,
+   <msub>s
+    <mn>2</mn>
+   </msub>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup></mtext>
+</mrow>
+</math>
+ with unknown parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+, and covariance matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>C</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ parametrized with covariance function 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3D5;</mi>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mrow>
+     <mi>s</mi>
+     <mo stretchy='false'>-</mo>
+     <mi>s</mi>
+     <mo stretchy='false'>'</mo>
+    </mrow>
+    <mo>&#x2225;</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ to impose that nearer locations cause stronger dependences in the model. Here <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3D5;</mi>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ are unknown parameters.</dd>
+<dt class="description_label">Hierarchical&#xA0;model</dt>
+<dd class="description_item" id='magicparlabel-114'> To sum up, we have build the hierarchical model<a id="eq__3" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <msub>
+        <mi>Z</mi>
+        <mi>i</mi>
+       </msub>
+       <mo stretchy='false'>|</mo>
+       <msub>
+        <mi>Y</mi>
+        <mi>i</mi>
+       </msub>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+       <mover accent='false'>
+        <mo>&#x223C;</mo>
+        <mtext>iid</mtext>
+       </mover>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mtext>Poi</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>&#x3BC;</mi>
+         <mrow>
+          <mo>(</mo>
+          <msub>
+           <mi>s</mi>
+           <mi>i</mi>
+          </msub>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>=</mo>
+         <mo>exp</mo>
+         <mrow>
+          <mo>(</mo>
+          <msub>
+           <mi>Y</mi>
+           <mi>i</mi>
+          </msub>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>,</mo>
+       <mspace width="10px"/>
+       <mtext>data&#0160;model</mtext>
+      </mrow>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>|</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3D5;</mi>
+       <mo>&#x223C;</mo>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <msub>
+        <mtext>N</mtext>
+        <mi>n</mi>
+       </msub>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mi>&#x3B2;</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>C</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>,</mo>
+       <mspace width="20px"/>
+       <mtext>spatial
+       <mspace width="6px"/>process&#0160;model</mtext>
+      </mrow>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mtext>(1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+
+<div class='standard' id='magicparlabel-115'>Figure <a href="#fig_Examples_representing_the">fig:Examples-representing-the</a> shows the hierarchical spatial model <a href="#eq__3">(1)</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ ; the surface corresponds to the spatial process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>Y</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <msup>
+   <mstyle mathvariant='double-struck'>
+    <mi>R</mi>
+   </mstyle>
+   <mn>2</mn>
+  </msup>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ and is presented at three different instances each of them with different values for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3D5;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+, while the dots correspond to the observations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ and their deviation from the spatial process is controlled by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ . </div>
+</dd><dt class="description_label">Bayesian&#xA0;hierarchical&#xA0;model</dt>
+<dd class="description_item" id='magicparlabel-120'> If we work on the fully Bayesian framework, we can complete the model with priors on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for instance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>&#x223C;</mo>
+ <mtext>IG</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BA;</mi>
+    <mi>&#x3C3;</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3BB;</mi>
+    <mi>&#x3C3;</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3D5;</mi>
+ <mo>&#x223C;</mo>
+ <mtext>IG</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BA;</mi>
+    <mi>&#x3D5;</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3BB;</mi>
+    <mi>&#x3D5;</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B2;</mi>
+ <mo>&#x223C;</mo>
+ <msub>
+  <mtext>N</mtext>
+  <mn>4</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>b</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>I</mi>
+   <mi>v</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, with some known hyper-parameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3BA;</mi>
+  <mi>&#x3C3;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>&#x3BB;</mi>
+  <mi>&#x3C3;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>&#x3BA;</mi>
+  <mi>&#x3D5;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>&#x3BB;</mi>
+  <mi>&#x3D5;</mi>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <mi>b</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>v</mi>
+</mrow>
+</math>
+. To sum up, we have build the Bayesian model 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+<mtable>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>|</mo>
+    <msub>
+     <mi>Y</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mover accent='false'>
+     <mo>&#x223C;</mo>
+     <mtext>iid</mtext>
+    </mover>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>Poi</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3BC;</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>i</mi>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>=</mo>
+      <mo>exp</mo>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>Y</mi>
+        <mi>i</mi>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="10px"/>
+    <mtext>data&#0160;model</mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Y</mi>
+    <mo stretchy='false'>|</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B2;</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3D5;</mi>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msub>
+     <mtext>N</mtext>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>S</mi>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="10px"/>
+    <mtext>spatial
+    <mspace width="6px"/>process&#0160;model</mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x3B2;</mi>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msub>
+     <mtext>N</mtext>
+     <mn>4</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>I</mi>
+      <mi>v</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace/>
+    <mtext>hyper-parameter&#0160;prior&#0160;model</mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>IG</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BA;</mi>
+       <mi>&#x3C3;</mi>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3BB;</mi>
+       <mi>&#x3C3;</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace/>
+    <mtext>hyper-parameter&#0160;prior&#0160;model</mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x3D5;</mi>
+    <mo>&#x223C;</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mtext>IG</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BA;</mi>
+       <mi>&#x3D5;</mi>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3BB;</mi>
+       <mi>&#x3D5;</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace/>
+    <mtext>hyper-parameter&#0160;prior&#0160;model</mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</dd>
+</dl>
+</li></ol>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-126'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-131'><span class="exercise_label">Exercise 3.</span>
+<a id="exer____4" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-133'>(Wolfcamp-aquifer data) Figure <a href="#fig_Wolfcamp_aquifer_data">4</a> presents locations and levels (in feet above sea level) of piezometric head for the aquifer; they are obtained by drilling a narrow pipe into the aquifer and letting the water find its own level in the pipe. After rigorous screening of unsuitable wells, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>85</mn>
+</math>
+ remained. There is interest to find where the radionuclide contamination would flow from the site in Deaf Smith County, Texas. Beneath Deaf Smith County is a deep brine aquifer known as the Wolfcamp aquifer, a potential pathway for any radionuclides leaking from the repository. The predicted direction of flow can be used to determine locations of downgradient and upgradient wells for a groundwater monitoring system. A first direction in analyzing this spatial data set is to draw a map of a predicted surface based on the (irregularly located) <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>85</mn>
+</math>
+ data. To which principal spatial statistical are would you associate this problem? </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-137'><img style='width:40%;' src='e_928b9dbca957_wolfcamp-aquifer-original.png' alt='image: e_928b9dbca957_wolfcamp-aquifer-original.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Figure 4:  <a id="fig_Wolfcamp_aquifer_data" />Wolfcamp-aquifer data. Piezometric-head levels (feet above sea level) vs coordinates.</span></div>
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-147'><span class="solution__label">Solution.</span>
+Point referenced data, or geostatistcal data</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-153'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-158'><span class="exercise_label">Exercise 4.</span>
+<a id="exer____4_1" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-160'>(Swiss rainfall data)  Figure <a href="#fig_Swiss_rainfall_data">5</a> presents the locations of the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>100</mn>
+</math>
+ locations in Switzerland as dots whose size and color indicates the amount of the corresponding rainfall measurements (in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>10</mn>
+</math>
+th of mm) taken on May 8, 1986. This is the R data set <span style='font-family:monospace;'>SIC{geoR}</span>. Observation sites are irregularly spaced, and fixed. A scientific objective may be to analyzing rainfall patterns with purpose to optimize crop planting and irrigation schedules. A statistician is able to estimate rainfall values at unsampled locations based on available measurements, create maps that represent the spatial distribution of rainfall, or quantify the uncertainty associated with rainfall estimates and predictions, which are important for risk assessment and decision-making. To which principal spatial statistical are would you associate this problem?</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-172'><img style='width:35%;' src='e_988c6fdf8ef5_sic_100.png' alt='image: e_988c6fdf8ef5_sic_100.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Figure 5:  <a id="fig_Swiss_rainfall_data" />Swiss rainfall data</span></div>
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-191'><span class="solution__label">Solution.</span>
+Point referenced data, or geostatistcal data</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-197'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-202'><span class="exercise_label">Exercise 5.</span>
+<a id="exer____4_1_2" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-204'>(Air pollution in Piemonte.)  Figure <a href="#fig_Air_pollution_data">6</a> presents the average PM10 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mi>g</mi>
+ <mo stretchy='false'>/</mo>
+ <msup>
+  <mi>m</mi>
+  <mn>3</mn>
+ </msup>
+</mrow>
+</math>
+) concentration during October 2005–March 2006 for the 24 monitoring stations in the Piemonte region (Northern Italy). The data (measurements) are at fixed locations at irregular grid points. PM10 is one of the most troublesome pollutants in the area. Environmental agencies need models to predict PM10 at unmonitored sites in order to assess PM10 concentration over an entire region. A geostatistician can build a model which is satisfactory in terms of goodness of fit, interpretability, parsimony, prediction capability and computational costs with purpose to build reliable PM10 concentration maps, equipped with the corresponding uncertainty measure.To which principal spatial statistical are would you associate this problem? </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-212'><img style='width:35%;' src='e_9b7b0d541c66_air_pollution_Piermonte_sites.png' alt='image: e_9b7b0d541c66_air_pollution_Piermonte_sites.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Figure 6:  <a id="fig_Air_pollution_data" />(Air pollution data) Average PM10 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mi>g</mi>
+ <mo stretchy='false'>/</mo>
+ <msup>
+  <mi>m</mi>
+  <mn>3</mn>
+ </msup>
+</mrow>
+</math>
+) concentration during October 2005–March 2006 for the 24 monitoring stations in the Piemonte</span></div>
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-222'><span class="solution__label">Solution.</span>
+Point reference data / geostatistical data</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-228'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-233'><span class="exercise_label">Exercise 6.</span>
+<a id="exer____4_1_2_1" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)<div class='standard' id='magicparlabel-235'>An example of spatio-temporal data where aerial spatial data are time referenced is given in Figure <a href="#fig_Population_of_the">7</a> which shows a spatio-temporal dataset representing the population of the counties of Ohio, USA, from 1968 to 1988. The dataset is available from the SpatialEpiApp R package. Interest lies in not only how the population is only distributed over the spatial domain but also how it evolves during the time. To which principal spatial statistical are would you associate this problem?</div>
+
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-240'><img style='width:100%;' src='e_d104ea86cadf_OhioPop-sptemp.png' alt='image: e_d104ea86cadf_OhioPop-sptemp.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-241'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 7:  <a id="fig_Population_of_the" />Population of the counties of Ohio, USA, from 1968 to 1988.</span></div>
+</div>
+
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-251'><span class="solution__label">Solution.</span>
+Aerial spatio-temporal data</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-257'><hr />
+</div>
+
+<div class='standard' id='magicparlabel-262'><br /></div>
+</section>
+<section>
+<h1 class='part' id='magicparlabel-263'><span class="part_label">Part II</span> Point referenced data / Geostatistics</h1>
 
 </section>
 <section>
-<h1 class='part' id='magicparlabel-223'><span class="part_label">Part II</span> Point referenced data / Geostatistics</h1>
-
-</section>
-<section>
-<h1 class='part' id='magicparlabel-903'><span class="part_label">Part III</span> Aerial unit data / spatial data on lattices</h1>
+<h1 class='part' id='magicparlabel-943'><span class="part_label">Part III</span> Aerial unit data / spatial data on lattices</h1>
 
 
 
