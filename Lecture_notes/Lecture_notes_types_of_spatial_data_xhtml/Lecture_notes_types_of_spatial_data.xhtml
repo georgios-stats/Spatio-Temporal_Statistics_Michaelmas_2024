@@ -1808,7 +1808,7 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
  </msup>
 </mrow>
 </math>
- imposes a spatial random process (or multivariate random field)
+ imposes a spatial random field (or multivariate random process)
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
  <mo>{</mo>
@@ -1827,7 +1827,7 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
  <mo>}</mo>
 </mrow>
 </math>
-which can be modeled as a random function / stochastic process (to be defined later.). </div>
+which can be modeled as a random field / random function / stochastic process (to be defined later.). </div>
 </div>
 <div class='standard' id='magicparlabel-127'>
 <br />
@@ -1873,7 +1873,7 @@ In spatial problems, spatial data <math xmlns='http://www.w3.org/1998/Math/MathM
  <mi>n</mi>
 </msubsup>
 </math>
- are assumed to be realizations of a spatial process (or a multivariate random field)<a id="eq_" />
+ are assumed to be realizations of a random field (or a stochastic processes)<a id="eq_" />
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true'>
  <mtr>
@@ -2522,7 +2522,7 @@ Sometimes the locations at which events occur are random. Typical examples inclu
 Rigorously, the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>S</mi>
 </math>
- is a random set of points; specifically a point process, in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ is a random set of points; specifically a point random field, in <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msup>
  <mstyle mathvariant='double-struck'>
   <mi>R</mi>
@@ -2584,7 +2584,7 @@ In the simplest case, no covariate for <math xmlns='http://www.w3.org/1998/Math/
  <mi>S</mi>
 </mrow>
 </math>
-. We will refer to it as a spatial point process</div>
+. We will refer to it as a spatial point random field</div>
 </div>
 <div class='standard' id='magicparlabel-527'>
 <br />
@@ -2611,14 +2611,14 @@ In the most general case, <math xmlns='http://www.w3.org/1998/Math/MathML'>
  (eg other covariates are associated to the location <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>s</mi>
 </math>
-); these covariates are called marked variables. We will refer to it as a Marked spatial point process.</div>
+); these covariates are called marked variables. We will refer to it as a Marked spatial point random field.</div>
 </div>
 <div class='standard' id='magicparlabel-535'>
 <br />
 </div>
 <div class='note'>
 <div class="note_item" id='magicparlabel-536'><span class="note_label">Note 32.</span>
-Questions in the spatial point pattern problems are mainly whether the pattern of locations is exhibiting complete spatial randomness, clustering (aggregation), or regularity (repulsiveness). In the marked spatial point process where additional covariates are measured, we could possibly investigate the factors/variables associated to this behavior as well. A statistical approach to address such questions is needed as different observers may disagree on the amount of clustering or randomness. Usually patters from a completely random process may appear to be wrongly clustered when just eyeballed by an individual. </div>
+Questions in the spatial point pattern problems are mainly whether the pattern of locations is exhibiting complete spatial randomness, clustering (aggregation), or regularity (repulsiveness). In the marked spatial point random field where additional covariates are measured, we could possibly investigate the factors/variables associated to this behavior as well. A statistical approach to address such questions is needed as different observers may disagree on the amount of clustering or randomness. Usually patters from a completely random field may appear to be wrongly clustered when just eyeballed by an individual. </div>
 </div>
 <div class='standard' id='magicparlabel-541'>
 <br />
@@ -2635,7 +2635,7 @@ Questions in the spatial point pattern problems are mainly whether the pattern o
  <mn>5000</mn>
 </mrow>
 </math>
- meter rectangular stand in a tropical rain forest at Barro Colorado Island, Panama. All spatial coordinates are in the Cartesian coordinate system and in meters. Dataset is available from the R package <span style='font-family:monospace;'>bei{spatstat}</span>. The scientific question may be if the trees are distributed over the area in a uniform way, they form clusters, or they are arrange in a specific pattern. Here, the locations of the dots/trees are not fixed but random/uncertain and of course they are matter of inference. This is a point process as each location is associated to an occurrence only and not any other covariate. The statistician&#8217;s task is to design models able to test and quantify heterogeneity/homogeneity. <div class='float-figure'><div class='plain_layout' id='magicparlabel-550'><img style='width:45%;' src='e_a050c7a112b5_bei_obs.png' alt='image: e_a050c7a112b5_bei_obs.png' /></div>
+ meter rectangular stand in a tropical rain forest at Barro Colorado Island, Panama. All spatial coordinates are in the Cartesian coordinate system and in meters. Dataset is available from the R package <span style='font-family:monospace;'>bei{spatstat}</span>. The scientific question may be if the trees are distributed over the area in a uniform way, they form clusters, or they are arrange in a specific pattern. Here, the locations of the dots/trees are not fixed but random/uncertain and of course they are matter of inference. This is a point random field as each location is associated to an occurrence only and not any other covariate. The statistician&#8217;s task is to design models able to test and quantify heterogeneity/homogeneity. <div class='float-figure'><div class='plain_layout' id='magicparlabel-550'><img style='width:45%;' src='e_a050c7a112b5_bei_obs.png' alt='image: e_a050c7a112b5_bei_obs.png' /></div>
 
 <div class='plain_layout' id='magicparlabel-551'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.6:  Locations of tropical rain forest trees in Barro/Colorado (Spatial point pattern data)<a id="fig_Tropical_rain_forest" /></span></div>
 </div>
@@ -2697,7 +2697,7 @@ The domain scientist is interested in knowing whether the spatial locations are 
  region of the Wade Tract, an old-growth forest in Thomas County, Georgia in <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mn>1979</mn>
 </math>
-. Dataset is available from R package <span style='font-family:monospace;'>bei{spatstat}</span>. Longleaf pine is a fire-adapted species of trees. The domain scientist is interested in knowing whether the spatial locations are spatially random, or clustered, if large (small) trees cluster and how do large and small trees interact. A statistician can design models able to quantify such notions and provide inference. Here, the locations are random (not fixed) and in fact an object of inference. The diameter at breast height recorded along with the tree&#8217;s location is the marked variable, and hence, the whole process is a marked process.  <div class='float-figure'><div class='plain_layout' id='magicparlabel-620'><img style='width:45%;' src='e_188d28829ad6_longleaf_obs.png' alt='image: e_188d28829ad6_longleaf_obs.png' /></div>
+. Dataset is available from R package <span style='font-family:monospace;'>bei{spatstat}</span>. Longleaf pine is a fire-adapted species of trees. The domain scientist is interested in knowing whether the spatial locations are spatially random, or clustered, if large (small) trees cluster and how do large and small trees interact. A statistician can design models able to quantify such notions and provide inference. Here, the locations are random (not fixed) and in fact an object of inference. The diameter at breast height recorded along with the tree&#8217;s location is the marked variable, and hence, the whole random field is a marked point random field.  <div class='float-figure'><div class='plain_layout' id='magicparlabel-620'><img style='width:45%;' src='e_188d28829ad6_longleaf_obs.png' alt='image: e_188d28829ad6_longleaf_obs.png' /></div>
 
 <div class='plain_layout' id='magicparlabel-621'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 2.8:  Longleaf Pines Point Pattern (Spatial point data) <a id="fig_Longleaf_Pines_Point" /></span></div>
 </div>
@@ -2719,7 +2719,7 @@ defined
 rigorously 
 <br />
 later</div>
-</div>In spatial problems, uncertainty is expressed probabilistically through a spatial stochastic process (or a multivariate random field), which can be written most generally as<a id="eq__4" />
+</div>In spatial problems, uncertainty is expressed probabilistically through a spatial random field (or a stochastic process), which can be written most generally as<a id="eq__4" />
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true'>
  <mtr>
@@ -2815,7 +2815,7 @@ The scientific uncertainty (i.e. the (known) uncertainty about the scientific pr
 </div>
 <div class='note'>
 <div class="note_item" id='magicparlabel-636'><span class="note_label">Note 38.</span>
-This spatial stochastic process can be a: geostatistical process, lattice process, or point process depending on the principal spatial statistical area (Section <a href="#sec_Principal_spatial_statistical">2</a>) the application is associated with.</div>
+This spatial random field can be a: geostatistical random field, lattice random field, or point random field depending on the principal spatial statistical area (Section <a href="#sec_Principal_spatial_statistical">2</a>) the application is associated with.</div>
 </div>
 <div class='standard' id='magicparlabel-642'>
 <br />
@@ -2979,7 +2979,7 @@ The measurement uncertainty is quantified via the data model. E.g. the &#8220;no
 The data model is specified to be the conditional distribution of the data <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>Z</mi>
 </math>
- given the spatial stochastic process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ given the spatial random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>Y</mi>
 </math>
  and the <math xmlns='http://www.w3.org/1998/Math/MathML'>
