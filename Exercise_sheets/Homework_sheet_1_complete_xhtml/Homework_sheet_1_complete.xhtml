@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta name="generator" content="LyX 2.4.1" />
+<title>LyX Document</title>
+<style>
+/* Layout-provided Styles */
+div.standard {
+text-align: left;
+
+}
+div.plain_layout {
+text-align: left;
+
+}
+div.theorem {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.theorem_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.exercise {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.exercise_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+ol.enumi   { list-style-type: decimal; }
+ol.enumii  { list-style-type: lower-latin; }
+ol.enumiii { list-style-type: lower-roman; }
+ol.enumiv  { list-style-type: upper-latin; }
+div.solution_ {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.solution__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.Shadowbox { border: solid gray medium; border-bottom: solid black 1ex; border-right: solid black 1ex; padding: 0.5ex; }
+
+
+</style>
+</head>
+<body dir="auto">
+<div class='standard' id='magicparlabel-1'><div class='Shadowbox'><div class='plain_layout' id='magicparlabel-5'>Spatio-temporal statistics (MATH4341)&#xA0;&#xA0;
+Michaelmas term, 2024<div style='height:3ex'></div></div>
+
+<div class='plain_layout' style='text-align: center;' id='magicparlabel-6'><b><span style='font-size:x-large;'>Homework 1: Point referenced data (building concepts)</span></b><div style='height:3ex'></div></div>
+
+<div class='plain_layout' id='magicparlabel-7'>Lecturer: Georgios P. Karagiannis&#xA0;&#xA0; 
+<a href="mailto:georgios.karagiannis@durham.ac.uk">georgios.karagiannis@durham.ac.uk</a></div>
+
+<div class='plain_layout' id='magicparlabel-8'><hr />
+</div>
+
+
+</div></div>
+
+<div class='standard' id='magicparlabel-14'>&#xA0;<div style='height:1ex'></div><div style='height:1ex'></div></div>
+
+<div class='standard' id='magicparlabel-15'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-16'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-17'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-18'><span class="exercise_label">Exercise 1.</span>
+(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+) <div class='standard' id='magicparlabel-20'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>:</mo>
+   <mi>s</mi>
+   <mo>&#x2208;</mo>
+   <msup>
+    <mstyle mathvariant='double-struck'>
+     <mi>R</mi>
+    </mstyle>
+    <mi>d</mi>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be an intrinsic random field with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>t</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ and let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>:</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ be its semivariogram. </div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-25'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>n</mi>
+ </msup>
+</mrow>
+</math>
+ be a vector of constants. Consider sites <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>s</mi>
+   <mn>1</mn>
+  </msub>
+  <mo stretchy='false'>,</mo>
+  <mn>...</mn>
+  <mo stretchy='false'>,</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>n</mi>
+  </msub>
+  <mo>&#x2286;</mo>
+  <msup>
+   <mstyle mathvariant='double-struck'>
+    <mi>R</mi>
+   </mstyle>
+   <mi>d</mi>
+  </msup>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ Show that 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <munderover>
+    <mo>&#x2211;</mo>
+    <mrow>
+     <mi>i</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>1</mn>
+    </mrow>
+    <mi>n</mi>
+   </munderover>
+   <msub>
+    <mi>a</mi>
+    <mi>i</mi>
+   </msub>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>j</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>a</mi>
+  <mi>i</mi>
+ </msub>
+ <msub>
+  <mi>a</mi>
+  <mi>j</mi>
+ </msub>
+ <msub>
+  <mi>c</mi>
+  <mi>I</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mi>I</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>t</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>s</mi>
+    <mn>0</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>t</mi>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>s</mi>
+    <mn>0</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>t</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at some additional <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mn>0</mn>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+.</li>
+<li class="enumerate_item" id='magicparlabel-30'>Show that for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>N</mi>
+ </mstyle>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>a</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>a</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2286;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>n</mi>
+ </msup>
+</mrow>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>a</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, and for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2286;</mo>
+ <msup>
+  <mi>S</mi>
+  <mi>n</mi>
+ </msup>
+</mrow>
+</math>
+, it is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>j</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>a</mi>
+  <mi>i</mi>
+ </msub>
+ <msub>
+  <mi>a</mi>
+  <mi>j</mi>
+ </msub>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2264;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+</li>
+</ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-57'><span class="solution__label">Solution.</span>
+&#xA0;</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-83'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-84'><span class="exercise_label">Exercise 2.</span>
+(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+) <div class='standard' id='magicparlabel-86'>Consider the zero-mean random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>:</mo>
+   <mi>s</mi>
+   <mo>&#x2208;</mo>
+   <msup>
+    <mstyle mathvariant='double-struck'>
+     <mi>R</mi>
+    </mstyle>
+    <mi>d</mi>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with covariogram function given by 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msup>
+      <mi>&#x3BE;</mi>
+      <mn>2</mn>
+     </msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>+</mo>
+       <mi>&#x3C1;</mi>
+       <mrow>
+        <mo>&#x2225;</mo>
+        <mi>h</mi>
+        <mo>&#x2225;</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>exp</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mi>&#x3C1;</mi>
+       <mrow>
+        <mo>&#x2225;</mo>
+        <mi>h</mi>
+        <mo>&#x2225;</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo stretchy='false'>,</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>h</mi>
+     <mo stretchy='false'>&gt;</mo>
+     <mn>0</mn>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msup>
+      <mi>&#x3BD;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>+</mo>
+     <msup>
+      <mi>&#x3BE;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>,</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>h</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>0</mn>
+    </mrow>
+   </mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</math>
+</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-87'>Compute the semivariogram for the random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <msup>
+   <mstyle mathvariant='double-struck'>
+    <mi>R</mi>
+   </mstyle>
+   <mi>d</mi>
+  </msup>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-88'>What are the nugget, sill and partial sill for this covariance model? Justify your answer.</li>
+<li class="enumerate_item" id='magicparlabel-89'>Would the slightly altered covariance function defined below be a good model for spatial data for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3D5;</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+? Justify your answer.
+<div class='standard' id='magicparlabel-90'>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msup>
+      <mi>&#x3BE;</mi>
+      <mn>2</mn>
+     </msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>+</mo>
+       <mi>&#x3C1;</mi>
+       <mrow>
+        <mo>&#x2225;</mo>
+        <mi>h</mi>
+        <mo>&#x2225;</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>exp</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mi>&#x3C1;</mi>
+       <mrow>
+        <mo>&#x2225;</mo>
+        <mi>h</mi>
+        <mo>&#x2225;</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo stretchy='false'>+</mo>
+     <mi>&#x3D5;</mi>
+     <mo stretchy='false'>,</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>h</mi>
+     <mo stretchy='false'>&gt;</mo>
+     <mn>0</mn>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msup>
+      <mi>&#x3BD;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>+</mo>
+     <msup>
+      <mi>&#x3BE;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>+</mo>
+     <mi>&#x3D5;</mi>
+     <mo stretchy='false'>,</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>h</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>0</mn>
+    </mrow>
+   </mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</math>
+</div>
+</li></ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-96'><span class="solution__label">Solution.</span>
+&#xA0; </div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-116'>
+<br />
+</div>
+</body>
+</html>
