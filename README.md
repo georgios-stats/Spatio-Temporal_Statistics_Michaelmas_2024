@@ -120,7 +120,13 @@ It contains all the exercises and solutions
 
 #### Homework 1  
 
-... Not available yet  
++ [Problems only (PDF)](./Exercise_sheets/Homework_sheet_1_questions.pdf)  
+
++ [Problems only (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_1_complete_xhtml/Homework_sheet_1_questions.xhtml)  
+
++ [Problems and solutions (PDF)](./Exercise_sheets/Homework_sheet_1_complete.pdf)  
+
++ [Problems and solutions (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_1_complete_xhtml/Homework_sheet_1_complete.xhtml)  
 
 #### Homework 2  
 
