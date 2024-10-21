@@ -4,6 +4,9 @@
 <meta name="generator" content="LyX 2.4.1" />
 <title>LyX Document</title>
 <style>
+/* LyX Provided Styles */
+mstyle.math { font-style: italic; }
+
 /* Layout-provided Styles */
 div.standard {
 text-align: left;
@@ -190,6 +193,46 @@ margin-top: 0.4ex;
 text-align: left;
 
 }
+ul.itemize {
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+margin-left: 3ex;
+text-align: left;
+
+}
+div.remark {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.remark_label {
+font-weight: normal;
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+
+}
+dl.description dt { font-weight: bold; }
+div.assumption {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.assumption_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
 div.Shadowbox { border: solid gray medium; border-bottom: solid black 1ex; border-right: solid black 1ex; padding: 0.5ex; }
 div.marginal {
 	border: 2px solid black;
@@ -212,6 +255,27 @@ div.float-caption {
 	border: 2px solid black;
 	padding: 1ex;
 	margin: 1ex;
+}
+span.foot_label {
+	vertical-align: super;
+	font-size: smaller;
+	font-weight: bold;
+	text-decoration: underline;
+}
+div.foot {
+	display: inline;
+	font-size: small;
+	font-weight: normal;
+	font-family: serif;
+	font-variant: normal;
+	font-style: normal;
+}
+div.foot_inner { display: none; }
+div.foot:hover div.foot_inner {
+	display: block;
+	border: 1px double black;
+	margin: 0em 1em;
+	padding: 1em;
 }
 
 
@@ -8187,14 +8251,7889 @@ then random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </div>
 
 
+</section>
+<section>
+<h2 class='section' id='magicparlabel-582'><span class="section_label">11</span> Isotropy </h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-583'><span class="note_label">Note 68.</span>
+Isotropy introduses the assumption of &#8220;rotation invariance&#8221;.</div>
+</div>
+<div class='standard' id='magicparlabel-584'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-585'><span class="note_label">Note 69.</span>
+Isotropy applies to both intrinsic and (weakly) stationary random fields. </div>
+</div>
+<div class='standard' id='magicparlabel-586'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-587'><span class="definition_label">Definition 70.</span>
+An intrinsic random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is isotropic iff <a id="eq__7" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x2200;</mi>
+    <mi>s</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>t</mi>
+    <mo>&#x2208;</mo>
+    <mstyle mathvariant='script'>
+     <mi>S</mi>
+    </mstyle>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <mfrac>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    <mtext>Var</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x3B3;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mo>&#x2225;</mo>
+      <mrow>
+       <mi>t</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>s</mi>
+      </mrow>
+      <mo>&#x2225;</mo>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mtext>for&#0160;some&#0160;function&#0160;
+    <mi>&#x3B3;</mi>:
+    <msub>
+     <mstyle mathvariant='double-struck'>R
+     </mstyle>
+     <mo>&#x2265;</mo>
+     <mn>0</mn>
+    </msub>
+    <mo>&#x2192;</mo>
+    <mstyle mathvariant='double-struck'>R
+    </mstyle></mtext>
+    <mn>.</mn>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(11.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-588'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-589'><span class="definition_label">Definition 71.</span>
+Isotropic semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>H</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ is the semivariogram of the isotropic random field (sometimes for simplicity of notation we use <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>:</mo>
+ <msub>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mrow>
+   <mo>&#x2265;</mo>
+   <mn>0</mn>
+  </mrow>
+ </msub>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mi>h</mi>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>s</mi>
+     <mo stretchy='false'>-</mo>
+     <mi>h</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-605'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-606'><span class="definition_label">Definition 72.</span>
+Isotropic covariance function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo>&#x00D7;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ is called the covariance function satisfying <a href="#eq__7">(11.1)</a>. </div>
+</div>
+<div class='standard' id='magicparlabel-607'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-608'><span class="definition_label">Definition 73.</span>
+Isotropic covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>H</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ of a weakly stationary process is the covariogram associated to an isotropic semivariogram. Sometimes for simplicity of notation we use <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mo stretchy='false'>:</mo>
+ <msub>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mrow>
+   <mo>&#x2265;</mo>
+   <mn>0</mn>
+  </mrow>
+ </msub>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mi>h</mi>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ from <a href="#eq__7">(11.1)</a>.</div>
+</div>
+<section>
+<h3 class='subsection' id='magicparlabel-614'><span class="subsection_label">11.1</span> <a id="subsec_Parametric_forms_of" />Popular isotropic covariance functions</h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-615'><span class="note_label">Note 74.</span>
+Isotropic semivariograms can be computed from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ given covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-616'>
+<br />
+</div>
+<section>
+<h4 class='subsubsection' id='magicparlabel-617'><span class="subsubsection_label">11.1.1</span> Nugget-effect </h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-618'><span class="note_label">Note 75.</span>
+Nugget-effect covariogram takes the form
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msub>
+  <mtext>
+  <mn>1</mn></mtext>
+  <mrow>{
+   <mn>0</mn>}
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mi>h</mi>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+. It is associate to white noise. It is used to model a discontinuity in the origin of the covariogram / sem-variogram.</div>
+</div>
+</section>
+<section>
+<h4 class='subsubsection' id='magicparlabel-631'><span class="subsubsection_label">11.1.2</span> Matern&#xA0;c.f. </h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-632'><span class="note_label">Note 76.</span>
+<div class='marginal'><div class='plain_layout' id='magicparlabel-636'>No need to 
+<br />
+memorize
+<br />
+<a href="#eq__73">(11.2)</a></div>
+</div>Matern covariogram takes the form <a id="eq__73" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>h</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mfrac>
+     <msup>
+      <mn>2</mn>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>-</mo>
+       <mi>&#x3BD;</mi>
+      </mrow>
+     </msup>
+     <mrow>
+      <mi>&#x393;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>&#x3BD;</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mfrac>
+       <mrow>
+        <mo>&#x2225;</mo>
+        <mi>h</mi>
+        <mo>&#x2225;</mo>
+       </mrow>
+       <mi>&#x3D5;</mi>
+      </mfrac>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x3BD;</mi>
+    </msup>
+    <msub>
+     <mi>K</mi>
+     <mi>&#x3BD;</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mfrac>
+      <mrow>
+       <mo>&#x2225;</mo>
+       <mi>h</mi>
+       <mo>&#x2225;</mo>
+      </mrow>
+      <mi>&#x3D5;</mi>
+     </mfrac>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(11.2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3D5;</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ , and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BD;</mi>
+ <mo>&#x2265;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ . Parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BD;</mi>
+</math>
+ controls the variogram&#8217;s regularity at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+</math>
+ which in turn controls the quadratic mean (q.m.) regularity of the associated process. For <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BD;</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>/</mo>
+ <mn>2</mn>
+</mrow>
+</math>
+, we get the exponential c.f.,
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <mn>1</mn>
+    <mi>&#x3D5;</mi>
+   </mfrac>
+   <msub>
+    <mrow>
+     <mo>&#x2225;</mo>
+     <mi>h</mi>
+     <mo>&#x2225;</mo>
+    </mrow>
+    <mn>1</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ which is not differentiable at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, while for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BD;</mi>
+ <mo>&#x2192;</mo>
+ <mi>&#x221E;</mi>
+</mrow>
+</math>
+, we get the Gaussian c.f.
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <mn>1</mn>
+    <mi>&#x3D5;</mi>
+   </mfrac>
+   <msubsup>
+    <mrow>
+     <mo>&#x2225;</mo>
+     <mi>h</mi>
+     <mo>&#x2225;</mo>
+    </mrow>
+    <mn>2</mn>
+    <mn>2</mn>
+   </msubsup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ which is infinite differentiable. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3D5;</mi>
+</math>
+ is a range parameter, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ is the (partial) sill parameter. </div>
+</div>
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-657'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-661'><img style='width:33%;' src='e_22d24b1cd5e4_cv_gauss.png' alt='image: e_22d24b1cd5e4_cv_gauss.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mtext>Gauss</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-669'><img style='width:33%;' src='e_f5d1d7939c83_cv_nugget.png' alt='image: e_f5d1d7939c83_cv_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mtext>Nugget</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-677'><img style='width:33%;' src='e_0579a6439b86_cv_gauss_nugget.png' alt='image: e_0579a6439b86_cv_gauss_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mtext>Gauss</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>c</mi>
+  <mtext>Nugget</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
 
 
+<div class='plain_layout' id='magicparlabel-682'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-686'><img style='width:33%;' src='e_b0d15bff3fe1_sv_gauss.png' alt='image: e_b0d15bff3fe1_sv_gauss.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>Gauss</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-694'><img style='width:33%;' src='e_aa3d686ec626_sv_nugget.png' alt='image: e_aa3d686ec626_sv_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>Nugget</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-702'><img style='width:33%;' src='e_9414f9eac81c_sv_gauss_nugget.png' alt='image: e_9414f9eac81c_sv_gauss_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>Gauss</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>Nugget</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
 
-<div class='standard' id='magicparlabel-961'>
+
+<div class='plain_layout' id='magicparlabel-707'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-711'><img style='width:33%;' src='e_9dea7a67eba9_matern_cv_vs_nu.png' alt='image: e_9dea7a67eba9_matern_cv_vs_nu.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>c</mi>
+ <mtext>Matern</mtext>
+</msub>
+</math>
+</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-731'><img style='width:33%;' src='e_4c7004b5c186_gaussian_cv_vs_sig2_phi.png' alt='image: e_4c7004b5c186_gaussian_cv_vs_sig2_phi.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mtext>Gauss</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>;</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-739'><img style='width:33%;' src='e_d20a93d52e08_cv_gauss_exp_spher_nugget.png' alt='image: e_d20a93d52e08_cv_gauss_exp_spher_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure i:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mtext>
+  <mstyle class='math'>
+   <mo>&#x22C5;</mo>
+  </mstyle></mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-744'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 11.1:  Covariogrames <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and semivariogrames <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</span></div>
+</div>
+
+</section>
+<section>
+<h4 class='subsubsection' id='magicparlabel-749'><span class="subsubsection_label">11.1.3</span> Spherical&#xA0;c.f. </h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-750'><span class="note_label">Note 77.</span>
+&#xA0;<div class='foot'><span class="foot_label">1</span><div class="foot_inner"><div class='plain_layout' id='magicparlabel-754'>For it&#8217;s derivation see Ch 8 in [<a href="#Wackernagel2003">4.</a>]</div>
+</div></div>Spherical covariograme takes the form <div class='marginal'><div class='plain_layout' id='magicparlabel-767'>No need to 
+<br />
+memorize
+<br />
+<a href="#eq__14">(11.3)</a></div>
+</div><a id="eq__14" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>h</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mn>1</mn>
+          <mo stretchy='false'>-</mo>
+          <mfrac>
+           <mn>3</mn>
+           <mn>2</mn>
+          </mfrac>
+          <mfrac>
+           <msub>
+            <mrow>
+             <mo>&#x2225;</mo>
+             <mi>h</mi>
+             <mo>&#x2225;</mo>
+            </mrow>
+            <mn>1</mn>
+           </msub>
+           <mi>&#x3D5;</mi>
+          </mfrac>
+          <mo stretchy='false'>+</mo>
+          <mfrac>
+           <mn>1</mn>
+           <mn>2</mn>
+          </mfrac>
+          <msup>
+           <mrow>
+            <mo>(</mo>
+            <mfrac>
+             <msub>
+              <mrow>
+               <mo>&#x2225;</mo>
+               <mi>h</mi>
+               <mo>&#x2225;</mo>
+              </mrow>
+              <mn>1</mn>
+             </msub>
+             <mi>&#x3D5;</mi>
+            </mfrac>
+            <mo>)</mo>
+           </mrow>
+           <mn>3</mn>
+          </msup>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <msub>
+         <mrow>
+          <mo>&#x2225;</mo>
+          <mi>h</mi>
+          <mo>&#x2225;</mo>
+         </mrow>
+         <mn>1</mn>
+        </msub>
+        <mo>&#x2264;</mo>
+        <mi>&#x3D5;</mi>
+       </mrow>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <msub>
+         <mrow>
+          <mo>&#x2225;</mo>
+          <mi>h</mi>
+          <mo>&#x2225;</mo>
+         </mrow>
+         <mn>1</mn>
+        </msub>
+        <mo stretchy='false'>&gt;</mo>
+        <mi>&#x3D5;</mi>
+       </mrow>
+      </mtd>
+     </mtr>
+    </mtable>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mi>h</mi>
+    <mo>&#x2208;</mo>
+    <msup>
+     <mstyle mathvariant='double-struck'>
+      <mi>R</mi>
+     </mstyle>
+     <mn>3</mn>
+    </msup>
+    <mn>.</mn>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(11.3)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3D5;</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+. The c.f. starts from its maximum value <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ at the origin, then steadily decreases, and finally vanishes when its range <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3D5;</mi>
+</math>
+ is reached. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3D5;</mi>
+</math>
+ is a range parameter, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ is the (partial) sill parameter. </div>
+</div>
+
+
+<div class='standard' id='magicparlabel-786'>
+<br />
+</div>
+</section>
+</section>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-787'><span class="section_label">12</span> Anisotropy</h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-788'><span class="note_label">Note 78.</span>
+Dependence between <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mi>s</mi>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>+</mo>
+   <mi>h</mi>
+  </mrow>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a function of both the magnitude and the direction of separation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+. This can be caused by the underlying physical process evolving differently in space (e.g., vertical and horizontal axes).</div>
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-789'><span class="definition_label">Definition 79.</span>
+<a id="def_The_variogram_" />The semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>H</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ is anisotropic if there are <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>1</mn>
+</msub>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>2</mn>
+</msub>
+</math>
+ with same length <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+</mrow>
+</math>
+ but different direction <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>h</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>/</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+ <mo>&#x2260;</mo>
+ <msub>
+  <mi>h</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>/</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+</mrow>
+</math>
+ that produce different semivariograms <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2260;</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-790'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-791'><span class="definition_label">Definition 80.</span>
+The intrinsically random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is anisotropic if its semivariogram is anisotropic.</div>
+</div>
+<div class='standard' id='magicparlabel-796'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-797'><span class="definition_label">Definition 81.</span>
+<a id="def_The_covariogram_" />The covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>H</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ is anisotropic if there are <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>1</mn>
+</msub>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>2</mn>
+</msub>
+</math>
+ with same length <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+</mrow>
+</math>
+ but different direction <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>h</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>/</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+ <mo>&#x2260;</mo>
+ <msub>
+  <mi>h</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>/</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>&#x2225;</mo>
+ </mrow>
+</mrow>
+</math>
+ that produce different covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2260;</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-798'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-799'><span class="definition_label">Definition 82.</span>
+The (weakly) stationary random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is anisotropic if its covariogram is anisotropic.</div>
+</div>
+<div class='standard' id='magicparlabel-800'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-801'><span class="note_label">Note 83.</span>
+For brevity, below we discuss about intrinsic random fields and semivariograms, however the concepts/definitions apply to stationary random fields and covariograms when defined, as in Defs <a href="#def_The_variogram_">79</a> &amp; <a href="#def_The_covariogram_">81</a>.</div>
+</div>
+<div class='standard' id='magicparlabel-802'>
 <br />
 </div>
 
 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-807'>  <span class='float-caption-Standard float-caption float-caption-standard'>Figure 12.1:  Isotropy vs Anisotropy</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-823'><img style='width:33%;' src='e_0e37c50f8f71_geometric-anisotropy-cartoon.png' alt='image: e_0e37c50f8f71_geometric-anisotropy-cartoon.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Geometric_anisotropy" />Geometric anisotropy</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-831'><img style='width:33%;' src='e_2c786c9e3690_zonal-anisotropy-cartoon.png' alt='image: e_2c786c9e3690_zonal-anisotropy-cartoon.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Zonal anisotropy</span></div>
+</div>
+
+</div>
+
+<section>
+<h3 class='subsection' id='magicparlabel-840'><span class="subsection_label">12.1</span> Geometric anisotropy</h3>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-841'><span class="definition_label">Definition 84.</span>
+The semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>g
+  <mn>.</mn>a
+  <mn>.</mn></mtext>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>H</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ exhibits geometric anisotropy if it results from an <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+-linear deformation of an isotropic semivariogram with function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>iso</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+; i.e.
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>g
+  <mn>.</mn>a
+  <mn>.</mn></mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>iso</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mrow>
+     <mi>A</mi>
+     <mi>h</mi>
+    </mrow>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mn>2</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-842'><span class="note_label">Note 85.</span>
+Such semivariograms have the same sill in all directions but with ranges that vary depending on the direction. See Figure    <a href="#fig_Geometric_anisotropy">a</a>.</div>
+</div>
+<div class='standard' id='magicparlabel-843'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-844'><span class="example_label">Example 86.</span>
+<a id="exa_For_instance__if" />For instance, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>g
+  <mn>.</mn>a
+  <mn>.</mn></mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>iso</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msqrt>
+   <mrow>
+    <msup>
+     <mi>h</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mi>Q</mi>
+    <mi>h</mi>
+   </mrow>
+  </msqrt>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Q</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>A</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>A</mi>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-845'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-846'><span class="example_label">Example 87.</span>
+[Rotating and dilating an ellipsoid in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>2</mn>
+</math>
+D] Consider a coordinate system for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>h</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>h</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+. We wish to find a new coordinate system for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+ in which the iso-semivariogram lines are spherical.</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-847'>[Rotate] Apply rotation matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+ such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+</mrow>
+</math>
+. In 2D, it is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>R</mi>
+ <mo stretchy='false'>=</mo>
+ <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo>cos</mo>
+     <mrow>
+      <mo>(</mo>
+      <mi>&#x3B8;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo>sin</mo>
+     <mrow>
+      <mo>(</mo>
+      <mi>&#x3B8;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mo>sin</mo>
+     <mrow>
+      <mo>(</mo>
+      <mi>&#x3B8;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo>cos</mo>
+     <mrow>
+      <mo>(</mo>
+      <mi>&#x3B8;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+ </mtable>
+ <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+ <mo stretchy='false'>,</mo>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mtext>for</mtext>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mi>&#x3B8;</mi>
+ <mo>&#x2208;</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <mn>2</mn>
+   <mi>&#x3C0;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mtext>is&#0160;the&#0160;rotation&#0160;angle</mtext>
+ <mn>.</mn>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-848'>[Dilate] Apply a dilation of the principal axes of the ellipsoid using a diagonal matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msqrt>
+  <mi>&#x39B;</mi>
+ </msqrt>
+ <mo stretchy='false'>=</mo>
+ <mtext>diag</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msqrt>
+    <msub>
+     <mi>&#x3BB;</mi>
+     <mn>1</mn>
+    </msub>
+   </msqrt>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msqrt>
+    <msub>
+     <mi>&#x3BB;</mi>
+     <mi>n</mi>
+    </msub>
+   </msqrt>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mover>
+  <mi>h</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mi>&#x39B;</mi>
+ </msqrt>
+ <mi>h</mi>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+. </li>
+</ol>
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-853'><img style='width:33%;' src='e_69bfd0560639_axis-system-rotation.png' alt='image: e_69bfd0560639_axis-system-rotation.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-854'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 12.2:  Rotation of the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>2</mn>
+</math>
+D coordinate system</span></div>
+</div>
+
+
+<div class='standard' id='magicparlabel-859'>Now the ellipsoids become spheres with radius <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>r</mi>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mover>
+    <mi>h</mi>
+    <mo stretchy='true'>&#x02DC;</mo>
+   </mover>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mrow>
+   <msup>
+    <mover>
+     <mi>h</mi>
+     <mo stretchy='true'>&#x02DC;</mo>
+    </mover>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <mover>
+    <mi>h</mi>
+    <mo stretchy='true'>&#x02DC;</mo>
+   </mover>
+  </mrow>
+ </msqrt>
+</mrow>
+</math>
+. This yields the equation of an ellipsoid in the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+ coordinate system 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mi>h</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>R</mi>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <mi>&#x39B;</mi>
+   <mi>R</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>r</mi>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+ where the diameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>d</mi>
+ <mi>j</mi>
+</msub>
+</math>
+ (principal axes) of the ellipsoid along the principal directions are 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>d</mi>
+  <mi>j</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>2</mn>
+ <mi>r</mi>
+ <mo stretchy='false'>/</mo>
+ <msqrt>
+  <msub>
+   <mi>&#x3BB;</mi>
+   <mi>j</mi>
+  </msub>
+ </msqrt>
+</mrow>
+</math>
+ and the principal direction is the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>j</mi>
+</math>
+-th column of the rotation matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>R</mi>
+ <mrow>
+  <mo stretchy='false'>:</mo>
+  <mo stretchy='false'>,</mo>
+  <mi>j</mi>
+ </mrow>
+</msub>
+</math>
+. </div>
+
+<div class='standard' id='magicparlabel-860'>Hence the anisotropic semivariogram is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>g
+  <mn>.</mn>a
+  <mn>.</mn></mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mtext>iso</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msqrt>
+   <mrow>
+    <msup>
+     <mi>h</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mi>Q</mi>
+    <mi>h</mi>
+   </mrow>
+  </msqrt>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Q</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>R</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>&#x39B;</mi>
+ <mi>R</mi>
+</mrow>
+</math>
+. This derivation extends to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>d</mi>
+</math>
+ dimensions.</div>
+</div>
+<div class='standard' id='magicparlabel-861'>
+<br />
+</div>
+
+
+
+<div class='standard' id='magicparlabel-868'>
+<br />
+</div>
+
+
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-879'><span class="subsection_label">12.2</span> Zonal (or stratified) anisotropy</h3>
+<div class='standard' id='magicparlabel-880'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-881'><span class="definition_label">Definition 88.</span>
+Support anisotropy is called the type of anysotropy that the semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ depends only on certain coordinates of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-882'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-883'><span class="example_label">Example 89.</span>
+If it is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>=</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>h</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>,</mo>
+     <msub>
+      <mi>h</mi>
+      <mn>2</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>h</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, then I ve support anisotropy</div>
+</div>
+<div class='standard' id='magicparlabel-884'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-885'><span class="definition_label">Definition 90.</span>
+Zonal anisotropy occurs when the semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the sum of several components each with a support anisotropy. </div>
+</div>
+<div class='standard' id='magicparlabel-886'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-887'><span class="example_label">Example 91.</span>
+Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ be semivariogram with sills <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>v</mi>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>v</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ correspondingly. If it is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>=</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>h</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>,</mo>
+     <msub>
+      <mi>h</mi>
+      <mn>2</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>'</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <msub>
+    <mi>h</mi>
+    <mn>1</mn>
+   </msub>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>'</mo>
+ <mrow>
+  <mo>(</mo>
+  <msqrt>
+   <mrow>
+    <mrow>
+     <mo>&#x2225;</mo>
+     <msub>
+      <mi>h</mi>
+      <mn>1</mn>
+     </msub>
+     <mo>&#x2225;</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mrow>
+     <mo>&#x2225;</mo>
+     <msub>
+      <mi>h</mi>
+      <mn>2</mn>
+     </msub>
+     <mo>&#x2225;</mo>
+    </mrow>
+   </mrow>
+  </msqrt>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, then I &#8217;ve Zonal anisotropy because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B3;</mi>
+</math>
+ has a sill <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>v</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>+</mo>
+ <mi>v</mi>
+ <mo stretchy='false'>'</mo>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ is direction <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mn>0</mn>
+  <mo stretchy='false'>,</mo>
+  <mn>1</mn>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ and a sill <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>v</mi>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+ in direction <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mn>1</mn>
+  <mo stretchy='false'>,</mo>
+  <mn>0</mn>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-888'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-889'><span class="note_label">Note 92.</span>
+We have Zonal anisotropy then the semivariogram calculated in different directions suggest a different value for the sill (and possibly the range). </div>
+</div>
+<div class='standard' id='magicparlabel-890'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-891'><span class="note_label">Note 93.</span>
+If in 2D case, the sill in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>1</mn>
+</msub>
+</math>
+ is larger than that in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>2</mn>
+</msub>
+</math>
+, we can model zonal anysotropy of random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ by assuming <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>I</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>A</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>I</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is an isotropic random field with isotropic semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3B3;</mi>
+ <mi>I</mi>
+</msub>
+</math>
+ along dimension of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>1</mn>
+</msub>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is an process with anisotropic semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3B3;</mi>
+ <mi>I</mi>
+</msub>
+</math>
+ without effect on dimension <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>h</mi>
+ <mn>1</mn>
+</msub>
+</math>
+; i.e. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Z</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>I</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>A</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+
+
+
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-911'><span class="subsection_label">12.3</span> Non-linear deformations</h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-912'><span class="note_label">Note 94.</span>
+A (rather too general) non-stationary non-intrinsic random field model can be specified by considering semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>2</mn>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>t</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>2</mn>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>o</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mrow>
+    <mi>G</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>G</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ such that a bijective non-linear (function) deformation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>G</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of space <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mstyle mathvariant='script'>
+ <mi>S</mi>
+</mstyle>
+</math>
+ has been applied on the isotropic semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <msub>
+  <mrow/>
+  <mi>o</mi>
+ </msub>
+</mrow>
+</math>
+. For instance, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <msub>
+  <mrow/>
+  <mi>o</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mo stretchy='false'>/</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>G</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>s</mi>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+ as a deterministic function. Now, if function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>G</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is considered as unknown, one can model it as a random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>G</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ with semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>2</mn>
+ <mtext>Var</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>G</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>G</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>t</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>2</mn>
+ <mi>&#x3B3;</mi>
+ <msub>
+  <mo stretchy='false'>'</mo>
+  <mi>o</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mrow>
+    <mi>G</mi>
+    <mo stretchy='false'>'</mo>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>G</mi>
+    <mo stretchy='false'>'</mo>
+    <mrow>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and so on...; then we will be talking about deep learning. </div>
+</div>
+
+</section>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-922'><span class="section_label">13</span> Geometrical properties of random fields</h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-923'><span class="note_label">Note 95.</span>
+We discuss basic geometric properties of random field we will use for modeling, as it can give us a deeper intuition on how to design appropriate spatial statistical models.</div>
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-924'><span class="definition_label">Definition 96.</span>
+(Continuity in quadratic mean (q.m.) ) Second-order random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is q.m. continuous at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+ if 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </munder>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>+</mo>
+      <mi>h</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mn>0.</mn>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-925'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-926'><span class="note_label">Note 97.</span>
+Consider random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ .Then
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mtext>E</mtext>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>s</mi>
+         <mo stretchy='false'>+</mo>
+         <mi>h</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>-</mo>
+       <mi>Z</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>s</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mtext>E</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Z</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>s</mi>
+           <mo stretchy='false'>+</mo>
+           <mi>h</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>-</mo>
+       <mtext>E</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Z</mi>
+         <mrow>
+          <mo>(</mo>
+          <mi>s</mi>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>+</mo>
+    <mtext>Var</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>s</mi>
+        <mo stretchy='false'>+</mo>
+        <mi>h</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+<ul class='lyxitem lyxitemi'>
+<li class="itemize_item" id='magicparlabel-927'>If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is intrinsic r.f., then 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>+</mo>
+      <mi>h</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is q.m. continuous iff <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </munder>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </li>
+<li class="itemize_item" id='magicparlabel-928'>If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is stationary r.f., then 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>+</mo>
+      <mi>h</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>c</mi>
+   <mrow>
+    <mo>(</mo>
+    <mn>0</mn>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>c</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>h</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is q.m. continuous iff <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </munder>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ ( i.e. ,<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>c</mi>
+</math>
+ is continuous). </li>
+</ul>
+</div>
+
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-951'><span class="definition_label">Definition 98.</span>
+Differentiable in quadratic mean (q.m.) ) Second-order random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is q.m. differentiable at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+ there exist <a id="eq__10" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mover>
+     <mi>Z</mi>
+     <mo stretchy='true'>&#x02D9;</mo>
+    </mover>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <munder>
+     <mo>lim</mo>
+     <mrow>
+      <mi>h</mi>
+      <mo>&#x2192;</mo>
+      <mn>0</mn>
+     </mrow>
+    </munder>
+    <mfrac>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>s</mi>
+        <mo stretchy='false'>+</mo>
+        <mi>h</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mi>h</mi>
+    </mfrac>
+    <mn>.</mn>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mtext>in</mtext>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mtext>q
+    <mn>.</mn>m</mtext>
+    <mn>.</mn>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(13.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-952'>
+<br />
+</div>
+<div class='proposition'>
+<div class="proposition_item" id='magicparlabel-953'><span class="proposition_label">Proposition 99.</span>
+Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>t</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be the covariance function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>:</mo>
+   <mi>s</mi>
+   <mo>&#x2208;</mo>
+   <mstyle mathvariant='script'>
+    <mi>S</mi>
+   </mstyle>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ . Then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is everywhere differentiable if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mfrac>
+  <msup>
+   <mi>&#x2202;</mi>
+   <mn>2</mn>
+  </msup>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <mi>s</mi>
+   <mi>&#x2202;</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>t</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ exists and it is finite. Also, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mfrac>
+  <msup>
+   <mi>&#x2202;</mi>
+   <mn>2</mn>
+  </msup>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <mi>s</mi>
+   <mi>&#x2202;</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>t</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the covariance function of <a href="#eq__10">(13.1)</a>.</div>
+</div>
+<div class='standard' id='magicparlabel-954'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-955'><span class="example_label">Example 100.</span>
+The process with exponential c.f. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mrow>
+    <mo>|</mo>
+    <mi>h</mi>
+    <mo>|</mo>
+   </mrow>
+   <mo stretchy='false'>/</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is continuous because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </munder>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ but not differentiable because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mfrac>
+  <msup>
+   <mi>&#x2202;</mi>
+   <mn>2</mn>
+  </msup>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <msup>
+    <mi>h</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mfrac>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ does not exist at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-956'>
+<br />
+</div>
+</section>
+</section>
+<section>
+<h1 class='part' id='magicparlabel-957'><span class="part_label">Part II</span> Model building &amp; related parametric inference</h1>
+<section>
+<h2 class='section' id='magicparlabel-958'><span class="section_label">14</span> The Geostatistical model (the big picture)<a id="sec_The_Geostatistical_model" /></h2>
+<section>
+<h3 class='subsection' id='magicparlabel-959'><span class="subsection_label">14.1</span> Linear Model of Regionalization </h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-960'><span class="note_label">Note 101.</span>
+A spatial phenomenon can be thought as being the sum of several independent subphenomena acting at different characteristic scales. A linear model can be set up to split the stochastic process representing the phenomenon into several uncorrelated stochastic processes, each with a different variogram or covariance function and characterizing different aspect of the overall phenomenon under investigation.</div>
+</div>
+<section>
+<h4 class='subsubsection' id='magicparlabel-961'><span class="subsubsection_label">14.1.1</span> Decomposition of the random field</h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-962'><span class="note_label">Note 102.</span>
+The linear model of regionalization consider the decomposition of the random field of interest <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as a summation of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>m</mi>
+</math>
+ independent zero-mean random fields <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mi>j</mi>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>;</mo>
+   <mi>s</mi>
+   <mo>&#x2208;</mo>
+   <mstyle mathvariant='script'>
+    <mi>S</mi>
+   </mstyle>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>j</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>0</mn>
+ </mrow>
+ <mi>m</mi>
+</msubsup>
+</math>
+ each of them characterizing different spatial scales, as <a id="eq__13" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>+</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>m</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(14.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be a deterministic drift (or trend) function.</div>
+</div>
+<div class='standard' id='magicparlabel-963'>
+<br />
+</div>
+<div class='remark'>
+<div class="remark_item" id='magicparlabel-964'><span class="remark_label">Remark 103.</span>
+In <a href="#eq__13">(14.1)</a>, let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>j</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be intrinsic random field with semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>j</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and mutually independent, then the semivariogram of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>j</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>m</mi>
+ </munderover>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>j</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-965'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-966'><span class="example_label">Example 104.</span>
+For instance consider <a href="#eq__13">(14.1)</a> with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>3</mn>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with a spherical semivariogram <a href="#eq__14">(11.3)</a> with range <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3D5;</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>3.5</mn>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mn>2</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with a spherical semi-variogram <a href="#eq__14">(11.3)</a> with range <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3D5;</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>6.5</mn>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mn>3</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with a nugget semi-variogram. See the &#8220;sudden&#8221; changes of the line in Figure <a href="#fig_Variogram__of">14.1</a> representing change of spatial behavior.<div class='float-figure'><div class='plain_layout' id='magicparlabel-970'><img style='width:50%;' src='e_5fe1f09800e2_sv_decomposition.png' alt='image: e_5fe1f09800e2_sv_decomposition.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-971'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 14.1:  <a id="fig_Variogram__of" />Variogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>Z</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>Z</mi>
+  <mn>2</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>Z</mi>
+  <mn>3</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with spherical s.v. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mrow>
+    <mo>|</mo>
+    <mi>h</mi>
+    <mo>|</mo>
+   </mrow>
+   <mo stretchy='false'>;</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>=</mo>
+   <mn>0.8</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>3.5</mn>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, spherical s.v. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mrow>
+    <mo>|</mo>
+    <mi>h</mi>
+    <mo>|</mo>
+   </mrow>
+   <mo stretchy='false'>;</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>=</mo>
+   <mn>1.1</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>6.5</mn>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and nugget <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mn>3</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mrow>
+    <mo>|</mo>
+    <mi>h</mi>
+    <mo>|</mo>
+   </mrow>
+   <mo stretchy='false'>;</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>=</mo>
+   <mn>0.4</mn>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</span></div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h4 class='subsubsection' id='magicparlabel-976'><span class="subsubsection_label">14.1.2</span> Scale of variation</h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-977'><span class="note_label">Note 105.</span>
+<a id="note_Cressi____Consider" />Cressi [<a href="#enu_Cressie__N___2015__1">1.</a>] considers the following intuitive decomposition <a id="eq__12" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>W</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B7;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B5;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="10px"/>
+    <mi>s</mi>
+    <mo>&#x2208;</mo>
+    <mi>S</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(14.2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where </div>
+<dl class='description'>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-978'> is the deterministic mean (or drift) structure. It aims to represent the &#8220;large scale variation&#8221;. </dd>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-979'> is a zero mean second order continuous intrinsic random field whose range is larger than gaps between the sites (sampling grid). It aims to represent &#8220;smooth small scale variation&#8221;.</dd>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-980'> is a zero mean intrinsic random field whose variogram range exists and is smaller than the gaps between the sites. It aims to represent &#8220;microscale variation&#8221;</dd>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-981'> is a zero-mean white-noise process (modeled as nugget effect). It aims to represent &#8220;measurement error or noise&#8221;</dd>
+</dl>
+<div class='standard' id='magicparlabel-982'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ are mutually independent.</div>
+</div>
+<div class='standard' id='magicparlabel-983'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-984'><span class="note_label">Note 106.</span>
+Reasonably, larger scale components, such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ can represented in the variogram if the diameter of the sampling domain is large <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mstyle mathvariant='script'>
+ <mi>S</mi>
+</mstyle>
+</math>
+ is large enough.</div>
+</div>
+<div class='standard' id='magicparlabel-985'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-986'><span class="note_label">Note 107.</span>
+Clearly, smaller scale components, such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ could be identified if the sampling grid is sufficiently fine. </div>
+</div>
+<div class='standard' id='magicparlabel-987'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-988'><span class="note_label">Note 108.</span>
+Decomposition <a href="#eq__12">(14.2)</a> is not unique and the components are not clearly identifiable from the data when modeled; e.g. one may find two pairs of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ doing the same thing; yet, separating <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is difficult as they often describe changes with range smaller than that of the sites (!) </div>
+</div>
+<div class='standard' id='magicparlabel-989'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-990'><span class="note_label">Note 109.</span>
+The geostatistical model is often presented (with reference to <a href="#eq__12">(14.2)</a>) is a form 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="10px"/>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ contains all the spatial variation. </div>
+</div>
+<div class='standard' id='magicparlabel-991'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-992'><span class="note_label">Note 110.</span>
+Alternatively, the hierarchical statistical model (Handout <a href="#enu_Handout_1__Types">enu:Handout-1:-Types</a>, <a href="#eq__3_1">eq:-3-1</a>) is used<a id="eq__43" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>Y</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B5;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="10px"/>
+    <mi>s</mi>
+    <mo>&#x2208;</mo>
+    <mi>S</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(14.3)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the spatial model, signal random field or noiseless random field. </div>
+</div>
+<div class='standard' id='magicparlabel-993'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-994'><span class="note_label">Note 111.</span>
+Another decomposition we will use 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="10px"/>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the called the correlated process. </div>
+</div>
+<div class='standard' id='magicparlabel-1004'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1005'><span class="note_label">Note 112.</span>
+<a id="note_In_several_problems_" />In several problems, additional covariates may be considered. The available dataset is of the form <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>x</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+</msub>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>x</mi>
+    <mi>i</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the observed response at location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mi>i</mi>
+</msub>
+</math>
+, associated with the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>p</mi>
+</math>
+-dimensional covariate <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>x</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>x</mi>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>,</mo>
+      <mn>1</mn>
+     </mrow>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>x</mi>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>p</mi>
+     </mrow>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>i</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+. Although not a necessity rule, the effect of the associated <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>p</mi>
+</math>
+-dimensional covariates is often expressed via the deterministic drift function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>x</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>s</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>x</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. E.g. in decomposition in <a href="#eq__12">(14.2)</a> <a id="eq__12_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>W</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B7;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B5;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="10px"/>
+    <mi>s</mi>
+    <mo>&#x2208;</mo>
+    <mi>S</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>x</mi>
+    <mo>&#x2208;</mo>
+    <mstyle mathvariant='script'>
+     <mi>X</mi>
+    </mstyle>
+    <mn>.</mn>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(14.4)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+Here, to simplify the presentation, we suppress dependence on possible covariates <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>X</mi>
+ </mstyle>
+ <mn>.</mn>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1018'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-1019'>
+<br />
+</div>
+</section>
+</section>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-1020'><span class="section_label">15</span> Learning the semivariogram <a id="sec_Training___inference" /> </h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1025'><span class="note_label">Note 113.</span>
+Consider a random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+ observed at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ sites <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+, and hence a dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-1026'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1027'><span class="note_label">Note 114.</span>
+Consider a decomposition 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mspace width="10px"/>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is an unknown deterministic drift and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a zero mean intrinsic random field. </div>
+</div>
+<div class='standard' id='magicparlabel-1028'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1029'><span class="example_label">Example 115.</span>
+<a id="exa__Meuse_river_data" />(Meuse river data set) The Meuse river dataset set, used as a running example gives locations and topsoil heavy metal concentrations, along with a number of soil and landscape variables at the observation locations, collected in a flood plain of the river Meuse, near the village of Stein (NL). Here, we use the topsoil zinc concentration, mg kg-1 soil ("ppm") as quantity of interest (Z). Heavy metal concentrations are from composite samples of an area of approximately <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>15</mn>
+ <mtext>m</mtext>
+ <mo>&#x00D7;</mo>
+ <mn>15</mn>
+ <mtext>m</mtext>
+</mrow>
+</math>
+. See Figure <a href="#fig_Variogram_cloud_1_1_1_1_1_1">a</a>. This is the R dataset <span style='font-family:monospace;'>meuse{sp}</span>. <div class='float-figure'><div class='plain_layout' id='magicparlabel-1033'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1037'><img style='width:33%;' src='e_a0a5ec55eb6a_meuse-bubble-plot.png' alt='image: e_a0a5ec55eb6a_meuse-bubble-plot.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Variogram_cloud_1_1_1_1_1_1" />Bubble plot of zinc (origial scale) vs location</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1045'><img style='width:33%;' src='e_5a35f52091bc_meuse-log-variogram-cloud.png' alt='image: e_5a35f52091bc_meuse-log-variogram-cloud.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_Variogram_cloud_2" />Variogram cloud</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1053'><img style='width:33%;' src='e_caa8f83d8501_meuse-log-variogram-isotropic.png' alt='image: e_caa8f83d8501_meuse-log-variogram-isotropic.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Variogram_cloud_1_2" />Empirical estimate (isotropic)</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-1058'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1062'><img style='width:33%;' src='e_2038e2ee94cf_meuse-log-variogram-semi-variogram-anisotropy-90.png' alt='image: e_2038e2ee94cf_meuse-log-variogram-semi-variogram-anisotropy-90.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <a id="fig_Variogram_cloud_1_1_2" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>9</mn>
+ <msup>
+  <mn>0</mn>
+  <mo>&#x25CB;</mo>
+ </msup>
+</mrow>
+</math>
+)</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1070'><img style='width:33%;' src='e_3714aa20d329_meuse-log-variogram-semi-variogram-anisotropy-45.png' alt='image: e_3714aa20d329_meuse-log-variogram-semi-variogram-anisotropy-45.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <a id="fig_Variogram_cloud_1_1_1_2" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>4</mn>
+ <msup>
+  <mn>5</mn>
+  <mo>&#x25CB;</mo>
+ </msup>
+</mrow>
+</math>
+)</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1078'><img style='width:33%;' src='e_54934ef8cbd4_meuse-log-variogram-semi-variogram-anisotropy.png' alt='image: e_54934ef8cbd4_meuse-log-variogram-semi-variogram-anisotropy.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <a id="fig_Variogram_cloud_1_1_1_1_1" />Empirical estimate (different directions)</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-1083'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 15.1:  Meuse dataset variogram estimations (Zinc in log scale)</span></div>
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1088'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1089'><span class="example_label">Example 116.</span>
+(Wolfcamp-aquifer dataset) We also consider the Wolfcamp-aquifer dataset in Ex <a href="#exer____4">exer:()-4</a> in the Exercise sheet. See Figure <a href="#fig_Variogram_cloud_1_1_1_1_2">a</a><div class='float-figure'><div class='plain_layout' id='magicparlabel-1093'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1097'><img style='width:33%;' src='e_fb34a006f36a_wolfcamp-aquifer-original.png' alt='image: e_fb34a006f36a_wolfcamp-aquifer-original.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Variogram_cloud_1_1_1_1_2" />Data</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1105'><img style='width:33%;' src='e_db8685bc2f5f_wolfcamp-variogram-cloud.png' alt='image: e_db8685bc2f5f_wolfcamp-variogram-cloud.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_Variogram_cloud" />Variogram cloud</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1113'><img style='width:33%;' src='e_27b5acfd3618_wolfcamp-variogram-isotropic.png' alt='image: e_27b5acfd3618_wolfcamp-variogram-isotropic.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Variogram_cloud_1" />Empirical estimate (isotropic)</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-1118'>  </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1122'><img style='width:33%;' src='e_f67baec95349_wolfcamp-variogram-semi-variogram-anisotropy-90.png' alt='image: e_f67baec95349_wolfcamp-variogram-semi-variogram-anisotropy-90.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <a id="fig_Variogram_cloud_1_1" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>9</mn>
+ <msup>
+  <mn>0</mn>
+  <mo>&#x25CB;</mo>
+ </msup>
+</mrow>
+</math>
+)</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1130'><img style='width:33%;' src='e_685a7cf91a00_wolfcamp-variogram-semi-variogram-anisotropy-45.png' alt='image: e_685a7cf91a00_wolfcamp-variogram-semi-variogram-anisotropy-45.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <a id="fig_Variogram_cloud_1_1_1" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>4</mn>
+ <msup>
+  <mn>5</mn>
+  <mo>&#x25CB;</mo>
+ </msup>
+</mrow>
+</math>
+)</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1138'><img style='width:33%;' src='e_0bc331b7d124_wolfcamp-variogram-semi-variogram-anisotropy.png' alt='image: e_0bc331b7d124_wolfcamp-variogram-semi-variogram-anisotropy.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <a id="fig_Variogram_cloud_1_1_1_1" />Empirical estimate (different directions)</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-1143'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 15.2:  Wolfcamp-aquifer dataset variogram estimations</span></div>
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1148'>
+<br />
+</div>
+<section>
+<h3 class='subsection' id='magicparlabel-1149'><span class="subsection_label">15.1</span> The semvariogram cloud</h3>
+<div class='assumption'>
+<div class="assumption_item" id='magicparlabel-1150'><span class="assumption_label">Assumption 117.</span>
+Assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ in an intrinsic random field with unknown constant mean; aka <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-1151'><span class="definition_label">Definition 118.</span>
+Dissimilarity between pairs of data values <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>a</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>b</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is called the measure <a id="eq__8" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>&#x3B3;</mi>
+     <mo>&#x2605;</mo>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>s</mi>
+       <mi>a</mi>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>b</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mfrac>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mrow>
+        <mo>(</mo>
+        <msub>
+         <mi>s</mi>
+         <mi>b</mi>
+        </msub>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>-</mo>
+       <mi>Z</mi>
+       <mrow>
+        <mo>(</mo>
+        <msub>
+         <mi>s</mi>
+         <mi>a</mi>
+        </msub>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(15.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1152'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-1153'><span class="definition_label">Definition 119.</span>
+If we let dissimilarity between pairs of data values <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>b</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ depend on the separation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>s</mi>
+  <mi>b</mi>
+ </msub>
+ <mo stretchy='false'>-</mo>
+ <mi>s</mi>
+</mrow>
+</math>
+ (lag or orientation) then we get 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mi>&#x3B3;</mi>
+  <mo>&#x2605;</mo>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>+</mo>
+      <mi>h</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mn>.</mn>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1154'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-1155'><span class="definition_label">Definition 120.</span>
+The semivariogram cloud is the set of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>−</mo>
+   <mn>1</mn>
+  </mrow>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+ <mo stretchy='false'>/</mo>
+ <mn>2</mn>
+</mrow>
+</math>
+ points
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mstyle mathvariant='fraktur'>
+   <mi>C</mi>
+  </mstyle>
+  <mi>S</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mrow>
+      <mo>&#x2225;</mo>
+      <mrow>
+       <msub>
+        <mi>s</mi>
+        <mi>i</mi>
+       </msub>
+       <mo stretchy='false'>-</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>j</mi>
+       </msub>
+      </mrow>
+      <mo>&#x2225;</mo>
+     </mrow>
+     <mo stretchy='false'>,</mo>
+     <msup>
+      <mi>&#x3B3;</mi>
+      <mo>&#x2605;</mo>
+     </msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>s</mi>
+        <mi>j</mi>
+       </msub>
+       <mo stretchy='false'>,</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>i</mi>
+       </msub>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mspace width="6px"/>
+   <mspace width="6px"/>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>n</mi>
+   <mo stretchy='false'>,</mo>
+   <mspace width="6px"/>
+   <mtext>and</mtext>
+   <mspace width="6px"/>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo>&#x2260;</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1156'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1157'><span class="note_label">Note 121.</span>
+Note that <a href="#eq__8">(15.1)</a> is an unbiased estimator of the semivariogram and hence the semivariogram cloud is too.</div>
+</div>
+<div class='standard' id='magicparlabel-1158'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1159'><span class="note_label">Note 122.</span>
+Often there is a smoothing of the cloud is superimposed onto the cloud itself to help us see semivariogram’s characteristics (e.g., sill, nugget, range) which may be &#8220;hidden&#8221; due to potential outliers in the plot.</div>
+</div>
+<div class='standard' id='magicparlabel-1160'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1161'><span class="example_label">Example 123.</span>
+Figure <a href="#fig_Variogram_cloud_2">b</a> and Figure <a href="#fig_Variogram_cloud">b</a> show the semivariogram cloud plots (that is a point plot of the dissimilarities vs the distances) for the datasets Meuse and Wolfcamp-aquifer dataset. The red line is a smoother line of the cloud. </div>
+</div>
+<div class='standard' id='magicparlabel-1166'>
+<br />
+</div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-1167'><span class="subsection_label">15.2</span> Non-parametric semivariogram estimator of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</h3>
+<div class='assumption'>
+<div class="assumption_item" id='magicparlabel-1168'><span class="assumption_label">Assumption 124.</span>
+Assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ in an intrinsic random field with unknown constant mean; aka <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is an unknown constant. </div>
+</div>
+<div class='standard' id='magicparlabel-1169'>
+<br />
+</div>
+<div class='proposition'>
+<div class="proposition_item" id='magicparlabel-1170'><span class="proposition_label">Proposition 125.</span>
+<a id="prop_Smoothed_Matheron_estimator" />The Smoothed Matheron estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mover>
+  <mi>&#x3B3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of an unknown constant mean intrinsic random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is <a id="eq__6" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mover>
+      <mi>&#x3B3;</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mtext>M</mtext>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>h</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>2</mn>
+      <mrow>
+       <mo>|</mo>
+       <mrow>
+        <msub>
+         <mi>N</mi>
+         <mrow>
+          <msub>
+           <mi>r</mi>
+           <mn>1</mn>
+          </msub>
+          <mo stretchy='false'>,</mo>
+          <msub>
+           <mi>r</mi>
+           <mn>2</mn>
+          </msub>
+         </mrow>
+        </msub>
+        <mrow>
+         <mo>(</mo>
+         <mi>h</mi>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+       <mo>|</mo>
+      </mrow>
+     </mrow>
+    </mfrac>
+    <munder>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>&#x2200;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>s</mi>
+         <mi>i</mi>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <msub>
+         <mi>s</mi>
+         <mi>j</mi>
+        </msub>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>&#x2208;</mo>
+      <msub>
+       <mi>N</mi>
+       <mrow>
+        <msub>
+         <mi>r</mi>
+         <mn>1</mn>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <msub>
+         <mi>r</mi>
+         <mn>2</mn>
+        </msub>
+       </mrow>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mi>h</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </munder>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mrow>
+        <mo>(</mo>
+        <msub>
+         <mi>s</mi>
+         <mi>i</mi>
+        </msub>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>-</mo>
+       <mi>Z</mi>
+       <mrow>
+        <mo>(</mo>
+        <msub>
+         <mi>s</mi>
+         <mi>j</mi>
+        </msub>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(15.2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>N</mi>
+  <mrow>
+   <msub>
+    <mi>r</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>r</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo stretchy='false'>,</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>j</mi>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>&#x2208;</mo>
+   <mstyle mathvariant='script'>
+    <mi>S</mi>
+   </mstyle>
+   <mo stretchy='false'>:</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+   <mo>&#x2208;</mo>
+   <msub>
+    <mi>B</mi>
+    <mrow>
+     <msub>
+      <mi>r</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>,</mo>
+     <msub>
+      <mi>r</mi>
+      <mn>2</mn>
+     </msub>
+    </mrow>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <mi>h</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+contains all the pairs of spatial points points whole difference is in a ball <a id="eq__26" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>B</mi>
+     <mrow>
+      <msub>
+       <mi>r</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>r</mi>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>h</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo stretchy='false'>:</mo>
+      <mrow>
+       <mo>&#x2225;</mo>
+       <mrow>
+        <mrow>
+         <mo>&#x2225;</mo>
+         <mi>x</mi>
+         <mo>&#x2225;</mo>
+        </mrow>
+        <mo stretchy='false'>-</mo>
+        <mrow>
+         <mo>&#x2225;</mo>
+         <mi>h</mi>
+         <mo>&#x2225;</mo>
+        </mrow>
+       </mrow>
+       <mo>&#x2225;</mo>
+      </mrow>
+      <mo stretchy='false'>&lt;</mo>
+      <msub>
+       <mi>r</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <mspace width="6px"/>
+      <mtext>and</mtext>
+      <mspace width="6px"/>
+      <msub>
+       <mrow>
+        <mo>&#x2225;</mo>
+        <mrow>
+         <mfrac>
+          <mi>x</mi>
+          <msub>
+           <mrow>
+            <mo>&#x2225;</mo>
+            <mi>x</mi>
+            <mo>&#x2225;</mo>
+           </mrow>
+           <mn>2</mn>
+          </msub>
+         </mfrac>
+         <mo stretchy='false'>-</mo>
+         <mfrac>
+          <mi>h</mi>
+          <msub>
+           <mrow>
+            <mo>&#x2225;</mo>
+            <mi>h</mi>
+            <mo>&#x2225;</mo>
+           </mrow>
+           <mn>2</mn>
+          </msub>
+         </mfrac>
+        </mrow>
+        <mo>&#x2225;</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>&lt;</mo>
+      <msub>
+       <mi>r</mi>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(15.3)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ centered at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>h</mi>
+</math>
+ with radius <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>r</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>r</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+<i>.</i></div>
+</div>
+<div class='standard' id='magicparlabel-1179'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1197'><span class="note_label">Note 126.</span>
+<a id="note_If_we_consider" />If we consider isotropic semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ then the ball may just considerate only the length of the distance as <a id="eq__27" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>B</mi>
+     <msub>
+      <mi>r</mi>
+      <mn>1</mn>
+     </msub>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>h</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo stretchy='false'>:</mo>
+      <mrow>
+       <mo>&#x2225;</mo>
+       <mrow>
+        <mrow>
+         <mo>&#x2225;</mo>
+         <mi>x</mi>
+         <mo>&#x2225;</mo>
+        </mrow>
+        <mo stretchy='false'>-</mo>
+        <mrow>
+         <mo>&#x2225;</mo>
+         <mi>h</mi>
+         <mo>&#x2225;</mo>
+        </mrow>
+       </mrow>
+       <mo>&#x2225;</mo>
+      </mrow>
+      <mo stretchy='false'>&lt;</mo>
+      <msub>
+       <mi>r</mi>
+       <mn>1</mn>
+      </msub>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(15.4)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ because the direction does not have any effect.</div>
+</div>
+<div class='standard' id='magicparlabel-1198'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1199'><span class="note_label">Note 127.</span>
+The choice of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>r</mi>
+ <mn>1</mn>
+</msub>
+</math>
+ , <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>r</mi>
+ <mn>2</mn>
+</msub>
+</math>
+ is an art, and a trade-off between variance and bias, similar to the bin length in histograms.</div>
+</div>
+<div class='standard' id='magicparlabel-1200'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1201'><span class="note_label">Note 128.</span>
+In practice, we consider a finite number of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>k</mi>
+</math>
+ separations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>H</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <msub>
+    <mi>h</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>h</mi>
+    <mi>k</mi>
+   </msub>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+, we estimate in such a way that each class contains at least <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>30</mn>
+</math>
+ pairs of points. Then compute <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mover>
+    <mi>&#x3B3;</mi>
+    <mo stretchy='true'>&#x02C6;</mo>
+   </mover>
+   <mtext>M</mtext>
+  </msub>
+  <mrow>
+   <mo>(</mo>
+   <mi>h</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>h</mi>
+  <mo>&#x2208;</mo>
+  <mi>H</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+, and plot <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>h</mi>
+     <mi>j</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mover>
+      <mi>&#x3B3;</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mtext>M</mtext>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>h</mi>
+      <mi>j</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>j</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+  <mo stretchy='false'>,</mo>
+  <mn>...</mn>
+  <mo stretchy='false'>,</mo>
+  <mi>k</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1202'><span class="example_label">Example 129.</span>
+Figures    <a href="#fig_Variogram_cloud_1_2">c</a> and <a href="#fig_Variogram_cloud_1">c</a>, show the nonparametric estimator ignoring the direction for the datasets Meuse and Wolfcamp-aquifer dataset. The estimator is calculated by using the ball in <a href="#eq__27">(15.4)</a>.</div>
+</div>
+<div class='standard' id='magicparlabel-1203'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1204'><span class="example_label">Example 130.</span>
+Figures    <a href="#fig_Variogram_cloud_1_1">d</a>and <a href="#fig_Variogram_cloud_1_1_1_2">e</a> show the nonparametric estimator considering directions <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>9</mn>
+ <msup>
+  <mn>0</mn>
+  <mo>&#x25CB;</mo>
+ </msup>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>4</mn>
+ <msup>
+  <mn>5</mn>
+  <mo>&#x25CB;</mo>
+ </msup>
+</mrow>
+</math>
+ for the dataset Meuse. Figures    <a href="#fig_Variogram_cloud_1_1">d</a> and <a href="#fig_Variogram_cloud_1_1_1">e</a> do the same for the Wolfcamp-aquifer dataset. The estimator is calculated by using the ball <a href="#eq__26">(15.3)</a>.</div>
+</div>
+<div class='standard' id='magicparlabel-1205'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1206'><span class="note_label">Note 131.</span>
+In practice anisotropies are detected by inspecting experimental semivariograms in different directions and are induced into the model by tuning predefined anisotropy parameters.</div>
+</div>
+<div class='standard' id='magicparlabel-1207'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1208'><span class="example_label">Example 132.</span>
+<a id="exa_Figure__" /> Figure    <a href="#fig_Variogram_cloud_1_1_1_1_1">f</a> and <a href="#fig_Variogram_cloud_1_1_1_1_2">a</a> show the nonparametric semivariogram estimator for different directions for the two datasets. We observe possible anisotropy due to the differences in the lines. </div>
+</div>
+
+
+
+
+
+
+<div class='standard' id='magicparlabel-1242'>
+<br />
+</div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-1243'><span class="subsection_label">15.3</span> Classic parametric estimator of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</h3>
+<div class='assumption'>
+<div class="assumption_item" id='magicparlabel-1244'><span class="assumption_label">Assumption 133.</span>
+Consider (for now) the assumption that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ in an intrinsic random field with unknown constant mean; aka <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is an unknown constant. </div>
+</div>
+<div class='standard' id='magicparlabel-1245'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1246'><span class="note_label">Note 134.</span>
+Smoothed Matheron estimator <a href="#eq__6">(8.1)</a> does not necessarily satisfies semivariogram properties, such as negative definiteness. To address this we use a parametric family of appropriate semi-variogram functions and tune them against data. </div>
+</div>
+<div class='standard' id='magicparlabel-1247'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1248'><span class="note_label">Note 135.</span>
+Popular parametrized isotopic semivariogrames are those Section <a href="#subsec_Parametric_forms_of">11.1</a>. Anisotropic semi-variogrames/covariogrames can be specified by using isotropic ones and applying a rotation and dilation as in Example <a href="#exa_For_instance__if">86</a>. </div>
+</div>
+<div class='standard' id='magicparlabel-1249'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1250'><span class="note_label">Note 136.</span>
+Below are some properties that allow the specification of sophisticated semivariograms from simpler ones. </div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-1251'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mover>
+  <mi>&#x3B3;</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>A</mi>
+   <mi>h</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a semivariogram and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ constant matrix.</li>
+<li class="enumerate_item" id='magicparlabel-1252'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>a</mi>
+  <mi>i</mi>
+ </msub>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>i</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>a</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>&#x2265;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>&#x3B3;</mi>
+   <mi>i</mi>
+  </msub>
+  <mrow>
+   <mo>(</mo>
+   <mo>&#x22C5;</mo>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ are semivariograms</li>
+<li class="enumerate_item" id='magicparlabel-1253'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munderover>
+  <mo>&#x220F;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>i</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>&#x3B3;</mi>
+   <mi>i</mi>
+  </msub>
+  <mrow>
+   <mo>(</mo>
+   <mo>&#x22C5;</mo>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ are semivariograms</li>
+<li class="enumerate_item" id='magicparlabel-1254'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>&#x222B;</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>u</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mtext>d</mtext>
+ <mi>F</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>u</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>u</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a semivariogram parametrized by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>u</mi>
+ <mo>&#x223C;</mo>
+ <mi>F</mi>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-1255'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mi>n</mi>
+   <mo>&#x2192;</mo>
+   <mi>&#x221E;</mi>
+  </mrow>
+ </munder>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>n</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>n</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is semivariogram and the limit exists</li>
+<li class="enumerate_item" id='magicparlabel-1256'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Z</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Y</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>X</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ corresponds to random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>X</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Y</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>X</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ are independent intrinsic random fields with semivariograms <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Y</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>X</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</li>
+<li class="enumerate_item" id='magicparlabel-1257'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a semivariogram iff <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>a</mi>
+   <mi>&#x3B3;</mi>
+   <mrow>
+    <mo>(</mo>
+    <mo>&#x22C5;</mo>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is positive definite for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+.</li>
+</ol>
+</div>
+<div class='standard' id='magicparlabel-1269'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1270'><span class="example_label">Example 137.</span>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mi>h</mi>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+ is a semivariogram because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>a</mi>
+   <msubsup>
+    <mrow>
+     <mo>&#x2225;</mo>
+     <mi>h</mi>
+     <mo>&#x2225;</mo>
+    </mrow>
+    <mn>2</mn>
+    <mn>2</mn>
+   </msubsup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a c.f. for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ and hence positive definite.</div>
+</div>
+<div class='standard' id='magicparlabel-1275'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-1276'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1277'><span class="note_label">Note 138.</span>
+For a q.m. continuous <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>:</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ , it is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </munder>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+. However, when modeling a real problem we may need to consider (or it may appear from the data) that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ should have a discontinuity <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <munder>
+  <mo>lim</mo>
+  <mrow>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </munder>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msubsup>
+  <mi>&#x3C3;</mi>
+  <mi>&#x3B5;</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo>&#x2260;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ aka a nugget.<div class='marginal'><div class='plain_layout' id='magicparlabel-1281'>[<a href="#enu_Gaetan__C____">5.</a>; 
+<br />
+Ch 1.4.1]</div>
+</div> Nugget effect is often mathematically described by considering a decomposition ; 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>Y</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B5;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ can be a continuous random field with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Y</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B5;</mi>
+</math>
+ can be a random field (called errors-in-variables model) with (nugget) semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>&#x3B5;</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msubsup>
+  <mi>&#x3C3;</mi>
+  <mi>&#x3B5;</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mtext>
+ <mn>1</mn></mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo>&#x2260;</mo>
+   <mn>0</mn>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. In this case, 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Z</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>Y</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mi>&#x3B5;</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mover accent='false'>
+  <mo>&#x2192;</mo>
+  <mrow>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+   <mo>&#x2192;</mo>
+   <mn>0</mn>
+  </mrow>
+ </mover>
+ <msubsup>
+  <mi>&#x3C3;</mi>
+  <mi>&#x3B5;</mi>
+  <mn>2</mn>
+ </msubsup>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1286'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1287'><span class="note_label">Note 139.</span>
+<a id="note_Assume_we_are" /> Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='true'>&#x02C6;</mo>
+</mover>
+</math>
+ be the empirical semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B3;</mi>
+ <mo stretchy='true'>&#x02C6;</mo>
+</mover>
+</math>
+ (e.g., Matheron <a href="#eq__6">(8.1)</a>) computed at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>k</mi>
+</math>
+ classes, i.e. it is available <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msubsup>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <msub>
+     <mi>h</mi>
+     <mi>j</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mover>
+     <mi>&#x3B3;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>h</mi>
+      <mi>j</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+  <mrow>
+   <mi>j</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>k</mi>
+ </msubsup>
+ <mn>.</mn>
+</mrow>
+</math>
+ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3B3;</mi>
+ <mi>&#x3B8;</mi>
+</msub>
+</math>
+ be a parametrised semivariogram by the unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+. The Least&#xA0;Square&#xA0;Errors (LSE) estimator is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>&#x3B3;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>LSE</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>;</mo>
+   <msub>
+    <mover>
+     <mi>&#x3B8;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>LSE</mtext>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <a id="eq__11" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mover>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mtext>LSE</mtext>
+    </msub>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <mrow>
+      <mo>arg</mo>
+      <mo>min</mo>
+     </mrow>
+     <mi>&#x3B8;</mi>
+    </munder>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mover>
+        <mi>&#x3B3;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mo stretchy='false'>-</mo>
+       <mi>&#x3B3;</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>h</mi>
+         <mo stretchy='false'>;</mo>
+         <mi>&#x3B8;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mi>V</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>&#x3B8;</mi>
+     <mo>)</mo>
+    </mrow>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mover>
+       <mi>&#x3B3;</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mo stretchy='false'>-</mo>
+      <mi>&#x3B3;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>h</mi>
+        <mo stretchy='false'>;</mo>
+        <mi>&#x3B8;</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(15.5)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>V</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>&#x3B8;</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a user specific positive definite matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>V</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>&#x3B8;</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ serving as a weight, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mover>
+  <mi>&#x3B3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mover>
+     <mi>&#x3B3;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>h</mi>
+      <mn>1</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <mover>
+     <mi>&#x3B3;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>h</mi>
+      <mi>k</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>&#x3B3;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>h</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>;</mo>
+      <mi>&#x3B8;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B3;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>h</mi>
+       <mi>k</mi>
+      </msub>
+      <mo stretchy='false'>;</mo>
+      <mi>&#x3B8;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ . </div>
+</div>
+<div class='standard' id='magicparlabel-1288'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1289'><span class="note_label">Note 140.</span>
+An example is OLS <a id="eq__28" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mover>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mtext>OLS</mtext>
+    </msub>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <mrow>
+      <mo>arg</mo>
+      <mo>min</mo>
+     </mrow>
+     <mi>&#x3B8;</mi>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x2211;</mo>
+       <mi>j</mi>
+      </munder>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mover>
+          <mi>&#x3B3;</mi>
+          <mo stretchy='true'>&#x02C6;</mo>
+         </mover>
+         <mrow>
+          <mo>(</mo>
+          <msub>
+           <mi>h</mi>
+           <mi>j</mi>
+          </msub>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>-</mo>
+         <mi>&#x3B3;</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>h</mi>
+           <mo stretchy='false'>;</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(15.6)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1290'> </div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1296'><span class="example_label">Example 141.</span>
+Figures    <a href="#fig_Exponential_c_f__with">a</a> and <a href="#fig_Spherical_c_f__with">b</a> show the OLE and WLE estimates <a href="#eq__28">(15.6)</a> and <a href="#eq__29">eq:-29</a> of the exponential and spherical semivariogram for the Meuse dataset. Figure    <a href="#fig_Spherical_c_f__with_1">c</a> shows the OLE and WLE estimates <a href="#eq__28">(15.6)</a> and <a href="#eq__29">eq:-29</a> of the exponential semi-variogram for the Wolfcamp dataset. The parametric semivariograms were tuned against the non-parametric estimator <a href="#eq__6">(8.1)</a> presented in dots, as discussed in Proposition <a href="#note_Assume_we_are">139</a>. <div class='float-figure'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1304'><img style='width:33%;' src='e_e7d3ce91a5f1_meuse-log-semi-variogram-cte-exp-ols-wls-mle.png' alt='image: e_e7d3ce91a5f1_meuse-log-semi-variogram-cte-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Exponential c.f. with constant mean (Meuse dataset) <a id="fig_Exponential_c_f__with" /></span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1312'><img style='width:33%;' src='e_e51f41d8378f_meuse-log-semi-variogram-cte-spherical-ols-wls-mle.png' alt='image: e_e51f41d8378f_meuse-log-semi-variogram-cte-spherical-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Spherical c.f. with constant mean (Meuse dataset) <a id="fig_Spherical_c_f__with" /></span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1320'><img style='width:33%;' src='e_441f84ff473a_wolfcamp-semi-variogram-cte-exp-ols-wls-mle.png' alt='image: e_441f84ff473a_wolfcamp-semi-variogram-cte-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Exponential c.f. with constant mean (Wolfcamp dataset) <a id="fig_Spherical_c_f__with_1" /></span></div>
+</div>
+
+
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1329'><img style='width:33%;' src='e_8a555d3fac32_meuse-log-semi-variogram-1st-exp-ols-wls-mle.png' alt='image: e_8a555d3fac32_meuse-log-semi-variogram-1st-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Exponential c.f. with linear trend (Meuse dataset) <a id="fig_Exponential_c_f__with_1" /></span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1337'><img style='width:33%;' src='e_7471c5cbc79e_wolfcamp-semi-variogram-1st-exp-ols-wls-mle.png' alt='image: e_7471c5cbc79e_wolfcamp-semi-variogram-1st-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Exponential c.f. with linear trend (Wolfcamp dataset) <a id="fig_Exponential_c_f__with_2" /></span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-1342'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 15.3:  Parametric training</span></div>
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1347'>
+<br />
+</div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-1348'><span class="subsection_label">15.4</span> Parametric learning of nonzero <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1349'><span class="note_label">Note 142.</span>
+Assume a random field model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ decomposed as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where the trend <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is parameterized as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+ (e.g. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C8;</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+), and the zero mean intrinsic process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ has a semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ parameterised as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+. </div>
+</div>
+<section>
+<h4 class='subsubsection' id='magicparlabel-1350'><span class="subsubsection_label">15.4.1</span> Non-parametric inference</h4>
+<div class='standard' id='magicparlabel-1351'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1352'><span class="note_label">Note 143.</span>
+Semi-parametric learning is as follows:</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-1353'>Compute estimate <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='true'>&#x02C6;</mo>
+</mover>
+</math>
+ via LSE (or equivalent)
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>LSE</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <munder accent='false'>
+  <mrow>
+   <mo>arg</mo>
+   <mo>min</mo>
+  </mrow>
+  <mi>&#x3B8;</mi>
+ </munder>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <munder>
+    <mo>&#x2211;</mo>
+    <mi>i</mi>
+   </munder>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>i</mi>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>&#x3BC;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>s</mi>
+         <mi>i</mi>
+        </msub>
+        <mo stretchy='false'>;</mo>
+        <mi>&#x3B2;</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-1354'>Compute the residuals <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mover>
+  <mi>&#x3B4;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mover>
+  <mi>&#x3B4;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ from 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mover>
+  <mi>&#x3B4;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>;</mo>
+   <msub>
+    <mover>
+     <mi>&#x3B2;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>LSE</mtext>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-1355'>Compute empirical variogram against <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B4;</mi>
+ <mo stretchy='true'>&#x02C6;</mo>
+</mover>
+</math>
+ on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>H</mi>
+</math>
+ according to Proposition   <a href="#prop_Smoothed_Matheron_estimator">125</a>.</li>
+<li class="enumerate_item" id='magicparlabel-1356'>Compute estimates <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mover>
+  <mi>&#x3B8;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mtext>LSE</mtext>
+</msub>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>&#x3B3;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>LSE</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ according to Proposition <a href="#note_Assume_we_are">139</a>. </li>
+</ol>
+</div>
+<div class='standard' id='magicparlabel-1357'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1358'><span class="example_label">Example 144.</span>
+Figure    <a href="#fig_Exponential_c_f__with">a</a> and <a href="#fig_Spherical_c_f__with">b</a> fit an exponential c.f. and a spherical c.f. in the data of Meuse dataset (assuming constant mean); we cannot eyeball any big difference. Figure    <a href="#fig_Spherical_c_f__with_1">c</a> fit an exponential c.f. in the data of Wolfcamp dataset (assuming constant mean); the fit looks really bad, possibly we should consider a non-constant mean and remove the trend.</div>
+</div>
+<div class='standard' id='magicparlabel-1359'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1360'><span class="example_label">Example 145.</span>
+<a id="exa_Fig__fits" />Figure    <a href="#fig_Exponential_c_f__with_1">d</a> fits an exponential c.f. in the residuals <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>1</mn>
+ </msub>
+ <msub>
+  <mi>s</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>2</mn>
+ </msub>
+ <msub>
+  <mi>s</mi>
+  <mn>2</mn>
+ </msub>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>OLS</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mn>42.8</mn>
+    <mo stretchy='false'>,</mo>
+    <mo stretchy='false'>-</mo>
+    <mn>9.5</mn>
+    <mo>&#x22C5;</mo>
+    <mn>1</mn>
+    <msup>
+     <mn>0</mn>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>4</mn>
+     </mrow>
+    </msup>
+    <mo stretchy='false'>,</mo>
+    <mo stretchy='false'>-</mo>
+    <mn>6.6</mn>
+    <mo>&#x22C5;</mo>
+    <mn>1</mn>
+    <msup>
+     <mn>0</mn>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>4</mn>
+     </mrow>
+    </msup>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+in Meuse dataset. Possibly inference would suggest a constant mean function. Figure    <a href="#fig_Exponential_c_f__with_2">e</a> fits an exponential c.f. in the residuals <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B4;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>1</mn>
+ </msub>
+ <msub>
+  <mi>s</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>2</mn>
+ </msub>
+ <msub>
+  <mi>s</mi>
+  <mn>2</mn>
+ </msub>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>OLS</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mn>607</mn>
+    <mo stretchy='false'>,</mo>
+    <mo stretchy='false'>-</mo>
+    <mn>1.12</mn>
+    <mo stretchy='false'>,</mo>
+    <mo stretchy='false'>-</mo>
+    <mn>1.13</mn>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ in Wolfcamp dataset; we see an improvement in fit compared to Figure    <a href="#fig_Spherical_c_f__with_1">c</a>.</div>
+</div>
+
+</section>
+<section>
+<h4 class='subsubsection' id='magicparlabel-1362'><span class="subsubsection_label">15.4.2</span> Parametric inference via MLE</h4>
+<div class='standard' id='magicparlabel-1363'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1364'><span class="note_label">Note 146.</span>
+Assume that the probability distribution of the random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is known. The MLE estimates <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <msub>
+   <mover>
+    <mi>&#x3B2;</mi>
+    <mo stretchy='true'>&#x02C6;</mo>
+   </mover>
+   <mtext>MLE</mtext>
+  </msub>
+  <mo stretchy='false'>,</mo>
+  <msub>
+   <mover>
+    <mi>&#x3B8;</mi>
+    <mo stretchy='true'>&#x02C6;</mo>
+   </mover>
+   <mtext>MLE</mtext>
+  </msub>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3B8;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ can be computed as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mover>
+     <mi>&#x3B2;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>MLE</mtext>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mover>
+     <mi>&#x3B8;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>MLE</mtext>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munder accent='false'>
+  <mrow>
+   <mo>arg</mo>
+   <mo>min</mo>
+  </mrow>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>&#x3B2;</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B8;</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+ </munder>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>2</mn>
+   <mo>log</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>L</mi>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>z</mi>
+        <mn>1</mn>
+       </msub>
+       <mo stretchy='false'>,</mo>
+       <mn>...</mn>
+       <mo stretchy='false'>,</mo>
+       <msub>
+        <mi>z</mi>
+        <mi>n</mi>
+       </msub>
+       <mo stretchy='false'>|</mo>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3B8;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>L</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>z</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>z</mi>
+    <mi>n</mi>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the associated likelihood function given observed data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1370'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-1371'><span class="example_label">Example 147.</span>
+If s <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x223C;</mo>
+ <mtext>GP</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3BC;</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>;</mo>
+     <mi>&#x3B2;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mi>c</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>,</mo>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>;</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3D5;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mn>1</mn>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mn>2</mn>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>2</mn>
+ </msub>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B3;</mi>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3D5;</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>-</mo>
+   <mo>exp</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mi>&#x3D5;</mi>
+     <msup>
+      <mi>h</mi>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ then MLE of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='false'>,</mo>
+  <msup>
+   <mi>&#x3C3;</mi>
+   <mn>2</mn>
+  </msup>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3D5;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mover>
+     <mi>&#x3B2;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>MLE</mtext>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msubsup>
+    <mover>
+     <mi>&#x3C3;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>MLE</mtext>
+    <mn>2</mn>
+   </msubsup>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mover>
+     <mi>&#x3D5;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mtext>MLE</mtext>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munder accent='false'>
+  <mrow>
+   <mo>arg</mo>
+   <mo>min</mo>
+  </mrow>
+  <mrow>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+ </munder>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>2</mn>
+   <mo>log</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mtext>N</mtext>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <msub>
+        <mi>&#x3BC;</mi>
+        <mi>&#x3B2;</mi>
+       </msub>
+       <mo stretchy='false'>,</mo>
+       <msub>
+        <mi>C</mi>
+        <mrow>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+         <mo stretchy='false'>,</mo>
+         <mi>&#x3D5;</mi>
+        </mrow>
+       </msub>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mi>&#x3B2;</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>C</mi>
+    <mi>&#x3B8;</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the Gaussian pdf at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>1</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>n</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+, with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mi>&#x3B2;</mi>
+   </msub>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>s</mi>
+  <mrow>
+   <mn>2</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x3B2;</mi>
+  <mn>2</mn>
+ </msub>
+</mrow>
+</math>
+ and covariance matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <msub>
+    <mi>C</mi>
+    <mrow>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3D5;</mi>
+    </mrow>
+   </msub>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3D5;</mi>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>s</mi>
+       <mi>i</mi>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1380'>
+<br />
+</div>
+
+
+
+<div class='standard' id='magicparlabel-1389'>&#xA0;</div>
+</section>
+</section>
 </section>
 </section>
 </body>
