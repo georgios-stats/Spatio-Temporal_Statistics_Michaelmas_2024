@@ -90,7 +90,7 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 This is about the retrival, manipulation, and visualisation of spatial data.
 
-+ [Tasks](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_partial.html)  
++ [Tasks](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_tasks.html)  
 
 + [Complete](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html)  
 
