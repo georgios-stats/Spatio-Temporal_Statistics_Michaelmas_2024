@@ -86,9 +86,13 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 # Computer lab notes  
 
-#### Types of spatial data       
+#### Spatial data in R           
 
-... Not available yet  
+This is about the retrival, manipulation, and visualisation of spatial data.
+
++ [Tasks](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_partial.html)  
+
++ [Complete](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html)  
 
 #### Geostatistical data modeling       
 
