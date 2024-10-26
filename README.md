@@ -103,7 +103,8 @@ Ensure that your system has the same software versions as what is installed in t
     install.packages(pkgs = c( 
         "st", "sf", 
         "mapview", "tmap", "ggplot2", 
-        "spData", "spdep", "SemiPar" 
+        "spData", "spdep", "SemiPar", 
+        "gstat" 
         ) )  
 
 #### Spatial data in R           
