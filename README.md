@@ -167,12 +167,6 @@ It contains all the exercises and solutions
 
 ------------------------------------------------------------------------
 
-# Data sets  
-
-... Not available yet  
-
-------------------------------------------------------------------------
-
 # Downloading instructions     
 
 ### How to download the whole repository
