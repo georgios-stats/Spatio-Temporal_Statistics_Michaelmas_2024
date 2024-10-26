@@ -86,6 +86,26 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 # Computer lab notes  
 
+#### System set up  
+
+Ensure that your system has the same software versions as what is installed in the CIS [anywhereapp](https://appsanywhere.durham.ac.uk). I.e. 
+
+64 bit version of  
+
++ RStudio (2024.04.2) for [Linux, MSWindows, or MacOS](https://dailies.rstudio.com/version/2024.04.2+764.pro1/?_gl=1*np68ei*_ga*NjQzMzkxMjU0LjE3Mjk0MjU3NDM.*_ga_2C0WZ1JHG0*MTcyOTk3ODkwMC4zLjEuMTcyOTk3ODk2NC4wLjAuMA..)  
+
++ R version 4.4.1 for [Linux](https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz), [MSWindows](https://cran.r-project.org/bin/windows/base/R-4.4.1-win.exe), or [MacOS](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.4.1-arm64.pkg)  
+
++ RTools 4.40: for  [MSWIndows](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.4.1-arm64.pkg)  
+
++ Rpackages  
+
+    install.packages(pkgs = c( 
+        "st", "sf", 
+        "mapview", "tmap", "ggplot2", 
+        "spData", "spdep", "SemiPar"
+        ) )
+
 #### Spatial data in R           
 
 This is about the retrival, manipulation, and visualisation of spatial data.
