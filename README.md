@@ -86,7 +86,7 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 # Computer lab notes  
 
-#### System set up  
+#### Technichal specs  
 
 The computer lab notes run by software whose version is the same as that installed in the CIS server [anywhereapp](https://appsanywhere.durham.ac.uk). I.e.  
 
