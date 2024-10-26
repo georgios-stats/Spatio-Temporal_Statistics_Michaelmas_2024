@@ -41,7 +41,7 @@ This repository contains the teaching material for the module ***MATH4341: Spati
 
 Below you can find:  
 
-+ [Lecture notes / handouts](./README.md#lecture-notes--handouts)  
++ [Lecture notes](./README.md#lecture-notes)  
 
 + [Computer lab notes](./README.md#computer-lab-notes)  
 
@@ -53,7 +53,7 @@ Below you can find:
 
 ------------------------------------------------------------------------
 
-# Lecture notes / handouts
+# Lecture notes  
 
 Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_notes)**  
 
