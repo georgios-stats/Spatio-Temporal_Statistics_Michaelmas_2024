@@ -107,7 +107,7 @@ Ensure that your system has the same software versions as what is installed in t
         "gstat" 
         ) )  
 
-#### Spatial data in R           
+#### Lab 1: Spatial data in R           
 
 This is about the retrival, manipulation, and visualisation of spatial data.
 
@@ -115,15 +115,15 @@ This is about the retrival, manipulation, and visualisation of spatial data.
 
 + [Complete](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html)  
 
-#### Geostatistical data modeling       
+#### Lab 2: Geostatistical data modeling       
 
 ... Not available yet  
 
-#### Aerial unit data modeling       
+#### Lab 3: Aerial unit data modeling       
 
 ... Not available yet  
 
-#### Random pattern data modeling    
+#### Lab 4: Random pattern data modeling    
 
 ... Not available yet  
 
