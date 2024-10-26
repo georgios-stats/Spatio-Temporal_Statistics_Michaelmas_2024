@@ -165,6 +165,26 @@ It contains all the exercises and solutions
 
 ... Not available yet  
 
+------------------------------------------------------------------------  
+
+# Data sets  
+
+Central valley Groundwater data  
+
++ [data](./Datasets/Central_Valley_Groundwater_data/), [description](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022GL099583)  
+
+Ferrite-Pearlite data  
+
++ [data](./Datasets/Ferrite-Pearlite_data/), [description](./Lecture_notes/Lecture_notes_geostatistical_data.pdf)  
+
+London suiside data  
+
++ [data](./Datasets/London_Suicides_data/)  
+
+Plemonte data  
+
++ [data](./Datasets/Piemonte_data/)   
+
 ------------------------------------------------------------------------
 
 # Downloading instructions     
