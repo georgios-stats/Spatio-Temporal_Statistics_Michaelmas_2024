@@ -98,7 +98,7 @@ The computer lab notes run by software whose version is the same as that install
 
 + RTools 4.40: for  [MS Windows](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.4.1-arm64.pkg)  
 
-+ R packages  
+Required R packages are     
 
     install.packages(pkgs = c( 
         "st", "sf", 
