@@ -91,6 +91,27 @@ div.float-caption {
 	padding: 1ex;
 	margin: 1ex;
 }
+span.foot_label {
+	vertical-align: super;
+	font-size: smaller;
+	font-weight: bold;
+	text-decoration: underline;
+}
+div.foot {
+	display: inline;
+	font-size: small;
+	font-weight: normal;
+	font-family: serif;
+	font-variant: normal;
+	font-style: normal;
+}
+div.foot_inner { display: none; }
+div.foot:hover div.foot_inner {
+	display: block;
+	border: 1px double black;
+	margin: 0em 1em;
+	padding: 1em;
+}
 
 
 </style>
@@ -4389,10 +4410,4186 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <div class='standard' id='magicparlabel-476'><hr />
 </div>
 
+<div class='standard' style='text-align: center;' id='magicparlabel-481'>(Given as Formative assessment 2) </div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-482'><span class="exercise_label">Exercise 13.</span>
+<a id="exer____4_1_1_4_1_1_1" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-484'>Consider we the geostatistical model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ with 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a weakly stationary process with mean zero and covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mi>w</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>;</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <mn>1</mn>
+    <mi>&#x3D5;</mi>
+   </mfrac>
+   <mrow>
+    <mo>&#x2225;</mo>
+    <mi>h</mi>
+    <mo>&#x2225;</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a deterministic function 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>;</mo>
+      <mi>&#x3B2;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>0</mn>
+     </mrow>
+     <mi>p</mi>
+    </munderover>
+    <msub>
+     <mi>&#x3C8;</mi>
+     <mi>j</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <msub>
+     <mi>&#x3B2;</mi>
+     <mi>j</mi>
+    </msub>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>&#x3C8;</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>s</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mi>&#x3B2;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ with unknown coefficients <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>&#x3B2;</mi>
+     <mn>0</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>&#x3B2;</mi>
+     <mi>p</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ and known basis functions <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C8;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>&#x3C8;</mi>
+     <mn>0</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>&#x3C8;</mi>
+     <mi>p</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a nugget effect process whose covariogram has sill <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C4;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+, and assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ are independent Gaussian Processes. </div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-489'>Write down the formula of the covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>h</mi>
+   <mo stretchy='false'>;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3D5;</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3C4;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>s</mi>
+ </msub>
+ <mo>)</mo>
+</mrow>
+</math>
+. </li>
+<li class="enumerate_item" id='magicparlabel-490'>Consider a re-parametrization <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3BE;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <msup>
+   <mi>&#x3C4;</mi>
+   <mn>2</mn>
+  </msup>
+  <msup>
+   <mi>&#x3C3;</mi>
+   <mn>2</mn>
+  </msup>
+ </mfrac>
+</mrow>
+</math>
+ is called signal to noise ratio. Assume there is available a dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a realization of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ at site <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mi>i</mi>
+</msub>
+</math>
+. 
+<ol class='lyxenum enumii'>
+<li class="enumerate_item" id='magicparlabel-491'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3A8;</mi>
+</math>
+ be a matrix with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>&#x3A8;</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3C8;</mi>
+  <mi>j</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>D</mi>
+</math>
+ be a matrix such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>D</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>&#x2225;</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>&#x2225;</mo>
+ </mrow>
+</mrow>
+</math>
+. Consider that you can use convenient notation such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mi>D</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ meaning <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mo>exp</mo>
+    <mrow>
+     <mo>(</mo>
+     <mi>D</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>D</mi>
+   <mrow>
+    <mi>i</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>j</mi>
+   </mrow>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Write down the covariance matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>&#x3B8;</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ as a function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>D</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+. </li>
+<li class="enumerate_item" id='magicparlabel-492'>Write down the log likelihood function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>log</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>L</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>Z</mi>
+     <mo stretchy='false'>;</mo>
+     <mi>&#x3B8;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ given <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </li>
+</ol>
+</li><li class="enumerate_item" id='magicparlabel-493'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>r</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ (called correlogram) such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mi>r</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3D5;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3BE;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ as known constants. 
+<ol class='lyxenum enumii'>
+<li class="enumerate_item" id='magicparlabel-498'>Compute the likelihood equations<div class='foot'><span class="foot_label">1</span><div class="foot_inner"><div class='plain_layout' id='magicparlabel-502'>that is, the gradient of the log-likelihood</div>
+</div></div> w.r.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='false'>,</mo>
+  <msup>
+   <mi>&#x3C3;</mi>
+   <mn>2</mn>
+  </msup>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+, and for given <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3D5;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3BE;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+. </li>
+<li class="enumerate_item" id='magicparlabel-503'>Compute the MLE <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mover>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</msub>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+ as a function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3D5;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3BE;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ </li>
+<li class="enumerate_item" id='magicparlabel-504'>Compute the MLE <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mn>2</mn>
+</msubsup>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ as a function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3D5;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3BE;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+.</li>
+<li class="enumerate_item" id='magicparlabel-505'>Compute the unbiased estimator of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mn>2</mn>
+</msup>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+. 
+<dl class='description'>
+<dt class="description_label">Hint</dt>
+<dd class="description_item" id='magicparlabel-506'> Consider the fitted values <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>e</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>e</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>e</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>e</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>[</mo>
+  <mrow>
+   <mi>I</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>H</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+ <mi>Z</mi>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>H</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msup>
+     <mi>&#x3A8;</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mi>R</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mi>&#x3A8;</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <msup>
+  <mi>&#x3A8;</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <msup>
+  <mi>R</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+, and write <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mn>2</mn>
+</msubsup>
+</math>
+ w.r.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>e</mi>
+</math>
+. </dd>
+<dt class="description_label">Hint</dt>
+<dd class="description_item" id='magicparlabel-507'> It is given that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>Z</mi>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <mi>A</mi>
+   <mi>Z</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mi>Z</mi>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>A</mi>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mi>Z</mi>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mo stretchy='false'>+</mo>
+ <mtext>tr</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>A</mi>
+   <mtext>Var</mtext>
+   <mrow>
+    <mo>(</mo>
+    <mi>Z</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ when <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo>&#x223C;</mo>
+ <mtext>Normal</mtext>
+</mrow>
+</math>
+</dd>
+</dl>
+</li></ol>
+</li><li class="enumerate_item" id='magicparlabel-521'>Compute the so-called log &#8220;profiled likelihood&#8221; <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>log</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>L</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>Z</mi>
+     <mo stretchy='false'>;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>&#x3D5;</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3BE;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ resulting as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>L</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>;</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3D5;</mi>
+        <mo stretchy='false'>,</mo>
+        <mi>&#x3BE;</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>L</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>;</mo>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>&#x3D5;</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>&#x3BE;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+      <mo stretchy='false'>=</mo>
+      <msubsup>
+       <mover>
+        <mi>&#x3C3;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msub>
+          <mover>
+           <mi>&#x3B2;</mi>
+           <mo stretchy='true'>&#x02C6;</mo>
+          </mover>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>&#x3D5;</mi>
+            <mo stretchy='false'>,</mo>
+            <mi>&#x3BE;</mi>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </msub>
+         <mo stretchy='false'>,</mo>
+         <mi>&#x3D5;</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>&#x3BE;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mn>2</mn>
+      </msubsup>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3D5;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3BE;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ by replacing the <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mover>
+  <mi>&#x3B2;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</msub>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mover>
+     <mi>&#x3B2;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3D5;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3BE;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BE;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mn>2</mn>
+</msubsup>
+</math>
+ in the actual likelihood <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>L</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+   <mo stretchy='false'>=</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3D5;</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>&#x3BE;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Describe how you would compute suitable values <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mover>
+   <mi>&#x3D5;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mo stretchy='false'>,</mo>
+  <mover>
+   <mi>&#x3BE;</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ for the MLE of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3D5;</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>&#x3BE;</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+</li>
+</ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-531'><span class="solution__label">Solution.</span>
+&#xA0;&#xA0;</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-564'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-569'><span class="exercise_label">Exercise 14.</span>
+<a id="exer____4_1_1_4_1_1_1_1" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-571'>&#xA0;Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>Z</mi>
+   <mi>s</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mrow>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+</msub>
+</math>
+ be a specified statistical model. Assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is weakly stationary with unknown constant mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and known covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Assume there is available a dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>:</mo>
+    <mo stretchy='false'>=</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ and assume they are realizations of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>Z</mi>
+   <mi>s</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mrow>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+</msub>
+</math>
+. Assume that the matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+ such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>C</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x2225;</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>-</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>j</mi>
+    </msub>
+   </mrow>
+   <mo>&#x2225;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ has an inverse. Consider the &#8220;Kriging&#8221; estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3BC;</mi>
+ <mtext>KM</mtext>
+</msub>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BC;</mi>
+</math>
+ as the BLUE (Best Linear Unbiased Estimator) 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3BC;</mi>
+  <mtext>KM</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>Z</mi>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+for some unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ that we need to learn.</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-572'>Find sufficient conditions on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>w</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>w</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ so that the Kriging estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3BC;</mi>
+ <mtext>KM</mtext>
+</msub>
+</math>
+ to be unbiased.</li>
+<li class="enumerate_item" id='magicparlabel-573'>Assume <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+ is invertable. Compute the MSE of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3BC;</mi>
+ <mtext>KM</mtext>
+</msub>
+</math>
+ as a function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>w</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>w</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-574'>Derive the Kriging estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3BC;</mi>
+ <mtext>KM</mtext>
+</msub>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3BC;</mi>
+</math>
+ as a function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-575'>Derive the Kriging standard error as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3C3;</mi>
+  <mtext>KM</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mrow>
+   <mtext>E</mtext>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mtext>KM</mtext>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <mi>&#x3BC;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </msqrt>
+</mrow>
+</math>
+ as a function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+</li>
+</ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-581'><span class="solution__label">Solution.</span>
+The method is called Kriging the Mean, and hence we denote it as KM. </div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-582'>It is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3BC;</mi>
+  <mtext>KM</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>Z</mi>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a set of unknown weights to be learned. 
+<div class='standard' id='magicparlabel-583'>We assume that assume zero systematic error (unbiasness), hence 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mtext>KM</mtext>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3BC;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <munderover>
+    <mo>&#x2211;</mo>
+    <mrow>
+     <mi>i</mi>
+     <mo stretchy='false'>=</mo>
+     <mn>1</mn>
+    </mrow>
+    <mi>n</mi>
+   </munderover>
+   <msub>
+    <mi>w</mi>
+    <mi>i</mi>
+   </msub>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3BC;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo stretchy='false'>-</mo>
+ <mi>&#x3BC;</mi>
+</mrow>
+</math>
+ which is satisfied given the assumption 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo>&#x27fa;</mo>
+ <msup>
+  <mn>1</mn>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mtext>
+ <mrow>
+  <mo stretchy='false'>(</mo>ASSUMPTION
+  <mo stretchy='false'>)</mo>
+ </mrow></mtext>
+</mrow>
+</math>
+</div>
+</li><li class="enumerate_item" id='magicparlabel-584'>It is 
+<div class='standard' id='magicparlabel-585'>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mtext>E</mtext>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>&#x3BC;</mi>
+        <mtext>KM</mtext>
+       </msub>
+       <mo stretchy='false'>-</mo>
+       <mi>&#x3BC;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mtext>E</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msubsup>
+       <mi>&#x3BC;</mi>
+       <mtext>KM</mtext>
+       <mn>2</mn>
+      </msubsup>
+      <mo stretchy='false'>+</mo>
+      <msup>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msup>
+      <mo stretchy='false'>-</mo>
+      <mn>2</mn>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mtext>KM</mtext>
+      </msub>
+      <mi>&#x3BC;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <msub>
+     <mi>w</mi>
+     <mi>i</mi>
+    </msub>
+    <msub>
+     <mi>w</mi>
+     <mi>j</mi>
+    </msub>
+    <mtext>E</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>i</mi>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mi>j</mi>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <msup>
+     <mi>&#x3BC;</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <msub>
+     <mi>w</mi>
+     <mi>i</mi>
+    </msub>
+    <msub>
+     <mi>w</mi>
+     <mi>j</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mtext>E</mtext>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>Z</mi>
+        <mrow>
+         <mo>(</mo>
+         <msub>
+          <mi>s</mi>
+          <mi>i</mi>
+         </msub>
+         <mo>)</mo>
+        </mrow>
+        <mi>Z</mi>
+        <mrow>
+         <mo>(</mo>
+         <msub>
+          <mi>s</mi>
+          <mi>j</mi>
+         </msub>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <msup>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <msub>
+     <mi>w</mi>
+     <mi>i</mi>
+    </msub>
+    <msub>
+     <mi>w</mi>
+     <mi>j</mi>
+    </msub>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>s</mi>
+       <mi>i</mi>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mi>w</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mi>C</mi>
+    <mi>w</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</li><li class="enumerate_item" id='magicparlabel-586'>To learn the unknown weights <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ we need to solve
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mi>w</mi>
+  <mtext>KM</mtext>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <munder accent='false'>
+  <mrow>
+   <mo>arg</mo>
+   <mo>min</mo>
+  </mrow>
+  <mi>w</mi>
+ </munder>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <mtext>KM</mtext>
+    </msub>
+    <mo stretchy='false'>-</mo>
+    <mi>&#x3BC;</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>,</mo>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mtext>subject&#0160;to</mtext>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+</mrow>
+</math>
+The Lagrange function is
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mstyle mathvariant='fraktur'>
+     <mi>L</mi>
+    </mstyle>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>w</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3BB;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <munderover>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo stretchy='false'>=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>n</mi>
+    </munderover>
+    <msub>
+     <mi>w</mi>
+     <mi>i</mi>
+    </msub>
+    <msub>
+     <mi>w</mi>
+     <mi>j</mi>
+    </msub>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>s</mi>
+       <mi>i</mi>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mn>2</mn>
+    <mi>&#x3BB;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munderover>
+       <mo>&#x2211;</mo>
+       <mrow>
+        <mi>i</mi>
+        <mo stretchy='false'>=</mo>
+        <mn>1</mn>
+       </mrow>
+       <mi>n</mi>
+      </munderover>
+      <msub>
+       <mi>w</mi>
+       <mi>i</mi>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mi>w</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mi>C</mi>
+    <mi>w</mi>
+    <mo stretchy='false'>-</mo>
+    <mn>2</mn>
+    <mi>&#x3BB;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msup>
+       <mn>1</mn>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <mi>w</mi>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+The Kriging to mean equations are <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x2207;</mi>
+  <mrow>
+   <mi>w</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BB;</mi>
+  </mrow>
+ </msub>
+ <mstyle mathvariant='fraktur'>
+  <mi>L</mi>
+ </mstyle>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>w</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3BB;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ producing 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mn>0</mn>
+       <mo stretchy='false'>=</mo>
+       <mn>2</mn>
+       <munderover>
+        <mo>&#x2211;</mo>
+        <mrow>
+         <mi>j</mi>
+         <mo stretchy='false'>=</mo>
+         <mn>1</mn>
+        </mrow>
+        <mi>n</mi>
+       </munderover>
+       <msubsup>
+        <mi>w</mi>
+        <mi>j</mi>
+        <mtext>KM</mtext>
+       </msubsup>
+       <mi>c</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msub>
+          <mi>s</mi>
+          <mi>i</mi>
+         </msub>
+         <mo stretchy='false'>-</mo>
+         <msub>
+          <mi>s</mi>
+          <mi>j</mi>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>2</mn>
+       <mi>&#x3BB;</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mi>&#x2200;</mi>
+       <mi>i</mi>
+       <mo stretchy='false'>=</mo>
+       <mn>1</mn>
+       <mo stretchy='false'>,</mo>
+       <mn>...</mn>
+       <mo stretchy='false'>,</mo>
+       <mi>n</mi>
+      </mrow>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>=</mo>
+       <munderover>
+        <mo>&#x2211;</mo>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy='false'>=</mo>
+         <mn>1</mn>
+        </mrow>
+        <mi>n</mi>
+       </munderover>
+       <msubsup>
+        <mi>w</mi>
+        <mi>i</mi>
+        <mtext>KM</mtext>
+       </msubsup>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow/>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mrow/>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mn>2</mn>
+       <mi>C</mi>
+       <msup>
+        <mi>w</mi>
+        <mtext>KM</mtext>
+       </msup>
+       <mo stretchy='false'>-</mo>
+       <mn>2</mn>
+       <mi>&#x3BB;</mi>
+       <mn>1</mn>
+       <mo stretchy='false'>=</mo>
+       <mn>0</mn>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow/>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <msup>
+        <mn>1</mn>
+        <mi>&#x22A4;</mi>
+       </msup>
+       <msup>
+        <mi>w</mi>
+        <mtext>KM</mtext>
+       </msup>
+       <mo stretchy='false'>=</mo>
+       <mn>1</mn>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow/>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mrow/>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+Given that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>C</mi>
+ <mrow>
+  <mo stretchy='false'>-</mo>
+  <mn>1</mn>
+ </mrow>
+</msup>
+</math>
+ exists, I multiply by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mn>1</mn>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <msup>
+  <mi>C</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+ and I get 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mn>2</mn>
+ <msup>
+  <mn>1</mn>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>w</mi>
+ <mo stretchy='false'>-</mo>
+ <mn>2</mn>
+ <msup>
+  <mn>1</mn>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <msup>
+  <mi>C</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mi>&#x3BB;</mi>
+ <mn>1</mn>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ so
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x3BB;</mi>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <msup>
+    <mn>1</mn>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <msup>
+    <mi>C</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <mn>1</mn>
+  </mrow>
+ </mfrac>
+</mrow>
+</math>
+ I substitute and I get 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mi>w</mi>
+  <mtext>KM</mtext>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mrow>
+   <msup>
+    <mi>C</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <mn>1</mn>
+  </mrow>
+  <mrow>
+   <msup>
+    <mn>1</mn>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <msup>
+    <mi>C</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <mn>1</mn>
+  </mrow>
+ </mfrac>
+</mrow>
+</math>
+ So 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3BC;</mi>
+  <mtext>KM</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mfrac>
+    <mrow>
+     <msup>
+      <mi>C</mi>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mn>1</mn>
+    </mrow>
+    <mrow>
+     <msup>
+      <mn>1</mn>
+      <mi>&#x22A4;</mi>
+     </msup>
+     <msup>
+      <mi>C</mi>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mn>1</mn>
+    </mrow>
+   </mfrac>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>Z</mi>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-591'>It is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3C3;</mi>
+  <mtext>KM</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mrow>
+   <mtext>E</mtext>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mtext>KM</mtext>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <mi>&#x3BC;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </msqrt>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mrow>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mfrac>
+      <mrow>
+       <msup>
+        <mi>C</mi>
+        <mrow>
+         <mo stretchy='false'>-</mo>
+         <mn>1</mn>
+        </mrow>
+       </msup>
+       <mn>1</mn>
+      </mrow>
+      <mrow>
+       <msup>
+        <mn>1</mn>
+        <mi>&#x22A4;</mi>
+       </msup>
+       <msup>
+        <mi>C</mi>
+        <mrow>
+         <mo stretchy='false'>-</mo>
+         <mn>1</mn>
+        </mrow>
+       </msup>
+       <mn>1</mn>
+      </mrow>
+     </mfrac>
+     <mo>)</mo>
+    </mrow>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <mi>C</mi>
+   <mfrac>
+    <mrow>
+     <msup>
+      <mi>C</mi>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mn>1</mn>
+    </mrow>
+    <mrow>
+     <msup>
+      <mn>1</mn>
+      <mi>&#x22A4;</mi>
+     </msup>
+     <msup>
+      <mi>C</mi>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mn>1</mn>
+    </mrow>
+   </mfrac>
+  </mrow>
+ </msqrt>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <msqrt>
+   <mrow>
+    <msup>
+     <mn>1</mn>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mi>C</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mn>1</mn>
+   </mrow>
+  </msqrt>
+ </mfrac>
+</mrow>
+</math>
+</li>
+</ol>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-597'><hr />
+</div>
+
+<div class='standard' style='text-align: center;' id='magicparlabel-602'>(Given as Formative assessment 2)</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-603'><span class="exercise_label">Exercise 15.</span>
+<a id="exer____4_1_1_4_1_1_1_1_1" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-605'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ be a specified statistical model. Assume that process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ has known mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and known covariance function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>,</mo>
+   <mo>&#x22C5;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Assume there is available a dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>:</mo>
+    <mo stretchy='false'>=</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+. Assume that the matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+ such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>C</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ has an inverse. Consider the &#8220;Kriging&#8221; estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3BC;</mi>
+ <mtext>SK</mtext>
+</msub>
+</math>
+ Consider the &#8220;Kriging&#8221; estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at an unseen spatial location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ as the BLUE (Best Linear Unbiased Estimator) 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>w</mi>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>w</mi>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>Z</mi>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+for some unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ that we need to learn, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+. Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>w</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>w</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+.</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-606'>Find sufficient conditions on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>w</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>w</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ so that the Kriging estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ to be unbiased.</li>
+<li class="enumerate_item" id='magicparlabel-607'>Derive the MSE of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mtext>SK</mtext>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>C</mi>
+ <mi>w</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mn>0</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mn>0</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mn>2</mn>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <msub>
+  <mi>C</mi>
+  <mn>0</mn>
+ </msub>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>C</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ is a vector such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <msub>
+    <mi>C</mi>
+    <mn>0</mn>
+   </msub>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mn>0</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</li>
+<li class="enumerate_item" id='magicparlabel-608'>Derive the Kriging estimator of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msubsup>
+  <mi>C</mi>
+  <mn>0</mn>
+  <mi>&#x22A4;</mi>
+ </msubsup>
+ <msup>
+  <mi>C</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mrow>
+  <mo>[</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>&#x3BC;</mi>
+   <mrow>
+    <mo>(</mo>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mn>1</mn>
+      <mo stretchy='false'>:</mo>
+      <mi>n</mi>
+     </mrow>
+    </msub>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mrow>
+    <mn>1</mn>
+    <mo stretchy='false'>:</mo>
+    <mi>n</mi>
+   </mrow>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a vector such as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>:</mo>
+       <mi>n</mi>
+      </mrow>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</li>
+<li class="enumerate_item" id='magicparlabel-609'>Compute the Kriging standard error <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3C3;</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mrow>
+   <mtext>E</mtext>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>Z</mi>
+       <mtext>SK</mtext>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </msqrt>
+</mrow>
+</math>
+.</li>
+</ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-615'><span class="solution__label">Solution.</span>
+&#xA0;&#xA0;&#xA0;</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-630'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-635'><span class="exercise_label">Exercise 16.</span>
+<a id="exer____4_1_1_4_1_1_1_2" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-637'>Assume a spatial model <a id="eq__15" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x3BC;</mi>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B4;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mi>s</mi>
+    <mo>&#x2208;</mo>
+    <mstyle mathvariant='script'>
+     <mi>S</mi>
+    </mstyle>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+with unknown mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+. Assume a set of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ observed realizations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <a href="#eq__15">(2)</a> at sites <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mi>i</mi>
+</msub>
+</math>
+ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>i</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>,</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+. Assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is a weak stationary stochastic process with known covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Derive the formula for the Ordinary Kriging predictor <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at spatial location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ and its kriging variance as function of the covariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and not the semi-variogram. </div>
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-643'><span class="solution__label">Solution.</span>
+&#xA0; </div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-649'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-654'><span class="exercise_label">Exercise 17.</span>
+<a id="exer____4_1_1_4_1_1_1_2_1" />(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-656'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ be a specified statistical model. Assume that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is an intrinsic stationary process with unknown constant mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and known semi-variogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Assume there is available a dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>:</mo>
+    <mo stretchy='false'>=</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+. Consider the &#8220;Kriging&#8221; estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>OK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at any unseen spatial location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ as the BLUE (Best Linear Unbiased Estimator) 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>OK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>w</mi>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>=</mo>
+   <mn>1</mn>
+  </mrow>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>w</mi>
+  <mrow>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>Z</mi>
+</mrow>
+</math>
+for some unknown <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>w</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ that we need to learn, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+. Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>w</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>w</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+.</div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-664'>Find sufficient conditions on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>w</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>w</mi>
+    <mi>n</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ so that the Kriging estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>OK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ to be unbiased.</li>
+<li class="enumerate_item" id='magicparlabel-665'>Derive the MSE of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>OK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>E</mtext>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mtext>OK</mtext>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mo stretchy='false'>-</mo>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mstyle mathvariant='bold'>
+ <mi>&#x393;</mi></mstyle>
+ <mi>w</mi>
+ <mo stretchy='false'>+</mo>
+ <mn>2</mn>
+ <msup>
+  <mi>w</mi>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <msub>
+  <mstyle mathvariant='bold'>
+  <mi>&#x3B3;</mi></mstyle>
+  <mn>0</mn>
+ </msub>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mstyle mathvariant='bold'>
+  <mi>&#x3B3;</mi></mstyle>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>&#x3B3;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>s</mi>
+       <mn>0</mn>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B3;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>s</mi>
+       <mn>0</mn>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>n</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x393;</mi>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mstyle mathvariant='bold'>
+   <mi>&#x393;</mi></mstyle>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B3;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-666'>Assume <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x393;</mi>
+</math>
+ is invertable matrix. Derive the Kriging estimator of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>OK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mstyle mathvariant='bold'>
+  <mi>&#x393;</mi></mstyle>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mstyle mathvariant='bold'>
+    <mi>&#x3B3;</mi></mstyle>
+    <mn>0</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <mfrac>
+    <mrow>
+     <mn>1</mn>
+     <mo stretchy='false'>-</mo>
+     <msup>
+      <mtext>
+      <mn>1</mn></mtext>
+      <mi>&#x22A4;</mi>
+     </msup>
+     <msup>
+      <mstyle mathvariant='bold'>
+      <mi>&#x393;</mi></mstyle>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <msub>
+      <mstyle mathvariant='bold'>
+      <mi>&#x3B3;</mi></mstyle>
+      <mn>0</mn>
+     </msub>
+    </mrow>
+    <mrow>
+     <msup>
+      <mtext>
+      <mn>1</mn></mtext>
+      <mi>&#x22A4;</mi>
+     </msup>
+     <msup>
+      <mstyle mathvariant='bold'>
+      <mi>&#x393;</mi></mstyle>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mtext>
+     <mn>1</mn></mtext>
+    </mrow>
+   </mfrac>
+   <mtext>
+   <mn>1</mn></mtext>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mi>Z</mi>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-667'>Derive the Kriging standard error of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mtext>OK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3C3;</mi>
+  <mtext>SK</mtext>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msqrt>
+  <mrow>
+   <msub>
+    <mstyle mathvariant='bold'>
+    <mi>&#x3B3;</mi></mstyle>
+    <mn>0</mn>
+   </msub>
+   <msup>
+    <mstyle mathvariant='bold'>
+    <mi>&#x393;</mi></mstyle>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <msub>
+    <mstyle mathvariant='bold'>
+    <mi>&#x3B3;</mi></mstyle>
+    <mn>0</mn>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>1</mn>
+       <mo stretchy='false'>-</mo>
+       <msup>
+        <mtext>
+        <mn>1</mn></mtext>
+        <mi>&#x22A4;</mi>
+       </msup>
+       <msup>
+        <mstyle mathvariant='bold'>
+        <mi>&#x393;</mi></mstyle>
+        <mrow>
+         <mo stretchy='false'>-</mo>
+         <mn>1</mn>
+        </mrow>
+       </msup>
+       <msub>
+        <mstyle mathvariant='bold'>
+        <mi>&#x3B3;</mi></mstyle>
+        <mn>0</mn>
+       </msub>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <msup>
+      <mtext>
+      <mn>1</mn></mtext>
+      <mi>&#x22A4;</mi>
+     </msup>
+     <msup>
+      <mstyle mathvariant='bold'>
+      <mi>&#x393;</mi></mstyle>
+      <mrow>
+       <mo stretchy='false'>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mtext>
+     <mn>1</mn></mtext>
+    </mrow>
+   </mfrac>
+  </mrow>
+ </msqrt>
+</mrow>
+</math>
+</li>
+</ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-673'><span class="solution__label">Solution.</span>
+&#xA0;</div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-693'><hr />
+</div>
+
 
 </section>
 <section>
-<h1 class='part' id='magicparlabel-986'><span class="part_label">Part III</span> Aerial unit data / spatial data on lattices</h1>
+<h1 class='part' id='magicparlabel-994'><span class="part_label">Part III</span> Aerial unit data / spatial data on lattices</h1>
 
 
 
