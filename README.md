@@ -179,7 +179,7 @@ Ferrite-Pearlite data
 
 London suiside data  
 
-+ [data](./Datasets/London_Suicides_data/)  
++ [data](./Datasets/London_Suicides_data/), [description](./Datasets/London_Suicides_data/The%20Epidemiology%20of%20Suicide%20in%20London.info)  
 
 Plemonte data  
 
