@@ -155,7 +155,13 @@ It contains all the exercises and solutions
 
 #### Homework 2  
 
-... Not available yet  
++ [Problems only (PDF)](./Exercise_sheets/Homework_sheet_2_questions.pdf)  
+
++ [Problems only (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_2_complete_xhtml/Homework_sheet_2_questions.xhtml)  
+
++ [Problems and solutions (PDF)](./Exercise_sheets/Homework_sheet_2_complete.pdf)  
+
++ [Problems and solutions (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_2_complete_xhtml/Homework_sheet_2_complete.xhtml)    
 
 #### Homework 3  
 
