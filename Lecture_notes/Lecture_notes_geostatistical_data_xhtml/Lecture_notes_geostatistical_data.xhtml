@@ -8,6 +8,9 @@
 mstyle.math { font-style: italic; }
 
 /* Layout-provided Styles */
+del.strikeout {
+  text-decoration: line-through;
+}
 div.standard {
 text-align: left;
 
@@ -233,6 +236,32 @@ font-variant: normal;
 font-size: medium;
 
 }
+div.fact {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.fact_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+h4.subsubsection_ {
+font-weight: normal;
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.4ex;
+text-align: left;
+
+}
 div.Shadowbox { border: solid gray medium; border-bottom: solid black 1ex; border-right: solid black 1ex; padding: 0.5ex; }
 div.marginal {
 	border: 2px solid black;
@@ -279,6 +308,10 @@ div.foot:hover div.foot_inner {
 }
 span.flex_url {
 font-family: monospace;
+}
+div.Boxed {
+	border: solid thick black;
+	padding: 0.5ex;
 }
 
 
@@ -3109,7 +3142,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
  <a id="alg_R_script_for" /></span></div>
 </div>
 <div class='float-figure'>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-160'><img style='width:20%;' src='e_4f3ec1f6198a_RMnugget_1D_1.png' alt='image: e_4f3ec1f6198a_RMnugget_1D_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Nugget c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-160'><img style='width:20%;' src='e_3f5d845e529a_RMnugget_1D_1.png' alt='image: e_3f5d845e529a_RMnugget_1D_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Nugget c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3123,7 +3156,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Nugget_c_f____2" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-168'><img style='width:20%;' src='e_d58eb466155b_RMnugget_1D_100.png' alt='image: e_d58eb466155b_RMnugget_1D_100.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Nugget c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-168'><img style='width:20%;' src='e_b5223b029421_RMnugget_1D_100.png' alt='image: e_b5223b029421_RMnugget_1D_100.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Nugget c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3140,7 +3173,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 
 
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-177'><img style='width:20%;' src='e_27b04c9f19eb_RMgauss_1D_1_0_5.png' alt='image: e_27b04c9f19eb_RMgauss_1D_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Gauss c.f
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-177'><img style='width:20%;' src='e_ebb2446d80cc_RMgauss_1D_1_0_5.png' alt='image: e_ebb2446d80cc_RMgauss_1D_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Gauss c.f
 <br />
  (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3161,7 +3194,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____2_1" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-185'><img style='width:20%;' src='e_71f622834793_RMgauss_1D_100_0_5.png' alt='image: e_71f622834793_RMgauss_1D_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Gauss c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-185'><img style='width:20%;' src='e_590c9ae11e38_RMgauss_1D_100_0_5.png' alt='image: e_590c9ae11e38_RMgauss_1D_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Gauss c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3182,7 +3215,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____3_1" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-193'><img style='width:20%;' src='e_52e245424639_RMgauss_1D_1_5.png' alt='image: e_52e245424639_RMgauss_1D_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Gauss c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-193'><img style='width:20%;' src='e_57a451ff9f6f_RMgauss_1D_1_5.png' alt='image: e_57a451ff9f6f_RMgauss_1D_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Gauss c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3206,7 +3239,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 
 
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-202'><img style='width:20%;' src='e_b5647162b29b_RMexp_1D_1_0_5.png' alt='image: e_b5647162b29b_RMexp_1D_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  Exp c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-202'><img style='width:20%;' src='e_031aa881e718_RMexp_1D_1_0_5.png' alt='image: e_031aa881e718_RMexp_1D_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  Exp c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3227,7 +3260,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____5" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-210'><img style='width:20%;' src='e_37d56f65a9ce_RMexp_1D_100_0_5.png' alt='image: e_37d56f65a9ce_RMexp_1D_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  Exp c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-210'><img style='width:20%;' src='e_8ad935e7335d_RMexp_1D_100_0_5.png' alt='image: e_8ad935e7335d_RMexp_1D_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  Exp c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3248,7 +3281,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____4_2" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-218'><img style='width:20%;' src='e_bdc917724c47_RMexp_1D_1_5.png' alt='image: e_bdc917724c47_RMexp_1D_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  Exp c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-218'><img style='width:20%;' src='e_5a6c434d6e38_RMexp_1D_1_5.png' alt='image: e_5a6c434d6e38_RMexp_1D_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  Exp c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3329,7 +3362,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
  (using same seed) <a id="fig_Realizations_of_GRF_1D" /></span></div>
 </div>
 <div class='float-figure'>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-235'><img style='width:20%;' src='e_63ed5239fea6_RMnugget_1.png' alt='image: e_63ed5239fea6_RMnugget_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Nugget c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-235'><img style='width:20%;' src='e_2a6711875666_RMnugget_1.png' alt='image: e_2a6711875666_RMnugget_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Nugget c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3343,7 +3376,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Nugget_c_f___" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-243'><img style='width:20%;' src='e_469e1418ab11_RMnugget_100.png' alt='image: e_469e1418ab11_RMnugget_100.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Nugget c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-243'><img style='width:20%;' src='e_e96237aa1913_RMnugget_100.png' alt='image: e_e96237aa1913_RMnugget_100.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Nugget c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3360,7 +3393,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 
 
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-252'><img style='width:20%;' src='e_3ac713e13af9_RMgauss_1_0_5.png' alt='image: e_3ac713e13af9_RMgauss_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Gauss c.f
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-252'><img style='width:20%;' src='e_3a44190cb2f1_RMgauss_1_0_5.png' alt='image: e_3a44190cb2f1_RMgauss_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Gauss c.f
 <br />
  (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3381,7 +3414,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____2" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-260'><img style='width:20%;' src='e_49f4ee12d02d_RMgauss_100_0_5.png' alt='image: e_49f4ee12d02d_RMgauss_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Gauss c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-260'><img style='width:20%;' src='e_fb503306a7e0_RMgauss_100_0_5.png' alt='image: e_fb503306a7e0_RMgauss_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Gauss c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3402,7 +3435,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____3" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-268'><img style='width:20%;' src='e_89bd4de15f8c_RMgauss_1_5.png' alt='image: e_89bd4de15f8c_RMgauss_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Gauss c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-268'><img style='width:20%;' src='e_b47db1e6b123_RMgauss_1_5.png' alt='image: e_b47db1e6b123_RMgauss_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Gauss c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3426,7 +3459,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 
 
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-277'><img style='width:20%;' src='e_430a29fca4d3_RMexp_1_0_5.png' alt='image: e_430a29fca4d3_RMexp_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  Exp c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-277'><img style='width:20%;' src='e_b3de906a2c17_RMexp_1_0_5.png' alt='image: e_b3de906a2c17_RMexp_1_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  Exp c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3447,7 +3480,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f____" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-285'><img style='width:20%;' src='e_311c1f2e7896_RMexp_100_0_5.png' alt='image: e_311c1f2e7896_RMexp_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  Exp c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-285'><img style='width:20%;' src='e_81df9d187db9_RMexp_100_0_5.png' alt='image: e_81df9d187db9_RMexp_100_0_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  Exp c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -3468,7 +3501,7 @@ D the code to simulate the GP is given in Algorithm <a href="#alg_R_script_for">
 </math>
 )<a id="fig_Gauss_c_f_____4" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-293'><img style='width:20%;' src='e_347f458d33dd_RMexp_1_5.png' alt='image: e_347f458d33dd_RMexp_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  Exp c.f 
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-293'><img style='width:20%;' src='e_d4811bd085e3_RMexp_1_5.png' alt='image: e_d4811bd085e3_RMexp_1_5.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  Exp c.f 
 <br />
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -7798,7 +7831,7 @@ The semivariogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
  is very informative when plotted against the lag <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>h</mi>
 </math>
-. Below we discuss some of the characteristics of it, using Figure <a href="#fig_Variogram_s_characteristics">10.1</a> <div class='float-figure'><div class='plain_layout' id='magicparlabel-509'><img style='width:50%;' src='e_8737efdf9b8f_variograms_characteristics-1.png' alt='image: e_8737efdf9b8f_variograms_characteristics-1.png' /></div>
+. Below we discuss some of the characteristics of it, using Figure <a href="#fig_Variogram_s_characteristics">10.1</a> <div class='float-figure'><div class='plain_layout' id='magicparlabel-509'><img style='width:50%;' src='e_9f47101899e9_variograms_characteristics-1.png' alt='image: e_9f47101899e9_variograms_characteristics-1.png' /></div>
 
 <div class='plain_layout' id='magicparlabel-510'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 10.1:  Semi Variogram&#8217;s characteristics <a id="fig_Variogram_s_characteristics" /></span></div>
 </div>
@@ -8849,7 +8882,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </div>
 
 <div class='float-figure'><div class='plain_layout' id='magicparlabel-657'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-661'><img style='width:33%;' src='e_22d24b1cd5e4_cv_gauss.png' alt='image: e_22d24b1cd5e4_cv_gauss.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-661'><img style='width:33%;' src='e_40d7c7b7deff_cv_gauss.png' alt='image: e_40d7c7b7deff_cv_gauss.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>c</mi>
@@ -8864,7 +8897,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-669'><img style='width:33%;' src='e_f5d1d7939c83_cv_nugget.png' alt='image: e_f5d1d7939c83_cv_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-669'><img style='width:33%;' src='e_cc062d713efb_cv_nugget.png' alt='image: e_cc062d713efb_cv_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>c</mi>
@@ -8879,7 +8912,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-677'><img style='width:33%;' src='e_0579a6439b86_cv_gauss_nugget.png' alt='image: e_0579a6439b86_cv_gauss_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-677'><img style='width:33%;' src='e_7aaf408e8249_cv_gauss_nugget.png' alt='image: e_7aaf408e8249_cv_gauss_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>c</mi>
@@ -8907,7 +8940,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 
 
 <div class='plain_layout' id='magicparlabel-682'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-686'><img style='width:33%;' src='e_b0d15bff3fe1_sv_gauss.png' alt='image: e_b0d15bff3fe1_sv_gauss.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-686'><img style='width:33%;' src='e_e6a37b4321fb_sv_gauss.png' alt='image: e_e6a37b4321fb_sv_gauss.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>&#x3B3;</mi>
@@ -8922,7 +8955,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-694'><img style='width:33%;' src='e_aa3d686ec626_sv_nugget.png' alt='image: e_aa3d686ec626_sv_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-694'><img style='width:33%;' src='e_4af0028d2a68_sv_nugget.png' alt='image: e_4af0028d2a68_sv_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>&#x3B3;</mi>
@@ -8937,7 +8970,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-702'><img style='width:33%;' src='e_9414f9eac81c_sv_gauss_nugget.png' alt='image: e_9414f9eac81c_sv_gauss_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-702'><img style='width:33%;' src='e_c7101cc98288_sv_gauss_nugget.png' alt='image: e_c7101cc98288_sv_gauss_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>&#x3B3;</mi>
@@ -8965,7 +8998,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 
 
 <div class='plain_layout' id='magicparlabel-707'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-711'><img style='width:33%;' src='e_9dea7a67eba9_matern_cv_vs_nu.png' alt='image: e_9dea7a67eba9_matern_cv_vs_nu.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-711'><img style='width:33%;' src='e_3f4301c6e8ed_matern_cv_vs_nu.png' alt='image: e_3f4301c6e8ed_matern_cv_vs_nu.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure g:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msub>
  <mi>c</mi>
  <mtext>Matern</mtext>
@@ -8973,7 +9006,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-731'><img style='width:33%;' src='e_4c7004b5c186_gaussian_cv_vs_sig2_phi.png' alt='image: e_4c7004b5c186_gaussian_cv_vs_sig2_phi.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-731'><img style='width:33%;' src='e_687b0a74d7d6_gaussian_cv_vs_sig2_phi.png' alt='image: e_687b0a74d7d6_gaussian_cv_vs_sig2_phi.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure h:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>c</mi>
@@ -8997,7 +9030,7 @@ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-739'><img style='width:33%;' src='e_d20a93d52e08_cv_gauss_exp_spher_nugget.png' alt='image: e_d20a93d52e08_cv_gauss_exp_spher_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure i:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-739'><img style='width:33%;' src='e_701d58367b4a_cv_gauss_exp_spher_nugget.png' alt='image: e_701d58367b4a_cv_gauss_exp_spher_nugget.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure i:  <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>c</mi>
@@ -9532,9 +9565,9 @@ For brevity, below we discuss about intrinsic random fields and semivariograms, 
 
 
 <div class='float-figure'><div class='plain_layout' id='magicparlabel-807'>  <span class='float-caption-Standard float-caption float-caption-standard'>Figure 12.1:  Isotropy vs Anisotropy</span></div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-823'><img style='width:33%;' src='e_0e37c50f8f71_geometric-anisotropy-cartoon.png' alt='image: e_0e37c50f8f71_geometric-anisotropy-cartoon.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Geometric_anisotropy" />Geometric anisotropy</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-823'><img style='width:33%;' src='e_c894850a693d_geometric-anisotropy-cartoon.png' alt='image: e_c894850a693d_geometric-anisotropy-cartoon.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Geometric_anisotropy" />Geometric anisotropy</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-831'><img style='width:33%;' src='e_2c786c9e3690_zonal-anisotropy-cartoon.png' alt='image: e_2c786c9e3690_zonal-anisotropy-cartoon.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Zonal anisotropy</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-831'><img style='width:33%;' src='e_9fb4ffb390b4_zonal-anisotropy-cartoon.png' alt='image: e_9fb4ffb390b4_zonal-anisotropy-cartoon.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Zonal anisotropy</span></div>
 </div>
 
 </div>
@@ -9854,7 +9887,7 @@ D] Consider a coordinate system for <math xmlns='http://www.w3.org/1998/Math/Mat
 . </li>
 </ol>
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-853'><img style='width:33%;' src='e_69bfd0560639_axis-system-rotation.png' alt='image: e_69bfd0560639_axis-system-rotation.png' /></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-853'><img style='width:33%;' src='e_9da1e13325a5_axis-system-rotation.png' alt='image: e_9da1e13325a5_axis-system-rotation.png' /></div>
 
 <div class='plain_layout' id='magicparlabel-854'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 12.2:  Rotation of the <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mn>2</mn>
@@ -11616,7 +11649,7 @@ For instance consider <a href="#eq__13">(14.1)</a> with <math xmlns='http://www.
  </mrow>
 </mrow>
 </math>
- with a nugget semi-variogram. See the &#8220;sudden&#8221; changes of the line in Figure <a href="#fig_Variogram__of">14.1</a> representing change of spatial behavior.<div class='float-figure'><div class='plain_layout' id='magicparlabel-970'><img style='width:50%;' src='e_5fe1f09800e2_sv_decomposition.png' alt='image: e_5fe1f09800e2_sv_decomposition.png' /></div>
+ with a nugget semi-variogram. See the &#8220;sudden&#8221; changes of the line in Figure <a href="#fig_Variogram__of">14.1</a> representing change of spatial behavior.<div class='float-figure'><div class='plain_layout' id='magicparlabel-970'><img style='width:50%;' src='e_cb513955fbd1_sv_decomposition.png' alt='image: e_cb513955fbd1_sv_decomposition.png' /></div>
 
 <div class='plain_layout' id='magicparlabel-971'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 14.1:  <a id="fig_Variogram__of" />Variogram <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
@@ -12638,16 +12671,16 @@ Consider a decomposition
 <div class='example'>
 <div class="example_item" id='magicparlabel-1029'><span class="example_label">Example 115.</span>
 <a id="exa__Meuse_river_data" />(Meuse river data set) The Meuse river dataset set, used as a running example gives locations and topsoil heavy metal concentrations, along with a number of soil and landscape variables at the observation locations, collected in a flood plain of the river Meuse, near the village of Stein (NL). Here, we use the topsoil zinc concentration, mg kg-1 soil ("ppm") as quantity of interest (Z).  See Figure <a href="#fig_Variogram_cloud_1_1_1_1_1_1">a</a>. This is the R dataset <span style='font-family:monospace;'>meuse{sp}</span>. <div class='float-figure'><div class='plain_layout' id='magicparlabel-1037'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1041'><img style='width:33%;' src='e_a0a5ec55eb6a_meuse-bubble-plot.png' alt='image: e_a0a5ec55eb6a_meuse-bubble-plot.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Variogram_cloud_1_1_1_1_1_1" />Bubble plot of zinc (origial scale) vs location</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1041'><img style='width:33%;' src='e_ae5d9ed6e2f2_meuse-bubble-plot.png' alt='image: e_ae5d9ed6e2f2_meuse-bubble-plot.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Variogram_cloud_1_1_1_1_1_1" />Bubble plot of zinc (origial scale) vs location</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1049'><img style='width:33%;' src='e_5a35f52091bc_meuse-log-variogram-cloud.png' alt='image: e_5a35f52091bc_meuse-log-variogram-cloud.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_Variogram_cloud_2" />Variogram cloud</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1049'><img style='width:33%;' src='e_ae8e8f92baae_meuse-log-variogram-cloud.png' alt='image: e_ae8e8f92baae_meuse-log-variogram-cloud.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_Variogram_cloud_2" />Variogram cloud</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1057'><img style='width:33%;' src='e_caa8f83d8501_meuse-log-variogram-isotropic.png' alt='image: e_caa8f83d8501_meuse-log-variogram-isotropic.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Variogram_cloud_1_2" />Empirical estimate (isotropic)</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1057'><img style='width:33%;' src='e_14cbce9c94c3_meuse-log-variogram-isotropic.png' alt='image: e_14cbce9c94c3_meuse-log-variogram-isotropic.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Variogram_cloud_1_2" />Empirical estimate (isotropic)</span></div>
 </div>
 
 
 <div class='plain_layout' id='magicparlabel-1062'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1066'><img style='width:33%;' src='e_2038e2ee94cf_meuse-log-variogram-semi-variogram-anisotropy-90.png' alt='image: e_2038e2ee94cf_meuse-log-variogram-semi-variogram-anisotropy-90.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <a id="fig_Variogram_cloud_1_1_2" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1066'><img style='width:33%;' src='e_622a0396d16e_meuse-log-variogram-semi-variogram-anisotropy-90.png' alt='image: e_622a0396d16e_meuse-log-variogram-semi-variogram-anisotropy-90.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <a id="fig_Variogram_cloud_1_1_2" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mn>9</mn>
  <msup>
@@ -12658,7 +12691,7 @@ Consider a decomposition
 </math>
 )</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1074'><img style='width:33%;' src='e_3714aa20d329_meuse-log-variogram-semi-variogram-anisotropy-45.png' alt='image: e_3714aa20d329_meuse-log-variogram-semi-variogram-anisotropy-45.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <a id="fig_Variogram_cloud_1_1_1_2" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1074'><img style='width:33%;' src='e_b88b22ce005b_meuse-log-variogram-semi-variogram-anisotropy-45.png' alt='image: e_b88b22ce005b_meuse-log-variogram-semi-variogram-anisotropy-45.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <a id="fig_Variogram_cloud_1_1_1_2" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mn>4</mn>
  <msup>
@@ -12669,7 +12702,7 @@ Consider a decomposition
 </math>
 )</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1082'><img style='width:33%;' src='e_54934ef8cbd4_meuse-log-variogram-semi-variogram-anisotropy.png' alt='image: e_54934ef8cbd4_meuse-log-variogram-semi-variogram-anisotropy.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <a id="fig_Variogram_cloud_1_1_1_1_1" />Empirical estimate (different directions)</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1082'><img style='width:33%;' src='e_91c29c579a15_meuse-log-variogram-semi-variogram-anisotropy.png' alt='image: e_91c29c579a15_meuse-log-variogram-semi-variogram-anisotropy.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <a id="fig_Variogram_cloud_1_1_1_1_1" />Empirical estimate (different directions)</span></div>
 </div>
 
 
@@ -12683,16 +12716,16 @@ Consider a decomposition
 <div class='example'>
 <div class="example_item" id='magicparlabel-1093'><span class="example_label">Example 116.</span>
 (Wolfcamp-aquifer dataset) We also consider the Wolfcamp-aquifer dataset in Exercise <a href="#exer____4">exer:()-4</a> in the Exercise sheet. See Figure <a href="#fig_Variogram_cloud_1_1_1_1_2">a</a><div class='float-figure'><div class='plain_layout' id='magicparlabel-1097'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1101'><img style='width:33%;' src='e_fb34a006f36a_wolfcamp-aquifer-original.png' alt='image: e_fb34a006f36a_wolfcamp-aquifer-original.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Variogram_cloud_1_1_1_1_2" />Data</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1101'><img style='width:33%;' src='e_4e97f0876247_wolfcamp-aquifer-original.png' alt='image: e_4e97f0876247_wolfcamp-aquifer-original.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  <a id="fig_Variogram_cloud_1_1_1_1_2" />Data</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1109'><img style='width:33%;' src='e_db8685bc2f5f_wolfcamp-variogram-cloud.png' alt='image: e_db8685bc2f5f_wolfcamp-variogram-cloud.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_Variogram_cloud" />Variogram cloud</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1109'><img style='width:33%;' src='e_3d09880c4274_wolfcamp-variogram-cloud.png' alt='image: e_3d09880c4274_wolfcamp-variogram-cloud.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  <a id="fig_Variogram_cloud" />Variogram cloud</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1117'><img style='width:33%;' src='e_27b5acfd3618_wolfcamp-variogram-isotropic.png' alt='image: e_27b5acfd3618_wolfcamp-variogram-isotropic.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Variogram_cloud_1" />Empirical estimate (isotropic)</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1117'><img style='width:33%;' src='e_d585283f2af0_wolfcamp-variogram-isotropic.png' alt='image: e_d585283f2af0_wolfcamp-variogram-isotropic.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  <a id="fig_Variogram_cloud_1" />Empirical estimate (isotropic)</span></div>
 </div>
 
 
 <div class='plain_layout' id='magicparlabel-1122'>  </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1126'><img style='width:33%;' src='e_f67baec95349_wolfcamp-variogram-semi-variogram-anisotropy-90.png' alt='image: e_f67baec95349_wolfcamp-variogram-semi-variogram-anisotropy-90.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <a id="fig_Variogram_cloud_1_1" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1126'><img style='width:33%;' src='e_b6240654d6f7_wolfcamp-variogram-semi-variogram-anisotropy-90.png' alt='image: e_b6240654d6f7_wolfcamp-variogram-semi-variogram-anisotropy-90.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  <a id="fig_Variogram_cloud_1_1" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mn>9</mn>
  <msup>
@@ -12703,7 +12736,7 @@ Consider a decomposition
 </math>
 )</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1134'><img style='width:33%;' src='e_685a7cf91a00_wolfcamp-variogram-semi-variogram-anisotropy-45.png' alt='image: e_685a7cf91a00_wolfcamp-variogram-semi-variogram-anisotropy-45.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <a id="fig_Variogram_cloud_1_1_1" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1134'><img style='width:33%;' src='e_455a8ccbd007_wolfcamp-variogram-semi-variogram-anisotropy-45.png' alt='image: e_455a8ccbd007_wolfcamp-variogram-semi-variogram-anisotropy-45.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  <a id="fig_Variogram_cloud_1_1_1" />Empirical estimate (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mn>4</mn>
  <msup>
@@ -12714,7 +12747,7 @@ Consider a decomposition
 </math>
 )</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1142'><img style='width:33%;' src='e_0bc331b7d124_wolfcamp-variogram-semi-variogram-anisotropy.png' alt='image: e_0bc331b7d124_wolfcamp-variogram-semi-variogram-anisotropy.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <a id="fig_Variogram_cloud_1_1_1_1" />Empirical estimate (different directions)</span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1142'><img style='width:33%;' src='e_3826198aef81_wolfcamp-variogram-semi-variogram-anisotropy.png' alt='image: e_3826198aef81_wolfcamp-variogram-semi-variogram-anisotropy.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure f:  <a id="fig_Variogram_cloud_1_1_1_1" />Empirical estimate (different directions)</span></div>
 </div>
 
 
@@ -14902,18 +14935,18 @@ An example is OLS <a id="eq__28" />
 <div class='example'>
 <div class="example_item" id='magicparlabel-1300'><span class="example_label">Example 141.</span>
 Figures    <a href="#fig_Exponential_c_f__with">a</a> and <a href="#fig_Spherical_c_f__with">b</a> show the OLE and WLE estimates <a href="#eq__28">(15.6)</a> and <a href="#eq__29">eq:-29</a> of the exponential and spherical semivariogram for the Meuse dataset. Figure    <a href="#fig_Spherical_c_f__with_1">c</a> shows the OLE and WLE estimates <a href="#eq__28">(15.6)</a> and <a href="#eq__29">eq:-29</a> of the exponential semi-variogram for the Wolfcamp dataset. The parametric semivariograms were tuned against the non-parametric estimator <a href="#eq__6">(8.1)</a> presented in dots, as discussed in Proposition <a href="#note_Assume_we_are">139</a>. <div class='float-figure'>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1308'><img style='width:33%;' src='e_e7d3ce91a5f1_meuse-log-semi-variogram-cte-exp-ols-wls-mle.png' alt='image: e_e7d3ce91a5f1_meuse-log-semi-variogram-cte-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Exponential c.f. with constant mean (Meuse dataset) <a id="fig_Exponential_c_f__with" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1308'><img style='width:33%;' src='e_42e4d91f2dc2_meuse-log-semi-variogram-cte-exp-ols-wls-mle.png' alt='image: e_42e4d91f2dc2_meuse-log-semi-variogram-cte-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Exponential c.f. with constant mean (Meuse dataset) <a id="fig_Exponential_c_f__with" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1316'><img style='width:33%;' src='e_e51f41d8378f_meuse-log-semi-variogram-cte-spherical-ols-wls-mle.png' alt='image: e_e51f41d8378f_meuse-log-semi-variogram-cte-spherical-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Spherical c.f. with constant mean (Meuse dataset) <a id="fig_Spherical_c_f__with" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1316'><img style='width:33%;' src='e_f2a4f1c27cbf_meuse-log-semi-variogram-cte-spherical-ols-wls-mle.png' alt='image: e_f2a4f1c27cbf_meuse-log-semi-variogram-cte-spherical-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Spherical c.f. with constant mean (Meuse dataset) <a id="fig_Spherical_c_f__with" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1324'><img style='width:33%;' src='e_441f84ff473a_wolfcamp-semi-variogram-cte-exp-ols-wls-mle.png' alt='image: e_441f84ff473a_wolfcamp-semi-variogram-cte-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Exponential c.f. with constant mean (Wolfcamp dataset) <a id="fig_Spherical_c_f__with_1" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1324'><img style='width:33%;' src='e_aafe9f17892a_wolfcamp-semi-variogram-cte-exp-ols-wls-mle.png' alt='image: e_aafe9f17892a_wolfcamp-semi-variogram-cte-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Exponential c.f. with constant mean (Wolfcamp dataset) <a id="fig_Spherical_c_f__with_1" /></span></div>
 </div>
 
 
 
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1333'><img style='width:33%;' src='e_8a555d3fac32_meuse-log-semi-variogram-1st-exp-ols-wls-mle.png' alt='image: e_8a555d3fac32_meuse-log-semi-variogram-1st-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Exponential c.f. with linear trend (Meuse dataset) <a id="fig_Exponential_c_f__with_1" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1333'><img style='width:33%;' src='e_bf7f952dc2df_meuse-log-semi-variogram-1st-exp-ols-wls-mle.png' alt='image: e_bf7f952dc2df_meuse-log-semi-variogram-1st-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Exponential c.f. with linear trend (Meuse dataset) <a id="fig_Exponential_c_f__with_1" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1341'><img style='width:33%;' src='e_7471c5cbc79e_wolfcamp-semi-variogram-1st-exp-ols-wls-mle.png' alt='image: e_7471c5cbc79e_wolfcamp-semi-variogram-1st-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Exponential c.f. with linear trend (Wolfcamp dataset) <a id="fig_Exponential_c_f__with_2" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1341'><img style='width:33%;' src='e_a25d07f4da40_wolfcamp-semi-variogram-1st-exp-ols-wls-mle.png' alt='image: e_a25d07f4da40_wolfcamp-semi-variogram-1st-exp-ols-wls-mle.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure e:  Exponential c.f. with linear trend (Wolfcamp dataset) <a id="fig_Exponential_c_f__with_2" /></span></div>
 </div>
 
 
@@ -16709,7 +16742,7 @@ Interested lies in learning/predicting <math xmlns='http://www.w3.org/1998/Math/
  <mi>S</mi>
 </mstyle>
 </math>
- (Figure    <a href="#fig_Kriging_area">16.1</a>).  <div class='float-figure'><div class='plain_layout' id='magicparlabel-1412'><img style='width:33%;' src='e_8fc37fdfc40a_Kriging-area-point.png' alt='image: e_8fc37fdfc40a_Kriging-area-point.png' /></div>
+ (Figure    <a href="#fig_Kriging_area">16.1</a>).  <div class='float-figure'><div class='plain_layout' id='magicparlabel-1412'><img style='width:33%;' src='e_a9eca23609ed_Kriging-area-point.png' alt='image: e_a9eca23609ed_Kriging-area-point.png' /></div>
 
 <div class='plain_layout' id='magicparlabel-1413'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 16.1:  Kriging area<a id="fig_Kriging_area" /></span></div>
 </div>
@@ -21490,9 +21523,9 @@ Consider the example with the Meuse dataset. Fig&#xA0;<a href="#fig_Ordinary_Kri
 </mrow>
 </math>
 .<div class='float-figure'><div class='plain_layout' id='magicparlabel-1509'> </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1513'><img style='width:33%;' src='e_232257291e55_logmeuse-kriging-const-exp.png' alt='image: e_232257291e55_logmeuse-kriging-const-exp.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Ordinary Kriging, constant mean, exponential covariogram <a id="fig_Ordinary_Kriging_with_2" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1513'><img style='width:33%;' src='e_06d47b4e8636_logmeuse-kriging-const-exp.png' alt='image: e_06d47b4e8636_logmeuse-kriging-const-exp.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  Ordinary Kriging, constant mean, exponential covariogram <a id="fig_Ordinary_Kriging_with_2" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1521'><img style='width:33%;' src='e_ff2442213e8b_logmeuse-kriging-1st-exp.png' alt='image: e_ff2442213e8b_logmeuse-kriging-1st-exp.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Universial Kriging, mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1521'><img style='width:33%;' src='e_cd8e64c45471_logmeuse-kriging-1st-exp.png' alt='image: e_cd8e64c45471_logmeuse-kriging-1st-exp.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  Universial Kriging, mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3BC;</mi>
  <mrow>
@@ -21530,7 +21563,7 @@ Consider the example with the Meuse dataset. Fig&#xA0;<a href="#fig_Ordinary_Kri
 
 
 <div class='plain_layout' id='magicparlabel-1526'> </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1530'><img style='width:33%;' src='e_da95b0a33ea3_logmeuse-scatter-logzinc_vs_sqrt_dist.png' alt='image: e_da95b0a33ea3_logmeuse-scatter-logzinc_vs_sqrt_dist.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Scatter plot of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1530'><img style='width:33%;' src='e_236beeb8b4c8_logmeuse-scatter-logzinc_vs_sqrt_dist.png' alt='image: e_236beeb8b4c8_logmeuse-scatter-logzinc_vs_sqrt_dist.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  Scatter plot of <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>Z</mi>
 </math>
  vs <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -21548,7 +21581,7 @@ Consider the example with the Meuse dataset. Fig&#xA0;<a href="#fig_Ordinary_Kri
 </math>
  is a third variable representing the distance to the riven bed. <a id="fig_Ordinary_Kriging_with_1_1_1_1" /></span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-1538'><img style='width:33%;' src='e_1d0cee00f826_logmeuse-kriging-sqrt_dist-exp.png' alt='image: e_1d0cee00f826_logmeuse-kriging-sqrt_dist-exp.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Universial Kriging, mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1538'><img style='width:33%;' src='e_ef7acd867f40_logmeuse-kriging-sqrt_dist-exp.png' alt='image: e_ef7acd867f40_logmeuse-kriging-sqrt_dist-exp.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure d:  Universial Kriging, mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3BC;</mi>
  <mrow>
@@ -21583,6 +21616,6800 @@ Consider the example with the Meuse dataset. Fig&#xA0;<a href="#fig_Ordinary_Kri
 </div>
 </div>
 </div>
+<div class='standard' id='magicparlabel-1548'>
+<br />
+</div>
+</section>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-1549'><span class="section_label">17</span> <a id="sec_The_Bayesian_Kriging" />The Bayesian Kriging paradigm (Hierarchical modeling) </h2>
+<section>
+<h3 class='subsection' id='magicparlabel-1550'><span class="subsection_label">17.1</span> General framework </h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1551'><span class="note_label">Note 178.</span>
+The Bayesian framework provides an elegant solution for taking into account the uncertainty on variogram or covariance parameters.</div>
+</div>
+<div class='standard' id='magicparlabel-1552'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1553'><span class="note_label">Note 179.</span>
+Consider the geostatistical model for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ with a scale decomposition such as in <a href="#eq__43">(14.3)</a> <a id="eq__46" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <munder>
+      <mrow>
+       <mi>&#x3BC;</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>s</mi>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>w</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>s</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo stretchy='true'>&#x23DF;</mo>
+     </munder>
+     <mrow>
+      <mo stretchy='false'>=</mo>
+      <mi>Y</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </munder>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B5;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mi>s</mi>
+    <mo>&#x2208;</mo>
+    <mstyle mathvariant='script'>
+     <mi>S</mi>
+    </mstyle>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.1)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ where, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is an unknown drift function modelling large scale variations, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>w</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is a zero mean random field modelling lower scale variation, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B5;</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>;</mo>
+  <mi>s</mi>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is a nugget random field modeling measurement errors. Also <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1559'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1560'><span class="note_label">Note 180.</span>
+Consider a dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ being a realization of <a href="#eq__46">(17.1)</a> at site <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mn>.</mn>
+</mrow>
+</math>
+ </div>
+</div>
+<div class='standard' id='magicparlabel-1561'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1562'><span class="note_label">Note 181.</span>
+<a id="note__Uncertainty_can" /> Unlike in the traditional kriging framework, in Bayesian kriging, we have to specify a certain probabilistic model on the spatial random fields. Uncertainty can be decomposed according to the Hierarchical spatial model<a id="eq__44" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <msub>
+        <mi>&#x3B8;</mi>
+        <mn>1</mn>
+       </msub>
+       <mo stretchy='false'>,</mo>
+       <msub>
+        <mi>&#x3B8;</mi>
+        <mn>2</mn>
+       </msub>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>data&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>|</mo>
+       <msub>
+        <mi>&#x3B8;</mi>
+        <mn>1</mn>
+       </msub>
+       <mo stretchy='false'>,</mo>
+       <msub>
+        <mi>&#x3B8;</mi>
+        <mn>2</mn>
+       </msub>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>spatial&#0160;process&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>1</mn>
+      </msub>
+     </mtd>
+     <mtd>
+      <mtext>hyper-priormodel&#0160;
+      <mrow>
+       <mo stretchy='false'>(</mo>optional&#0160;layer
+       <mo stretchy='false'>)</mo>
+      </mrow></mtext>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mtext>(17.2)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+with 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Y</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Y</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+, with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Here, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B8;</mi>
+  <mn>1</mn>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msub>
+  <mi>&#x398;</mi>
+  <mn>1</mn>
+ </msub>
+</mrow>
+</math>
+ is an unknown random hyper parameter following prior <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B8;</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>|</mo>
+ <msub>
+  <mi>&#x3B8;</mi>
+  <mn>2</mn>
+ </msub>
+ <mo>&#x223C;</mo>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B8;</mi>
+  <mn>2</mn>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msub>
+  <mi>&#x398;</mi>
+  <mn>2</mn>
+ </msub>
+</mrow>
+</math>
+ is an unknown fixed parameter without a specified prior. </div>
+</div>
+<div class='standard' id='magicparlabel-1563'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1564'><span class="note_label">Note 182.</span>
+Spatial process model expresses the scientific uncertainty (e.g., that coming from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Y</mi>
+  <mrow>
+   <mo>(</mo>
+   <mo>&#x22C5;</mo>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ as quantified via the specified distribution <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Y</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ possibly labeled by some hyper-parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>&#x3B8;</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>&#x3B8;</mi>
+     <mn>2</mn>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+. Data model expresses the measurement uncertainty (e.g., that coming from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>&#x3B5;</mi>
+  <mrow>
+   <mo>(</mo>
+   <mo>&#x22C5;</mo>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+) as quantified via the distribution <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>Y</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ possibly labeled by some parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1575'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1576'><span class="note_label">Note 183.</span>
+Figure <a href="#fig_Examples_representing_the">17.1</a> presents a visualization of the hierarchical model in Notes <a href="#note__Uncertainty_can">181</a>. The surfaces can be considered as a realization of the spatial process model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and the dotes can be considered as realizations of the data model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at specific sites given the spatial process. <div class='float-figure'><div class='plain_layout' id='magicparlabel-1580'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 17.1:  Examples representing the hierarchical spatial model <a href="#eq__44">17.2</a> for different values of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3D1;</mi>
+</math>
+ <a id="fig_Examples_representing_the" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1584'><img style='width:33%;' src='e_e37c997a0b42_pic_hierarchical_3.png' alt='image: e_e37c997a0b42_pic_hierarchical_3.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  &#xA0;</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1592'><img style='width:33%;' src='e_21e53fb45fd3_pic_hierarchical_2.png' alt='image: e_21e53fb45fd3_pic_hierarchical_2.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  &#xA0;</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-1600'><img style='width:33%;' src='e_3021f7840c84_pic_hierarchical_1.png' alt='image: e_3021f7840c84_pic_hierarchical_1.png' /><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  &#xA0;</span></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1609'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1610'><span class="note_label">Note 184.</span>
+Under Bayesian model <a href="#eq__44">(17.2)</a>, unknown but fixed <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3B8;</mi>
+ <mn>2</mn>
+</msub>
+</math>
+ can be learned pointwise by computing a point estimator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mover>
+  <mi>&#x3B8;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mn>2</mn>
+</msub>
+</math>
+ via marginal likelihood maximization 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <msub>
+    <mover>
+     <mi>&#x3B8;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mn>2</mn>
+   </msub>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <mrow>
+      <mo>arg</mo>
+      <mo>min</mo>
+     </mrow>
+     <msub>
+      <mi>&#x3B8;</mi>
+      <mn>2</mn>
+     </msub>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>2</mn>
+      <mo>log</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>Pr</mo>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>Z</mi>
+          <mo stretchy='false'>|</mo>
+          <msub>
+           <mi>&#x3B8;</mi>
+           <mn>2</mn>
+          </msub>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mtext>where</mtext>
+    <mspace width="20px"/>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>Y</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <mi>Y</mi>
+    <mtext>d</mtext>
+    <msub>
+     <mi>&#x3B8;</mi>
+     <mn>1</mn>
+    </msub>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1615'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1616'><span class="note_label">Note 185.</span>
+Under Bayesian model <a href="#eq__45">eq:-45</a>, uncertainty about unknown random <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>&#x3B8;</mi>
+ <mn>1</mn>
+</msub>
+</math>
+ can be represented by the posterior distribution 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <mi>Z</mi>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3B8;</mi>
+    <mn>2</mn>
+   </msub>
+   <mo stretchy='false'>=</mo>
+   <msub>
+    <mover>
+     <mi>&#x3B8;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mfrac>
+  <mrow>
+   <mo>Pr</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>Z</mi>
+     <mo stretchy='false'>|</mo>
+     <msub>
+      <mi>&#x3B8;</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>,</mo>
+     <msub>
+      <mi>&#x3B8;</mi>
+      <mn>2</mn>
+     </msub>
+     <mo stretchy='false'>=</mo>
+     <msub>
+      <mover>
+       <mi>&#x3B8;</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mn>2</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>Pr</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>&#x3B8;</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>|</mo>
+     <msub>
+      <mi>&#x3B8;</mi>
+      <mn>2</mn>
+     </msub>
+     <mo stretchy='false'>=</mo>
+     <msub>
+      <mover>
+       <mi>&#x3B8;</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mn>2</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mrow>
+   <mo>Pr</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>Z</mi>
+     <mo stretchy='false'>|</mo>
+     <msub>
+      <mi>&#x3B8;</mi>
+      <mn>2</mn>
+     </msub>
+     <mo stretchy='false'>=</mo>
+     <msub>
+      <mover>
+       <mi>&#x3B8;</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mn>2</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mfrac>
+</mrow>
+</math>
+ where the value <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mover>
+  <mi>&#x3B8;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mn>2</mn>
+</msub>
+</math>
+ is plugged in.</div>
+</div>
+<div class='standard' id='magicparlabel-1622'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1623'><span class="note_label">Note 186.</span>
+The posterior predictive distributions of the spatial process model <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Y</mi>
+  <mrow>
+   <mo>(</mo>
+   <mo>&#x22C5;</mo>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ given the data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is <a id="eq__21" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <msub>
+     <mi>&#x3B8;</mi>
+     <mn>1</mn>
+    </msub>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.3)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ and the marginal process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>Z</mi>
+  <mrow>
+   <mo>(</mo>
+   <mo>&#x22C5;</mo>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ given the data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is <a id="eq__20" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>&#x3B8;</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>=</mo>
+      <msub>
+       <mover>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='true'>&#x02C6;</mo>
+       </mover>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <msub>
+     <mi>&#x3B8;</mi>
+     <mn>1</mn>
+    </msub>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.4)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mn>0</mn>
+ </msub>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1628'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1629'><span class="note_label">Note 187.</span>
+The Bayes Kriging predictor <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>Y</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>BK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at unseen location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ equations is the optimizer <a id="eq__22" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mover>
+      <mi>Y</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mtext>BK</mtext>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <mrow>
+      <mo>arg</mo>
+      <mo>min</mo>
+     </mrow>
+     <mrow>
+      <msub>
+       <mi>Y</mi>
+       <mtext>BK</mtext>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mtext>E</mtext>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x2113;</mi>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <msub>
+           <mi>Y</mi>
+           <mtext>BK</mtext>
+          </msub>
+          <mrow>
+           <mo>(</mo>
+           <msub>
+            <mi>s</mi>
+            <mn>0</mn>
+           </msub>
+           <mo>)</mo>
+          </mrow>
+          <mo stretchy='false'>,</mo>
+          <mi>Y</mi>
+          <mrow>
+           <mo>(</mo>
+           <msub>
+            <mi>s</mi>
+            <mn>0</mn>
+           </msub>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo stretchy='false'>|</mo>
+        <mi>Z</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.5)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ given a pre-specified loss function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x2113;</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>Z</mi>
+ </mstyle>
+ <mo>&#x00D7;</mo>
+ <mstyle mathvariant='script'>
+  <mi>Z</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <msub>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mo stretchy='false'>+</mo>
+ </msub>
+</mrow>
+</math>
+. The expectation is under the probability <a href="#eq__20">(17.4)</a>. For Bayes Kriging predictor <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mover>
+   <mi>Z</mi>
+   <mo stretchy='true'>&#x02C6;</mo>
+  </mover>
+  <mtext>BK</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ is <a id="eq__22_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mover>
+      <mi>Z</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mtext>BK</mtext>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>s</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <mrow>
+      <mo>arg</mo>
+      <mo>min</mo>
+     </mrow>
+     <mrow>
+      <msub>
+       <mi>Z</mi>
+       <mtext>BK</mtext>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>s</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mtext>E</mtext>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x2113;</mi>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <msub>
+           <mi>Z</mi>
+           <mtext>BK</mtext>
+          </msub>
+          <mrow>
+           <mo>(</mo>
+           <msub>
+            <mi>s</mi>
+            <mn>0</mn>
+           </msub>
+           <mo>)</mo>
+          </mrow>
+          <mo stretchy='false'>,</mo>
+          <mi>Z</mi>
+          <mrow>
+           <mo>(</mo>
+           <msub>
+            <mi>s</mi>
+            <mn>0</mn>
+           </msub>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo stretchy='false'>|</mo>
+        <mi>Z</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.6)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-1630'><span class="subsection_label">17.2</span> <a id="subsec_Bayesian_Kriging__Gaussian" />An example: Gaussian process regression </h3>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1631'><span class="note_label">Note 188.</span>
+We are going through a particular example of the Bayesian Kriging (or Bayesian Gaussian process regression) to demonstrate how the &#8220;Bayesian Kriging&#8221; works.</div>
+</div>
+<div class='standard' id='magicparlabel-1636'><div class='Boxed' style='width: 90%; '><div class='plain_layout' style='text-align: center;' id='magicparlabel-1640'><u><b>List of useful formulas.</b></u></div>
+<div class='fact'>
+<div class="fact_item" id='magicparlabel-1641'><span class="fact_label">Fact 189.</span>
+<a id="fact_Let__" /> Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mi>X</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3A3;</mi>
+    <mi>X</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mi>Y</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3A3;</mi>
+    <mi>Y</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+ independent. Let fixed matrices <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ and vector <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>c</mi>
+</math>
+ of appropriate sizes. Then <a id="eq__57" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mi>X</mi>
+    <mo stretchy='false'>+</mo>
+    <mi>B</mi>
+    <mi>Y</mi>
+    <mo stretchy='false'>+</mo>
+    <mi>c</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x223C;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>A</mi>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mi>X</mi>
+      </msub>
+      <mo stretchy='false'>+</mo>
+      <mi>B</mi>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mi>Y</mi>
+      </msub>
+      <mo stretchy='false'>+</mo>
+      <mi>c</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>A</mi>
+      <msub>
+       <mi>&#x3A3;</mi>
+       <mi>X</mi>
+      </msub>
+      <msup>
+       <mi>A</mi>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <mo stretchy='false'>+</mo>
+      <mi>B</mi>
+      <msub>
+       <mi>&#x3A3;</mi>
+       <mi>Y</mi>
+      </msub>
+      <msup>
+       <mi>B</mi>
+       <mi>&#x22A4;</mi>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.7)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='plain_layout' id='magicparlabel-1642'>
+<br />
+</div>
+<div class='fact'>
+<div class="fact_item" id='magicparlabel-1643'><span class="fact_label">Fact 190.</span>
+<a id="fact_It_is" /> Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>b</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be the Gaussian pdf with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+ and covariance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ at <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+. It is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>&#x222B;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3A8;</mi>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <mi>&#x3B2;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3A8;</mi>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+      <mo stretchy='false'>+</mo>
+      <mi>&#x3A8;</mi>
+      <mi>B</mi>
+      <msup>
+       <mi>&#x3A8;</mi>
+       <mi>&#x22A4;</mi>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='plain_layout' id='magicparlabel-1644'>
+<br />
+</div>
+
+
+<div class='fact'>
+<div class="fact_item" id='magicparlabel-1651'><span class="fact_label">Fact 191.</span>
+(Woodbury matrix identity) It is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>A</mi>
+    <mo stretchy='false'>+</mo>
+    <mi>B</mi>
+    <mi>C</mi>
+    <mi>D</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>A</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mo stretchy='false'>-</mo>
+ <msup>
+  <mi>A</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mi>B</mi>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msup>
+     <mi>C</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mo stretchy='false'>+</mo>
+    <mi>D</mi>
+    <msup>
+     <mi>A</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mi>B</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mi>D</mi>
+ <msup>
+  <mi>A</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+</div>
+</div>
+<div class='plain_layout' id='magicparlabel-1652'>
+<br />
+</div>
+<div class='fact'>
+<div class="fact_item" id='magicparlabel-1653'><span class="fact_label">Fact 192.</span>
+<a id="prop__Marginalization___conditioning_" /> [Marginalization &amp; conditioning] Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>x</mi>
+  <mn>1</mn>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <msub>
+   <mi>d</mi>
+   <mn>1</mn>
+  </msub>
+ </msup>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>x</mi>
+  <mn>2</mn>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <msub>
+   <mi>d</mi>
+   <mn>2</mn>
+  </msub>
+ </msup>
+</mrow>
+</math>
+. If 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+ <mtable>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>x</mi>
+     <mn>1</mn>
+    </msub>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>x</mi>
+     <mn>2</mn>
+    </msub>
+   </mtd>
+  </mtr>
+ </mtable>
+ <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+ <mo>&#x223C;</mo>
+ <msub>
+  <mtext>N</mtext>
+  <mrow>
+   <msub>
+    <mi>d</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <msub>
+    <mi>d</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>1</mn>
+      </msub>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msub>
+     </mtd>
+    </mtr>
+   </mtable>
+   <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+   <mo stretchy='false'>,</mo>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>&#x3A3;</mi>
+       <mn>1</mn>
+      </msub>
+     </mtd>
+     <mtd>
+      <msubsup>
+       <mi>&#x3A3;</mi>
+       <mn>21</mn>
+       <mi>&#x22A4;</mi>
+      </msubsup>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>&#x3A3;</mi>
+       <mn>21</mn>
+      </msub>
+     </mtd>
+     <mtd>
+      <msub>
+       <mi>&#x3A3;</mi>
+       <mn>2</mn>
+      </msub>
+     </mtd>
+    </mtr>
+   </mtable>
+   <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ then it is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>x</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>|</mo>
+ <msub>
+  <mi>x</mi>
+  <mn>1</mn>
+ </msub>
+ <mo>&#x223C;</mo>
+ <msub>
+  <mtext>N</mtext>
+  <msub>
+   <mi>d</mi>
+   <mn>2</mn>
+  </msub>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mn>2</mn>
+     <mo stretchy='false'>|</mo>
+     <mn>1</mn>
+    </mrow>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>&#x3A3;</mi>
+    <mrow>
+     <mn>2</mn>
+     <mo stretchy='false'>|</mo>
+     <mn>1</mn>
+    </mrow>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>&#x3BC;</mi>
+  <mrow>
+   <mn>2</mn>
+   <mo stretchy='false'>|</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3BC;</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3A3;</mi>
+  <mn>21</mn>
+ </msub>
+ <msubsup>
+  <mi>&#x3A3;</mi>
+  <mn>1</mn>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msubsup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>-</mo>
+   <msub>
+    <mi>&#x3BC;</mi>
+    <mn>1</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mtext>and</mtext>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <mspace width="6px"/>
+ <msub>
+  <mi>&#x3A3;</mi>
+  <mrow>
+   <mn>2</mn>
+   <mo stretchy='false'>|</mo>
+   <mn>1</mn>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>&#x3A3;</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>-</mo>
+ <msub>
+  <mi>&#x3A3;</mi>
+  <mn>21</mn>
+ </msub>
+ <msubsup>
+  <mi>&#x3A3;</mi>
+  <mn>1</mn>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msubsup>
+ <msubsup>
+  <mi>&#x3A3;</mi>
+  <mn>21</mn>
+  <mi>&#x22A4;</mi>
+ </msubsup>
+</mrow>
+</math>
+</div>
+<div class="fact_item" id='magicparlabel-1654'></div>
+</div>
+</div></div>
+
+<div class='standard' id='magicparlabel-1659'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1660'><span class="note_label">Note 193.</span>
+Consider an available dataset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+</msubsup>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>Z</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2208;</mo>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+. The <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>i</mi>
+</math>
+-th datum <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ may be an independent measurement of an unobserved quantity <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at location <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mi>i</mi>
+</msub>
+</math>
+ but contaminated by additive random error <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3B5;</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+; i.e. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>Y</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>+</mo>
+ <msub>
+  <mi>&#x3F5;</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>i</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>,</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+. Interest lies in recovering functions <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and/or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ over the spatial domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mstyle mathvariant='script'>
+ <mi>S</mi>
+</mstyle>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1665'>
+<br />
+</div>
+<h4 class='subsubsection_' id='magicparlabel-1666'>Specifying the hierarchical model</h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1667'><span class="note_label">Note 194.</span>
+The geostatistical model can be considered as <a id="eq__59" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <munder>
+      <mrow>
+       <mi>&#x3BC;</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>s</mi>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>w</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>s</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo stretchy='true'>&#x23DF;</mo>
+     </munder>
+     <mrow>
+      <mo stretchy='false'>=</mo>
+      <mi>Y</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </munder>
+    <mo stretchy='false'>+</mo>
+    <mi>&#x3B5;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mi>s</mi>
+    <mo>&#x2208;</mo>
+    <mstyle mathvariant='script'>
+     <mi>S</mi>
+    </mstyle>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.8)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ </div>
+<dl class='description'>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-1668'> is a deterministic systematic drift <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mtext>E</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>s</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ modeling large scale variation; </dd>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-1669'> models smaller scale variation, it is modeled as a Gaussian process
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x223C;</mo>
+ <mtext>GP</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>c</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>,</mo>
+     <mo>&#x22C5;</mo>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with covariance function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mo stretchy='false'>:</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo>&#x00D7;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo>&#x2192;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ and mean function zero. </dd>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-1670'> models the additive random measurement error, it is modeled as a Gaussian process 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x223C;</mo>
+ <mtext>GP</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>c</mi>
+    <mtext>nugget</mtext>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>,</mo>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>|</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with nugget covariance function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mtext>nugget</mtext>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+   <mo stretchy='false'>|</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msub>
+  <mtext>
+  <mn>1</mn></mtext>
+  <mrow>
+   <mo>{</mo>
+   <mn>0</mn>
+   <mo>}</mo>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>|</mo>
+   <mrow>
+    <mi>s</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>s</mi>
+    <mo stretchy='false'>'</mo>
+   </mrow>
+   <mo>|</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </dd>
+</dl>
+<div class='standard' id='magicparlabel-1671'>Assuming, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mi>&#x22A5;</mi>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, it is implied </div>
+<dl class='description'>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-1672'> models the noisiness signal 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x223C;</mo>
+ <mtext>GP</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3BC;</mi>
+   <mrow>
+    <mo>(</mo>
+    <mo>&#x22C5;</mo>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mi>c</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>,</mo>
+     <mo>&#x22C5;</mo>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dd>
+<dt class="description_label"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</dt>
+<dd class="description_item" id='magicparlabel-1673'> is the marginal process 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x223C;</mo>
+ <mtext>GP</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x3BC;</mi>
+   <mrow>
+    <mo>(</mo>
+    <mo>&#x22C5;</mo>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>c</mi>
+    <mi>Z</mi>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mo>&#x22C5;</mo>
+     <mo stretchy='false'>,</mo>
+     <mo>&#x22C5;</mo>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>c</mi>
+  <mi>Z</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msub>
+  <mtext>
+  <mn>1</mn></mtext>
+  <mrow>
+   <mo>{</mo>
+   <mn>0</mn>
+   <mo>}</mo>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>|</mo>
+   <mrow>
+    <mi>s</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>s</mi>
+    <mo stretchy='false'>'</mo>
+   </mrow>
+   <mo>|</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ assuming that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>w</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ are independent.</dd>
+</dl>
+</div>
+<div class='standard' id='magicparlabel-1674'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1675'><span class="note_label">Note 195.</span>
+The resulted hierarchical model is <a id="eq__47" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mover accent='false'>
+        <mo>&#x223C;</mo>
+        <mrow/>
+       </mover>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Y</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>data&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo>&#x223C;</mo>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>&#x3BC;</mi>
+         <mrow>
+          <mo>(</mo>
+          <mi>S</mi>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>,</mo>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>S</mi>
+           <mo stretchy='false'>,</mo>
+           <mi>S</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>spatial&#0160;process&#0160;model</mtext>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mtext>(17.9)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>Z</mi>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>Y</mi>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>S</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mi>C</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>S</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ . </div>
+</div>
+<div class='standard' id='magicparlabel-1676'>
+<br />
+</div>
+<h4 class='subsubsection_' id='magicparlabel-1677'>The predictive distribution of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>|</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+ under <i><a href="#eq__47">(17.9)</a></i></h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1678'><span class="note_label">Note 196.</span>
+<a id="note_Given_that_vector" /> Assume a vector of &#8220;unseen&#8221; sites <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>S</mi>
+  <mo stretchy='false'>*</mo>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mo stretchy='false'>*</mo>
+      <mo stretchy='false'>,</mo>
+      <mn>1</mn>
+     </mrow>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mo stretchy='false'>*</mo>
+      <mo stretchy='false'>,</mo>
+      <mi>q</mi>
+     </mrow>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>q</mi>
+ <mo>&#x2208;</mo>
+ <msub>
+  <mstyle mathvariant='double-struck'>
+   <mi>N</mi>
+  </mstyle>
+  <mn>0</mn>
+ </msub>
+</mrow>
+</math>
+ . The join marginal distribution of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>Y</mi>
+    <mo stretchy='false'>*</mo>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mi>Z</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mi>&#x22A4;</mi>
+</msup>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>S</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Y</mi>
+  <mo stretchy='false'>*</mo>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>S</mi>
+   <mo stretchy='false'>*</mo>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is <a id="eq__68" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>(</mo>
+    <mtable>
+     <mtr>
+      <mtd>
+       <msub>
+        <mi>Y</mi>
+        <mo stretchy='false'>*</mo>
+       </msub>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mi>Z</mi>
+      </mtd>
+     </mtr>
+    </mtable>
+    <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>)</mo>
+    <mo>&#x223C;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>(</mo>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mrow>
+          <mi>&#x3BC;</mi>
+          <mrow>
+           <mo>(</mo>
+           <msub>
+            <mi>S</mi>
+            <mo stretchy='false'>*</mo>
+           </msub>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mrow>
+          <mi>&#x3BC;</mi>
+          <mrow>
+           <mo>(</mo>
+           <mi>S</mi>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+        </mtd>
+       </mtr>
+      </mtable>
+      <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>)</mo>
+      <mo stretchy='false'>,</mo>
+      <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>(</mo>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mrow>
+          <mi>C</mi>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <msub>
+             <mi>S</mi>
+             <mo stretchy='false'>*</mo>
+            </msub>
+            <mo stretchy='false'>,</mo>
+            <msub>
+             <mi>S</mi>
+             <mo stretchy='false'>*</mo>
+            </msub>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+        </mtd>
+        <mtd>
+         <msup>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>C</mi>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <msub>
+               <mi>S</mi>
+               <mo stretchy='false'>*</mo>
+              </msub>
+              <mo stretchy='false'>,</mo>
+              <mi>S</mi>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mi>&#x22A4;</mi>
+         </msup>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mrow>
+          <mi>C</mi>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <msub>
+             <mi>S</mi>
+             <mo stretchy='false'>*</mo>
+            </msub>
+            <mo stretchy='false'>,</mo>
+            <mi>S</mi>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+        </mtd>
+        <mtd>
+         <mrow>
+          <mi>C</mi>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>S</mi>
+            <mo stretchy='false'>,</mo>
+            <mi>S</mi>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo stretchy='false'>+</mo>
+          <mi>I</mi>
+          <msup>
+           <mi>&#x3C3;</mi>
+           <mn>2</mn>
+          </msup>
+         </mrow>
+        </mtd>
+       </mtr>
+      </mtable>
+      <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>)</mo>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.10)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+by using convenient notation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mi>C</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <mi>S</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>s</mi>
+    <mrow>
+     <mo stretchy='false'>*</mo>
+     <mo stretchy='false'>,</mo>
+     <mi>i</mi>
+    </mrow>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>s</mi>
+    <mi>j</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>S</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>s</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1679'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1680'><span class="note_label">Note 197.</span>
+The (posterior) predictive distribution of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mo stretchy='false'>*</mo>
+ </msub>
+ <mo stretchy='false'>|</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+ is the conditional distribution <a id="eq__49_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>Y</mi>
+     <mo stretchy='false'>*</mo>
+    </msub>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo>&#x223C;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>S</mi>
+        <mo stretchy='false'>*</mo>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>C</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.11)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where <a id="eq__23" /><a id="eq__24" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>C</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>C</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <msub>
+          <mi>S</mi>
+          <mo stretchy='false'>*</mo>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>S</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>I</mi>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mi>C</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>S</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.12)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>S</mi>
+      <mo stretchy='false'>*</mo>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>S</mi>
+      <mo stretchy='false'>*</mo>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <msub>
+          <mi>S</mi>
+          <mo stretchy='false'>*</mo>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>S</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>I</mi>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3BC;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>S</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.13)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+<i>[We used Fact <a href="#prop__Marginalization___conditioning_">192</a>].</i></div>
+</div>
+<div class='standard' id='magicparlabel-1681'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1682'><span class="note_label">Note 198.</span>
+<a id="note_Since_the_derivation" /> Since  derivation of <a href="#eq__49_1">(17.11)</a> holds for all vectors <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>S</mi>
+  <mo stretchy='false'>*</mo>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>q</mi>
+ </msup>
+</mrow>
+</math>
+ and all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>q</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, <a href="#eq__49_1">(17.11)</a> can be extended to a Gaussian Process <a id="eq__54" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Y</mi>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo>&#x223C;</mo>
+    <mtext>GP</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mo>&#x22C5;</mo>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>c</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>,</mo>
+        <mo>&#x22C5;</mo>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.14)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ with 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>c</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>s</mi>
+      <mo stretchy='false'>'</mo>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>s</mi>
+      <mo stretchy='false'>'</mo>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>s</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>S</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>I</mi>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mi>C</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>S</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>s</mi>
+      <mo stretchy='false'>'</mo>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>&#x3BC;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>s</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>S</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>I</mi>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3BC;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>S</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>s</mi>
+ <mo stretchy='false'>'</mo>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+. This is the predictive process for noiseless signal <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ at any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+ given <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+. <i>[Here we used the definition of GP (Definition   <a href="#def___indexed">17</a>) given Note </i><a href="#note_Given_that_vector">196</a><i>].</i> </div>
+</div>
+<h4 class='subsubsection_' id='magicparlabel-1683'>The predictive distribution of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>|</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+ under <i><a href="#eq__47">(17.9)</a></i></h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1684'><span class="note_label">Note 199.</span>
+It is a Gaussian Process <a id="eq__54_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo>&#x223C;</mo>
+    <mtext>GP</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mo>&#x22C5;</mo>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msubsup>
+       <mi>c</mi>
+       <mn>1</mn>
+       <mi>z</mi>
+      </msubsup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>,</mo>
+        <mo>&#x22C5;</mo>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.15)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msubsup>
+  <mi>c</mi>
+  <mn>1</mn>
+  <mi>z</mi>
+ </msubsup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>c</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msub>
+  <mtext>
+  <mn>1</mn></mtext>
+  <mrow>
+   <mo>{</mo>
+   <mn>0</mn>
+   <mo>}</mo>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>|</mo>
+   <mrow>
+    <mi>s</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>s</mi>
+    <mo stretchy='false'>'</mo>
+   </mrow>
+   <mo>|</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. This is because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mi>&#x22A5;</mi>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-1689'>
+<br />
+</div>
+<h4 class='subsubsection_' id='magicparlabel-1690'>Learning <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>,</mo>
+   <mo>&#x22C5;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ via parametrization </h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1691'><span class="note_label">Note 200.</span>
+Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be parametrised as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C8;</mi>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mi>s</mi>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+ with known basis functions <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C8;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>&#x3C8;</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>&#x3C8;</mi>
+     <mi>p</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ , and unknown random parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B2;</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>p</mi>
+ </msup>
+</mrow>
+</math>
+ following prior distribution <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B2;</mi>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>b</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+. Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>,</mo>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be parametrised as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>,</mo>
+   <mo>&#x22C5;</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>c</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>,</mo>
+   <mo>&#x22C5;</mo>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with unknown fixed parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B8;</mi>
+ <mo>&#x2208;</mo>
+ <mi>&#x398;</mi>
+</mrow>
+</math>
+. Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ be an unknown fixed parameter. </div>
+</div>
+<div class='standard' id='magicparlabel-1692'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1693'><span class="note_label">Note 201.</span>
+The Bayesian hierarchical model summaries to <a id="eq__47_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mo form='prefix' fence='true' stretchy='true' symmetric='true'>{</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>Y</mi>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+       <mover accent='false'>
+        <mo>&#x223C;</mo>
+        <mrow/>
+       </mover>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Y</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>data&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>Y</mi>
+       <mo stretchy='false'>|</mo>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <mi>&#x3B8;</mi>
+       <mo>&#x223C;</mo>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>&#x3BC;</mi>
+         <mrow>
+          <mo>(</mo>
+          <mi>S</mi>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>,</mo>
+         <mi>c</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>S</mi>
+           <mo stretchy='false'>,</mo>
+           <mi>S</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>spatial&#0160;process&#0160;model</mtext>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>&#x3B2;</mi>
+       <mo>&#x223C;</mo>
+       <mtext>N</mtext>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>b</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>B</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mtext>hyper-prior&#0160;model</mtext>
+     </mtd>
+    </mtr>
+   </mtable>
+  </mtd>
+  <mtd>
+   <mtext>(17.16)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ </div>
+</div>
+<div class='standard' id='magicparlabel-1694'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1695'><span class="note_label">Note 202.</span>
+The posterior of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+ given data <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ is computed via the Bayes theorem 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x221D;</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mi>&#x3B2;</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x221D;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3A8;</mi>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>S</mi>
+        <mo stretchy='false'>,</mo>
+        <mi>S</mi>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>+</mo>
+      <mi>I</mi>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+and results as <a id="eq__60" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>&#x3B2;</mi>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B8;</mi>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>b</mi>
+       <mi>n</mi>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>B</mi>
+       <mi>n</mi>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.17)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ with 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>B</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msup>
+       <mi>B</mi>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mo stretchy='false'>+</mo>
+      <msup>
+       <mi>&#x3A8;</mi>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>S</mi>
+           <mo stretchy='false'>,</mo>
+           <mi>S</mi>
+           <mo stretchy='false'>|</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>+</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mi>&#x3A8;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>b</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>B</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msup>
+       <mi>B</mi>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mi>b</mi>
+      <mo stretchy='false'>+</mo>
+      <msup>
+       <mi>&#x3A8;</mi>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>S</mi>
+           <mo stretchy='false'>,</mo>
+           <mi>S</mi>
+           <mo stretchy='false'>|</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>+</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mi>Z</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+<i> [For the calculations of the derivation see Exercise </i><a href="#exer____4_1_1_4_1_1_1_2_1_3">exer:()-4-1-1-4-1-1-1-2-1-3</a> in<i> the Exercise sheet.] </i></div>
+</div>
+<div class='standard' id='magicparlabel-1696'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1697'><span class="note_label">Note 203.</span>
+Given a vector of &#8220;unseen&#8221; sites <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>S</mi>
+  <mo stretchy='false'>*</mo>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mo stretchy='false'>*</mo>
+      <mo stretchy='false'>,</mo>
+      <mn>1</mn>
+     </mrow>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>s</mi>
+     <mrow>
+      <mo stretchy='false'>*</mo>
+      <mo stretchy='false'>,</mo>
+      <mi>q</mi>
+     </mrow>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ for any <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>q</mi>
+ <mo>&#x2208;</mo>
+ <msub>
+  <mstyle mathvariant='double-struck'>
+   <mi>N</mi>
+  </mstyle>
+  <mn>0</mn>
+ </msub>
+</mrow>
+</math>
+, I integrate <a href="#eq__49_1">17.11</a> with respect to <a href="#eq__60">(17.17)</a> i.e. 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>Y</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>Y</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>Z</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <mi>&#x3B2;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>Y</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='false'>,</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>C</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>|</mo>
+      <msub>
+       <mi>b</mi>
+       <mi>n</mi>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>B</mi>
+       <mi>n</mi>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <mi>&#x3B2;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where now <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>C</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>&#x3BC;</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ are parameterized by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+. By using Fact <a href="#fact_It_is">190</a> <a id="eq__25" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>Y</mi>
+     <mo stretchy='false'>*</mo>
+    </msub>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B8;</mi>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>C</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.18)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where <a id="eq__23_1" /><a id="eq__24_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>C</mi>
+     <mn>2</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>C</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.19)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>+</mo>
+    <mrow>
+     <mo>[</mo>
+     <mrow>
+      <mi>&#x3A8;</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>S</mi>
+        <mo stretchy='false'>*</mo>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>S</mi>
+           <mo stretchy='false'>,</mo>
+           <msub>
+            <mi>S</mi>
+            <mo stretchy='false'>*</mo>
+           </msub>
+           <mo stretchy='false'>|</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>S</mi>
+           <mo stretchy='false'>,</mo>
+           <mi>S</mi>
+           <mo stretchy='false'>|</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>+</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mi>&#x3A8;</mi>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>S</mi>
+        <mo stretchy='false'>*</mo>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mspace width="6px"/>
+    <mo>&#x00D7;</mo>
+    <msub>
+     <mi>B</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <msup>
+     <mrow>
+      <mo>[</mo>
+      <mrow>
+       <mi>&#x3A8;</mi>
+       <mrow>
+        <mo>(</mo>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>-</mo>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>C</mi>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>S</mi>
+            <mo stretchy='false'>,</mo>
+            <msub>
+             <mi>S</mi>
+             <mo stretchy='false'>*</mo>
+            </msub>
+            <mo stretchy='false'>|</mo>
+            <mi>&#x3B8;</mi>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mi>&#x22A4;</mi>
+       </msup>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>C</mi>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <mi>S</mi>
+            <mo stretchy='false'>,</mo>
+            <mi>S</mi>
+            <mo stretchy='false'>|</mo>
+            <mi>&#x3B8;</mi>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+          <mo stretchy='false'>+</mo>
+          <mi>I</mi>
+          <msup>
+           <mi>&#x3C3;</mi>
+           <mn>2</mn>
+          </msup>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mrow>
+         <mo stretchy='false'>-</mo>
+         <mn>1</mn>
+        </mrow>
+       </msup>
+       <mi>&#x3A8;</mi>
+       <mrow>
+        <mo>(</mo>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+   </mrow>
+  </mtd>
+  <mtd>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <mn>2</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>&#x3A8;</mi>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>S</mi>
+      <mo stretchy='false'>*</mo>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <msub>
+     <mi>b</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <msub>
+          <mi>S</mi>
+          <mo stretchy='false'>*</mo>
+         </msub>
+         <mo stretchy='false'>|</mo>
+         <mi>&#x3B8;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>S</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>S</mi>
+         <mo stretchy='false'>|</mo>
+         <mi>&#x3B8;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>I</mi>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3A8;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>S</mi>
+       <mo>)</mo>
+      </mrow>
+      <msub>
+       <mi>b</mi>
+       <mi>n</mi>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.20)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-1702'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1703'><span class="note_label">Note 204.</span>
+Since derivation of <a href="#eq__25">(17.18)</a> holds for all vectors <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>S</mi>
+  <mo stretchy='false'>*</mo>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>q</mi>
+ </msup>
+</mrow>
+</math>
+ and all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>q</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, <a href="#eq__25">(17.18)</a> can be extended to a Gaussian Process <a id="eq__58" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Y</mi>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B8;</mi>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+    <mtext>GP</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>c</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>,</mo>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.21)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+<a id="eq__51" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <mn>2</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>&#x3C8;</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <msub>
+     <mi>b</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>s</mi>
+         <mo stretchy='false'>|</mo>
+         <mi>&#x3B8;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>C</mi>
+       <mrow>
+        <mo>(</mo>
+        <mi>&#x3B8;</mi>
+        <mo>)</mo>
+       </mrow>
+       <mo stretchy='false'>+</mo>
+       <mi>I</mi>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3A8;</mi>
+      <msub>
+       <mi>b</mi>
+       <mi>n</mi>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.22)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>c</mi>
+     <mn>2</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>s</mi>
+      <mo stretchy='false'>'</mo>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>c</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>s</mi>
+      <mo stretchy='false'>'</mo>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.23)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>+</mo>
+    <mrow>
+     <mo>[</mo>
+     <mrow>
+      <mi>&#x3C8;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>s</mi>
+           <mo stretchy='false'>|</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mi>&#x3B8;</mi>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>+</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mi>&#x3A8;</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <msub>
+     <mi>B</mi>
+     <mi>n</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mrow>
+     <mo>[</mo>
+     <mrow>
+      <mi>&#x3C8;</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>s</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>-</mo>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>s</mi>
+           <mo stretchy='false'>|</mo>
+           <mi>&#x3B8;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mi>&#x22A4;</mi>
+      </msup>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>C</mi>
+         <mrow>
+          <mo>(</mo>
+          <mi>&#x3B8;</mi>
+          <mo>)</mo>
+         </mrow>
+         <mo stretchy='false'>+</mo>
+         <mi>I</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+      <mi>&#x3A8;</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+with column vector <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>s</mi>
+       <mn>1</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <mi>c</mi>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>s</mi>
+       <mi>n</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+, and matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>&#x3B8;</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. <i><!-- Output Error: Closing tag `div' when other tags are open, namely: -->
+<!-- Output Error: i -->
+</i></div>
+</div>
+<div class='standard' id='magicparlabel-1712'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1713'><span class="note_label">Note 205.</span>
+Estimates <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='true'>&#x02C6;</mo>
+</mover>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mn>2</mn>
+</msup>
+</math>
+ of the unknown fixed hyper-parameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ are computed by maximizing the marginal likelihood of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ given <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ <a id="eq__48_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>Pr</mo>
+    <mrow>
+     <mo>(</mo>
+     <mi>&#x3B2;</mi>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <mi>&#x3B2;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.24)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mo>&#x222B;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3A8;</mi>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>&#x3B8;</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>+</mo>
+      <mi>I</mi>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>&#x3B2;</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mtext>d</mtext>
+    <mi>&#x3B2;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.25)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>|</mo>
+      <mi>&#x3A8;</mi>
+      <mi>b</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>C</mi>
+      <mrow>
+       <mo>(</mo>
+       <mi>&#x3B8;</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>+</mo>
+      <mi>I</mi>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+      <mo stretchy='false'>+</mo>
+      <mi>&#x3A8;</mi>
+      <mi>B</mi>
+      <msup>
+       <mi>&#x3A8;</mi>
+       <mi>&#x22A4;</mi>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.26)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>&#x3B8;</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>:</mo>
+ <mo stretchy='false'>=</mo>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>S</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>S</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ [from Fact <a href="#fact_It_is">190</a>] by computing 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mover>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mo stretchy='false'>,</mo>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02C6;</mo>
+      </mover>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder accent='false'>
+     <mrow>
+      <mo>arg</mo>
+      <mo>min</mo>
+     </mrow>
+     <mrow>
+      <mi>&#x3B8;</mi>
+      <mo stretchy='false'>,</mo>
+      <msup>
+       <mi>&#x3C3;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>2</mn>
+      <mo>log</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mtext>N</mtext>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>Z</mi>
+          <mo stretchy='false'>|</mo>
+          <mi>&#x3A8;</mi>
+          <mi>b</mi>
+          <mo stretchy='false'>,</mo>
+          <mi>C</mi>
+          <mrow>
+           <mo>(</mo>
+           <mi>&#x3B8;</mi>
+           <mo>)</mo>
+          </mrow>
+          <mo stretchy='false'>+</mo>
+          <mi>I</mi>
+          <msup>
+           <mi>&#x3C3;</mi>
+           <mn>2</mn>
+          </msup>
+          <mo stretchy='false'>+</mo>
+          <mi>&#x3A8;</mi>
+          <mi>B</mi>
+          <msup>
+           <mi>&#x3A8;</mi>
+           <mi>&#x22A4;</mi>
+          </msup>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<h4 class='subsubsection_' id='magicparlabel-1714'>The predictive distribution of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>|</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+ after parameterization </h4>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1715'><span class="note_label">Note 206.</span>
+It is a Gaussian Process <a id="eq__54_1_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Z</mi>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>&#x3B8;</mi>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>&#x3C3;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+    <mtext>GP</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msubsup>
+       <mi>c</mi>
+       <mn>2</mn>
+       <mi>z</mi>
+      </msubsup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>,</mo>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>|</mo>
+        <mi>&#x3B8;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.27)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msubsup>
+  <mi>c</mi>
+  <mn>2</mn>
+  <mi>z</mi>
+ </msubsup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>c</mi>
+  <mn>2</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>s</mi>
+   <mo stretchy='false'>'</mo>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msub>
+  <mtext>
+  <mn>1</mn></mtext>
+  <mrow>
+   <mo>{</mo>
+   <mn>0</mn>
+   <mo>}</mo>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo>|</mo>
+   <mrow>
+    <mi>s</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>s</mi>
+    <mo stretchy='false'>'</mo>
+   </mrow>
+   <mo>|</mo>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. This is because <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Y</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+ <mi>&#x22A5;</mi>
+ <mi>&#x3B5;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mo>&#x22C5;</mo>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-1716'>
+<br />
+</div>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1717'><span class="note_label">Note 207.</span>
+The estimated &#8220;Kriging predictor&#8221; results by plugging <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='true'>&#x02C6;</mo>
+</mover>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02C6;</mo>
+ </mover>
+ <mn>2</mn>
+</msup>
+</math>
+ in <a href="#eq__58">(17.21)</a><a id="eq__58_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true'>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>Y</mi>
+    <mrow>
+     <mo>(</mo>
+     <mo>&#x22C5;</mo>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>|</mo>
+    <mi>Z</mi>
+    <mo stretchy='false'>,</mo>
+    <mover>
+     <mi>&#x3B8;</mi>
+     <mo stretchy='true'>&#x02C6;</mo>
+    </mover>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mover>
+      <mi>&#x3C3;</mi>
+      <mo stretchy='true'>&#x02C6;</mo>
+     </mover>
+     <mn>2</mn>
+    </msup>
+    <mo>&#x223C;</mo>
+    <mtext>GP</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>|</mo>
+        <mover>
+         <mi>&#x3B8;</mi>
+         <mo stretchy='true'>&#x02C6;</mo>
+        </mover>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mover>
+          <mi>&#x3C3;</mi>
+          <mo stretchy='true'>&#x02C6;</mo>
+         </mover>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>c</mi>
+       <mn>2</mn>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>,</mo>
+        <mo>&#x22C5;</mo>
+        <mo stretchy='false'>|</mo>
+        <mover>
+         <mi>&#x3B8;</mi>
+         <mo stretchy='true'>&#x02C6;</mo>
+        </mover>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mover>
+          <mi>&#x3C3;</mi>
+          <mo stretchy='true'>&#x02C6;</mo>
+         </mover>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(17.28)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+
+
 
 </section>
 </section>
