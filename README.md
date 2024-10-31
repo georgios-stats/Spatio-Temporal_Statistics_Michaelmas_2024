@@ -177,7 +177,7 @@ It contains all the exercises and solutions
 
 Central valley Groundwater data  
 
-+ [data](./Datasets/Central_Valley_Groundwater_data/), [description](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022GL099583)  
++ [data](./Datasets/Central_Valley_Groundwater_data/), [description](https://www.edf.org/sites/default/files/documents/groundwater-contaminants-report.pdf)    
 
 Ferrite-Pearlite data  
 
