@@ -117,7 +117,11 @@ This is about the retrival, manipulation, and visualisation of spatial data.
 
 #### Lab 2: Geostatistical data modeling       
 
-... Not available yet  
+This is about the fiting semivariograms, and implementing Kriging.
+
++ [Tasks](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  
+
++ [Complete](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html)  
 
 #### Lab 3: Aerial unit data modeling       
 
