@@ -878,8 +878,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 . </div>
-
-<div class='standard' id='magicparlabel-74'>It is 
+</li><li class="enumerate_item" id='magicparlabel-74'>It is 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
  <mtr>
@@ -1079,8 +1078,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
  </mtr>
 </mtable>
 </math>
-</div>
-</li><li class="enumerate_item" id='magicparlabel-75'>It is
+It is
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
  <mtr>
@@ -1150,7 +1148,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
     </msub>
     <msub>
      <mi>c</mi>
-     <mi>Y</mi>
+     <mi>I</mi>
     </msub>
     <mrow>
      <mo>(</mo>
@@ -1402,14 +1400,14 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 
 </div>
 </div>
-<div class='standard' id='magicparlabel-81'><hr />
+<div class='standard' id='magicparlabel-80'><hr />
 </div>
 <div class='exercise'>
-<div class="exercise_item" id='magicparlabel-82'><span class="exercise_label">Exercise 2.</span>
+<div class="exercise_item" id='magicparlabel-81'><span class="exercise_label">Exercise 2.</span>
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mo>&#x2605;</mo>
 </math>
-) <div class='standard' id='magicparlabel-84'>Consider the zero-mean random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+) <div class='standard' id='magicparlabel-83'>Consider the zero-mean random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>Z</mi>
  <mo stretchy='false'>=</mo>
@@ -1522,7 +1520,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 </div>
 <ol class='lyxenum enumi'>
-<li class="enumerate_item" id='magicparlabel-85'>Compute the semivariogram for the random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-84'>Compute the semivariogram for the random field <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mo>(</mo>
  <mrow>
@@ -1546,8 +1544,8 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 </li>
-<li class="enumerate_item" id='magicparlabel-86'>What are the nugget, sill and partial sill for this covariance model? Justify your answer.</li>
-<li class="enumerate_item" id='magicparlabel-87'>Would the slightly altered covariance function defined below be a good model for spatial data for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-85'>What are the nugget, sill and partial sill for this covariance model? Justify your answer.</li>
+<li class="enumerate_item" id='magicparlabel-86'>Would the slightly altered covariance function defined below be a good model for spatial data for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3D5;</mi>
  <mo stretchy='false'>&gt;</mo>
@@ -1555,7 +1553,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 ? Justify your answer.
-<div class='standard' id='magicparlabel-88'>
+<div class='standard' id='magicparlabel-87'>
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
  <mi>c</mi>
@@ -1647,11 +1645,11 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </li></ol>
 
 <div class='solution_'>
-<div class="solution__item" id='magicparlabel-94'><span class="solution__label">Solution.</span>
+<div class="solution__item" id='magicparlabel-93'><span class="solution__label">Solution.</span>
 &#xA0; &#xA0;</div>
 </div>
 <ol class='lyxenum enumi'>
-<li class="enumerate_item" id='magicparlabel-95'>For all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-94'>For all <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>h</mi>
  <mo>&#x2260;</mo>
@@ -1886,9 +1884,9 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 
 <ol class='lyxenum enumii'>
-<li class="enumerate_item" id='magicparlabel-96'>&#xA0;
+<li class="enumerate_item" id='magicparlabel-95'>&#xA0;
 <ul class='lyxitem lyxitemi'>
-<li class="itemize_item" id='magicparlabel-97'>The sill is the covariogram function at distance <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-96'>The sill is the covariogram function at distance <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mn>0</mn>
 </math>
 , that is <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -2139,7 +2137,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 </li>
-<li class="itemize_item" id='magicparlabel-98'>The nugget effect is the limiting value of the semicovariogram as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-97'>The nugget effect is the limiting value of the semicovariogram as <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>h</mi>
  <mo>&#x2192;</mo>
@@ -2172,7 +2170,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 .</li>
-<li class="itemize_item" id='magicparlabel-103'>The partial sill is the sill minus the nugget and is hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-102'>The partial sill is the sill minus the nugget and is hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msup>
  <mi>&#x3BE;</mi>
  <mn>2</mn>
@@ -2180,7 +2178,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 .</li>
 </ul>
-</li><li class="enumerate_item" id='magicparlabel-104'>No, it would be unrealistic because if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+</li><li class="enumerate_item" id='magicparlabel-103'>No, it would be unrealistic because if <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x3D5;</mi>
  <mo stretchy='false'>&gt;</mo>
@@ -2196,7 +2194,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 
 </div>
 </div>
-<div class='standard' id='magicparlabel-110'>
+<div class='standard' id='magicparlabel-109'>
 <br />
 </div>
 
