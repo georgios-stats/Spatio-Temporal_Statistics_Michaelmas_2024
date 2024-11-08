@@ -33010,10 +33010,103 @@ with
 <h1 class='part' id='magicparlabel-1946'><span class="part_label">Part IV</span> Extensions to multivariate Geostatistics (special topic)</h1>
 <section>
 <h2 class='section' id='magicparlabel-1947'><span class="section_label">22</span> Extensions to Multivariate Geostatistics</h2>
+<div class='note'>
+<div class="note_item" id='magicparlabel-1948'><span class="note_label">Note 242.</span>
+So far we have limited our attention to a single real-valued measurement <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>Z</mi>
+ </mstyle>
+ <mo>&#x2286;</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+ at each site <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo>&#x2286;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>d</mi>
+ </msup>
+</mrow>
+</math>
+. A natural extension is to allow a vector of measurements <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>Z</mi>
+ </mstyle>
+ <mo>&#x2286;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>k</mi>
+ </msup>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>k</mi>
+ <mo>&#x2265;</mo>
+ <mn>1</mn>
+</mrow>
+</math>
+, with elements <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ , <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>i</mi>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+ <mo stretchy='false'>,</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>,</mo>
+ <mi>k</mi>
+</mrow>
+</math>
+ at each site <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>s</mi>
+</math>
+.</div>
+</div>
 <section>
-<h3 class='subsection' id='magicparlabel-1948'><span class="subsection_label">22.1</span> Cross-variance functions</h3>
+<h3 class='subsection' id='magicparlabel-1949'><span class="subsection_label">22.1</span> Cross-variance functions</h3>
 <div class='definition'>
-<div class="definition_item" id='magicparlabel-1949'><span class="definition_label">Definition 242.</span>
+<div class="definition_item" id='magicparlabel-1950'><span class="definition_label">Definition 243.</span>
 Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
@@ -33042,7 +33135,7 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
  be <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>k</mi>
 </math>
- stochastic processes on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ random fields on <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>s</mi>
  <mo>&#x2208;</mo>
@@ -33222,11 +33315,11 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 .</div>
 </div>
-<div class='standard' id='magicparlabel-1950'>
+<div class='standard' id='magicparlabel-1951'>
 <br />
 </div>
 <div class='definition'>
-<div class="definition_item" id='magicparlabel-1951'><span class="definition_label">Definition 243.</span>
+<div class="definition_item" id='magicparlabel-1952'><span class="definition_label">Definition 244.</span>
 Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
@@ -33255,7 +33348,7 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
  be <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>k</mi>
 </math>
- weakly stationary stochastic processes on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ (weakly) stationary random fields on <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>s</mi>
  <mo>&#x2208;</mo>
@@ -33264,7 +33357,7 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
  </mstyle>
 </mrow>
 </math>
-. The cross-covariogram function of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+. The under stationarity cross-covariance function (or cross-covariogram function) of <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>Z</mi>
@@ -33455,16 +33548,148 @@ Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
  </mstyle>
 </mrow>
 </math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-1953'>
+<br />
+</div>
+<div class='definition'>
+<div class="definition_item" id='magicparlabel-1954'><span class="definition_label">Definition 245.</span>
+Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mn>1</mn>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>,</mo>
+ <mn>...</mn>
+ <mo stretchy='false'>,</mo>
+ <msub>
+  <mi>Z</mi>
+  <mi>k</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ be <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>k</mi>
+</math>
+ (weakly) stationary random fields on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>s</mi>
+ <mo>&#x2208;</mo>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+</mrow>
+</math>
+. The matrix valued function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>C</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mrow>
+    <mi>C</mi>
+    <mrow>
+     <mo>(</mo>
+     <mi>h</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>C</mi>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the covariance function matrix (or under stationarity cross-covariance function) of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>s</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>k</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>s</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
 .</div>
 </div>
-<div class='standard' id='magicparlabel-1952'>
+<div class='standard' id='magicparlabel-1955'>
 <br />
 </div>
 <div class='example'>
-<div class="example_item" id='magicparlabel-1953'><span class="example_label">Example 244.</span>
+<div class="example_item" id='magicparlabel-1956'><span class="example_label">Example 246.</span>
 Cross-covariograms have the following properties </div>
 <ol class='lyxenum enumi'>
-<li class="enumerate_item" id='magicparlabel-1954'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-1957'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>C</mi>
@@ -33544,7 +33769,7 @@ Cross-covariograms have the following properties </div>
 </mrow>
 </math>
 </li>
-<li class="enumerate_item" id='magicparlabel-1955'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-1958'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>C</mi>
@@ -33564,7 +33789,7 @@ Cross-covariograms have the following properties </div>
  is semi-positive definite</li>
 </ol>
 <div class='solution_'>
-<div class="solution__item" id='magicparlabel-1956'><span class="solution__label">Solution.</span>
+<div class="solution__item" id='magicparlabel-1959'><span class="solution__label">Solution.</span>
 Well, part 1 is easy to check. Now for Part 2, <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x2200;</mi>
@@ -33697,17 +33922,19 @@ Well, part 1 is easy to check. Now for Part 2, <math xmlns='http://www.w3.org/19
 </div>
 
 
-<div class='standard' id='magicparlabel-1998'>
+<div class='standard' id='magicparlabel-2001'>
 <br />
 </div>
 </section>
 <section>
-<h3 class='subsection' id='magicparlabel-1999'><span class="subsection_label">22.2</span> Co-Kriging</h3>
+<h3 class='subsection' id='magicparlabel-2002'><span class="subsection_label">22.2</span> Co-Kriging</h3>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2000'><span class="note_label">Note 245.</span>
-The cokriging procedure is a natural extension of kriging when the cross-covariance function/model is available.  A variable of interest is cokriged at a specific location from data about itself and about auxiliary variables in the neighborhood. Examples: </div>
-<ol class='lyxenum enumi'>
-<li class="enumerate_item" id='magicparlabel-2005'>In the meuse{sp} R dataset, different variables correspond to a different characteristics. The quantities of interest (QoI) <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class="note_item" id='magicparlabel-2003'><span class="note_label">Note 247.</span>
+CoKriging procedure is a natural extension of kriging when the cross-covariance function is available.  A quantity of interest (QoI) (response variable) is coKriged at a specific location from data about itself and/or about auxiliary variables in the neighborhood. The purpose of coKriging is to “borrow strength” from the measurements on the auxiliary variables to improve the accuracy when predicting the QoI. </div>
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-2008'><span class="example_label">Example 248.</span>
+Different variables correspond to a different characteristics measures at same/different locations and associated with same/different covariates. In the meuse{sp} R dataset, the QoI <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mo>{</mo>
  <mrow>
@@ -33742,7 +33969,7 @@ The cokriging procedure is a natural extension of kriging when the cross-covaria
  <mo>}</mo>
 </mrow>
 </math>
- are the concentrations of zinc, lead, copper, and cadmium, at these locations. Interest lie in prediction of QoI at unobserved locations (i.e. interpolation), quantification of the joint distribution of the QoI (evaluate the distribution of a random function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ are the concentrations of zinc, lead, copper, and cadmium, at these locations. Interest lies on the prediction of QoI at unobserved locations (i.e. interpolation), computation of the joint distribution of the QoI (evaluate the distribution of a random function <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>Z</mi>
  <mrow>
@@ -33901,8 +34128,39 @@ The cokriging procedure is a natural extension of kriging when the cross-covaria
  </mrow>
 </mrow>
 </math>
-. Figure <a href="#fig_Map_of_thedfsdfasdf">22.1</a>.</li>
-<li class="enumerate_item" id='magicparlabel-2006'>Different variables correspond to a different accuracy level or support. The variable of interest could be the precipitation in a location, and the auxiliary variables could be: <math xmlns='http://www.w3.org/1998/Math/MathML'>
+. See Figure <a href="#fig_Map_of_thedfsdfasdf">22.1</a>. <div class='float-figure'>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2016'><img style='width:45%;' src='e_56f563f7462a_meuse-zinc.png' alt='image: e_56f563f7462a_meuse-zinc.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-2017'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  zinc concentration (obs)</span></div>
+</div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2025'><img style='width:45%;' src='e_7a21c9db37c2_meuse-lead.png' alt='image: e_7a21c9db37c2_meuse-lead.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-2026'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  lead concentration (obs)</span></div>
+</div>
+
+
+
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2035'><img style='width:45%;' src='e_427539bd11fa_meuse-data-scatterplot_2.png' alt='image: e_427539bd11fa_meuse-data-scatterplot_2.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-2036'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  scatter plot (obs)</span></div>
+</div>
+
+
+<div class='plain_layout' id='magicparlabel-2045'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 22.1:  <a id="fig_Map_of_thedfsdfasdf" /> Map of the meuse dataset</span></div>
+</div>
+</div>
+<div class='standard' id='magicparlabel-2050'>
+<br />
+</div>
+</div>
+<div class='standard' id='magicparlabel-2051'>
+<br />
+</div>
+<div class='example'>
+<div class="example_item" id='magicparlabel-2052'><span class="example_label">Example 249.</span>
+Different variables correspond to a different accuracy level or support.</div>
+<ul class='lyxitem lyxitemi'>
+<li class="itemize_item" id='magicparlabel-2053'>The QoI could be the precipitation over a spatial domain, and the auxiliary variables could be: <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msubsup>
  <mrow>
   <mo>{</mo>
@@ -33933,7 +34191,7 @@ The cokriging procedure is a natural extension of kriging when the cross-covaria
  </msub>
 </msubsup>
 </math>
- the precipitation measured by a weather station , and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ the precipitation measured by a weather station, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <msubsup>
  <mrow>
   <mo>{</mo>
@@ -33964,7 +34222,7 @@ The cokriging procedure is a natural extension of kriging when the cross-covaria
  </msub>
 </msubsup>
 </math>
- the precipitation measured by a satellite. The weather station measurements are much more accurate than those from the satellite however they are taken at a smaller number of locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ the precipitation measured by a satellite. Here the weather station measurements are much more accurate than those from the satellite however they are taken at a smaller number of locations <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>n</mi>
@@ -33977,7 +34235,71 @@ The cokriging procedure is a natural extension of kriging when the cross-covaria
  </msub>
 </mrow>
 </math>
-. Interest lies in the predictive process <math xmlns='http://www.w3.org/1998/Math/MathML'>
+. </li>
+<li class="itemize_item" id='magicparlabel-2054'>The QoI could be the temperature over a spatial domain; the available data may be  the temperature readings by an old technology (less accurate) satellite <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mn>2</mn>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <msub>
+  <mi>n</mi>
+  <mn>1</mn>
+ </msub>
+</msubsup>
+</math>
+, and the temperature readings by a new technology (more accurate) satellite <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msubsup>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mn>1</mn>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <msub>
+     <mi>s</mi>
+     <mi>i</mi>
+    </msub>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>=</mo>
+  <mn>1</mn>
+ </mrow>
+ <msub>
+  <mi>n</mi>
+  <mn>1</mn>
+ </msub>
+</msubsup>
+</math>
+.
+<div class='standard' id='magicparlabel-2059'>Interest lies in the predictive process <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>Z</mi>
@@ -34094,242 +34416,40 @@ The cokriging procedure is a natural extension of kriging when the cross-covaria
  </msub>
 </msubsup>
 </math>
- (i.e. given the combined data). </li>
-<li class="enumerate_item" id='magicparlabel-2007'>Different variables correspond to a different accuracy level or support. The variable of interest could be the temperature reading in a location, and the auxiliary variables could be <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<msubsup>
- <mrow>
-  <mo>{</mo>
-  <mrow>
-   <msub>
-    <mi>Z</mi>
-    <mn>1</mn>
-   </msub>
-   <mrow>
-    <mo>(</mo>
-    <msub>
-     <mi>s</mi>
-     <mi>i</mi>
-    </msub>
-    <mo>)</mo>
-   </mrow>
-  </mrow>
-  <mo>}</mo>
- </mrow>
- <mrow>
-  <mi>i</mi>
-  <mo stretchy='false'>=</mo>
-  <mn>1</mn>
- </mrow>
- <msub>
-  <mi>n</mi>
-  <mn>1</mn>
- </msub>
-</msubsup>
-</math>
- the temperature readings by an old technology (less accurate) satellite, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<msubsup>
- <mrow>
-  <mo>{</mo>
-  <mrow>
-   <msub>
-    <mi>Z</mi>
-    <mn>2</mn>
-   </msub>
-   <mrow>
-    <mo>(</mo>
-    <msub>
-     <mi>s</mi>
-     <mi>i</mi>
-    </msub>
-    <mo>)</mo>
-   </mrow>
-  </mrow>
-  <mo>}</mo>
- </mrow>
- <mrow>
-  <mi>i</mi>
-  <mo stretchy='false'>=</mo>
-  <mn>1</mn>
- </mrow>
- <msub>
-  <mi>n</mi>
-  <mn>1</mn>
- </msub>
-</msubsup>
-</math>
- the temperature readings by a new technology (more accurate) satellite. Interest lies in the predictive process <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <msub>
-  <mi>Z</mi>
-  <mn>2</mn>
- </msub>
- <mrow>
-  <mo>(</mo>
-  <mo>&#x22C5;</mo>
-  <mo>)</mo>
- </mrow>
- <mo stretchy='false'>|</mo>
- <mrow>
-  <mo>{</mo>
-  <msub>
-   <mi>Z</mi>
-   <mrow>
-    <mn>1</mn>
-    <mo stretchy='false'>,</mo>
-    <mi>i</mi>
-   </mrow>
-  </msub>
-  <mo>}</mo>
- </mrow>
- <mo stretchy='false'>,</mo>
- <mrow>
-  <mo>{</mo>
-  <msub>
-   <mi>Z</mi>
-   <mrow>
-    <mn>2</mn>
-    <mo stretchy='false'>,</mo>
-    <mi>i</mi>
-   </mrow>
-  </msub>
-  <mo>}</mo>
- </mrow>
-</mrow>
-</math>
- of <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <msub>
-  <mi>Z</mi>
-  <mn>2</mn>
- </msub>
- <mrow>
-  <mo>(</mo>
-  <mi>s</mi>
-  <mo>)</mo>
- </mrow>
-</mrow>
-</math>
- at any point <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mi>s</mi>
-</math>
- given all the available data <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<msubsup>
- <mrow>
-  <mo>{</mo>
-  <mrow>
-   <msub>
-    <mi>Z</mi>
-    <mn>1</mn>
-   </msub>
-   <mrow>
-    <mo>(</mo>
-    <msub>
-     <mi>s</mi>
-     <mi>i</mi>
-    </msub>
-    <mo>)</mo>
-   </mrow>
-  </mrow>
-  <mo>}</mo>
- </mrow>
- <mrow>
-  <mi>i</mi>
-  <mo stretchy='false'>=</mo>
-  <mn>1</mn>
- </mrow>
- <msub>
-  <mi>n</mi>
-  <mn>1</mn>
- </msub>
-</msubsup>
-</math>
- and <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<msubsup>
- <mrow>
-  <mo>{</mo>
-  <mrow>
-   <msub>
-    <mi>Z</mi>
-    <mn>2</mn>
-   </msub>
-   <mrow>
-    <mo>(</mo>
-    <msub>
-     <mi>s</mi>
-     <mi>i</mi>
-    </msub>
-    <mo>)</mo>
-   </mrow>
-  </mrow>
-  <mo>}</mo>
- </mrow>
- <mrow>
-  <mi>i</mi>
-  <mo stretchy='false'>=</mo>
-  <mn>1</mn>
- </mrow>
- <msub>
-  <mi>n</mi>
-  <mn>1</mn>
- </msub>
-</msubsup>
-</math>
- (i.e. given the combined data). (Figure    <a href="#fig_Saterlite__data">22.2</a>)</li>
-</ol>
+ (i.e. given the combined data). See Figure <a href="#fig_Saterlite__data">22.2</a>. </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2110'>  <span class='float-caption-Standard float-caption float-caption-standard'>Figure 22.2:  Satellite temperature readings data<a id="fig_Saterlite__data" /></span></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2114'><img style='width:33%;' src='e_12ee44f8a265_ck_N14_true.png' alt='image: e_12ee44f8a265_ck_N14_true.png' /></div>
+
+<div class='plain_layout' id='magicparlabel-2115'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  N14 (less accurate)</span></div>
 </div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2123'><img style='width:33%;' src='e_ffabc8a4c513_ck_N15_training.png' alt='image: e_ffabc8a4c513_ck_N15_training.png' /></div>
 
-<div class='float-figure'>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2055'><img style='width:45%;' src='e_56f563f7462a_meuse-zinc.png' alt='image: e_56f563f7462a_meuse-zinc.png' /></div>
-
-<div class='plain_layout' id='magicparlabel-2056'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  zinc concentration (obs)</span></div>
+<div class='plain_layout' id='magicparlabel-2124'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  N15 (more accurate)</span></div>
 </div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2064'><img style='width:45%;' src='e_7a21c9db37c2_meuse-lead.png' alt='image: e_7a21c9db37c2_meuse-lead.png' /></div>
+<div class='float-figure'><div class='plain_layout' id='magicparlabel-2132'><img style='width:33%;' src='e_ec9fe4e64181_ck_N15_p_full.png' alt='image: e_ec9fe4e64181_ck_N15_p_full.png' /></div>
 
-<div class='plain_layout' id='magicparlabel-2065'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  lead concentration (obs)</span></div>
-</div>
-
-
-
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2074'><img style='width:45%;' src='e_427539bd11fa_meuse-data-scatterplot_2.png' alt='image: e_427539bd11fa_meuse-data-scatterplot_2.png' /></div>
-
-<div class='plain_layout' id='magicparlabel-2075'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  scatter plot (obs)</span></div>
-</div>
-
-
-<div class='plain_layout' id='magicparlabel-2084'><span class='float-caption-Standard float-caption float-caption-standard'>Figure 22.1:  <a id="fig_Map_of_thedfsdfasdf" /> Map of the meuse dataset</span></div>
-</div>
-
-
-
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2093'>  <span class='float-caption-Standard float-caption float-caption-standard'>Figure 22.2:  Satellite temperature readings data<a id="fig_Saterlite__data" /></span></div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2097'><img style='width:33%;' src='e_12ee44f8a265_ck_N14_true.png' alt='image: e_12ee44f8a265_ck_N14_true.png' /></div>
-
-<div class='plain_layout' id='magicparlabel-2098'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure a:  N14 (less accurate)</span></div>
-</div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2106'><img style='width:33%;' src='e_ffabc8a4c513_ck_N15_training.png' alt='image: e_ffabc8a4c513_ck_N15_training.png' /></div>
-
-<div class='plain_layout' id='magicparlabel-2107'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure b:  N15 (more accurate)</span></div>
-</div>
-<div class='float-figure'><div class='plain_layout' id='magicparlabel-2115'><img style='width:33%;' src='e_ec9fe4e64181_ck_N15_p_full.png' alt='image: e_ec9fe4e64181_ck_N15_p_full.png' /></div>
-
-<div class='plain_layout' id='magicparlabel-2116'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  N15 (co-kriging prediction)</span></div>
+<div class='plain_layout' id='magicparlabel-2133'><span class='float-caption-Standard float-caption float-caption-standard'>Sub-Figure c:  N15 (co-kriging prediction)</span></div>
 </div>
 
 </div>
 
-
-<div class='standard' id='magicparlabel-2125'>
+</li></ul>
+</div>
+<div class='standard' id='magicparlabel-2142'>
 <br />
 </div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-2143'><span class="subsection_label">22.3</span> Classical coKriking</h3>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2126'><span class="note_label">Note 246.</span>
+<div class="note_item" id='magicparlabel-2144'><span class="note_label">Note 250.</span>
 We present the concept in the ordinary Kriging framework. </div>
 </div>
-<div class='standard' id='magicparlabel-2127'>
+<div class='standard' id='magicparlabel-2145'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2128'><span class="note_label">Note 247.</span>
+<div class="note_item" id='magicparlabel-2146'><span class="note_label">Note 251.</span>
 Consider <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>k</mi>
 </math>
@@ -34516,11 +34636,11 @@ Consider <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 . </div>
 </div>
-<div class='standard' id='magicparlabel-2129'>
+<div class='standard' id='magicparlabel-2147'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2130'><span class="note_label">Note 248.</span>
+<div class="note_item" id='magicparlabel-2148'><span class="note_label">Note 252.</span>
 Assume 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
@@ -34653,11 +34773,11 @@ Assume
 </math>
  </div>
 </div>
-<div class='standard' id='magicparlabel-2135'>
+<div class='standard' id='magicparlabel-2153'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2136'><span class="note_label">Note 249.</span>
+<div class="note_item" id='magicparlabel-2154'><span class="note_label">Note 253.</span>
 Co-Kriging predictor <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
@@ -34728,11 +34848,11 @@ Co-Kriging predictor <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 . </div>
 </div>
-<div class='standard' id='magicparlabel-2137'>
+<div class='standard' id='magicparlabel-2155'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2138'><span class="note_label">Note 250.</span>
+<div class="note_item" id='magicparlabel-2156'><span class="note_label">Note 254.</span>
 The Co-Kriging predictor has the linear form<a id="eq__69" />
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
@@ -34950,11 +35070,11 @@ weighted by a set of tunable unknown weights <math xmlns='http://www.w3.org/1998
 </math>
 .</div>
 </div>
-<div class='standard' id='magicparlabel-2139'>
+<div class='standard' id='magicparlabel-2157'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2140'><span class="note_label">Note 251.</span>
+<div class="note_item" id='magicparlabel-2158'><span class="note_label">Note 255.</span>
 Parametrization <a href="#eq__69">(22.1)</a> requires that all <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
@@ -34989,11 +35109,11 @@ Parametrization <a href="#eq__69">(22.1)</a> requires that all <math xmlns='http
 </math>
  are observed at different sets of sites from each other. </div>
 </div>
-<div class='standard' id='magicparlabel-2141'>
+<div class='standard' id='magicparlabel-2159'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2142'><span class="note_label">Note 252.</span>
+<div class="note_item" id='magicparlabel-2160'><span class="note_label">Note 256.</span>
 To enforce unbiassness, we find sufficient conditions for <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mo>{</mo>
@@ -35459,11 +35579,11 @@ To enforce unbiassness, we find sufficient conditions for <math xmlns='http://ww
 </math>
 </div>
 </div>
-<div class='standard' id='magicparlabel-2151'>
+<div class='standard' id='magicparlabel-2169'>
 <br />
 </div>
 <div class='notation'>
-<div class="notation_item" id='magicparlabel-2152'><span class="notation_label">Notation 253.</span>
+<div class="notation_item" id='magicparlabel-2170'><span class="notation_label">Notation 257.</span>
 Set convenient notation for the calculations below as
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
@@ -35531,11 +35651,11 @@ Set convenient notation for the calculations below as
 </math>
 </div>
 </div>
-<div class='standard' id='magicparlabel-2157'>
+<div class='standard' id='magicparlabel-2175'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2158'><span class="note_label">Note 254.</span>
+<div class="note_item" id='magicparlabel-2176'><span class="note_label">Note 258.</span>
 The MSE (or Variance) is <a id="eq__71" />
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
@@ -36422,11 +36542,11 @@ The MSE (or Variance) is <a id="eq__71" />
 </math>
  </div>
 </div>
-<div class='standard' id='magicparlabel-2159'>
+<div class='standard' id='magicparlabel-2177'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2160'><span class="note_label">Note 255.</span>
+<div class="note_item" id='magicparlabel-2178'><span class="note_label">Note 259.</span>
 The Lagrange function is
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true' columnalign='right left '>
@@ -36752,11 +36872,11 @@ The Lagrange function is
 </math>
  </div>
 </div>
-<div class='standard' id='magicparlabel-2161'>
+<div class='standard' id='magicparlabel-2179'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2162'><span class="note_label">Note 256.</span>
+<div class="note_item" id='magicparlabel-2180'><span class="note_label">Note 260.</span>
 The CK system of equations produced by <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mn>0</mn>
@@ -37006,11 +37126,11 @@ The CK system of equations produced by <math xmlns='http://www.w3.org/1998/Math/
 </math>
  </div>
 </div>
-<div class='standard' id='magicparlabel-2163'>
+<div class='standard' id='magicparlabel-2181'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2164'><span class="note_label">Note 257.</span>
+<div class="note_item" id='magicparlabel-2182'><span class="note_label">Note 261.</span>
 Plugin <a href="#eq__70">(22.3)</a> in <a href="#eq__71">(22.2)</a>, I can get the co-Kriging variance
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
@@ -37145,18 +37265,21 @@ Plugin <a href="#eq__70">(22.3)</a> in <a href="#eq__71">(22.2)</a>, I can get t
 </math>
 </div>
 </div>
-<div class='standard' id='magicparlabel-2165'>
+<div class='standard' id='magicparlabel-2183'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2166'><span class="note_label">Note 258.</span>
+<div class="note_item" id='magicparlabel-2184'><span class="note_label">Note 262.</span>
 The above derivation can be done wrt the cross-variogram as in UK, OK (by making extra assumptions). I choose to presented wrt the cross-covariance as more general. </div>
 </div>
-<div class='standard' id='magicparlabel-2167'>
+<div class='standard' id='magicparlabel-2185'>
 <br />
 </div>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-2186'><span class="subsection_label">22.4</span> Bayesian coKriking</h3>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2168'><span class="note_label">Note 259.</span>
+<div class="note_item" id='magicparlabel-2187'><span class="note_label">Note 263.</span>
 Regarding the Bayesian framework. Consider the paradigm that <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
@@ -37400,19 +37523,7 @@ Regarding the Bayesian framework. Consider the paradigm that <math xmlns='http:/
  </mrow>
 </mrow>
 </math>
- and resulted after conditioning the following joint distribution on <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<msub>
- <mi>Z</mi>
- <mn>1</mn>
-</msub>
-</math>
-,..., <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<msub>
- <mi>Z</mi>
- <mi>k</mi>
-</msub>
-</math>
-<a id="eq__72" />
+ and resulted after computing the joint distribution <a id="eq__72" />
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mtable displaystyle='true'>
  <mtr>
@@ -37447,31 +37558,40 @@ Regarding the Bayesian framework. Consider the paradigm that <math xmlns='http:/
      </mtr>
      <mtr>
       <mtd>
-       <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
-       <mtable>
-        <mtr>
-         <mtd>
-          <msub>
-           <mi>Z</mi>
-           <mn>1</mn>
-          </msub>
-         </mtd>
-        </mtr>
-        <mtr>
-         <mtd>
-          <mi>&#x22EE;</mi>
-         </mtd>
-        </mtr>
-        <mtr>
-         <mtd>
-          <msub>
-           <mi>Z</mi>
-           <mi>k</mi>
-          </msub>
-         </mtd>
-        </mtr>
-       </mtable>
-       <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+       <munder accent='false'>
+        <munder>
+         <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+         <mtable>
+          <mtr>
+           <mtd>
+            <msub>
+             <mi>Z</mi>
+             <mn>1</mn>
+            </msub>
+           </mtd>
+          </mtr>
+          <mtr>
+           <mtd>
+            <mi>&#x22EE;</mi>
+           </mtd>
+          </mtr>
+          <mtr>
+           <mtd>
+            <msub>
+             <mi>Z</mi>
+             <mi>k</mi>
+            </msub>
+           </mtd>
+          </mtr>
+         </mtable>
+         <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+         <mo stretchy='true'>&#x23DF;</mo>
+        </munder>
+        <mrow>
+         <mo stretchy='false'>=</mo>
+         <mi>Z</mi>
+        </mrow>
+       </munder>
       </mtd>
      </mtr>
     </mtable>
@@ -37510,51 +37630,60 @@ Regarding the Bayesian framework. Consider the paradigm that <math xmlns='http:/
        </mtr>
        <mtr>
         <mtd>
-         <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
-         <mtable>
-          <mtr>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>&#x3BC;</mi>
-              <mn>1</mn>
-             </msub>
-             <mrow>
-              <mo>(</mo>
-              <msub>
-               <mi>S</mi>
-               <mn>1</mn>
-              </msub>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-          </mtr>
-          <mtr>
-           <mtd>
-            <mi>&#x22EE;</mi>
-           </mtd>
-          </mtr>
-          <mtr>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>&#x3BC;</mi>
-              <mi>k</mi>
-             </msub>
-             <mrow>
-              <mo>(</mo>
-              <msub>
-               <mi>S</mi>
-               <mi>k</mi>
-              </msub>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-          </mtr>
-         </mtable>
-         <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+         <munder accent='false'>
+          <munder>
+           <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+           <mtable>
+            <mtr>
+             <mtd>
+              <mrow>
+               <msub>
+                <mi>&#x3BC;</mi>
+                <mn>1</mn>
+               </msub>
+               <mrow>
+                <mo>(</mo>
+                <msub>
+                 <mi>S</mi>
+                 <mn>1</mn>
+                </msub>
+                <mo>)</mo>
+               </mrow>
+              </mrow>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <mi>&#x22EE;</mi>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <mrow>
+               <msub>
+                <mi>&#x3BC;</mi>
+                <mi>k</mi>
+               </msub>
+               <mrow>
+                <mo>(</mo>
+                <msub>
+                 <mi>S</mi>
+                 <mi>k</mi>
+                </msub>
+                <mo>)</mo>
+               </mrow>
+              </mrow>
+             </mtd>
+            </mtr>
+           </mtable>
+           <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+           <mo stretchy='true'>&#x23DF;</mo>
+          </munder>
+          <mrow>
+           <mo stretchy='false'>=</mo>
+           <mi>&#x3BC;</mi>
+          </mrow>
+         </munder>
         </mtd>
        </mtr>
       </mtable>
@@ -37674,219 +37803,240 @@ Regarding the Bayesian framework. Consider the paradigm that <math xmlns='http:/
        </mtr>
        <mtr>
         <mtd>
-         <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
-         <mtable>
-          <mtr>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>C</mi>
-              <mrow>
-               <mn>1</mn>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>j</mi>
-                <mn>0</mn>
-               </msub>
-              </mrow>
-             </msub>
-             <mrow>
-              <mo>(</mo>
+         <munder accent='false'>
+          <munder>
+           <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+           <mtable>
+            <mtr>
+             <mtd>
               <mrow>
                <msub>
-                <mi>S</mi>
-                <mn>1</mn>
+                <mi>C</mi>
+                <mrow>
+                 <mn>1</mn>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>j</mi>
+                  <mn>0</mn>
+                 </msub>
+                </mrow>
                </msub>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>S</mi>
-                <mo stretchy='false'>*</mo>
-               </msub>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <msub>
+                  <mi>S</mi>
+                  <mn>1</mn>
+                 </msub>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>S</mi>
+                  <mo stretchy='false'>*</mo>
+                 </msub>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
               </mrow>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-          </mtr>
-          <mtr>
-           <mtd>
-            <mi>&#x22EE;</mi>
-           </mtd>
-          </mtr>
-          <mtr>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>C</mi>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <mi>&#x22EE;</mi>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
               <mrow>
-               <mi>k</mi>
-               <mo stretchy='false'>,</mo>
                <msub>
-                <mi>j</mi>
-                <mn>0</mn>
+                <mi>C</mi>
+                <mrow>
+                 <mi>k</mi>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>j</mi>
+                  <mn>0</mn>
+                 </msub>
+                </mrow>
                </msub>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <msub>
+                  <mi>S</mi>
+                  <mi>k</mi>
+                 </msub>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>S</mi>
+                  <mo stretchy='false'>*</mo>
+                 </msub>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
               </mrow>
-             </msub>
-             <mrow>
-              <mo>(</mo>
-              <mrow>
-               <msub>
-                <mi>S</mi>
-                <mi>k</mi>
-               </msub>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>S</mi>
-                <mo stretchy='false'>*</mo>
-               </msub>
-              </mrow>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-          </mtr>
-         </mtable>
-         <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+             </mtd>
+            </mtr>
+           </mtable>
+           <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+           <mo stretchy='true'>&#x23DF;</mo>
+          </munder>
+          <msub>
+           <mi>C</mi>
+           <msub>
+            <mi>j</mi>
+            <mn>0</mn>
+           </msub>
+          </msub>
+         </munder>
         </mtd>
         <mtd>
-         <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
-         <mtable>
-          <mtr>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>C</mi>
+         <munder accent='false'>
+          <munder>
+           <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+           <mtable>
+            <mtr>
+             <mtd>
               <mrow>
                <msub>
-                <mi>j</mi>
-                <mn>1</mn>
+                <mi>C</mi>
+                <mrow>
+                 <msub>
+                  <mi>j</mi>
+                  <mn>1</mn>
+                 </msub>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>j</mi>
+                  <mn>1</mn>
+                 </msub>
+                </mrow>
                </msub>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>j</mi>
-                <mn>1</mn>
-               </msub>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <msub>
+                  <mi>S</mi>
+                  <mn>1</mn>
+                 </msub>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>S</mi>
+                  <mn>1</mn>
+                 </msub>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
               </mrow>
-             </msub>
-             <mrow>
-              <mo>(</mo>
+             </mtd>
+             <mtd>
+              <mi>&#x22EF;</mi>
+             </mtd>
+             <mtd>
               <mrow>
                <msub>
-                <mi>S</mi>
-                <mn>1</mn>
+                <mi>C</mi>
+                <mrow>
+                 <mn>1</mn>
+                 <mo stretchy='false'>,</mo>
+                 <mi>k</mi>
+                </mrow>
                </msub>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>S</mi>
-                <mn>1</mn>
-               </msub>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <msub>
+                  <mi>S</mi>
+                  <mn>1</mn>
+                 </msub>
+                 <msub>
+                  <mi>S</mi>
+                  <mi>k</mi>
+                 </msub>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
               </mrow>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-           <mtd>
-            <mi>&#x22EF;</mi>
-           </mtd>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>C</mi>
-              <mrow>
-               <mn>1</mn>
-               <mo stretchy='false'>,</mo>
-               <mi>k</mi>
-              </mrow>
-             </msub>
-             <mrow>
-              <mo>(</mo>
-              <mrow>
-               <msub>
-                <mi>S</mi>
-                <mn>1</mn>
-               </msub>
-               <msub>
-                <mi>S</mi>
-                <mi>k</mi>
-               </msub>
-              </mrow>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-          </mtr>
-          <mtr>
-           <mtd>
-            <mi>&#x22EE;</mi>
-           </mtd>
-           <mtd>
-            <mi>&#x22F1;</mi>
-           </mtd>
-           <mtd>
-            <mi>&#x22EE;</mi>
-           </mtd>
-          </mtr>
-          <mtr>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>C</mi>
-              <mrow>
-               <mi>k</mi>
-               <mo stretchy='false'>,</mo>
-               <mn>1</mn>
-              </mrow>
-             </msub>
-             <mrow>
-              <mo>(</mo>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <mi>&#x22EE;</mi>
+             </mtd>
+             <mtd>
+              <mi>&#x22F1;</mi>
+             </mtd>
+             <mtd>
+              <mi>&#x22EE;</mi>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
               <mrow>
                <msub>
-                <mi>S</mi>
-                <mi>k</mi>
+                <mi>C</mi>
+                <mrow>
+                 <mi>k</mi>
+                 <mo stretchy='false'>,</mo>
+                 <mn>1</mn>
+                </mrow>
                </msub>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>S</mi>
-                <mn>1</mn>
-               </msub>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <msub>
+                  <mi>S</mi>
+                  <mi>k</mi>
+                 </msub>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>S</mi>
+                  <mn>1</mn>
+                 </msub>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
               </mrow>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-           <mtd>
-            <mi>&#x22EF;</mi>
-           </mtd>
-           <mtd>
-            <mrow>
-             <msub>
-              <mi>C</mi>
+             </mtd>
+             <mtd>
+              <mi>&#x22EF;</mi>
+             </mtd>
+             <mtd>
               <mrow>
-               <mi>k</mi>
-               <mo stretchy='false'>,</mo>
-               <mi>k</mi>
-              </mrow>
-             </msub>
-             <mrow>
-              <mo>(</mo>
-              <mrow>
                <msub>
-                <mi>S</mi>
-                <mi>k</mi>
+                <mi>C</mi>
+                <mrow>
+                 <mi>k</mi>
+                 <mo stretchy='false'>,</mo>
+                 <mi>k</mi>
+                </mrow>
                </msub>
-               <mo stretchy='false'>,</mo>
-               <msub>
-                <mi>S</mi>
-                <mi>k</mi>
-               </msub>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <msub>
+                  <mi>S</mi>
+                  <mi>k</mi>
+                 </msub>
+                 <mo stretchy='false'>,</mo>
+                 <msub>
+                  <mi>S</mi>
+                  <mi>k</mi>
+                 </msub>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
               </mrow>
-              <mo>)</mo>
-             </mrow>
-            </mrow>
-           </mtd>
-          </mtr>
-         </mtable>
-         <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+             </mtd>
+            </mtr>
+           </mtable>
+           <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+           <mo stretchy='true'>&#x23DF;</mo>
+          </munder>
+          <mrow>
+           <mo stretchy='false'>=</mo>
+           <mi>C</mi>
+          </mrow>
+         </munder>
         </mtd>
        </mtr>
       </mtable>
@@ -37902,13 +38052,281 @@ Regarding the Bayesian framework. Consider the paradigm that <math xmlns='http:/
  </mtr>
 </mtable>
 </math>
+ and conditioning as <a id="eq__72_1" />
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <msub>
+      <mi>j</mi>
+      <mn>0</mn>
+     </msub>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>S</mi>
+      <mo stretchy='false'>*</mo>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>|</mo>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>k</mi>
+    </msub>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x223C;</mo>
+    <mtext>N</mtext>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>&#x3BC;</mi>
+       <mrow>
+        <msub>
+         <mi>j</mi>
+         <mn>0</mn>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <mn>1</mn>
+        <mo stretchy='false'>,</mo>
+        <mn>...</mn>
+        <mo stretchy='false'>,</mo>
+        <mi>k</mi>
+       </mrow>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <msub>
+        <mi>S</mi>
+        <mo stretchy='false'>*</mo>
+       </msub>
+       <mo>)</mo>
+      </mrow>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>C</mi>
+       <mrow>
+        <msub>
+         <mi>j</mi>
+         <mn>0</mn>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <mn>1</mn>
+        <mo stretchy='false'>,</mo>
+        <mn>...</mn>
+        <mo stretchy='false'>,</mo>
+        <mi>k</mi>
+       </mrow>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <msub>
+         <mi>S</mi>
+         <mo stretchy='false'>*</mo>
+        </msub>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(22.5)</mtext>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <mrow>
+      <msub>
+       <mi>j</mi>
+       <mn>0</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mn>1</mn>
+      <mo stretchy='false'>,</mo>
+      <mn>...</mn>
+      <mo stretchy='false'>,</mo>
+      <mi>k</mi>
+     </mrow>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>S</mi>
+      <mo stretchy='false'>*</mo>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <msub>
+     <mi>&#x3BC;</mi>
+     <msub>
+      <mi>j</mi>
+      <mn>0</mn>
+     </msub>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>S</mi>
+      <mo stretchy='false'>*</mo>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <msub>
+     <mi>C</mi>
+     <msub>
+      <mi>j</mi>
+      <mn>0</mn>
+     </msub>
+    </msub>
+    <msup>
+     <mi>C</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>[</mo>
+     <mrow>
+      <mi>&#x3BC;</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>Z</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo stretchy='false'>,</mo>
+    <mspace width="6px"/>
+    <msub>
+     <mi>C</mi>
+     <mrow>
+      <msub>
+       <mi>j</mi>
+       <mn>0</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <mn>1</mn>
+      <mo stretchy='false'>,</mo>
+      <mn>...</mn>
+      <mo stretchy='false'>,</mo>
+      <mi>k</mi>
+     </mrow>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <msub>
+     <mi>C</mi>
+     <mrow>
+      <msub>
+       <mi>j</mi>
+       <mn>0</mn>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>j</mi>
+       <mn>0</mn>
+      </msub>
+     </mrow>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+      <mo stretchy='false'>,</mo>
+      <msub>
+       <mi>S</mi>
+       <mo stretchy='false'>*</mo>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>-</mo>
+    <msub>
+     <mi>C</mi>
+     <msub>
+      <mi>j</mi>
+      <mn>0</mn>
+     </msub>
+    </msub>
+    <msup>
+     <mi>C</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <msubsup>
+     <mi>C</mi>
+     <msub>
+      <mi>j</mi>
+      <mn>0</mn>
+     </msub>
+     <mi>&#x22A4;</mi>
+    </msubsup>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mtext>(22.6)</mtext>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
 </div>
 </div>
-<div class='standard' id='magicparlabel-2169'>
+<div class='standard' id='magicparlabel-2188'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2170'><span class="note_label">Note 260.</span>
+<div class="note_item" id='magicparlabel-2189'><span class="note_label">Note 264.</span>
 If <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>k</mi>
 </math>
@@ -37927,13 +38345,15 @@ If <math xmlns='http://www.w3.org/1998/Math/MathML'>
 &#8217;s your computer (particularly its CPU and its RAM) would complain with a blue screen...</div>
 </div>
 
-
-<div class='standard' id='magicparlabel-2181'>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-2200'><span class="subsection_label">22.5</span> Intrinsic correlation model</h3>
+<div class='standard' id='magicparlabel-2201'>
 <br />
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2182'><span class="note_label">Note 261.</span>
-For instance some tricks to mitigate challenges with large <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class="note_item" id='magicparlabel-2202'><span class="note_label">Note 265.</span>
+Tricks to mitigate challenges with large <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>k</mi>
 </math>
  and <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -37942,7 +38362,7 @@ For instance some tricks to mitigate challenges with large <math xmlns='http://w
  <mi>j</mi>
 </msub>
 </math>
- involve specifying restricted forms of cross-covariance functions <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ involve imposing restrictions on the cross-covariance functions <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <msub>
   <mi>C</mi>
@@ -37963,146 +38383,55 @@ For instance some tricks to mitigate challenges with large <math xmlns='http://w
  </mrow>
 </mrow>
 </math>
- with special structure often introducing conditional independences (hence restricting the model), as well as using suitable experimental designs.</div>
+ having special structure often by introducing conditional independences (hence restricting the model), as well as using suitable experimental designs.</div>
 </div>
 <div class='definition'>
-<div class="definition_item" id='magicparlabel-2183'><span class="definition_label">Definition 262.</span>
-Intrinsic Multivariate Correlation (co-Kriking) model is the CK model which assumes that the multivariate correlation structure is independent of the spatial correlation; i.e. the following correlation 
+<div class="definition_item" id='magicparlabel-2203'><span class="definition_label">Definition 266.</span>
+Intrinsic Multivariate Correlation model is the model which describes relations between variables by the covariance matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ and the relations between points in space by a spatial correlation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3F1;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ which is the same for all variables; i.e. 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
-<mfrac>
- <mrow>
-  <msub>
-   <mi>C</mi>
-   <mrow>
-    <mi>i</mi>
-    <mo stretchy='false'>,</mo>
-    <mi>j</mi>
-   </mrow>
-  </msub>
-  <mrow>
-   <mo>(</mo>
-   <mrow>
-    <mi>s</mi>
-    <mo stretchy='false'>,</mo>
-    <mi>t</mi>
-   </mrow>
-   <mo>)</mo>
-  </mrow>
- </mrow>
- <msqrt>
-  <mrow>
-   <msub>
-    <mi>C</mi>
-    <mrow>
-     <mi>i</mi>
-     <mo stretchy='false'>,</mo>
-     <mi>i</mi>
-    </mrow>
-   </msub>
-   <mrow>
-    <mo>(</mo>
-    <mrow>
-     <mi>s</mi>
-     <mo stretchy='false'>,</mo>
-     <mi>t</mi>
-    </mrow>
-    <mo>)</mo>
-   </mrow>
-   <msub>
-    <mi>C</mi>
-    <mrow>
-     <mi>j</mi>
-     <mo stretchy='false'>,</mo>
-     <mi>j</mi>
-    </mrow>
-   </msub>
-   <mrow>
-    <mo>(</mo>
-    <mrow>
-     <mi>s</mi>
-     <mo stretchy='false'>,</mo>
-     <mi>t</mi>
-    </mrow>
-    <mo>)</mo>
-   </mrow>
-  </mrow>
- </msqrt>
-</mfrac>
-</math>
- between any two <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
- <msub>
-  <mi>Z</mi>
-  <mi>i</mi>
- </msub>
+ <mi>C</mi>
  <mrow>
   <mo>(</mo>
-  <mo>&#x22C5;</mo>
+  <mi>h</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>B</mi>
+ <mi>&#x3F1;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>h</mi>
   <mo>)</mo>
  </mrow>
 </mrow>
 </math>
- <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <msub>
-  <mi>Z</mi>
-  <mi>j</mi>
- </msub>
- <mrow>
-  <mo>(</mo>
-  <mo>&#x22C5;</mo>
-  <mo>)</mo>
- </mrow>
-</mrow>
-</math>
- at <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <mo>(</mo>
- <mrow>
-  <mi>s</mi>
-  <mo stretchy='false'>,</mo>
-  <mi>t</mi>
- </mrow>
- <mo>)</mo>
-</mrow>
-</math>
- does not depend upon spatial scale <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <mo>|</mo>
- <mrow>
-  <mi>t</mi>
-  <mo stretchy='false'>-</mo>
-  <mi>s</mi>
- </mrow>
- <mo>|</mo>
-</mrow>
-</math>
- or <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <mo>(</mo>
- <mrow>
-  <mi>s</mi>
-  <mo stretchy='false'>,</mo>
-  <mi>t</mi>
- </mrow>
- <mo>)</mo>
-</mrow>
-</math>
- for any pair of sites <math xmlns='http://www.w3.org/1998/Math/MathML'>
-<mrow>
- <mo>(</mo>
- <mrow>
-  <mi>s</mi>
-  <mo stretchy='false'>,</mo>
-  <mi>t</mi>
- </mrow>
- <mo>)</mo>
-</mrow>
-</math>
-. </div>
+</div>
+</div>
+
+
+<div class='standard' id='magicparlabel-2215'>
+<br />
 </div>
 <div class='example'>
-<div class="example_item" id='magicparlabel-2184'><span class="example_label">Example 263.</span>
+<div class="example_item" id='magicparlabel-2216'><span class="example_label">Example 267.</span>
 Consider a set of processes <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mo>{</mo>
@@ -38224,8 +38553,8 @@ Consider a set of processes <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 . Show that this co-kriging model is Intrinsic Multivariate Correlation model. </div>
 <div class='solution_'>
-<div class="solution__item" id='magicparlabel-2185'><span class="solution__label">Solution.</span>
-The correlation between two variables For any pair of spatial points <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<div class="solution__item" id='magicparlabel-2217'><span class="solution__label">Solution.</span>
+The correlation between two variables for any pair of spatial points <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mo>(</mo>
  <mrow>
@@ -38336,7 +38665,7 @@ The correlation between two variables For any pair of spatial points <math xmlns
         <mrow>
          <mi>i</mi>
          <mo stretchy='false'>,</mo>
-         <mi>j</mi>
+         <mi>i</mi>
         </mrow>
        </msub>
        <mi>&#x3F1;</mi>
@@ -38356,7 +38685,7 @@ The correlation between two variables For any pair of spatial points <math xmlns
        <msub>
         <mi>&#x3C3;</mi>
         <mrow>
-         <mi>i</mi>
+         <mi>j</mi>
          <mo stretchy='false'>,</mo>
          <mi>j</mi>
         </mrow>
@@ -38395,13 +38724,13 @@ The correlation between two variables For any pair of spatial points <math xmlns
         <mrow>
          <mi>i</mi>
          <mo stretchy='false'>,</mo>
-         <mi>j</mi>
+         <mi>i</mi>
         </mrow>
        </msub>
        <msub>
         <mi>&#x3C3;</mi>
         <mrow>
-         <mi>i</mi>
+         <mi>j</mi>
          <mo stretchy='false'>,</mo>
          <mi>j</mi>
         </mrow>
@@ -38418,12 +38747,14 @@ The correlation between two variables For any pair of spatial points <math xmlns
 </div>
 </div>
 <div class='note'>
-<div class="note_item" id='magicparlabel-2186'><span class="note_label">Note 264.</span>
+<div class="note_item" id='magicparlabel-2218'><span class="note_label">Note 268.</span>
 In Co-Kriging, using the Intrinsic Multivariate Correlation model for the cross-covariance, and using sites in a grid allows the use of Kronecker product operations in cases <a href="#eq__70">(22.3)</a> and <a href="#eq__72">22.4</a> for mitigating the computational requirements.</div>
 </div>
 
-
-<div class='standard' id='magicparlabel-2196'>
+</section>
+<section>
+<h3 class='subsection' id='magicparlabel-2228'><span class="subsection_label">22.6</span> Linear model of coregionalisation (LMC)</h3>
+<div class='standard' id='magicparlabel-2229'>
 <br />
 </div>
 
