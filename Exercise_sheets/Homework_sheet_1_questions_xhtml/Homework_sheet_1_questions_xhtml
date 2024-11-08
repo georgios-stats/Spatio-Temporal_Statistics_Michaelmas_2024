@@ -1882,8 +1882,7 @@ It is
  </mtable>
 </mrow>
 </math>
-
-<ol class='lyxenum enumii'>
+</li>
 <li class="enumerate_item" id='magicparlabel-95'>&#xA0;
 <ul class='lyxitem lyxitemi'>
 <li class="itemize_item" id='magicparlabel-96'>The sill is the covariogram function at distance <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -2190,7 +2189,6 @@ It is
 </math>
 . In practical terms this means that two points will always be correlated however far apart they are, it would be unrealistic.</li>
 </ol>
-</li></ol>
 
 </div>
 </div>
