@@ -86,7 +86,7 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 # Computer lab notes  
 
-#### Technichal specs  
+#### Technical specs  
 
 The computer lab notes run by software whose version is the same as that installed in the CIS server [anywhereapp](https://appsanywhere.durham.ac.uk). I.e.  
 
@@ -102,9 +102,9 @@ Required R packages are
 
     install.packages(pkgs = c( 
         "st", "sf", 
-        "mapview", "tmap", "ggplot2", 
+        "mapview", "tmap", "ggplot2", "viridis", 
         "spData", "spdep", "SemiPar", 
-        "gstat" 
+        "gstat", "geoR"   
         ) )  
 
 #### Lab 1: Spatial data in R           
