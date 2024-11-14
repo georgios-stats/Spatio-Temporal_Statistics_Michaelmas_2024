@@ -74,9 +74,11 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 + [HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_geostatistical_data_xhtml/Lecture_notes_geostatistical_data.xhtml)  
 
-#### Aerial unit data modeling       
+#### Aerial unit data modeling              
 
-... Not available yet  
++ [PDF](./Lecture_notes/Lecture_notes_aerial_unit_data.pdf)  
+
++ [HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_aerial_unit_data_xhtml/Lecture_notes_aerial_unit_data.xhtml)  
 
 #### Random pattern data modeling       
 
