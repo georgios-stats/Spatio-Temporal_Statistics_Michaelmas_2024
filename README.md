@@ -105,8 +105,9 @@ Required R packages are
     install.packages(pkgs = c( 
         "st", "sf", 
         "mapview", "tmap", "ggplot2", "viridis", 
-        "spData", "spdep", "SemiPar", 
-        "gstat", "geoR"   
+        "spData", "SemiPar", 
+        "gstat", "geoR", 
+        "spdep", "spatialreg"
         ) )  
 
 #### Lab 1: Spatial data in R           
@@ -119,7 +120,7 @@ This is about the retrival, manipulation, and visualisation of spatial data.
 
 #### Lab 2: Geostatistical data modeling       
 
-This is about the fiting semivariograms, and implementing Kriging.
+This is about the fiting (cross-)semivariograms, implementing (co-)Kriging, and implementind the linear model of coregionalization.  
 
 + [Tasks](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  
 
@@ -127,7 +128,11 @@ This is about the fiting semivariograms, and implementing Kriging.
 
 #### Lab 3: Aerial unit data modeling       
 
-... Not available yet  
+This is about design neighborhoods, proximity matrices, (global and local) Moran's tests, Simultaneous Auto-regressive (SAR) model fitting, and Conditional Auto-Regressive (CAR) model fitting.  
+
++ [Tasks](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html)  
+
++ [Complete](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html) 
 
 #### Lab 4: Random pattern data modeling    
 
