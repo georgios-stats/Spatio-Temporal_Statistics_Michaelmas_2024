@@ -156,7 +156,7 @@ Complete
 
 + [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html)  
 
-+ [Download](<a>https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html</a>)  
++ <a>[Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html)</a>  
 
 #### Lab 4: Random pattern data modeling    
 
