@@ -116,13 +116,13 @@ This is about the retrival, manipulation, and visualisation of spatial data.
 
 Tasks  
 
-+ [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_tasks.html)  
++ [View HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_tasks.html)  
 
 + [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Spatial_data_in_R_tasks.html)  
 
 Complete  
 
-+ [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html)
++ [View HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html)
 
 + [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Spatial_data_in_R_complete.html)  
 
@@ -130,17 +130,17 @@ Complete
 
 This is about the fiting (cross-)semivariograms, implementing (co-)Kriging, and implementind the linear model of coregionalization.  
 
-Tasks: [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  
+Tasks: [View HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  
 
-Complete: [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html) ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html)  
+Complete: [View HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html) ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html)  
 
 #### Lab 3: Aerial unit data modeling       
 
 This is about design neighborhoods, proximity matrices, (global and local) Moran's tests, Simultaneous Auto-regressive (SAR) model fitting, and Conditional Auto-Regressive (CAR) model fitting.  
 
-Tasks: [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html) ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html)  
+Tasks: [View HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html) ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html)  
 
-Complete [View](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html) ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html)  
+Complete [View HTML](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html) ; [Download](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html)  
 
 #### Lab 4: Random pattern data modeling    
 
