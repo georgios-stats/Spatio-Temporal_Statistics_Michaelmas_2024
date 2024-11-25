@@ -1850,8 +1850,7 @@ Show that the estimation variance(or else extension variance)
  <mi>a</mi>
 </mrow>
 </math>
-
-<ol class='lyxenum enumii'>
+</li>
 <li class="enumerate_item" id='magicparlabel-66'>It is 
 <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
 <mrow>
@@ -4557,7 +4556,6 @@ From the hint I can see, I can see that
 </math>
  element marked in red. </li>
 </ol>
-</li></ol>
 
 </div>
 </div>

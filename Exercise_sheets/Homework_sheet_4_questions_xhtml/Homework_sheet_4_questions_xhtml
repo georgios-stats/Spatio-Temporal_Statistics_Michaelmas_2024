@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta name="generator" content="LyX 2.4.1" />
+<title>LyX Document</title>
+<style>
+/* Layout-provided Styles */
+div.standard {
+	margin-bottom: 2ex;
+}
+div.plain_layout {
+text-align: left;
+
+}
+div.theorem {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.theorem_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.exercise {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.exercise_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.solution_ {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.solution__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.definition {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.definition_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.definition_ {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.definition__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+dl.description dt { font-weight: bold; }
+ul.itemize {
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+margin-left: 3ex;
+text-align: left;
+
+}
+ol.enumi   { list-style-type: decimal; }
+ol.enumii  { list-style-type: lower-latin; }
+ol.enumiii { list-style-type: lower-roman; }
+ol.enumiv  { list-style-type: upper-latin; }
+div.Shadowbox { border: solid gray medium; border-bottom: solid black 1ex; border-right: solid black 1ex; padding: 0.5ex; }
+div.Boxed {
+	border: solid thick black;
+	padding: 0.5ex;
+}
+
+
+</style>
+</head>
+<body dir="auto">
+<div class='standard' id='magicparlabel-3'><div class='Shadowbox'>
+
+<div class='plain_layout' id='magicparlabel-12'>Spatio-temporal statistics (MATH4341)&#xA0;&#xA0;
+Michaelmas term, 2024<div style='height:3ex'></div></div>
+
+<div class='plain_layout' style='text-align: center;' id='magicparlabel-13'><b><span style='font-size:x-large;'>Homework 4: Aerial data modeling</span></b><div style='height:3ex'></div></div>
+
+<div class='plain_layout' id='magicparlabel-14'>Lecturer: Georgios P. Karagiannis&#xA0;&#xA0; 
+<a href="mailto:georgios.karagiannis@durham.ac.uk">georgios.karagiannis@durham.ac.uk</a></div>
+
+<div class='plain_layout' id='magicparlabel-15'><hr />
+</div>
+</div></div>
+
+<div class='standard' id='magicparlabel-16'>&#xA0;<div style='height:1ex'></div><div style='height:1ex'></div></div>
+
+<div class='standard' id='magicparlabel-17'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-18'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-19'><hr />
+</div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-20'><span class="exercise_label">Exercise 1.</span>
+(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-22'>Show that the local characteristics
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <munder>
+     <mo>Pr</mo>
+     <mn>1</mn>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <msub>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msqrt>
+     <mfrac>
+      <mn>1</mn>
+      <mrow>
+       <mn>2</mn>
+       <mi>&#x3C0;</mi>
+      </mrow>
+     </mfrac>
+    </msqrt>
+    <mo>exp</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mfrac>
+       <mn>1</mn>
+       <mn>2</mn>
+      </mfrac>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msub>
+          <mi>x</mi>
+          <mn>1</mn>
+         </msub>
+         <mo stretchy='false'>-</mo>
+         <msub>
+          <mi>x</mi>
+          <mn>2</mn>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <munder>
+     <mo>Pr</mo>
+     <mn>2</mn>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>|</mo>
+      <msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msqrt>
+     <mfrac>
+      <mn>1</mn>
+      <mrow>
+       <mn>2</mn>
+       <mi>&#x3C0;</mi>
+      </mrow>
+     </mfrac>
+    </msqrt>
+    <mo>exp</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mfrac>
+       <mn>1</mn>
+       <mn>2</mn>
+      </mfrac>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msub>
+          <mi>x</mi>
+          <mn>2</mn>
+         </msub>
+         <mo stretchy='false'>-</mo>
+         <msub>
+          <mi>x</mi>
+          <mn>1</mn>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+do not define a proper joint distribution on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>,</mo>
+   <mn>2</mn>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</msup>
+</math>
+.</div>
+
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-28'><span class="solution__label">Solution.</span>
+&#xA0;&#xA0; </div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-38'><hr />
+</div>
+
+<div class='standard' id='magicparlabel-43'><div class='Boxed' style='width: 99%; '><div class='definition'>
+<div class="definition_item" id='magicparlabel-51'><span class="definition_label">Definition 2.</span>
+(Pseudo-likelihood) The pseudo likelihood <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>pseudo-</mtext>
+ <mi>L</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of observables <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ given parameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ is an approximation of the likelihood <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>L</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of observables <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ given parameters <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ which is equal to 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtext>pseudo-</mtext>
+ <mi>L</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munder>
+  <mo>&#x220F;</mo>
+  <mi>i</mi>
+ </munder>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>Z</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mi>i</mi>
+    </mrow>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>Z</mi>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>|</mo>
+   <msub>
+    <mi>Z</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mi>i</mi>
+    </mrow>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ are the conditionals of the joint pdf/pmf of the sampling distribution <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>Pr</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ given <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>+</mo>
+      <mn>1</mn>
+     </mrow>
+    </msub>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ and parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+.</div>
+</div>
+<div class='plain_layout' id='magicparlabel-52'>
+<br />
+</div>
+<div class='definition_'>
+<div class="definition__item" id='magicparlabel-53'><span class="definition__label">Definition.</span>
+(Maximum Pseudo-Likelihood Estimator) The Maximum Pseudo-Likelihood Estimator (MPLE) <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B8;</mi>
+ <mo stretchy='true'>&#x02DC;</mo>
+</mover>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ is the maximizer of the pseudo likelihood function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>pseudo-</mtext>
+ <mi>L</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>;</mo>
+   <mi>&#x3B8;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ where the parameter <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B8;</mi>
+</math>
+ is the argument and the observables <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>Z</mi>
+     <mn>1</mn>
+    </msub>
+    <mo stretchy='false'>,</mo>
+    <mn>...</mn>
+    <mo stretchy='false'>,</mo>
+    <msub>
+     <mi>Z</mi>
+     <mi>n</mi>
+    </msub>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+ are fixed values.
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mover>
+  <mi>&#x3B8;</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mo stretchy='false'>=</mo>
+ <munder accent='false'>
+  <mrow>
+   <mo>arg</mo>
+   <mo>max</mo>
+  </mrow>
+  <mi>&#x3B8;</mi>
+ </munder>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mtext>pseudo-</mtext>
+   <mi>L</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>Z</mi>
+     <mo stretchy='false'>;</mo>
+     <mi>&#x3B8;</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+</div></div>
+<div class='exercise'>
+<div class="exercise_item" id='magicparlabel-54'><span class="exercise_label">Exercise 3.</span>
+(<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2605;</mo>
+</math>
+)&#xA0; <div class='standard' id='magicparlabel-56'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>Z</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='script'>
+   <mi>Z</mi>
+  </mstyle>
+  <mstyle mathvariant='script'>
+   <mi>S</mi>
+  </mstyle>
+ </msup>
+</mrow>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mstyle mathvariant='script'>
+  <mi>S</mi>
+ </mstyle>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>1</mn>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <mi>n</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mstyle mathvariant='script'>
+  <mi>Z</mi>
+ </mstyle>
+ <mo stretchy='false'>=</mo>
+ <mstyle mathvariant='double-struck'>
+  <mi>R</mi>
+ </mstyle>
+</mrow>
+</math>
+. Consider the model 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>X</mi>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>B</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>Z</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>X</mi>
+   <mi>&#x3B2;</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>E</mi>
+</mrow>
+</math>
+where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is a <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x00D7;</mo>
+ <mi>p</mi>
+</mrow>
+</math>
+ design matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3B2;</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mi>p</mi>
+ </msup>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>I</mi>
+ <mo stretchy='false'>-</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+ is an <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x00D7;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ symmetric positive definite matrix with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mrow>
+   <mo>[</mo>
+   <mi>B</mi>
+   <mo>]</mo>
+  </mrow>
+  <mrow>
+   <mi>i</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>E</mi>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mn>0</mn>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>I</mi>
+     <mo stretchy='false'>-</mo>
+     <mi>B</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+.</div>
+<dl class='description'>
+<dt class="description_label">Hint</dt>
+<dd class="description_item" id='magicparlabel-57'> The following formulas are provided for your information</dd>
+</dl>
+<ul class='lyxitem lyxitemi'>
+<li class="itemize_item" id='magicparlabel-58'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x2202;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>X</mi>
+   <mi>Y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <mi>X</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mi>Y</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>X</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <mi>Y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</li>
+<li class="itemize_item" id='magicparlabel-59'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x2202;</mi>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>X</mi>
+   <mi>&#x22A4;</mi>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>&#x2202;</mi>
+    <mi>X</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+</mrow>
+</math>
+</li>
+<li class="itemize_item" id='magicparlabel-60'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mfrac>
+  <mi>&#x2202;</mi>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <mi>x</mi>
+  </mrow>
+ </mfrac>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>x</mi>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <mi>B</mi>
+   <mi>x</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>B</mi>
+   <mo stretchy='false'>+</mo>
+   <msup>
+    <mi>B</mi>
+    <mi>&#x22A4;</mi>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mi>x</mi>
+</mrow>
+</math>
+</li>
+<li class="itemize_item" id='magicparlabel-61'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mfrac>
+  <mi>&#x2202;</mi>
+  <mrow>
+   <mi>&#x2202;</mi>
+   <mi>x</mi>
+  </mrow>
+ </mfrac>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>s</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>A</mi>
+      <mi>x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mi>&#x22A4;</mi>
+   </msup>
+   <mi>W</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>s</mi>
+     <mo stretchy='false'>-</mo>
+     <mi>A</mi>
+     <mi>x</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mo stretchy='false'>-</mo>
+ <mn>2</mn>
+ <mi>A</mi>
+ <mi>W</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>s</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>A</mi>
+   <mi>x</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</li>
+</ul>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-62'>This is a multiple choice question, choose any number of correct answers. 
+<ol class='lyxenum enumii'>
+<li class="enumerate_item" id='magicparlabel-63'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ follows a simultaneous autoregressive (SAR) with Gaussian joint distribution with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+ and covariance matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>I</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>B</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-64'>Ising model</li>
+<li class="enumerate_item" id='magicparlabel-65'>Conditional autoregressive (CAR) with Gaussian joint distribution with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+ and covariance matrix <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mi>I</mi>
+</mrow>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-66'>Bernoulli regression</li>
+</ol>
+</li><li class="enumerate_item" id='magicparlabel-71'>Show that the minus two log Pseudo-Likelihood is such as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mn>2</mn>
+    <mo>log</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mtext>pseudo-</mtext>
+      <mi>L</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>Z</mi>
+        <mo stretchy='false'>;</mo>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mi>&#x3B2;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mi>&#x3B2;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</li>
+<li class="enumerate_item" id='magicparlabel-72'>Compute the Maximum Pseudo-Likelihood Estimators (MPLE) <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='true'>&#x02DC;</mo>
+</mover>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mn>2</mn>
+</msup>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3B2;</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>&#x3C3;</mi>
+ <mn>2</mn>
+</msup>
+</math>
+ </li>
+</ol>
+
+<div class='solution_'>
+<div class="solution__item" id='magicparlabel-82'><span class="solution__label">Solution.</span>
+&#xA0;&#xA0; </div>
+</div>
+
+</div>
+</div>
+<div class='standard' id='magicparlabel-103'><hr />
+</div>
+
+<div class='standard' id='magicparlabel-108'>
+<br />
+</div>
+
+</body>
+</html>
