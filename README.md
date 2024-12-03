@@ -196,6 +196,18 @@ It contains all the exercises and solutions
 
 ------------------------------------------------------------------------  
 
+# Practical First Computer Based Tests  
+
+Solutions only  
+
++ [Spatial data (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Spatial-data.html)    
+
++ [Geostatistical data (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Geostatistical-data.html)        
+
++ [Aerial unit data (HTML)](https://html-preview.github.io/?url=https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Aerial-unit-data.html)    
+
+------------------------------------------------------------------------  
+
 # Data sets  
 
 Central valley Groundwater data  
