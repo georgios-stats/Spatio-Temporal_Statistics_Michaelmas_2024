@@ -310,16 +310,293 @@ do not define a proper joint distribution on <math xmlns='http://www.w3.org/1998
 
 <div class='solution_'>
 <div class="solution__item" id='magicparlabel-26'><span class="solution__label">Solution.</span>
-&#xA0;&#xA0; </div>
+&#xA0;&#xA0; The local characteristics are well-defined normal densities. Using Besag’s factorization theorem, with reference <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>x</mi>
+  <mo stretchy='false'>*</mo>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mn>0</mn>
+    <mo stretchy='false'>,</mo>
+    <mn>0</mn>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+ the joint density would be proportional to 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mfrac>
+  <mrow>
+   <munder>
+    <mo>Pr</mo>
+    <mn>1</mn>
+   </munder>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>x</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>|</mo>
+     <mn>0</mn>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mrow>
+   <munder>
+    <mo>Pr</mo>
+    <mn>1</mn>
+   </munder>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>0</mn>
+     <mo stretchy='false'>|</mo>
+     <mn>0</mn>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mfrac>
+ <mfrac>
+  <mrow>
+   <munder>
+    <mo>Pr</mo>
+    <mn>2</mn>
+   </munder>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>x</mi>
+      <mn>2</mn>
+     </msub>
+     <mo stretchy='false'>|</mo>
+     <msub>
+      <mi>x</mi>
+      <mn>1</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mrow>
+   <munder>
+    <mo>Pr</mo>
+    <mn>2</mn>
+   </munder>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>0</mn>
+     <mo stretchy='false'>|</mo>
+     <msub>
+      <mi>x</mi>
+      <mn>1</mn>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mfrac>
+ <mo stretchy='false'>=</mo>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>G</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>x</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mstyle mathvariant='double-struck'>
+   <mi>R</mi>
+  </mstyle>
+  <mn>2</mn>
+ </msup>
+</mrow>
+</math>
+. But <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>G</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is not integratable, 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mo>&#x222B;</mo>
+  <msup>
+   <mstyle mathvariant='double-struck'>
+    <mi>R</mi>
+   </mstyle>
+   <mn>2</mn>
+  </msup>
+ </msub>
+ <mi>G</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mn>1</mn>
+   </msub>
+   <mo stretchy='false'>,</mo>
+   <msub>
+    <mi>x</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mtext>d</mtext>
+ <msub>
+  <mi>x</mi>
+  <mn>1</mn>
+ </msub>
+ <mtext>d</mtext>
+ <msub>
+  <mi>x</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mo>&#x222B;</mo>
+  <msup>
+   <mstyle mathvariant='double-struck'>
+    <mi>R</mi>
+   </mstyle>
+   <mn>2</mn>
+  </msup>
+ </msub>
+ <mo>exp</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msub>
+      <mo stretchy='false'>-</mo>
+      <msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mtext>d</mtext>
+ <msub>
+  <mi>x</mi>
+  <mn>1</mn>
+ </msub>
+ <mtext>d</mtext>
+ <msub>
+  <mi>x</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x221E;</mi>
+</mrow>
+</math>
+</div>
 </div>
 
 </div>
 </div>
-<div class='standard' id='magicparlabel-36'><hr />
+<div class='standard' id='magicparlabel-32'><hr />
 </div>
 
-<div class='standard' id='magicparlabel-41'><div class='Boxed' style='width: 99%; '><div class='definition'>
-<div class="definition_item" id='magicparlabel-49'><span class="definition_label">Definition 2.</span>
+<div class='standard' id='magicparlabel-37'><div class='Boxed' style='width: 99%; '><div class='definition'>
+<div class="definition_item" id='magicparlabel-45'><span class="definition_label">Definition 2.</span>
 (Pseudo-likelihood) The pseudo likelihood <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mtext>pseudo-</mtext>
@@ -547,11 +824,11 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </math>
 .</div>
 </div>
-<div class='plain_layout' id='magicparlabel-50'>
+<div class='plain_layout' id='magicparlabel-46'>
 <br />
 </div>
 <div class='definition_'>
-<div class="definition__item" id='magicparlabel-51'><span class="definition__label">Definition.</span>
+<div class="definition__item" id='magicparlabel-47'><span class="definition__label">Definition.</span>
 (Maximum Pseudo-Likelihood Estimator) The Maximum Pseudo-Likelihood Estimator (MPLE) <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mover>
  <mi>&#x3B8;</mi>
@@ -643,11 +920,11 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </div>
 </div></div>
 <div class='exercise'>
-<div class="exercise_item" id='magicparlabel-52'><span class="exercise_label">Exercise 3.</span>
+<div class="exercise_item" id='magicparlabel-48'><span class="exercise_label">Exercise 3.</span>
 (<math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mo>&#x2605;</mo>
 </math>
-)&#xA0; <div class='standard' id='magicparlabel-54'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+)&#xA0; <div class='standard' id='magicparlabel-50'>Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>Z</mi>
  <mo>&#x2208;</mo>
@@ -812,10 +1089,10 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 .</div>
 <dl class='description'>
 <dt class="description_label">Hint</dt>
-<dd class="description_item" id='magicparlabel-55'> The following formulas are provided for your information</dd>
+<dd class="description_item" id='magicparlabel-51'> The following formulas are provided for your information</dd>
 </dl>
 <ul class='lyxitem lyxitemi'>
-<li class="itemize_item" id='magicparlabel-56'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-52'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x2202;</mi>
  <mrow>
@@ -849,7 +1126,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 </li>
-<li class="itemize_item" id='magicparlabel-57'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-53'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>&#x2202;</mi>
  <mrow>
@@ -875,7 +1152,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 </li>
-<li class="itemize_item" id='magicparlabel-58'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-54'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mfrac>
   <mi>&#x2202;</mi>
@@ -913,7 +1190,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 </li>
-<li class="itemize_item" id='magicparlabel-59'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="itemize_item" id='magicparlabel-55'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mfrac>
   <mi>&#x2202;</mi>
@@ -972,9 +1249,9 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </li>
 </ul>
 <ol class='lyxenum enumi'>
-<li class="enumerate_item" id='magicparlabel-60'>This is a multiple choice question, choose any number of correct answers. 
+<li class="enumerate_item" id='magicparlabel-56'>This is a multiple choice question, choose any number of correct answers. 
 <ol class='lyxenum enumii'>
-<li class="enumerate_item" id='magicparlabel-61'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-57'><math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mi>Z</mi>
 </math>
  follows a simultaneous autoregressive (SAR) with Gaussian joint distribution with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
@@ -1007,8 +1284,8 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 </mrow>
 </math>
 </li>
-<li class="enumerate_item" id='magicparlabel-62'>Ising model</li>
-<li class="enumerate_item" id='magicparlabel-63'>Conditional autoregressive (CAR) with Gaussian joint distribution with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<li class="enumerate_item" id='magicparlabel-58'>Ising model</li>
+<li class="enumerate_item" id='magicparlabel-59'>Conditional autoregressive (CAR) with Gaussian joint distribution with mean <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mrow>
  <mi>X</mi>
  <mi>&#x3B2;</mi>
@@ -1023,7 +1300,7 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
  <mi>I</mi>
 </mrow>
 </math>
-</li>
+ </li>
 <li class="enumerate_item" id='magicparlabel-64'>Bernoulli regression</li>
 </ol>
 </li><li class="enumerate_item" id='magicparlabel-69'>Show that the minus two log Pseudo-Likelihood is such as 
@@ -1153,15 +1430,2010 @@ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
 
 <div class='solution_'>
 <div class="solution__item" id='magicparlabel-80'><span class="solution__label">Solution.</span>
-&#xA0;&#xA0; </div>
+&#xA0;&#xA0; &#xA0; &#xA0;</div>
 </div>
+<ol class='lyxenum enumi'>
+<li class="enumerate_item" id='magicparlabel-81'>The correct answer is (a) It is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>|</mo>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='false'>,</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>X</mi>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>I</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ which is in a CAR model form with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>K</mi>
+ <mo stretchy='false'>=</mo>
+ <mtext>diag</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>X</mi>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+. </li>
+<li class="enumerate_item" id='magicparlabel-86'>It is 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>Z</mi>
+ <mo stretchy='false'>|</mo>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='false'>,</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>X</mi>
+   <mi>&#x3B2;</mi>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>I</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ which is in a CAR model form with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>K</mi>
+ <mo stretchy='false'>=</mo>
+ <mtext>diag</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+   <mo stretchy='false'>,</mo>
+   <mn>...</mn>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3BC;</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>X</mi>
+ <mi>&#x3B2;</mi>
+</mrow>
+</math>
+. Hence the local characteristics are 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mi>Z</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>|</mo>
+ <msub>
+  <mi>Z</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <mo stretchy='false'>,</mo>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='false'>,</mo>
+ <msup>
+  <mi>&#x3C3;</mi>
+  <mn>2</mn>
+ </msup>
+ <mo>&#x223C;</mo>
+ <mtext>N</mtext>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mrow>
+     <mo>[</mo>
+     <mrow>
+      <mi>X</mi>
+      <mi>&#x3B2;</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mi>i</mi>
+   </msub>
+   <mo stretchy='false'>+</mo>
+   <munder>
+    <mo>&#x2211;</mo>
+    <mrow>
+     <mi>i</mi>
+     <mo>&#x2260;</mo>
+     <mi>j</mi>
+    </mrow>
+   </munder>
+   <msub>
+    <mi>B</mi>
+    <mrow>
+     <mi>i</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>j</mi>
+    </mrow>
+   </msub>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>Z</mi>
+      <mi>j</mi>
+     </msub>
+     <mo stretchy='false'>-</mo>
+     <msub>
+      <mrow>
+       <mo>[</mo>
+       <mrow>
+        <mi>X</mi>
+        <mi>&#x3B2;</mi>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+      <mi>j</mi>
+     </msub>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ The -log pseudo-likelihood is
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mn>2</mn>
+    <mo>log</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x220F;</mo>
+       <mrow>
+        <mi>i</mi>
+        <mo>&#x2208;</mo>
+        <mstyle mathvariant='script'>
+         <mi>S</mi>
+        </mstyle>
+       </mrow>
+      </munder>
+      <munder>
+       <mo>Pr</mo>
+       <mi>i</mi>
+      </munder>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>Z</mi>
+         <mi>i</mi>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <msub>
+         <mi>Z</mi>
+         <mrow>
+          <mo stretchy='false'>-</mo>
+          <mi>i</mi>
+         </mrow>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>=</mo>
+    <mo stretchy='false'>-</mo>
+    <mn>2</mn>
+    <munder>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo>&#x2208;</mo>
+      <mstyle mathvariant='script'>
+       <mi>S</mi>
+      </mstyle>
+     </mrow>
+    </munder>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>Pr</mo>
+       <mi>i</mi>
+      </munder>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>Z</mi>
+         <mi>i</mi>
+        </msub>
+        <mo stretchy='false'>|</mo>
+        <msub>
+         <mi>Z</mi>
+         <mrow>
+          <mo stretchy='false'>-</mo>
+          <mi>i</mi>
+         </mrow>
+        </msub>
+        <mo stretchy='false'>,</mo>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='false'>,</mo>
+        <msup>
+         <mi>&#x3C3;</mi>
+         <mn>2</mn>
+        </msup>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <munder>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo>&#x2208;</mo>
+      <mstyle mathvariant='script'>
+       <mi>S</mi>
+      </mstyle>
+     </mrow>
+    </munder>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>Z</mi>
+        <mi>i</mi>
+       </msub>
+       <mo stretchy='false'>-</mo>
+       <msub>
+        <mrow>
+         <mo>[</mo>
+         <mrow>
+          <mi>X</mi>
+          <mi>&#x3B2;</mi>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mi>i</mi>
+       </msub>
+       <mo stretchy='false'>-</mo>
+       <munder>
+        <mo>&#x2211;</mo>
+        <mrow>
+         <mi>i</mi>
+         <mo>&#x2260;</mo>
+         <mi>j</mi>
+        </mrow>
+       </munder>
+       <msub>
+        <mi>B</mi>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>j</mi>
+        </mrow>
+       </msub>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msub>
+          <mi>Z</mi>
+          <mi>j</mi>
+         </msub>
+         <mo stretchy='false'>-</mo>
+         <msub>
+          <mrow>
+           <mo>[</mo>
+           <mrow>
+            <mi>X</mi>
+            <mi>&#x3B2;</mi>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+          <mi>j</mi>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mspace width="40px"/>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mtext>let&#0160;</mtext>
+      <mspace width="6px"/>
+      <mi>A</mi>
+      <mo stretchy='false'>:</mo>
+      <mo stretchy='false'>=</mo>
+      <mi>I</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <munder>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo>&#x2208;</mo>
+      <mstyle mathvariant='script'>
+       <mi>S</mi>
+      </mstyle>
+     </mrow>
+    </munder>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <munder>
+        <mo>&#x2211;</mo>
+        <mi>i</mi>
+       </munder>
+       <msub>
+        <mi>A</mi>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy='false'>,</mo>
+         <mi>j</mi>
+        </mrow>
+       </msub>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msub>
+          <mi>Z</mi>
+          <mi>j</mi>
+         </msub>
+         <mo stretchy='false'>-</mo>
+         <msub>
+          <mrow>
+           <mo>[</mo>
+           <mrow>
+            <mi>X</mi>
+            <mi>&#x3B2;</mi>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+          <mi>j</mi>
+         </msub>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <munder>
+     <mo>&#x2211;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo>&#x2208;</mo>
+      <mstyle mathvariant='script'>
+       <mi>S</mi>
+      </mstyle>
+     </mrow>
+    </munder>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>A</mi>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy='false'>,</mo>
+         <mtext>all</mtext>
+        </mrow>
+       </msub>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Z</mi>
+         <mo stretchy='false'>-</mo>
+         <mi>X</mi>
+         <mi>&#x3B2;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>[</mo>
+      <mrow>
+       <mi>A</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>Z</mi>
+         <mo stretchy='false'>-</mo>
+         <mi>X</mi>
+         <mi>&#x3B2;</mi>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mrow>
+     <mo>[</mo>
+     <mrow>
+      <mi>A</mi>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>Z</mi>
+        <mo stretchy='false'>-</mo>
+        <mi>X</mi>
+        <mi>&#x3B2;</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mi>&#x3B2;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>I</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mi>&#x3B2;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mi>n</mi>
+    <mo>log</mo>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mi>&#x3C3;</mi>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mi>&#x3B2;</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mi>&#x3B2;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo stretchy='false'>+</mo>
+    <mtext>const
+    <mn>.</mn></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>I</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>B</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mn>2</mn>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>I</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>B</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mi>&#x22A4;</mi>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>I</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</li>
+<li class="enumerate_item" id='magicparlabel-91'>The psudo-likelihood equations are 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mn>0</mn>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <msub>
+    <mrow>
+     <mo>.</mo>
+     <mrow>
+      <msub>
+       <mi>&#x2207;</mi>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>&#x3B2;</mi>
+         <mo stretchy='false'>,</mo>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </msub>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mn>2</mn>
+        <munder>
+         <mo>&#x2211;</mo>
+         <mrow>
+          <mi>i</mi>
+          <mo>&#x2208;</mo>
+          <mstyle mathvariant='script'>
+           <mi>S</mi>
+          </mstyle>
+         </mrow>
+        </munder>
+        <mo>log</mo>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <munder>
+           <mo>Pr</mo>
+           <mi>i</mi>
+          </munder>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <msub>
+             <mi>Z</mi>
+             <mi>i</mi>
+            </msub>
+            <mo stretchy='false'>|</mo>
+            <msub>
+             <mi>Z</mi>
+             <mrow>
+              <mo stretchy='false'>-</mo>
+              <mi>i</mi>
+             </mrow>
+            </msub>
+            <mo stretchy='false'>,</mo>
+            <mi>&#x3B2;</mi>
+            <mo stretchy='false'>,</mo>
+            <msup>
+             <mi>&#x3C3;</mi>
+             <mn>2</mn>
+            </msup>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>|</mo>
+    </mrow>
+    <mrow>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo stretchy='false'>=</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mover>
+         <mi>&#x3C3;</mi>
+         <mo stretchy='true'>&#x02DC;</mo>
+        </mover>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </msub>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <msub>
+    <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mfrac>
+         <mi>&#x2202;</mi>
+         <mrow>
+          <mi>&#x2202;</mi>
+          <mi>&#x3B2;</mi>
+         </mrow>
+        </mfrac>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mo stretchy='false'>-</mo>
+          <mn>2</mn>
+          <munder>
+           <mo>&#x2211;</mo>
+           <mrow>
+            <mi>i</mi>
+            <mo>&#x2208;</mo>
+            <mstyle mathvariant='script'>
+             <mi>S</mi>
+            </mstyle>
+           </mrow>
+          </munder>
+          <mo>log</mo>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <munder>
+             <mo>Pr</mo>
+             <mi>i</mi>
+            </munder>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <msub>
+               <mi>Z</mi>
+               <mi>i</mi>
+              </msub>
+              <mo stretchy='false'>|</mo>
+              <msub>
+               <mi>Z</mi>
+               <mrow>
+                <mo stretchy='false'>-</mo>
+                <mi>i</mi>
+               </mrow>
+              </msub>
+              <mo stretchy='false'>,</mo>
+              <mi>&#x3B2;</mi>
+              <mo stretchy='false'>,</mo>
+              <msup>
+               <mi>&#x3C3;</mi>
+               <mn>2</mn>
+              </msup>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mfrac>
+         <mi>&#x2202;</mi>
+         <mrow>
+          <mi>&#x2202;</mi>
+          <msup>
+           <mi>&#x3C3;</mi>
+           <mn>2</mn>
+          </msup>
+         </mrow>
+        </mfrac>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mo stretchy='false'>-</mo>
+          <mn>2</mn>
+          <munder>
+           <mo>&#x2211;</mo>
+           <mrow>
+            <mi>i</mi>
+            <mo>&#x2208;</mo>
+            <mstyle mathvariant='script'>
+             <mi>S</mi>
+            </mstyle>
+           </mrow>
+          </munder>
+          <mo>log</mo>
+          <mrow>
+           <mo>(</mo>
+           <mrow>
+            <munder>
+             <mo>Pr</mo>
+             <mi>i</mi>
+            </munder>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <msub>
+               <mi>Z</mi>
+               <mi>i</mi>
+              </msub>
+              <mo stretchy='false'>|</mo>
+              <msub>
+               <mi>Z</mi>
+               <mrow>
+                <mo stretchy='false'>-</mo>
+                <mi>i</mi>
+               </mrow>
+              </msub>
+              <mo stretchy='false'>,</mo>
+              <mi>&#x3B2;</mi>
+              <mo stretchy='false'>,</mo>
+              <msup>
+               <mi>&#x3C3;</mi>
+               <mn>2</mn>
+              </msup>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+           </mrow>
+           <mo>)</mo>
+          </mrow>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+      </mtd>
+     </mtr>
+    </mtable>
+    <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+    <mrow>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo stretchy='false'>=</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mover>
+         <mi>&#x3C3;</mi>
+         <mo stretchy='true'>&#x02DC;</mo>
+        </mover>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </msub>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mo stretchy='false'>=</mo>
+  </mtd>
+  <mtd>
+   <msub>
+    <mo form='prefix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>[</mo>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mfrac>
+         <mn>1</mn>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mfrac>
+        <msup>
+         <mi>X</mi>
+         <mi>&#x22A4;</mi>
+        </msup>
+        <mn>2</mn>
+        <msup>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>I</mi>
+           <mo stretchy='false'>-</mo>
+           <mi>B</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mn>2</mn>
+        </msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>Z</mi>
+          <mo stretchy='false'>-</mo>
+          <mi>X</mi>
+          <mi>&#x3B2;</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo stretchy='false'>-</mo>
+        <mfrac>
+         <mi>n</mi>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>2</mn>
+         </msup>
+        </mfrac>
+        <mo stretchy='false'>+</mo>
+        <mfrac>
+         <mn>1</mn>
+         <msup>
+          <mi>&#x3C3;</mi>
+          <mn>4</mn>
+         </msup>
+        </mfrac>
+        <msup>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>Z</mi>
+           <mo stretchy='false'>-</mo>
+           <mi>X</mi>
+           <mi>&#x3B2;</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mi>&#x22A4;</mi>
+        </msup>
+        <msup>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mi>I</mi>
+           <mo stretchy='false'>-</mo>
+           <mi>B</mi>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mn>2</mn>
+        </msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>Z</mi>
+          <mo stretchy='false'>-</mo>
+          <mi>X</mi>
+          <mi>&#x3B2;</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+       </mrow>
+      </mtd>
+     </mtr>
+    </mtable>
+    <mo form='postfix' fence='true' stretchy='true' symmetric='true' lspace='0.1666em'>]</mo>
+    <mrow>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mi>&#x3C3;</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo stretchy='false'>=</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+       <mo stretchy='false'>,</mo>
+       <msup>
+        <mover>
+         <mi>&#x3C3;</mi>
+         <mo stretchy='true'>&#x02DC;</mo>
+        </mover>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </msub>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ So the likelihood equations are 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mn>0</mn>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mi>X</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mn>0</mn>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mfrac>
+     <mi>n</mi>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>4</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ In details, by solving the first equation wrt <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='true'>&#x02DC;</mo>
+</mover>
+</math>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mn>0</mn>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mi>X</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x2194;</mo>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>X</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mi>X</mi>
+    <mover>
+     <mi>&#x3B2;</mi>
+     <mo stretchy='true'>&#x02DC;</mo>
+    </mover>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mi>X</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mi>Z</mi>
+    <mo>&#x2194;</mo>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mover>
+    <mi>&#x3B2;</mi>
+    <mo stretchy='true'>&#x02DC;</mo>
+   </mover>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msup>
+        <mi>X</mi>
+        <mi>&#x22A4;</mi>
+       </msup>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>I</mi>
+          <mo stretchy='false'>-</mo>
+          <mi>B</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mn>2</mn>
+       </msup>
+       <mi>X</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <msup>
+     <mi>X</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mi>Z</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+ and by solving the second equation wrt <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mn>2</mn>
+</msup>
+</math>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mn>0</mn>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mfrac>
+     <mi>n</mi>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>4</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x2194;</mo>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mn>0</mn>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>-</mo>
+    <mfrac>
+     <mi>n</mi>
+     <mn>1</mn>
+    </mfrac>
+    <mo stretchy='false'>+</mo>
+    <mfrac>
+     <mn>1</mn>
+     <msup>
+      <mover>
+       <mi>&#x3C3;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+      <mn>2</mn>
+     </msup>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x2194;</mo>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mover>
+      <mi>&#x3C3;</mi>
+      <mo stretchy='true'>&#x02DC;</mo>
+     </mover>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mi>n</mi>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+Hence by solving w.r.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mover>
+ <mi>&#x3B2;</mi>
+ <mo stretchy='true'>&#x02DC;</mo>
+</mover>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mover>
+  <mi>&#x3C3;</mi>
+  <mo stretchy='true'>&#x02DC;</mo>
+ </mover>
+ <mn>2</mn>
+</msup>
+</math>
+ I get 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mover>
+     <mi>&#x3B2;</mi>
+     <mo stretchy='true'>&#x02DC;</mo>
+    </mover>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msup>
+        <mi>X</mi>
+        <mi>&#x22A4;</mi>
+       </msup>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mi>I</mi>
+          <mo stretchy='false'>-</mo>
+          <mi>B</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mn>2</mn>
+       </msup>
+       <mi>X</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <msup>
+     <mi>X</mi>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mi>Z</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mover>
+      <mi>&#x3C3;</mi>
+      <mo stretchy='true'>&#x02DC;</mo>
+     </mover>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>=</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mi>n</mi>
+    </mfrac>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>Z</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>X</mi>
+       <mover>
+        <mi>&#x3B2;</mi>
+        <mo stretchy='true'>&#x02DC;</mo>
+       </mover>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mi>&#x22A4;</mi>
+    </msup>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>I</mi>
+       <mo stretchy='false'>-</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Z</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>X</mi>
+      <mover>
+       <mi>&#x3B2;</mi>
+       <mo stretchy='true'>&#x02DC;</mo>
+      </mover>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</li>
+</ol>
 
 </div>
 </div>
-<div class='standard' id='magicparlabel-101'><hr />
+<div class='standard' id='magicparlabel-97'><hr />
 </div>
 
-<div class='standard' id='magicparlabel-106'>
+<div class='standard' id='magicparlabel-102'>
 <br />
 </div>
 </body>
