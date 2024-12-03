@@ -47,6 +47,8 @@ Below you can find:
 
 + [Exercise sheets](./README.md#excercise-sheets-and-homework)  
 
++ [Practical computer based tests](https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/README.md#practical-first-computer-based-tests)  
+
 + [Data sets](./README.md#data-sets)  
 
 + [Downloading instructions](./README.md#downloading-instructions)     
