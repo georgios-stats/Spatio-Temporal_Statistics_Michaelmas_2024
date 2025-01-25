@@ -68,19 +68,19 @@ Lecture notes and lecture handouts are in folder **[[Lecture_notes]](./Lecture_n
 
 + [PDF](./Lecture_notes/Lecture_notes_types_of_spatial_data.pdf)    
 
-+ [HTML](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_types_of_spatial_data_xhtml/Lecture_notes_types_of_spatial_data.xhtml)  
++ [HTML](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_types_of_spatial_data_xhtml/Lecture_notes_types_of_spatial_data.xhtml)  
 
 #### Geostatistical data modeling       
 
 + [PDF](./Lecture_notes/Lecture_notes_geostatistical_data.pdf)  
 
-+ [HTML](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_geostatistical_data_xhtml/Lecture_notes_geostatistical_data.xhtml)  
++ [HTML](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_geostatistical_data_xhtml/Lecture_notes_geostatistical_data.xhtml)  
 
 #### Aerial unit data modeling              
 
 + [PDF](./Lecture_notes/Lecture_notes_aerial_unit_data.pdf)  
 
-+ [HTML](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_aerial_unit_data_xhtml/Lecture_notes_aerial_unit_data.xhtml)  
++ [HTML](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Lecture_notes/Lecture_notes_aerial_unit_data_xhtml/Lecture_notes_aerial_unit_data.xhtml)  
 
 #### Random pattern data modeling       
 
@@ -116,25 +116,25 @@ Required R packages are
 
 This is about the retrival, manipulation, and visualisation of spatial data.
 
-Tasks: [View (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_tasks.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Spatial_data_in_R_tasks.html)  
+Tasks: [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_tasks.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Spatial_data_in_R_tasks.html)  
 
-Complete: [View (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Spatial_data_in_R_complete.html)  
+Complete: [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Spatial_data_in_R_complete.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Spatial_data_in_R_complete.html)  
 
 #### Lab 2: Geostatistical data modeling       
 
 This is about the fiting (cross-)semivariograms, implementing (co-)Kriging, and implementind the linear model of coregionalization.  
 
-Tasks: [View (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  
+Tasks: [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_tasks.html)  
 
-Complete: [View (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html)  
+Complete: [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Point_referenced_spatial_data_modelling_complete.html)  
 
 #### Lab 3: Aerial unit data modeling       
 
 This is about design neighborhoods, proximity matrices, (global and local) Moran's tests, Simultaneous Auto-regressive (SAR) model fitting, and Conditional Auto-Regressive (CAR) model fitting.  
 
-Tasks: [View (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html)  
+Tasks: [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_tasks.html)  
 
-Complete [View (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html)  
+Complete [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html) ; [Download (HTML)](https://raw.githubusercontent.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/refs/heads/main/Computer_lab_notes/Aerial_unit_spatial_data_modelling_complete.html)  
 
 #### Lab 4: Random pattern data modeling    
 
@@ -150,51 +150,51 @@ It contains all the exercises and solutions
 
 + [Problems only (PDF)](./Exercise_sheets/Exercise_sheet_questions.pdf)  
 
-+ [Problems only (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Exercise_sheet_complete_xhtml/Exercise_sheet_questions.xhtml)  
++ [Problems only (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Exercise_sheet_complete_xhtml/Exercise_sheet_questions.xhtml)  
 
 + [Problems and solutions (PDF)](./Exercise_sheets/Exercise_sheet_complete.pdf)  
 
-+ [Problems and solutions (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Exercise_sheet_complete_xhtml/Exercise_sheet_complete.xhtml)  
++ [Problems and solutions (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Exercise_sheet_complete_xhtml/Exercise_sheet_complete.xhtml)  
 
 #### Homework 1  
 
 + [Problems only (PDF)](./Exercise_sheets/Homework_sheet_1_questions.pdf)  
 
-+ [Problems only (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_1_complete_xhtml/Homework_sheet_1_questions.xhtml)  
++ [Problems only (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_1_complete_xhtml/Homework_sheet_1_questions.xhtml)  
 
 + [Problems and solutions (PDF)](./Exercise_sheets/Homework_sheet_1_complete.pdf)  
 
-+ [Problems and solutions (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_1_complete_xhtml/Homework_sheet_1_complete.xhtml)  
++ [Problems and solutions (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_1_complete_xhtml/Homework_sheet_1_complete.xhtml)  
 
 #### Homework 2  
 
 + [Problems only (PDF)](./Exercise_sheets/Homework_sheet_2_questions.pdf)  
 
-+ [Problems only (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_2_complete_xhtml/Homework_sheet_2_questions.xhtml)  
++ [Problems only (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_2_complete_xhtml/Homework_sheet_2_questions.xhtml)  
 
 + [Problems and solutions (PDF)](./Exercise_sheets/Homework_sheet_2_complete.pdf)  
 
-+ [Problems and solutions (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_2_complete_xhtml/Homework_sheet_2_complete.xhtml)    
++ [Problems and solutions (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_2_complete_xhtml/Homework_sheet_2_complete.xhtml)    
 
 #### Homework 3  
 
 + [Problems only (PDF)](./Exercise_sheets/Homework_sheet_3_questions.pdf)  
 
-+ [Problems only (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_3_complete_xhtml/Homework_sheet_3_questions.xhtml)  
++ [Problems only (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_3_complete_xhtml/Homework_sheet_3_questions.xhtml)  
 
 + [Problems and solutions (PDF)](./Exercise_sheets/Homework_sheet_3_complete.pdf)  
 
-+ [Problems and solutions (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_3_complete_xhtml/Homework_sheet_3_complete.xhtml)  
++ [Problems and solutions (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_3_complete_xhtml/Homework_sheet_3_complete.xhtml)  
 
 #### Homework 4  
 
 + [Problems only (PDF)](./Exercise_sheets/Homework_sheet_4_questions.pdf)  
 
-+ [Problems only (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_4_complete_xhtml/Homework_sheet_4_questions.xhtml)  
++ [Problems only (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_4_complete_xhtml/Homework_sheet_4_questions.xhtml)  
 
 + [Problems and solutions (PDF)](./Exercise_sheets/Homework_sheet_4_complete.pdf)  
 
-+ [Problems and solutions (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_4_complete_xhtml/Homework_sheet_4_complete.xhtml)  
++ [Problems and solutions (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_4_complete_xhtml/Homework_sheet_4_complete.xhtml)  
 
 ------------------------------------------------------------------------  
 
@@ -202,11 +202,11 @@ It contains all the exercises and solutions
 
 Solutions only  
 
-+ [Spatial data (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Spatial-data.html)    
++ [Spatial data (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Spatial-data.html)    
 
-+ [Geostatistical data (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Geostatistical-data.html)        
++ [Geostatistical data (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Geostatistical-data.html)        
 
-+ [Aerial unit data (HTML)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Aerial-unit-data.html)    
++ [Aerial unit data (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Aerial-unit-data.html)    
 
 ------------------------------------------------------------------------  
 
