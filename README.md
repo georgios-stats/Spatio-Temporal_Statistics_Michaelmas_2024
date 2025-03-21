@@ -196,6 +196,12 @@ It contains all the exercises and solutions
 
 + [Problems and solutions (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Homework_sheet_4_complete_xhtml/Homework_sheet_4_complete.xhtml)  
 
+#### Revision   
+
++ [View (PDF)](./Exercise_sheets/Revision_sheet.pdf)  
+
++ [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Machine_Learning_and_Neural_Networks_III_Epiphany_2025/blob/main/Exercise_sheets/Revision_sheet_xhtml/Revision_sheet.xhtml)  
+
 ------------------------------------------------------------------------  
 
 # Practical First Computer Based Tests  
@@ -208,7 +214,7 @@ Solutions only
 
 + [Aerial unit data (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/FPCBT-Topic-Aerial-unit-data.html)    
 
-------------------------------------------------------------------------  
+------------------------------------------------------------------------
 
 # Data sets  
 
