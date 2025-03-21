@@ -200,7 +200,7 @@ It contains all the exercises and solutions
 
 + [View (PDF)](./Exercise_sheets/Revision_sheet.pdf)  
 
-+ [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Machine_Learning_and_Neural_Networks_III_Epiphany_2025/blob/main/Exercise_sheets/Revision_sheet_xhtml/Revision_sheet.xhtml)  
++ [View (HTML)](http://htmlpreview.github.io/?https://github.com/georgios-stats/Spatio-Temporal_Statistics_Michaelmas_2024/blob/main/Exercise_sheets/Revision_sheet_xhtml/Revision_sheet.xhtml)  
 
 ------------------------------------------------------------------------  
 
